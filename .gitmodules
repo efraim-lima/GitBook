@@ -1,0 +1,3 @@
+[submodule "information-security/fatec"]
+	path = information-security/fatec
+	url = git@github.com:efraim-lima/fatec.git
