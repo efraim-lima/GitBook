@@ -1,0 +1,72 @@
+!
+version 12.4
+!
+hostname R3
+!
+enable secret 5 $1$mERr$WwfYkWJNgzhVOU1fKBqJ9/
+!
+ip dhcp pool LAN
+ network 19.0.0.0 255.255.255.0
+ default-router 19.0.0.1 
+ dns-server 20.0.0.3 20.0.0.2
+ exit
+!
+interface FastEthernet0
+ ip address 19.0.0.1 255.255.255.0
+ no shutdown
+ speed auto
+ exit
+!
+interface Serial0
+ ip address 16.0.0.2 255.255.255.0
+ no shutdown
+ exit
+!
+interface Serial1
+ ip address 17.0.0.1 255.255.255.0
+ no shutdown
+ exit
+!
+router rip
+ version 2
+ network 15.0.0.0
+ network 16.0.0.0
+ network 17.0.0.0
+ network 18.0.0.0
+ network 19.0.0.0
+ network 20.0.0.0
+ no auto-summary
+ exit
+!
+banner motd ^CC
+
+!!!ATENCAO!!!
+
+Voce esta em um ambiente de rede privada.
+Todo acesso nao autorizado nao e permitido e pode ser penalizado de acordo com o regimento de leis em conformidade com os orgaos responsaveis.
+
+- line: $(line)
+- hostname: $(hostname)
+- domain: $(domain)
+
+Projeto de redes no Packet Tracer!.
+^C
+!
+line con 0
+ exec-timeout 5 0
+ password 7 0822455D0A1606181C1803082F
+ logging synchronous
+ login
+!
+line vty 0 4
+ exec-timeout 5 0
+ password 7 0822455D0A1611121E050910
+ login
+!
+line aux 0
+ exec-timeout 5 0
+ logging synchronous
+!
+!
+end
+
