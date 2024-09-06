@@ -278,6 +278,29 @@ vmmon                 167936  0
 
 Também precisamos analisar todos pacotes instalados, pode haver algo no meio, pra isso podemos usar comandos como `dpkg -l`, `dpkg-query -l`, `apt list --installed`, `flatpak list` e/ou `snap list` e verificar cada item e sua proveniência.
 
+Algumas ferramentas que podemos utilizar para desenvolver um processo de monitoramento do sistema no linux, algo semelhante ao Sysmon no Windows:
+
+
+
+* **Auditd**: O Audit Daemon é uma ferramenta poderosa para monitoramento e auditoria de eventos no Linux. Ele pode registrar atividades do sistema e arquivos.
+  * **Instalação**: `sudo apt-get install auditd` (Debian/Ubuntu) ou `sudo yum install audit` (RHEL/CentOS).
+  * **Uso básico**: Configure regras no arquivo `/etc/audit/audit.rules` e use `auditctl` para adicionar ou modificar regras de auditoria.
+* **Osquery**: Uma ferramenta que permite realizar consultas SQL em dados do sistema, semelhante a um banco de dados.
+  * **Instalação**: Siga as instruções em https://osquery.io/downloads/ (disponível para várias distribuições).
+  * **Uso básico**: Execute `osqueryi` para iniciar o shell interativo e realizar consultas SQL.
+* **Falco**: Um monitor de segurança e integridade de contêineres e sistemas, que pode fornecer alertas sobre comportamentos anômalos.
+  * **Instalação**: Siga as instruções em https://falco.org/docs/getting-started/.
+  * **Uso básico**: O Falco roda como um serviço e usa regras configuradas para gerar alertas sobre atividades suspeitas.
+* **Lsof**: Uma ferramenta para listar arquivos abertos e os processos que os abriram.
+  * **Instalação**: Geralmente já está disponível em distribuições Linux.
+  * **Uso básico**: Execute `lsof` para listar arquivos abertos e `lsof /path/to/file` para verificar processos relacionados a um arquivo específico.
+* **Strace**: Uma ferramenta para rastrear chamadas de sistema e sinais de processos.
+  * **Instalação**: `sudo apt-get install strace` (Debian/Ubuntu) ou `sudo yum install strace` (RHEL/CentOS).
+  * **Uso básico**: Execute `strace -p <pid>` para monitorar um processo em execução ou `strace <command>` para monitorar a execução de um novo comando.
+* **Sysdig**: Uma ferramenta para captura e análise de tráfego de sistema e eventos.
+  * **Instalação**: Siga as instruções em https://sysdig.com/opensource/.
+  * **Uso básico**: Execute `sysdig` para começar a capturar eventos ou `sysdig -p"%evt.time %proc.name %evt.type %evt.args"` para personalizar a saída.
+
 
 
 * no maximo 20 paginas contando com referencias, imagens e tudo mais
