@@ -83,6 +83,7 @@
         * [Análise Dinâmica](readme/soc/processes/malware-analysis/analise-dinamica/README.md)
           * [Configurando Maquina Virtual](readme/soc/processes/malware-analysis/analise-dinamica/configurando-maquina-virtual.md)
           * [Softwares](readme/soc/processes/malware-analysis/analise-dinamica/softwares.md)
+          * [Pontos de Antenção](readme/soc/processes/malware-analysis/analise-dinamica/pontos-de-antencao.md)
         * [Análise Estática](readme/soc/processes/malware-analysis/analise-estatica.md)
   * [TOOLS](readme/tools/README.md)
     * [LEARN](readme/tools/learn/README.md)
