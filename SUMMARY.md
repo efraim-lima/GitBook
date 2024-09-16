@@ -44,7 +44,7 @@
         * [CRIPTOGRAFIA](readme/fatec/2024/2-2024/criptografia/README.md)
           * [Aula Inaugural 08-08-2024](readme/fatec/2024/2-2024/criptografia/aula-inaugural-08-08-2024.md)
           * [Aula criptografia 08-29-2024](readme/fatec/2024/2-2024/criptografia/aula-criptografia-08-29-2024.md)
-          * [tRABALHO](readme/fatec/2024/2-2024/criptografia/trabalho.md)
+          * [Trabalho](readme/fatec/2024/2-2024/criptografia/trabalho.md)
         * [ADMINISTRAÇÃO DE EMPRESAS](readme/fatec/2024/2-2024/administracao-de-empresas/README.md)
           * [Aula Inaugural 07-08-2024](readme/fatec/2024/2-2024/administracao-de-empresas/aula-inaugural-07-08-2024.md)
           * [Estudos do Ambiente 08-15-2024](readme/fatec/2024/2-2024/administracao-de-empresas/estudos-do-ambiente-08-15-2024.md)
