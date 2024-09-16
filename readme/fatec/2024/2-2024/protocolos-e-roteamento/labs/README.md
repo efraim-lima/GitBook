@@ -1,6 +1,0 @@
----
-icon: flask-gear
----
-
-# LABs
-
