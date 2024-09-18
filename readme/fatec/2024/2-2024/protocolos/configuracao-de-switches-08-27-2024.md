@@ -15,9 +15,9 @@ configure terminal
 interface range FastEthernet 0/1-5
 switchport mode trunk
 interface range FastEthernet 0/6-24
-switchport access vlan 50
+switchport access vlan 10
 exit
-hostname ENG
+hostname DCE
 vlan 10
 name DCE
 vlan 20
