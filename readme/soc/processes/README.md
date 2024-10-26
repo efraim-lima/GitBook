@@ -1,6 +1,0 @@
----
-icon: gear-code
----
-
-# PROCESSES
-

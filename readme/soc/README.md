@@ -1,6 +1,0 @@
----
-icon: camera-cctv
----
-
-# SOC
-
