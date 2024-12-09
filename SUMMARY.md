@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Information Security](__init__.md)
+* [Information Security](README.md)
   * [FATEC](readme/fatec/__init__.md)
     * [2024](readme/fatec/2024/__init__.md)
       * [1/2024](readme/fatec/2024/1-2024/__init__.md)
@@ -60,7 +60,7 @@
         * [ESTATISTICA](readme/fatec/2024/2-2024/estatistica/__init__.md)
           * [Atividade Estatística 08-23-2024](readme/fatec/2024/2-2024/estatistica/atividade-estatistica-08-23-2024.md)
     * [Processo de Forense no Linux](readme/fatec/processo-de-forense-no-linux.md)
-  * [CYBERETICO](readme/cyberetico/README.md)
+  * [CYBERETICO](__init__/cyberetico/README.md)
     * [TEMAS](readme/cyberetico/temas/__init__.md)
       * [ROTEIROS](readme/cyberetico/temas/roteiros/__init__.md)
         * [Handshake](readme/cyberetico/temas/roteiros/handshake.md)
