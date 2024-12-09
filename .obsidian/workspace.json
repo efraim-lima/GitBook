@@ -9,16 +9,35 @@
         "dimension": 45.69471624266145,
         "children": [
           {
-            "id": "398cb624c49f44c6",
+            "id": "8df5badb1f8ea512",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "readme/__init__.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "__init__"
+            }
+          },
+          {
+            "id": "793a605c108add18",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "readme/fatec/Pesquisa/ARTIGO.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ARTIGO"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "5d0d52247bf9c935",
@@ -26,17 +45,17 @@
         "dimension": 54.30528375733855,
         "children": [
           {
-            "id": "7646edcf2766d521",
+            "id": "57cd248ccb3574b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readme/fatec/processo-de-forense-no-linux.md",
+                "file": "readme/fatec/__init__.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "processo-de-forense-no-linux"
+              "title": "__init__"
             }
           }
         ]
@@ -176,35 +195,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "398cb624c49f44c6",
+  "active": "793a605c108add18",
   "lastOpenFiles": [
+    "readme/fatec/__init__.md",
+    "readme/fatec/Pesquisa/__init__.md",
+    "readme/fatec/Pesquisa/Untitled.md",
+    "readme/fatec/Pesquisa/ARTIGO.md",
+    "readme/fatec/Pesquisa/Trabalho/__init__.md",
+    "readme/fatec/Pesquisa/Rascunhos/__init__.md",
+    "readme/fatec/Pesquisa/Cronograma/__init__.md",
+    "readme/fatec/Pesquisa/Ferramentas/__init__.md",
+    "readme/fatec/Pesquisa/Pesquisa/__init__.md",
+    "readme/fatec/Pesquisa/Cronograma",
+    "readme/fatec/Pesquisa/Rascunhos",
+    "readme/fatec/Pesquisa/Trabalho",
+    "readme/fatec/Pesquisa/Ferramentas",
+    "readme/fatec/Pesquisa/Pesquisa",
+    "Untitled.md",
+    "readme/__init__.md",
+    "readme/fatec/Pesquisa",
+    "readme/fatec/2024/2-2024/__init__.md",
     "readme/cyberetico/__init__.md",
-    "readme/fatec/processo-de-forense-no-linux.md",
-    "readme/fatec/2024/1-2024/dspti/raid.md",
-    "readme/cyberetico/temas/roteiros/md5.md",
-    "SUMMARY.md",
+    "readme/cyberetico/temas/__init__.md",
+    "readme/cyberetico/temas/roteiros/__init__.md",
     "__init__.md",
+    "readme/tools/intel/cyber-kill-chain.md",
+    "SUMMARY.md",
     "readme/tools/learn/__init__.md",
     "readme/tools/intel/__init__.md",
-    "Obsidian/Welcome.md",
-    "readme/cyberetico/temas/roteiros/__init__.md",
-    "readme/cyberetico/temas/__init__.md",
-    "readme/fatec/2024/1-2024/calculo/__init__.md",
-    "readme/fatec/2024/1-2024/dspti/apresentacoes/__init__.md",
-    "readme/fatec/2024/1-2024/dspti/__init__.md",
-    "readme/fatec/2024/1-2024/redes/__init__.md",
-    "readme/fatec/2024/1-2024/so/__init__.md",
-    "readme/fatec/2024/1-2024/__init__.md",
-    "readme/fatec/2024/2-2024/administracao-de-empresas/__init__.md",
-    "readme/fatec/2024/2-2024/criptografia/__init__.md",
-    "readme/fatec/2024/2-2024/estatistica/__init__.md",
-    "readme/fatec/2024/2-2024/lab-so-redes/__init__.md",
-    "readme/fatec/2024/2-2024/protocolos/labs/__init__.md",
-    "readme/fatec/2024/2-2024/protocolos/__init__.md",
-    "readme/fatec/2024/2-2024/__init__.md",
-    "readme/fatec/2024/__init__.md",
-    "readme/soc/labs/letsdefend/__init__.md",
-    "Untitled 1",
-    "Untitled"
+    "readme/tools/__init__.md",
+    "readme/tools/Untitled.md",
+    "readme/soc/soc-level-1-or-analista-de-seguranca-jr/__init__.md",
+    "readme/soc/soc-level-1-or-analista-de-seguranca-jr/cyber-kill-chain.md",
+    "readme/soc/processes/malware-analysis/analise-dinamica/__init__.md",
+    "readme/soc/processes/malware-analysis/__init__.md",
+    "Untitled 1"
   ]
 }

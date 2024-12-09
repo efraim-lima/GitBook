@@ -8,3 +8,6 @@ icon: flask-vial
 
 # LABs
 
+[[readme/soc/labs/letsdefend/__init__|letsdefend]]
+[[readme/soc/labs/tryhackme/__init__|tryhackme]]
+[[hackthebox]]

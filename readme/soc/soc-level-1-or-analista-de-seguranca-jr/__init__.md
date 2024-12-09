@@ -5,6 +5,9 @@ description: >-
   recursos que coletei durante meus estudos
 icon: dumbbell
 ---
+[[readme/soc/soc-level-1-or-analista-de-seguranca-jr/cyber-kill-chain|cyber-kill-chain]]
+[[readme/soc/soc-level-1-or-analista-de-seguranca-jr/pyramid-of-pain|pyramid-of-pain]]
+
 
 # SKILLS
 

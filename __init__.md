@@ -5,6 +5,7 @@ description: >-
   esquecimento
 icon: shield-halved
 ---
+[[readme/__init__|INICIO]]
 
 # Information Security
 
