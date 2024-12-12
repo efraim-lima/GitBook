@@ -142,6 +142,7 @@
         * [Pyramid Of Pain](readme/soc/labs/tryhackme/pyramid-of-pain.md)
     * [processes](readme-1/soc/processes/README.md)
       * [PROCESSES](readme/soc/processes/__init__.md)
+      * [Framework For Dummies | Processo de Análise de E-mails e detecção de Phishing](readme-1/soc/processes/framework-for-dummies-or-processo-de-analise-de-e-mails-e-deteccao-de-phishing.md)
       * [malware-analysis](readme-1/soc/processes/malware-analysis/README.md)
         * [\_\_init\_\_](readme/soc/processes/malware-analysis/__init__.md)
         * [Análise Estática](readme/soc/processes/malware-analysis/analise-estatica.md)
