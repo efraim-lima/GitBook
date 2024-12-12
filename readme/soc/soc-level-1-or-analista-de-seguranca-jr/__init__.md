@@ -1,15 +1,17 @@
 ---
+icon: dumbbell
 description: >-
   Este material é um conteúdo que tem sido compilado primeiro proveniente de
   treinamentos web como o TryHackMe, mas que vou complementando com outros
   recursos que coletei durante meus estudos
-icon: dumbbell
+hidden: true
 ---
-[[readme/soc/soc-level-1-or-analista-de-seguranca-jr/cyber-kill-chain|cyber-kill-chain]]
-[[readme/soc/soc-level-1-or-analista-de-seguranca-jr/pyramid-of-pain|pyramid-of-pain]]
 
+# \_\_init\_\_
 
-# SKILLS
+\[\[readme/soc/soc-level-1-or-analista-de-seguranca-jr/cyber-kill-chain|cyber-kill-chain]] \[\[readme/soc/soc-level-1-or-analista-de-seguranca-jr/pyramid-of-pain|pyramid-of-pain]]
+
+## SKILLS
 
 Primeiro precisamos compreender como é a carreira de um analista de segurança junior e suas obrigações.\
 O analista de segurança junior geralmente é o primeiro contato com os incidentes em um ambiente, sendo responsável por analisar alertas de segurança, analisar tal evento e escalar a decisão para setores superiores quando necessário.
@@ -34,4 +36,3 @@ A partir de agora fica evidente que para essa área é importante ter conhecimen
 Para isso podemos contar com ferrametas que auxiliam no processo de análise e de coleta de informação:
 
 * Compilado de pefis que podem auxiliar no processo de coleta de informações - [info.md](../../tools/learn/info.md "mention")
-

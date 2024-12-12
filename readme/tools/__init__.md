@@ -1,12 +1,13 @@
 ---
+icon: screwdriver-wrench
 description: >-
   Ferramentas úteis para investigações, análises, processos e até mesmo para a
   construção de conhecimento
-icon: screwdriver-wrench
+hidden: true
 ---
-[[readme/tools/intel/__init__|intel]]
-[[readme/tools/learn/__init__|learn]]
-[[malwares]]
 
-# TOOLS
+# \_\_init\_\_
 
+\[\[readme/tools/intel/**init**|intel]] \[\[readme/tools/learn/**init**|learn]] \[\[malwares]]
+
+## TOOLS

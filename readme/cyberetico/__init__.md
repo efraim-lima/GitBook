@@ -1,6 +1,10 @@
 ---
 icon: square-youtube
+hidden: true
 ---
-[[readme/cyberetico/temas/__init__|temas]]
-# CYBERETICO
 
+# \_\_init\_\_
+
+\[\[readme/cyberetico/temas/**init**|temas]]
+
+## CYBERETICO

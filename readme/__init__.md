@@ -1,7 +1,7 @@
-[[readme/cyberetico/__init__|cyberetico]] 
-[[readme/fatec/__init__|fatec]] 
-[[readme/soc/__init__|soc]] 
-[[readme/tools/__init__|tools]]
-[[Pesquisa]]
+---
+hidden: true
+---
 
+# \_\_init\_\_
 
+\[\[readme/cyberetico/**init**|cyberetico]] \[\[readme/fatec/**init**|fatec]] \[\[readme/soc/**init**|soc]] \[\[readme/tools/**init**|tools]] \[\[Pesquisa]]
