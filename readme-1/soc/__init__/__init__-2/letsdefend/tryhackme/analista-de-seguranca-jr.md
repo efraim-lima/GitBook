@@ -21,7 +21,7 @@ Sites para busca e análise de IPs com intuito de se detectar se foram identific
 
 Após inserirmos o IP detectaremos este como um endereço malicioso...
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Depois disso basta escalar o incidente para uma pessoa responsável pelas atividades que tenha maior autonomia para a investigação, neste caso seria nosso Team Leader, Will Griffin.
 
