@@ -1,4 +1,4 @@
-# Framework For Dummies | Processo de Análise de E-mails e detecção de Phishing
+# análise de possível phishing
 
 Você sabe como verificar se um e-mail pode ou não ser um phishing?\
 Sabia que existem formas de inferir se um e-mail é phishing ou não? E ainda mais, não precisa de extrema expertise na detecção de incidentes e nem de ferramentas específicas de detecção e gestão  de ameaças, 'da pra fazer de casa'.\
@@ -19,17 +19,7 @@ Agora, neste material gostaria de aprofundar a análise dos metadados dos emails
 Primeiro precisamos entender o conceito de metadados (BUSCAR REFERENCIAS).\
 \
 Com isso em mente teremos maior propriedade para fazer esta análise e precisamos primeiro acessar tais metadados, para isso verifique como acessá-los em seu cliente de e-mail preferido, neste caso vamos utilizar o Outlook como referência e nele o processo consiste em abrir o e-mail de forma individual (clicando duas vezes sobre o e-mail), acessando o ícone de Arquivo e procurando por Propriedades, localizado no elemento Informações que encontra-se na coluna à esquerda.\
-\
-Ao abrir os metadados devemos prestar atenção a alguns elementos para verificar a autenticidade deste email:
 
-* **Headers do E-mail;**
-* **Campos como**:
-  * **Received**: mostra o caminho percorrido pelo e-mail desde o remetente até o destinatário;
-  * **From**: Indica o endereço de e-mail do remetente, mas este campo pode ser facilmente alterado pelo remetente;
-  * **To:** podem ocorrer discrepâncias neste campo, o que estiver fora disso pode ser um alerta de indício de phishing;
-  * **Return-Path**: Especifica o endereço de e-mail para onde devem ser enviadas as mensagens de erro ou de devolução (bounces) e ajuda a apresentar o endereço de e-mail real do remetente;
-  * **Message-ID**: Fornece um identificador único para cada e-mail, geralmente gerado pelo servidor de envio;
-  * **DKIM-Signature**: DKIM (Domain Keys Identified Mail) é uma assinatura digital que verifica se o e-mail foi enviado e autorizado pelo domínio indicado. Inclui uma chave criptográfica que pode ser verificada pelo servidor de recebimento;
 
 Com essas informações em mãos poderemos verificar a autenticidade dos e-mails, para isso utilizaremos as ferramentas MXToolBox (disponível em [https://mxtoolbox.com/](https://mxtoolbox.com/)), VirusTotal (disponível em [https://www.virustotal.com/](https://www.virustotal.com/)) e IPVoid (disponível em [https://www.ipvoid.com/](https://www.ipvoid.com/)). Com isso poderemos dar sequência em nossa analise do e-mail.\
 \

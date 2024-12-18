@@ -7,7 +7,7 @@ description: >-
 
 # Pyramid Of Pain
 
-Um atacante precisa estar munido de informações e ferramentas para conseguir transpunir as ferramentas de segurança de um determinado sistema e, do lado da defesa, precisamos estar munidos de ferramentas que possibilitam compreensão se o sistema está robusto e devidamente configurado e eficaz contra as ameaças destes atacantes assim como deixar o processo de ataque mais difícil para os atacantes adqurirem acesso aos recursos que desejam, causando "dor" para o atacante, daí Pyramid of Pain.
+Um atacante precisa estar munido de informações e ferramentas para conseguir passar as ferramentas de segurança de um determinado sistema e, do lado da defesa, precisamos estar munidos de ferramentas que possibilitam compreensão se o sistema está robusto e devidamente configurado e eficaz contra as ameaças destes atacantes assim como deixar o processo de ataque mais difícil para os atacantes adqurirem acesso aos recursos que desejam, causando "dor" para o atacante, daí Pyramid of Pain.
 
 Pyramid of Pain classifica os indicadores de comprometimento (IoCs) de acordo com a dificuldade que eles causam ao atacante quando são detectados e neutralizados, tais indicadores são:
 
@@ -28,7 +28,7 @@ Pyramid of Pain classifica os indicadores de comprometimento (IoCs) de acordo co
 
 Algumas ferramentas para anasarmos hash, IPs, URLs, Domínios, Arquivos ou até mesmo CVEs:
 
-* Malwares - [malwares.md](../../tools/malwares.md "mention")
+* Malwares - [malwares.md](../../../readme/tools/malwares.md "mention")
 
 ####
 
