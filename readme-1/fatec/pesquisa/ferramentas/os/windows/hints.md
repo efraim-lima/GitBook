@@ -7,6 +7,14 @@ nformações importantes a serem guardadas para perícias forenses:
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_/WINDOWS
 
+
+
+
+
+
+
+Para dicas de SOC neste sistema operacional: [windows](../../../../../soc/tools/operational-systems/windows/ "mention")
+
 ESTUDAR CMDLETS
 
 * Os dados que o arquivo contém são armazenados no atributo $DATA;

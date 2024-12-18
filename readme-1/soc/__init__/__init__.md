@@ -35,4 +35,4 @@ A partir de agora fica evidente que para essa área é importante ter conhecimen
 
 Para isso podemos contar com ferrametas que auxiliam no processo de análise e de coleta de informação:
 
-* Compilado de pefis que podem auxiliar no processo de coleta de informações - [info.md](../../../readme/tools/learn/info.md "mention")
+* Compilado de pefis que podem auxiliar no processo de coleta de informações - [info.md](../info.md "mention")

@@ -1,7 +1,0 @@
----
-icon: books
----
-
-# LEARN
-
-[[info]]

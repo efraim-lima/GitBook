@@ -1,12 +1,10 @@
 # Hints
 
+Para dicas de SOC neste sistema operacional: [linux](../../../../../soc/tools/operational-systems/linux/ "mention")
+
 Linux é uma ferramenta flexivel que permite instalação de elementos independetemente e também possui diversas distribuições mantidas por empresas e pela comunidade. Uma distro potente e que será estudada mais pra frente é a Security Onion, que possui a ferramenta Sguil.
 
-&#x20;
-
-Sguil, é o console do analista de segurança cibernética em uma versão especial do Linux chamada Security Onion. O Security Onion é um conjunto de ferramentas de código aberto que trabalham juntas para análise de segurança de rede.
-
-&#x20;
+Sguil, é o console do analista de segurana cibernética em uma versão especial do Linux chamada Security Onion. O Security Onion é um conjunto de ferramentas de código aberto que trabalham juntas para análise de segurança de rede.
 
 A tabela lista algumas ferramentas que são freqüentemente encontradas em um SOC.
 

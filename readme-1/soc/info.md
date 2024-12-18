@@ -2,6 +2,7 @@
 description: >-
   Ferramentas para a construção do conuecimento e que podem servir para
   compreender incidentes e eventos de segurança.
+icon: globe
 ---
 
 # INFO
@@ -12,7 +13,7 @@ Websites que podem ser usados para inteligencia de ameaças:
 
 * Feedly - [https://feedly.com](https://feedly.com)
 * Twitter - alguns perfis podem ser uteis para coletar informações, como:
-  * [https://x.com/Certego\_Intel](https://x.com/Certego\_Intel) - Aponta domínios e IPs que foram detectados como indicadores de ameaça cibernética (auxiliando na tomada de decisão)
+  * [https://x.com/Certego\_Intel](https://x.com/Certego_Intel) - Aponta domínios e IPs que foram detectados como indicadores de ameaça cibernética (auxiliando na tomada de decisão)
   * [https://x.com/cipherstorm](https://x.com/cipherstorm) - Coleta e compartilha informações de data breaches, incidentes e eventos que podem impactar  empresas de forma geral
   * [https://x.com/MsftSecIntel](https://x.com/MsftSecIntel) - Portal de comunicação da Microsoft Threat Intelligence
   * [https://x.com/vxunderground](https://x.com/vxunderground) - Coleção de codigo fonte de malwares, exemplos e notícias sobre segurança

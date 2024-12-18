@@ -2,9 +2,10 @@
 description: >-
   Ferramentas que podem ser utilizadas para analisar o processo de cyber kill
   chain
+icon: file-magnifying-glass
 ---
 
-# Cyber Kill Chain
+# RECON
 
 Ferramentas de reconhecimento.
 
