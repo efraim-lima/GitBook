@@ -22,25 +22,18 @@ Desabilitar leitura automática de USB – montar ou montagem automatica
 
 &#x20;
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_/WINDOWS
-
 * Entrar no editor de registror do windows
-*
   * Win + R => regedit => Computer\HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Services\mountmgr
-  *
     * Criar uma DWORD em hexadecimal chamada NoAutoMount
     * Double Click nela
-    *
-      * Mudar valor de 1 para 0 (disable to enable)
+    * Mudar valor de 1 para 0 (disable to enable)
   * Win + R => regedit =>  Computer\HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Services\USBSTOR
-  *
     * Criar um novo valor DWORD chamado "PreventDeviceEnumeration"
-    * definir-lo como 1
+    * Mudar valor de 0 para 1 (enable to disable)
   * Win + R => regedit => Computer\HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Services\USBSTOR
-  *
     * Criar um novo valor DWORD chamado "PreventAutomaticMounting"
-    * Definir-lo como 1
-  * Reiniciar o computador para receber as mudanças
+    * Mudar valor de 0 para 1 (enable to disable)
+* Reiniciar o computador para receber as mudanças
 * Caso queira montar alguma unidade segura após isto basta digitar Win + X e ir em Gerenciador de Dispositivos
 
 &#x20;
@@ -57,8 +50,9 @@ Outra alternativa para montagem de unidades no windows:\
   * Para reabilitar:
   *
     * automount enable
-    * | Mountvol /e |   |
-      | ----------- | - |
+    * mountvol /e
+    * | Mountvol /e |
+      | ----------- |
   * Para limpar histórico de unidades montadas anteriormente:
   *
     * automount scrub
