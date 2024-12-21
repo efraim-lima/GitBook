@@ -14,25 +14,17 @@ Podemos desmembrar o Cyber Kill Chain em algumas etapas:\
 
 Este é o estágio inicial, onde o atacante escolhe seu alvo e começa a investigar, coletar informações de forma ativa ou passiva e performar scans para coletar informações de antivírus, firewalls, sistemas operacionais e tecnologias de rede;
 
-&#x20;
-
 <mark style="color:green;">**Weaponize**</mark>
 
 Neste momento o malware que deve infectar o alvo é desenvolvido, levando em consideração que deve ser extremamente leve e indetectável pelas ferramentas de antivírus do sistema
-
-&#x20;
 
 <mark style="color:green;">**Delivery**</mark>
 
 Momento de entrega do Malware, onde o atacante já estudou e se preparou, agora ele precisa buscar acesso aos sistemas. A entrega pode ser feita de diversas formas, mas as mais comuns são por e-mails de phishing, onde o usuário é levado a uma página externa falsificada pelo atacante, nessa página o atacante pode optar por coletar credenciais, transmitir payloads para instalar ferramentas no sistema ou explorar vulnerabilidades do sistema para ganhar o acesso
 
-&#x20;
-
 <mark style="color:green;">**Exploit**</mark>
 
 Neste momento o atacante vai explorar as vulnerabilidades do sistema de fato, geralmente ocorre quando o payload é entregue ao sistema e acionado. Neste momento o atacante pretende ganhar acesso e/ou controle do sistema atacado.
-
-&#x20;
 
 <mark style="color:green;">**Install**</mark>
 
@@ -64,4 +56,4 @@ O processo de manejamento de incidentes de segurança pode ser dividido entre tr
 
 &#x20;
 
-Poderemos verificar este processo no campo a seguir: [incident-handling.md](__init__-1/incident-handling.md "mention")
+Poderemos verificar este processo no campo a seguir: [incident-handling.md](__init__/__init__-1/incident-handling.md "mention")

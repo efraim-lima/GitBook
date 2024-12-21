@@ -4,6 +4,10 @@ description: Aqui encontraremos as referências para o artigo que estou desenvol
 
 # Referências
 
+IMPORTANTE: Tecnicas antiforesnse em maquinas  [https://academiadeforensedigital.com.br/hackers-e-tecnicas-antiforense-desafios-para-os-especialistas/](https://academiadeforensedigital.com.br/hackers-e-tecnicas-antiforense-desafios-para-os-especialistas/)
+
+
+
 GuiaFoca — Site Oficial do GuiaFoca. www.guiafoca.org. Disponível em: [https://www.guiafoca.org](https://www.guiafoca.org). Acesso em: 2 nov. 2024.
 
 SALEH, M. et al. Forensic analysis of logs: Modeling and verification. Knowledge-Based Systems, v. 20, n. 7, p. 671–682, out. 2007.

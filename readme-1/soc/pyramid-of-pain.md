@@ -28,7 +28,7 @@ Pyramid of Pain classifica os indicadores de comprometimento (IoCs) de acordo co
 
 Algumas ferramentas para anasarmos hash, IPs, URLs, Domínios, Arquivos ou até mesmo CVEs:
 
-* Malwares - [malwares.md](../tools/malwares.md "mention")
+* Malwares - [malwares.md](tools/malwares.md "mention")
 
 ####
 
