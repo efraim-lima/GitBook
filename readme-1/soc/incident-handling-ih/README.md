@@ -2,7 +2,7 @@
 
 O tratamento de incidentes é um ponto importante para uma organização que se preocupa com a prevenção e a redução de volume de incidentes de segurança. Algumas organizações podem tratar disso dentro de casa, outras podem terceirizar este processo.
 
-Agora, para uma boa compreensão do processo de tratamento de incidentes vamos alinhar alguns elementos super importantes para a construção do conhecimento.\
+Agora, para uma boa compreensão do processo de tratamento de incidentes vamos alinhar alguns elementos super importantes que serão abordados mais a frente, mas pretendo introduzir aqui para que possamos entender núcleo  da construção do conhecimento.\
 Podemos iniciar a compreensão a partir dos menores fragmentos de um sistema que podem ser analisados e que são constantes ferramentas para quem for atuar na área de segurança: eventos.
 
 Basicamente eventos são elementos compiladas em um sistema que são provenientes de ações tomadas num sistema seja por um usuário ou por aplicações presentes no sistema, geralmente essas ações são transmitidas através de Logs pelos sistemas. A estes elementos podemos chamar de "eventos".
@@ -63,5 +63,30 @@ PREPARAÇÃO DO AMBIENTE
 
 O ambiente empresarial também deve estar pronto para passar por incidentes potencialmente críticos e para isso temos algumas ferramentas que podem auxiliar a transformar o ambiente das organizações mais seguro.
 
-* DMARC: ferramenta para proteção contra phishing, baseada em filtros e regras, evitando contato entre o email potencialmente malicioso e o usuário alvo;
-*
+* SIEM: coleta logs (eventos) de todos dispositivos conectados (e seus sensores configurados) na rede, para o prin
+* DMARC: ferramenta para proteção contra phishing, baseada em filtros e regras, evitando contato entre o e-mail potencialmente malicioso e o usuário alvo;
+* EDR: é uma ferramenta que foca em detectar as principais ameaças que se originam na internet e tem como alvo os endpoints de uma organização (estações de trabalho, impressoras por exemplo)
+  * &#x20;Neste momento, o AMSI oferece grande visibilidade de scripts ofuscados para produtos antimalware para inspecionar o conteúdo antes que ele seja executado. É altamente recomendável que você escolha apenas produtos que se integrem ao AMSI
+* Endpoint Hardening: aqui pode-se tomar uma série de medidas que focam no processo de se assegurar que os endpoints estão devidamente assegurados
+  * Desativar LLMNR/NetBIOS&#x20;
+  * Implementar LAPS e remover privilégios administrativos de usuários regulares&#x20;
+  * Desativar ou configurar o PowerShell no modo "ConstrainedLanguage"&#x20;
+  * Habilitar as regras de controle de superfície de ataque (ASR) ao usar o Microsoft Defender&#x20;
+  * Implementar whitelists no sistema (IPs, Users, domínios, etc)&#x20;
+  * Implementar uma boa política de permissionamento aos usuários
+    * prestar atenção aos arquivos LOLBin durante a implementação da lista de permissões, eles são realmente usados como acesso inicial para ignorar a lista de permissões
+  * Bloquear scripts como .hta, .vbs, .cmd, .bat, .js e similares.
+  * Utilizar firewalls baseados em host e, de preferência um NGFW para garantir maior cobertura contra ameaças recentemente descobertas.
+  * Bloquear a comunicação entre estações de trabalho e tráfego de saída para LOLBins
+* Segurança de Rede: assim como proteger as estações de trabalho é importante, proteger a rede também é um processo importantíssimo, sendo uma das camadas mais críticas a ser protegida. Com isso podemos tomar algumas medidas
+  * Segmentar a rede em subredes
+  * Implementar uma DMZ para acesso a rede externa (internet)
+  * Utilizar firewalls de borda e intenamente na rede (um WAF pode ser enquadrado como "hardening" da rede)
+  * Implementar IPS/IDS quando possível (o custo é mais elevado, mas compensa)
+  * Implementação de ACLs
+  * Avalie as configurações e permissões de serviço de domíno de rede, como AD e Samba
+  * Tenha uma boa política de BYOD
+* IAM/MFA/Passwd: Crie politicas de acesso robustas, com camadas para o acesso ao ambiente que sejam eficientes e também robustos
+* Vulnerability Scanning: garanta que as vulnerabilidades do ambiente estão mapeadas e tratadas constantemente
+* Treinameito: treine o pessoal, faça com que a segurança esteja na rotina de seus funcionários
+* Exercícios: aplique exercicios de segurança e performe simulações constantemente, para que o time interno esteja sempre perarado e atento para incidentes
