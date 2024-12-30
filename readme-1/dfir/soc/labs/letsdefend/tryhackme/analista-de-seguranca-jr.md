@@ -1,2 +1,0 @@
-# Analista de Segurança Jr
-

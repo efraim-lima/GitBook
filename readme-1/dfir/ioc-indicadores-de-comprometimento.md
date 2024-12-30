@@ -1,2 +1,0 @@
-# IOC - Indicadores de Comprometimento
-

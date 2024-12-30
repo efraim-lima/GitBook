@@ -1,2 +1,0 @@
-# Artigo: Forense Computacional
-

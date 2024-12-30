@@ -1,2 +1,0 @@
-# Detecção e Análise
-

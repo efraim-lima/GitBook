@@ -1,2 +1,0 @@
-# Pyramid Of Pain
-

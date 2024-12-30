@@ -1,2 +1,0 @@
-# análise de possível phishing
-
