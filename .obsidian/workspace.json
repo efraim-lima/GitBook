@@ -26,14 +26,17 @@
             "id": "793a605c108add18",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "readme/fatec/Pesquisa/ARTIGO.md",
-                "mode": "source",
-                "source": false
+                "file": "Untitled 1.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "ARTIGO"
+              "icon": "lucide-layout-dashboard",
+              "title": "Untitled 1"
             }
           }
         ],
@@ -130,6 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Untitled 1.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +143,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Untitled 1"
             }
           },
           {
@@ -197,10 +201,13 @@
   },
   "active": "793a605c108add18",
   "lastOpenFiles": [
+    "Untitled 1.canvas",
+    "2024-12-30.md",
+    "Untitled.canvas",
+    "readme/fatec/Pesquisa/ARTIGO.md",
     "readme/fatec/__init__.md",
     "readme/fatec/Pesquisa/__init__.md",
     "readme/fatec/Pesquisa/Untitled.md",
-    "readme/fatec/Pesquisa/ARTIGO.md",
     "readme/fatec/Pesquisa/Trabalho/__init__.md",
     "readme/fatec/Pesquisa/Rascunhos/__init__.md",
     "readme/fatec/Pesquisa/Cronograma/__init__.md",
@@ -227,8 +234,6 @@
     "readme/tools/Untitled.md",
     "readme/soc/soc-level-1-or-analista-de-seguranca-jr/__init__.md",
     "readme/soc/soc-level-1-or-analista-de-seguranca-jr/cyber-kill-chain.md",
-    "readme/soc/processes/malware-analysis/analise-dinamica/__init__.md",
-    "readme/soc/processes/malware-analysis/__init__.md",
     "Untitled 1"
   ]
 }
