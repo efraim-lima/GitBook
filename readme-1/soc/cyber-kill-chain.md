@@ -56,4 +56,4 @@ O processo de manejamento de incidentes de segurança pode ser dividido entre tr
 
 &#x20;
 
-Poderemos verificar este processo no campo a seguir: [incident-handling.md](__init__/__init__-1/incident-handling.md "mention")
+Poderemos verificar este processo no campo a seguir: [Broken link](broken-reference "mention")

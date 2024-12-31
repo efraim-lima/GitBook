@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # SharePoint
 
 Criei um sharepoint para centralizar minhas atividades e meu trabalho, contando com um arquivo word onde elaborarei todo meu texto para o artigo
