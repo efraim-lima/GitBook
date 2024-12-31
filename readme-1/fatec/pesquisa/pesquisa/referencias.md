@@ -4,65 +4,7 @@ description: Aqui encontraremos as referências para o artigo que estou desenvol
 
 # Referências
 
-## Bibliography
-
-BORIS. How hackers cover tracks and countermeasures. Disponível em: \<https://www.tekyhost.com/how-hackers-cover-tracks-and-countermeasures/>. Acesso em: 29 dez. 2024.
-
-CIRILO DE SOUZA, M. Estudo De Caso De Análise Forense De Arquivos Apagados Em Área Não Alocada Da Memória. Tecnologia Da Informação, v. 5, n. 2675-1828, p. 2–2023, 31 dez. 2023.
-
-DUY, P. et al. SDNLog-Foren: Ensuring the Integrity and Tamper Resistance of Log Files for SDN Forensics using Blockchain. \[s.l: s.n.]. Acesso em: 29 dez. 2024.
-
-HSU, F. et al. Back to the Future: A Framework for Automatic Malware Removal and System Repair \*. \[s.l: s.n.]. Disponível em: \<https://pages.cs.wisc.edu/\~rist/papers/bttf.pdf>. Acesso em: 10 dez. 2024.
-
-JELODAR, H. Identification of Internet Hackers’ Attacks through Keywords by Analyzing the Server Log File. ARPN Jounal of Systems and Software, v. 3, n. 6, out. 2013.
-
-JIANG, L.; TIAN, G.; ZHU, S. Design and Implementation of Network Forensic System Based on Intrusion Detection Analysis. 2012 International Conference on Control Engineering and Communication Technology, p. 689–692, dez. 2012.
-
-KORKIN, I.; TANDA, S. Detect Kernel-Mode Rootkits via Real Time Logging & Controlling Memory Access. Disponível em: \<https://arxiv.org/abs/1705.06784>. Acesso em: 10 dez. 2024.
-
-KREPS, J. I Heart Logs. \[s.l.] “O’Reilly Media, Inc.”, 2014.
-
-LANTZ, B.; HALL, R.; COURAUD, J. LOCKING DOWN LOG FILES: ENHANCING NETWORK SECURITY BY PROTECTING LOG FILES. v. VII, n. 2, 2006.
-
-LIN, J. A Web Forensic System Based on Semantic Checking. 2008 International Symposium on Computational Intelligence and Design, p. 99–102, out. 2008.
-
-MA, R. Anomaly Detection for Linux System Log - University of Twente Student Theses. Utwente.nl, 2020.
-
-MALIN, C. H. et al. Malware forensic field guide for Windows systems digital forensics field guides. \[s.l.] Amsterdam Elsevier Rockland, Mass. Syngress Waltham, Mass. Syngress, 2012.
-
-MANSFIELD-DEVINE, S. FIGHTING FORENSICSScienceDirect. \[s.l: s.n.]. Disponível em: \<https://www.sciencedirect.com/science/article/abs/pii/S1361372310701123>. Acesso em: 29 dez. 2024.
-
-MAZIOLLI, G. Guia Foca. Disponível em: \<https://www.guiafoca.org>. Acesso em: 2 nov. 2024.
-
-RIBEIRO TEIXEIRA, A. Adriana Ribeiro Teixeira PERÍCIA FORENSE DE REDE: TEORIA E PRÁTICA. \[s.l: s.n.]. Acesso em: 24 dez. 2024.
-
-SUTTON, A.; SAMAVI, R. Blockchain Enabled Privacy Audit Logs. Lecture Notes in Computer Science, p. 645–660, 2017.
-
-VEERRAJU, R.; SAI, B. TRACKING THE HACKER WITH CYBER FORENSICS. International Journal of Emerging Technology in Computer Science & Electronics (IJETCSE), v. 11, n. 0976-1353, p. 976–1353, 5 nov. 2014.
-
-YAGEMANN, C. et al. Validating the Integrity of Audit Logs Against Execution Repartitioning Attacks. 12 nov. 2021.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-IMPORTANTE: Tecnicas antiforesnse em maquinas  [https://academiadeforensedigital.com.br/hackers-e-tecnicas-antiforense-desafios-para-os-especialistas/](https://academiadeforensedigital.com.br/hackers-e-tecnicas-antiforense-desafios-para-os-especialistas/)\
-\
-[https://www.fateccampinas.com.br/rbti/index.php/fatec/article/view/95/55](https://www.fateccampinas.com.br/rbti/index.php/fatec/article/view/95/55)
-
-{% embed url="https://www.eccouncil.org/cybersecurity-exchange/computer-forensics/what-is-digital-forensics/" %}
+IMPORTANTE: Tecnicas antiforesnse em maquinas  [https://academiadeforensedigital.com.br/hackers-e-tecnicas-antiforense-desafios-para-os-especialistas/](https://academiadeforensedigital.com.br/hackers-e-tecnicas-antiforense-desafios-para-os-especialistas/)
 
 
 
