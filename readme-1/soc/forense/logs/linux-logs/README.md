@@ -1,6 +1,0 @@
----
-icon: linux
----
-
-# Linux Logs
-

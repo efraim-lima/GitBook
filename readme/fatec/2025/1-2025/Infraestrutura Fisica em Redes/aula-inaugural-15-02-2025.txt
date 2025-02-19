@@ -1,0 +1,78 @@
+As principais grandezas eletricas 
+Tensão Eletrica (V, U ou E) => como é medida em Volts, geralmente usa-se V para nomear
+
+
+Corrente eletrica (A ou I) => como é medida dem Amperes, geralmente usa-se A para nomear
+	é a direção da energia
+	a corrente sempre vai do positivo para o negativo
+	o que mata é tanto tensão quanto corrente
+
+Resistencia (Ohm ou R) => Impede a passagem dos eletrons
+	São materiais que podem conduzir ou isolar o fluxo de energia
+	Resistividade indica o quão bom ou ruim um material é, no caso quanto mais próximo de 0, mais condutor o material é 
+	A energia sempre vai procurar o caminho de menor resistencia
+
+Potencia (watts) => 
+	Quanto um dispositivo depende de energia para funcionar
+	As coisas que mais consomem energia são as que tem resistencia e/ou motor eletrico
+
+
+Levar um choque pelo lado esquerdo é pior, pois pode afetar o coração
+
+No momento de se estruturar um cabo para uma resistencia (por exemplo) é importante levar em consideração a soma das bitolas diretamente conectadas. Por exemplo: se preciso de 3 fios com potencia de X energia em uma casa, preciso de um fio de uma bitola de 3x na entrada de energia da casa.
+
+Baterias em série: fazer a ligação de uma na outra, conectado o negativo de uma com o positivo da outra, isso faz a soma da tensão, mas mantém a corrente.
+
+
+
+Disjuntor impede que uma determinada 
+Amper = 
+
+    RUI | UPI 
+        
+U/(R*I) | P/(U*I)
+        
+   U    |   P   
+--------|-------
+ R * I  | U * I
+        
+
+R = Resistencia 
+U = Tensao
+P = Potencia
+I = Corrente
+
+
+Corrente: Existem continuas e alternadas
+	continuas => o positivo é sempre positivo
+	alternada => alterna entre positivo e negativo
+
+Quando colocamos baterias em paralelo aumentamos a corrente
+Quando colocamos baterias em série aumentamos a tensão
+Quando colocamos baterias em patinete aumentamos tensão e corrente
+
+Exercicios do dia:
+1) Informe a corrente (A) de um secador de cabelo de 1700 W, em 124 Volts;
+P = 1700
+U = 124
+
+1700/(127*I) => 13,38 Amp
+
+
+2) Informe a corrente de uma TV LED de 32" que tem potencia de 10 Watts, em 127 Volts
+P = 10
+U = 127
+
+10/(127*I) => 0,07 Amp ou 70 mAmp
+
+3) Qual a potencia de uma Impressora laser, que possui corrente de 5A em 127 Volts?
+U = 127
+I = 5
+
+P/(127*5) => 635 W
+
+4) Um Ferro de Passar com resistencia de 30 Ohms está ligado em uma rede de 127 Volts. Coalcule a corrente
+R = 30
+I = 127
+
+127/(30*I) => 4,2

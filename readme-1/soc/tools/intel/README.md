@@ -1,6 +1,0 @@
----
-icon: mosquito-net
----
-
-# INCIDENT
-

@@ -1,0 +1,62 @@
+
+
+
+Igor Stringasci Moreira
+Mestre em adminsitração de Empresas
+Mestre em Sistemas de Informação 
+Graduado em Administração de Empresas
+
+Instrutor das normas ISO 27005, 31000, 37001, 27701 e 37301
+
+Autor do livro Segurança Minima Uma visao corporativa da Seguraça da Informação
+
+Autor do Gestor 0 Plataforma para Gestão de Risscos www.influenciar.net.br
+
+
+Fundador e moderador do grupo ISO 31000 Brasil
+
+
+-----------------------------------------------------------------------------------------
+
+A N1 será prova, no processo normal de avaliação
+
+A N2 será dada no processo de abertura de "empresas", ou seja, cada grupo sera uma empresa de serviços de segurança da informaçao e receberemos uma empresa para cuidar (Bango digital, Industria farmaceutica, cartao de creditos)
+
+Os grupos serão formados de acordo com o interesse pela empresa final --> escolheremos de acordo com as especificações das empresas, cada empresa terá uma especificação de requerimentos, sendo o ferramental de cada empresa. Teremos que acompanhar o NIST para detectar as vulnerabilidades de cada recurso.
+
+Ao sair uma nova vulnerabilidade, precisaremos 
+1 - Notificar o cliente (professor) -> data e hora que saiu, o numero da CVE e um link de acesso 
+A cada 15 dias apresentaremos uma planilha indicando as vulnerabilidades detectadas no período em função de servidores, estações, bancos de dados, servidores e escolher uma vulnerabilidades dessas para explicar
+
+Politica de SI
+Rede Local - do ponto de vista de segurança
+Nuvem
+Backup
+Desenvolvimento Seguro
+Gestão de VIlnerabilidades ** no requisito 8.8 da ISO 27001 fala exclusivamente deste ponto
+	o professor tem uma formula 
+
+Delta t = (Delta TP - Delta TC) / ?
+
+data em que a correção foi lançada = data de correção na empresa
+
+
+*nós fazemos backup da base de dados, não do banco de dados 
+
+Incidente de Segurança
+
+
+A ISO 27001 indica requisitos de classificação de indormações, para que saiba-se o valuation das informações e como saber qual o procedimento para lidar com cada informação.
+	Norma da classificação da informação
+	Esta norma informa como estes dados podem ser tratados (como enviar, assinar, informar a label)
+Um grupo da manha desenvolveu uma aplicação que cataloga, lista e envia os emails diretamente para o professor. Estão usando isso 
+
+
+Os ativos valiosos são dados como recursos valisos, a partir desses recursos cria a estrategia e valor para a empresa, a principal caracteristica desses ativos é: de dificil replicação/imitação
+
+Exemplos de recursos valiosos:
+Marca
+COnhecimento tecnologico
+Indormação acumulada de clientes
+Habilidade Gerencial
+CUltura organizacional

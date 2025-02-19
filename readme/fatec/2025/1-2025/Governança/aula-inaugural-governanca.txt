@@ -1,0 +1,71 @@
+Governança - Aula 01
+
+OBJETIVOS
+
+Todo tipo de processo/serviço de TI implementado precisa atingir aos objetivos estratégicos de TI.
+
+Para averiguar e estabelecer os objetivos estratégicos precisamos ter as ações bem alinhadas com o plano estratégico.
+
+O processo de auditoria é identificar os pontos fortes e fracos da organização, posteriormente salinhando com a alta gestão quais seus objetivos de médio o longo prazo.
+O processo de consultoria desenrola-se determinando os pontos fortes e fracos de acordo com as atividades da empresa, e a partir deste momento pontuam ações e metas a nivel de setores, sistemas, processos e outras ações mais de acordo com as necessidades de cada ambiente. Com essas necessidades em mãos ficam viaveis os não tais ações.
+
+Quando o plano estratégico diz uma coisa e a empresa segue por outro caminho?
+--> Empresas podem procurar se enquadrar em planos estratégicos e auditorias apenas com objetivos de alcançar outros objetivos, nisso a auditoria fica apeans para "ingles ver". Por exemplo, se uma empresa quer prestar serviço para uma empresa do setor financeiro, pode ser obrigada a ter determinadas certificações para isso.
+
+
+INTRODUÇÃO
+Qual a função de um gestor de TI, o que ele faz e quem é ele? O gestor de TI geralmente é um gerente funcional, sem ter a obrigação de fazer (ele não precisa saber fazer). O papel dele é fazer a gestão de pessoas, processos 
+
+Hierarquia e funcionalidades:
+Governança - visão estratégica/tática e organizacional | direcionar, priorizar e monitorar
+
+Supervisão - visão operacional especialista de tarefas dos subordinados, traduzindo o que a gestão preciso
+
+A governança precisa entender as estratégias da empresa e, a aprtir do que foi edtipulado ela deve liderar os proessos;
+
+Em empresa que ganha quem grita mais alto, significa que não existe governança forte.
+
+Quando existe algum tipo de solicitação, é importante ter em mente o que tal solicitação 
+
+Durante um processo de definição de pré-requisitos para um novo passo estratégico, a gestão de TI deve fazer o processo de analise dos pre-requisitos do próprio setor. Verificando seus recursos para se preparar para a reunião geral de planejamento, para, no momento em que a gestão dos outros setores trouxerem suas dores 
+
+Analogia da Gestão:
+A empresa é um barco
+O CEO é o capitão do barco
+A governança seria o piloto
+A gestão seriam os primeiros imediatos
+A supervisão seriam os capatazes
+Os funcionarios seriam os serviçais
+
+A Governança tomasuas decisões de acordo com o que a gestão levar a eles.
+
+CAPEX
+-> levantamento de pre-requisitos + dimensionamento
+-> levantamento de custos iniciais de uma solução
+** custos a curto prazo
+OPEX
+-> este é o custo de operação e manutenção da solução (precisa-se levar em consideração todos os custos provenientes do CAPEX)
+** custos a longo prazo
+
+
+
+
+Uma empresa que, de fato segue o plano estratégico cria KPIs, Metricas, OKRs
+
+---> nunca devemos estar fechados para o mercado e estar sempre alinhados com 
+
+O tema de governança deve vir apenas até a aula seguinte até o intervalo; depois trataremos de boas práticas de acordo com cada aula. Teremos um overview de cada uma das boas práticas;
+
+AVALIAÇÕES:
+N1
+Prova: 0-8 Atividades 0-2
+07/04/2025
+
+N2
+Prova: 0-8 Trabalho(...) 0-2
+16/06/2025
+
+N3
+Prova: 0-10
+30/06/2025
+*nenhuma atividade de ocorrer fora do horario de aula, todas devem ser feitas em sala de aula...durante as aulas devem ocorrer simulados da prova

@@ -1,6 +1,0 @@
----
-icon: chart-bar
----
-
-# LOGs
-

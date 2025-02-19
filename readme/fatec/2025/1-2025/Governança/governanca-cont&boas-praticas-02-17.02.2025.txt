@@ -1,0 +1,64 @@
+governanca-cont&boas-praticas-02-17.02.2025
+
+Quando uma empresa determina que utiliza ITIL, COBIT, CMMI e outras mantenedoras de boas praticas a empresa não precisa estar complicente com todas as regras das boas praticas.
+Agora, quando estiver tratando de ISO o processo é diferente, é importante seguir a todas as regras estabelecidas pelo padrão, caso não haja comprometimento com este padrão a empresa deve receber uma Não Conformidade.
+
+A metodologia da-se como um processo para que uma determinada meta seja atingida, o subproduto da metodologia são os procedimentos e vamos usar muito destes procedimentos no próximo semestre.
+
+Governança de TI => Alinhar a área de TI ao negocio
+Quando as empresas adiquirem um serviço de ERP (SAP, por exemplo), ela precisa das pessoas que farão a manutenção e adaptação para as necessidades do negocio, este é o exemplo mais valido neste caso;
+
+Outro ponto importante é o processo de contigencia, proveniente do plano de continuidade de negocios, na verdade o mais importante é o plano de continuidade de negócios.
+
+As empresas tem reguladoradoras especificas, como a Anatel para telefonia e Bacen para empresas o mercado financeiro;
+
+Sarbanes-Oxley (2002) 
+-> as organizações precisam mostrar o balancete financeiro de forma obrigatória e transparente,
+sendo condizente com a realidade
+
+Basileia II (2004)
+-> regulamenta instituições e transasações financeiras, obrigando a empresa a ter capital real e podendo honras os valores que são depositados pelos correntistas
+
+Alinhamento Estrategico Compliance (Planejamento estratégico) -> Decisao Compromisso, Priorização e Alocação de Recursos (Responsabilidades elas decisões relativas à area) -> Estrutura Processos,Operações e Gestao (Estrutura Organizacional e funcional) -> Gestão do Valor e do Desempenho (Determinação, coleta e geração de indicadores)
+
+Destrinchando os Objetivos:
+-> Posicionamento claro  consistente a TI em relação às demais áreas (se a gestão vê a área de TI de determinada forma é assim que será tratada pela empresa);
+	-> se a empresa vê a TI como suporte, a empresa faz o rateio do investimento no setor de TI;
+	-> quando a empresa verifica e a TI é algo estratégico, o próprio setor terá um centro de custo, onde os recursos chegarão para a TI;
+
+Geralmente a visão das empresas é que a TI é um setor com problemas, geralmente por pouco orçamentos
+
+-> ALinhamento e a priorização das iniciativas e TI com a estratégia do negócio;
+-> Alinhamento da arquitetura de TI, sua infraestrutura e aplicações (presente e futuro);
+-> Implantação e melhoria os processos operacionaise gestão;
+
+
+Componentes da Governança de TI
+-> Alinhamento estrategico e Compliance
+	Principios da Governança e TI
+	Gestao da demanda
+	Necessidade de aplicações 
+	Arquitetura de TI
+	Infraestrutura e TI
+	Capacidade
+	Sourcing
+	Segurana da Informação
+	Competencias
+	Processos e Organização 
+	Plano e TI
+	Projetos 
+	Serviços
+	Inovações (criação de novos serviços, ESG, aproximação da sociedade) 
+	Relacionamento com usuários
+	Relacionamento com fornecedores (importante mencionar a classificação dos fornecedores, de forma a rotular cada um de acordo com suas qualidades)
+
+
+BOAS PRATICAS
+PMBOK (mantido pelo PMI)
+Aplicar o conjunto de conhecimento m gerenciamnto amplamente reconhecido oo boa prática
+Promove um vocebulário comum dento da profissão de gerenciamneto e projetos
+Codigo de Etica e Conduta Profissional do PMI
+-> vem da administração e deve ser aplicado a toda a organização
+-> aplica politicas e boas praticas para varias áreas de gestão (tempo, recursos, finanças, etc)
+-> Cada area de gerenciamento também teremos entradas e saidas, muitas vezes sendo um document que entra para que um determinado processo ocorra e "cuspa" um outro documento de saída, o document de saída irá server de document de entrada para outra area de gerencimento. Assim como uma linha de produção, onde cada setor é responsavel por uma atividade e o produto final dessa atividade será materia prima para outro setor.
+
