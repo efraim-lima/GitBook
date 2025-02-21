@@ -1,0 +1,73 @@
+aula 20/02/2025
+
+O conceito de risco é antigo (implementado tando em seguros, finanças...)
+
+
+No nosso conteúdo, o que for tecnico será alinhado de acordo com os objetivos de negócio.
+
+De acordo com a necessidade do negocio (ex.: chegar em determinado patamar).
+
+A diretoria designa as ordens de acordo com a decisão estratégica, delega para os gerenciais dos setores e estes.
+
+O processo de mudança implica em diversas variaveis e deve-se levar em consideração.
+
+Uma situação que pode ocorrer é o risco de se perder pessoas chaves para o negocio (padaria-padeiro, pizzaria-pizzaiolo)
+
+
+Uma avaliação real de risco (professor trouxe como exemplo)
+
+-> o primeiro ponto a ser analisado é o(s) objetivo(s) do negócio
+	- Processo de atendimento, superar expectativas, 
+		- Analise do processo de atendimento em função do core business
+	- Observar o que pode afetar os objetivos de negocio 
+
+Matriz do risco
+
++---------------+---------------+---------------+-----------------------+
+| Objetivo	| Processo	| Risco 	| Fonte de Risco	|
++---------------+---------------+---------------+-----------------------+
+|		|		|		|			|
+|		|		|		|			|
+|		|		|		|			|
++---------------+---------------+---------------+-----------------------+
+
+Ao fazer uma avaliação de risco é fundamental levantar qual o ativo mais precioso da empresa:
+- uma receita, um padrão de procedimento, uma informação;
+
+A avaliação de risco deve iniciar na diretoria, mas passar pelo operacional.
+
+Antes de se iniciar a avaliação de risco, devemos estabelecer o contexto.
+Contexto externo: 
+- as leis que a empresa atende;
+- concorrencia;
+
+Contexto intero:
+- enteder as politicas;
+- a forma de fazer as coisas;
+- os procedimentos;
+
+Avaliação de Risco != auditoria
+
+Criterios de Impacto:
+Deve ser mensurado em função de faturamento, receita, operações comprometidas, nivel de classificação do ativo de informação afetado, Perda de oportunidades de negócio.
+
+
+Escopo:
+Não se faz avaliaçã de risco de uma empresa enteira, apenas de um setor por vez e antes de se iniciar a avaliação deve ocorrer um diagnostico.
+ao levantar um setor para esta avaliação deve-se analisar os processos, as pessoas, as tecnologias e as segurança como um tudo, um sistema, uma unidade de negócio, linha de serviço ou produto.
+
+Para se definir um escopo deve verificar qual a área que, se sofrer uma falha, implicará em maior impacto no faturaamento.
+
+
+
+As leis da TI
+13709 - LGPD
+12737 - Carolina Diekman
+12965 - Marco Civil
+9609/98 - Pirataria - ABES
+
+Não atender uma lei é compliance
+Não atender a uma ISO é não conformidade
+
+
+Pesquisar mais sobre matriz de risco

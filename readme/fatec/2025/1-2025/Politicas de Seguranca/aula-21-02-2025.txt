@@ -1,0 +1,68 @@
+Existem procedimentos para garantir que o proposito das politicas de seguranca tai s procedimentos sao mantidos pelo Comite Festor de Seguraca da Informacao (CGSI)
+- o comite gestor que determina os tipos de punicao de acordo com o tipo de err;o
+- requisita informacoes das areas da empresa para verificar o cumprimento da politica, ads normas e procedimentos de seguranca;
+- recebe, documenta e analisa casos de violacao da politica, das normas e procedimentos de seguranca;
+- estabelecer mecanismos de registro e controle de eventos e incidentes de seguranca da informacao, RNCs, normas ou procedimentos de seguranca da informacao;
+- notificar as gerencias e diretoriasquanto a casoso de violacao da politica e das normas e procedimentos;
+- receber sugestoes dos gestores da informacao para implantacao de normas e procedimentos;
+- propor projetos e iniciativas e acompahar os processos;
+- propor a relacao de gestores da informacao;
+- realizar, sistematiamente, a gestao de ativos da informacao;
+- gerir a conrinuidade dos negocios, demandadno junto  as diversas areas da empresa, planos de conrinuidade dos negocios e suas  validacoes;
+realizar sistematicamente a gestao de riscos relacionados a seguranca da informacao;
+
+Gestor da Informação
+- empregado sugerido pelo Comite Gestor de Segurança da Informação e designado pela Diretoria como responsável por um determinado ativo de informação (um unico ativo, ou seja, para outros ativos, outros gestores);
+- ele dominsa todas regras de negocio relacionadas a criação, manutenção e atualização de meedidas de segurança relacionadas ao ativo de informação sob sua responsabilidade. Ele gerencia o permissionamento dos ativos;
+- o gestor pode delegar a autoridade sobre o ativo, mas a responsabilidade final pela proteção do ativo continua sendo dele (a gente delega autoridade, não responsabilidade);
+- o gestor também inventaria, classifica a informação sob sua responsabilidade e envia relatorios solicitados pelo Comite referentes aos ativos sob sua responsabilidade;
+- ele sugere como proteger o proprio ativo, como se estivesse fazendo um seguro para sua casa e informando qual a necessidade de proteção de cada ativo;
+- ele mantem o controle do acesso à informação em função de altarações no status do usuário que ele gerencia (ferias, desligamentos, mudanças de setores);
+	- nunca deve-se excluir um userID, apenas devemos imputar uma data de validade do acesso e não excluir;
+
+GERENCIAS
+- deve cumprir e fazer cumprir as normas de segurança;
+- assgurar que as equipes tenham aesso e entendam a politica, normas e procedimentos;
+- redigir e detalhar, tecnica e opperacionalmente as normas e procedimentos de segurança relacionados às suas areas, quando solicitado pelo CGSI;
+-  Comunicar o COmite eventurais casos de violação da politica, de normas ou de procedimentos de segurança;
+
+
+GERENCIA JURIDICA
+- manter as aresas da empresa infomradas sobre alterações nas leis correlacionadasa gestao de seguraça;
+-  incluir na analise e elaboração de contratos, sempre que necessario, clausulas especificas relacionadas à segurança da informação, com o objetivo de proteger os interesses da empresa;
+- avaliar a plitica quando solicitado (deve ser, ao menos, uma vez por ano);
+
+GERENCIA de RH
+- exclusivamente responsavel pelas pessoas, garantindo o conhecimento da estrutura norativa do SGSI;
+- criar mecanismos para informar alterações no quadro funcional da empresa;
+
+SI
+- Consolidar e coordenar a elaboração, acompanhamento e avaliação do SGSI;
+- Convocar, coordenar e prover apoio às reuniões do CGSI;
+- Prover as inforações de gestão de segurança;
+- Facilita a conscientização, divulgação e o treinamento quanto à política;
+- Executar projetos e iniciativas visando otimizar a segurança da informação;
+
+Diretoria Executiva
+- Aprovar a politica e as normas de segurança da informação esusas revisões;
+- Aprovar a composição do CGSI;
+- Nomear os gestores da informação;
+- Receber por intermédio do Comite, relatorios de violações da politica e das normas, quando aplicável;
+- Tomar decisões referentes aos casos de descumprimento da politica e das normas de seguraça da informação, mediante a apresentação de propostas do Comite;
+
+
++---------------+---------------+---------------+---------------+
+|				SGSI				|
++---------------+---------------+---------------+---------------+
+| P		| D		| C		| A		|
++---------------+---------------+---------------+---------------+
+| PDS		| Politicas	| auditoria	| ações corret.	|
+|		| Plan. Conti	|		| melhorias	|
+		| Gest. Incid.	|		|		|
++---------------+---------------+---------------+---------------+
+
+O nivel de risco de um mesmo ativo pode ser oscilante (geralmente é oscilante), pois pode haver sazonalidade no risco e isso torna segurança algo caro, pois precisamos medir o risco pelo seu momento mais agressivo;
+
+Diminuir riscos 'e proporcionalmente direto a diminuir impactos
+
+
