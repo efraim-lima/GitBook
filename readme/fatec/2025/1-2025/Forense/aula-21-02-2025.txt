@@ -1,0 +1,61 @@
+Apresentação da área de Perícia Forense
+
+A importancia de conhecer algumas tecnologias, dispositivos.
+Sempre estaremos desatualizados. 
+
+Até que possamos entender sobre um determinado sistema ou tecnologia, por isso um perito precisa procurar copreender muito afundo sobre o seu tema de interesse.
+
+O desenvolvedor de CVEs procura todas as formas que um OS opera e procura falhas a niveis extremamete 'baixos'...para esse tipo de situação, o perito precisa ter foco no sistema assim como o atacante daquele sistema, ou seja, de forma extremamente aprofundada.
+
+No momento que um perito for tratar algumas evidencias, precisará fazer o processo de coleta e armazenamento em forma apenas de LEITURA para que a mídia não seja alterada posteriormente.
+
+O perito é o "cara" que resolve determinado problema de forma exímia. Comparando a um serviço de helpdesk ou service desk ele não seria nem o n1, n2 ou n3, ele seria o fabricante do produto.
+
+Um perito pode precisar resolver problemas da parte civel ou da parte criminal, para a criminal é imprescindível cadastrar-se em um tribunal para que possa ser acionado em casos de necessidade; mas para este tipo de cadastro ele precisa apresentar suas devidas credenciais validas para dada tecnologia. Isso porque o perito precisa dar uma resposta acurada a um tipo de problema e de forma extremamente clara e "matadora" pois estamos atuando em um universo de exatas.
+
+O perito precisa ter conhecimento do enquadramento das leis de acordo com o tipo de delito analisado.
+
+A investigação pode envolver diversar áreas:
+-rede, dados, dispositivos móveis, IoT
+-apreensão, aquisição de imagens forenses analise de midia digital, produção de relatório sobre as evidencias coletadas e demonstração de evidencias;
+	- relatorio é por especificidade (equipamentos e tecnologias diferentes
+	- laudo é a união de todos os relatórios
+	- assistente é o especialista em uma especificidade
+	- perito é quem apresentará o laudo
+
+Caso os honorários de um perito seja de R$300/h ele pode incrementar até 8x este valor de acordo com tipo de caso. Em casos maiores de perícia, sendo necessaria a contratação de mais assistentes ocorre um processo de negociação com o juiz, dessa forma podendo negociar o valor dos assistentes de acordo com o orçamento possível e disponível.
+
+Quando po perito chega a um ambiente precisa também:
+- fotografar o ambiente
+- fazer um "croqui" do ambiente, desenhando o ambiente e discrevendo no relatório assim como feito em um trabalho academico;
+- gravar tudo o que é ocorrido durante o processo de coleta em gravador de audio;
+
+
+- O perito é o responsável por analisar amientes digitais (sistemas, hardwares, softwares e midias) a dim de detectar fraudes e levantar evidencias que possam servir como provas de possiveis crimes;
+- Deve obedecer o principio basico  de minima interferencia no ambiente respeitando os principios de legitimidade e licitude da prova;
+- O processo de descrição em um relatório deve ser feito assim como em um TCC de fato. 
+	- conhecendo uma das partes devemos declinar da pericia, pois o conhecimento de uma das partes invalida o relatório/laudo;
+O perito identifica e processa evidencias em provas materiais de crimes;
+- Com conhecimento em TI, esse profissional aplica metodos e tecnicas cientificamente comprovados em busca de evidencias digitais, apresentando-as por meio do LAUDO PERICIAL, até o julgamento;
+- O perito deve sempre se atentar para a correta preservação da prova;
+
+Atividades desenvolvidas
+-investigação digital
+-entendimento basico de:
+	- Windows e Linux
+	- Imagens, fotos e videos (esteganografia);
+	- sites, blogs, redes sociais;
+-Assistencia tecnica pericial e formulação de qusitos para pericia;
+-Investigação de analise de vazamento de informações;
+-Investigação e resposta a incidentes de segurança;
+Coleta e registro de evidencias com validade juridica;
+
+Importante para o perito ter um perfil metodico e organizado;
+
+Atuação:
+- Consultorias
+- Laudo Juridico
+- Assessoria
+- Concursos
+
+
