@@ -1,0 +1,131 @@
+PMBOK
+
+O PMBOK não lida bem com metodologias ágeis, eles acabem conflitando entre si no ciclo do projeto. Já parte do princípio de ocorrer um Levantamento inicial e um planejamento que definirá o que deverá se executado de forma quase imutável.
+Mas a implementação de um PMBOK ou de alguma metodologia ágil depende exclusivamente do negócio alvo. Por exemplo: existem empresas que não lidam com ações flutuantes, o negócio é mais engessado; mas para outros casos de negócios como startups pode ocorrer flutuabilidade nas entregas e nos processos. Isso depende do NEGÓCIO exclusivamente.
+
+Características de um projeto:
+- começo meio e fim;
+- entrega de um produto ou serviço final para o cliente;
+
+Pontos de controle do PMBOK para controle de projetos:
+- Escopo: a definição de um escopo era fundamental;
+	- diferenças pequenas podem ser aceitas, mas diferenças grandes passarão a impressão de descontrole 
+- Custo: o valor deve ser acordado no começo e acompanhado de perto para que a entrega seja 
+- Tempo: o tempo deve controlado para que as entregas sejam previsíveis e efetivas;
+- Qualidade: Esta veio a partir de 2017, com o objetivo de alinhar as expectativas do cliente. Este item está diretamente conectado com o Escopo do projeto;
+
+Tudo o que não se enquadra em atividades de um projeto é um processo rotineiro da atividade;
+Ex.:
+- Emissão de NF
+- Vendas de celular
+- Produção de um carro
+- Sintetização de uma proteína
+
+INTRODUÇÃO AO GERENCIAMNEO DE PROJETOS
+- Iniciação
+- Planejamento (a maior parte do tempo gasto está aqui - 70% a 75% do tempo gasto)
+- Execução
+- Monitoramento e controle
+- Encerramento
+
+O tempo gasto no planejamento é crucial pra que não ocorram erros durante o processo de Execução, pois neste momento, quando ocorrem falhas significa que o planejamento foi feito errado.
+
+Um projeto possui:
+
+- Escopo | Limites que definem o projeto
+	Os requisitos devem ser levantados junto ao cliente, mas não deve-se ser especifico para o orçamento do cliente, pois a sua ideia pode ser roubada e o cliente pode implementar sem o uso de seus serviços (ao menos antes de assinar isso não deve ser entregue);
+
+- Cronograma | Atividades e datas de entrega
+	Nunca deve-se inserir uma data exata de início ou fim, mas uma data aproximada (quinzena, quarter,  semestre, etc);
+
+- Orçamento | Custos limitantes ao projeto
+	custos pode ser inderido até mesmo descriminado por cada custo específico, para que o cliente possa escolher qual serviço ou produto optar;
+
+- Recursos | Pessoas ou equipamentos a serem utilizados
+
+- Riscos | Situações previstas e suas soluções
+	Deve-se analisar riscos inerentes à tecnologia como um todo, isso de acordo com nossa expertise;
+
+- Linguagem | Alto nível versus Detalhada
+	Linguagem de alto nível é o processo de não falar o que deve ser feito em detalhes;
+
+Qualidades de uma pessoa para o gerenciamento de projeto:
+O gerenciamento de projetos é a aplicação de conhecimento, habilidades, ferramentas e técnicas às atividades do projeto a fim de atender aos seus requisitos
+- o ideal é: ao terminar o projeto fazer uma reunião com a equipe para verificar o que deu certo e o que deu errado, para fazer o processo de melhoramento continuo;
+
+"Sponsor" é o nome dado ao dono do projeto, ou seja, quem contratou;
+
+As fases de um projeto:
+
+- Iniciação: momento onde vamos até o cliente para compreender as necessidades do projeto
+	- Gerenciamento da Integração do Projeto: Aqui vamos definir os processos e as atividades de integram os diversos elementos do gerenciamento de projetos. Aqui faz-se a avaliação do que já existe no ambiente, um levantamento das necessidades de acordo com os recursos já existentes, isso geralmente é feito pelo cliente, de forma descritiva pois não deve-se permitir que varias consultorias adentrem o ambiente do cliente para fazer este levantamento. O nome dado ao orçamento inicial do projeto, que deve ser feito antes de assinatura com o cliente é Termo de Abertura de Projeto (TAP) -- o TAP é desenvolvido mas não garante recursos ou aprovação do lado do cliente, não existe garantia de aceite. O TAP permite ajustes de valores posteriormente devido ao processo de levantamento real do ambiente do cliente (pois o cliente falou o que ele estava vendo, principalmente por não ser técnico).
+
+- Gerenciamento do Escopo do Projeto:
+
+- Gerenciamento do Prazo do Projeto:
+
+- Gerenciamento do Custo do Projeto
+
+- Gerenciamento da Qualidade do Projeto
+
+- Gerenciamento de Recursos Humanos do Projeto
+
+- Gerenciamento das Comunicações do Projeto:
+	- Aqui define=se o processo de: quando o ocorre uma reunião deve haver uma ATA, a comunicação oficial deva ser feita por email, ao fim de um projeto deve haver uma reunião de finalização para coletar as impressões do cliente;
+
+- Gerenciamento de Riscos do Projeto:
+	- onde analisa-se os riscos para não ocorrerem surpresas
+
+- Gerenciamento de Aquisição do Projeto;
+	- onde define-se o que o cliente contratou e contratará (ferramentas), se ele irá arcar com os custos, contratar as ferramentas e os serviços, analisando até mesmo aquisição de ferramentas equivocadamente;
+
+- Gerenciamento de Envolvidos (Stakeholders) do Projeto;
+	- onde indica-se quais as pessoas chave, que implicam influencia sobre os outros colaboradores, para isso precisa-se saber identificar quem são essas pessoas e qual tipo de influencia elas implicam. Isso para que o gerente possa se direcionar ao dominante da situação;
+	- referencia: "o príncipe" de Maquiavel, "A arte da Guerra" de Sun Tzu;
+
+PERFIL DO GERENTE DE PROJETOS
+O gerente de projetos ira se relacionar com
+- Equipe
+- Sponsor
+- Usuários
+- Fornecedores
+- Outros Stakeholders
+
+Gerente precisa ter as seguintes qualidades:
+Conhecimento
+Desempenho
+Pessoal
+Competência
+	- é formada pelo conjunto de habilidades , atitudes e conhecimentos
+
+Soft Skill: ligadas ao próprio comportamento, liderança, cooperação, comunicação, gerenciamento de equipe, solução de problemas e gestão de conflitos
+
+intrapessoais: empreendorismo, criatividade, etc
+
+Hard Skills: saber aplicar efetivamente o PMBok
+
+
+CICLO DE VIDA DO PROJETO
+Estrutura básica para o gerenciamento, o numero de fases pode mudar dependendo da complexidade e do tamanho do projeto, ou seja, quando mais complexo em mais etapas precisa-se quebrar o projeto em vários outros projetos menores; para este caso o projeto grande seria chamado de programa e as demais atividades seriam chamadas de projetos -- um programa é composto de vários sub projetos.
+
+O mesmo projeto pode ter diversas fases, de acordo com as necessidades
+Ex.: 
+1. Programa - infraestrutura da faculdade, 
+2. Projetos - cada andar, 
+3. Marcos ou pontos de verificação - conseguir pingar cada sala
+
+
+O custo do projeto no início é baixo e vai sendo incrementado de acordo com o desenvolvimento, isso porque na fase inicial ocorre as conversas para levantamento dos requisitos...neste processo pode ocorrer o deslocamento de técnicos especialistas para estipular-se o tempo e as dependências de cada atividade (o gerente de projetos deve considerar gorduras no tempo de execução das atividades).
+O momento de execução é quando ocorre o momento de maior gasto, de equipe trabalhando no projeto. 
+Após este momento (se tudo foi bem planejado) o custo irá reduzir até chegar a 0.
+
+(imagine uma curva de Gauss neste momento, onde a curva indica valor x tempo)
+
+No começo de um projeto, o stakeholder acaba influenciando muito isso é diminuído ao passar com o tempo; no começo também, o custo das mudanças é menor, mas vai sendo acrescido ao decorrer do tempo.
+Alterar algo do escopo no início tem um custo baixo, se for mais no final o custo tende até ao infinito.
+
+Os marcos ou passagem de estágio tem o objetivo de fazer com que possa-se ter um diagnóstico da saúde do projeto. 
+
+As atividades em empresas devem ocorrer em 2 estados: sequencial ou sobreposta, em alguns casos atividades podem ocorrer de forma sobreposta ou paralela.
+
+Existe uma outra forma de sequencia de atividades, sendo a Relação Iterativa, mas ela só se aplica em pesquisas, pois a cada etapa atingida pode ser encontrado uma nova etapa que deve ser um incógnito devido a natureza de uma pesquisa.
