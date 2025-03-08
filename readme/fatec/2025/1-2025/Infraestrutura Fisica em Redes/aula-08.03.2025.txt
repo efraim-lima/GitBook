@@ -1,0 +1,73 @@
+Cabeamento e suas potencias:
+
+Cat => 100Mb
+Cate => 1000Mg
+
+Camada OSI auxilia no processo de troubleshooting de problemas de rede, sempre iniciando-se o estudo da camada mais baixa para a camada mais alta.
+
+Os primeiros estudos de potencia datam-se do seculo XIX
+
+A ferramenta utilizada para medição de potencia é o logaritmo:
+
+log¹°(1000) = 3 
+(o logaritmo é o processo de se procurar a potencia de algo, no caso 10³ = 1000)
+(no logaritmo, quando não há nenhum numero na base é porque a base é 10
+
+A potencia da rede está relacionada a energia eletrica, não ao sinal.
+Quano lemos um sinal de wifi estamos lendo frequencia e intensidade, a intensidade é medida por Watts, o roteador wireless converte Watts em decibeis, pois o roteador converte 
+
+para se calcular a potencia do sinal:
+
+
+a saida dessa equação será em decibeis
+
+10log(potencia de saida / potencia de entrada)
+10log(Pot mW / 1 mW) 
+
+Pot = Potencia
+mW = mili Watt
+
+db 	Potencia	Conta
+30 	1000		10*(log(1000/1))
+20 	100		10*(log(100/1))
+10 	10		10*(log(10/1))
+6.02 	4		10*(log(4/1))
+0 	1		10*(log(1/1))
+-3.01 	0.5		10*(log(0.5/1))
+
+existe sinal negativo, mas não existe potencia negativa
+
+Porturações que afetam o Sinal
+Distorções sistemáticas
+- retardo (delay)
+- atenuação
+| latencia é um vetor que leva em consideração o delay, mas também outras variaveis presentes no calculo como:
+	- Meio de Transmissão
+	- Distância geográfica
+	- Saltos de Rede
+	- Volume de dados
+	- Tamanho dos pacotes
+	- Atenuação do sinal
+	- Desempenho do Servidor
+| outro termo a se pesquisar: jitter => é a variação no tempo de entrega dos pacotes em milissegundos (ms). Diferente da latência (que é um atraso fixo) o jitter é quando ocorre instabilidade neste atraso.
+
+Verificar a escala da intensidade de som
+
+Distorções Aleatorias
+- Ruidos
+| podem ser causados por explosões solares, ignições de automóveis, reatores, proximidade a motores elétricos, equipamento de microondas
+- Diafonia (Cross Talk)
+| quando 2 cabos correm de forma paralela existe transferência de sinal entre os cabos inevitavelmente, igual interfones de condomínio mal projetados
+
+
+Modos de Transmissão:
+Simplex 	|	-> 	| transmissão apenas em um sentido (TV)
+Half Duplex 	|	<- -> 	| a transmissão ocorre em ambos sentidos, mas uma transmissão de cada vez
+Full Dubplex	|	<=> 	| a transmissão ocorre em ambos sentidos, de forma simultanea
+
+1 - paralel link
+2 - ruido
+3 - full duplex
+4 - 10 * log (400/1) = 26
+5 - 10 * log (1000/1) = 30 | chegarã 27.6
+6 - 10 * log (400/1) = 26 | a atenuação é 6

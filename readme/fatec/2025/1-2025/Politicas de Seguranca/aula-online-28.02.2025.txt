@@ -1,0 +1,16 @@
+Politicas precisam atender às necessidades das empresas, normas internas e externas (do país, por exemplo);
+São normas, métodos e procedimentos utilizados para a manutenção da segurança da informação.
+
+Para cada item que colocarmos na politica devemos avaliar se valem realmente a pena para o processo, pois vai atravancar mais o processo dos usuários.
+
+A politica deve ser divulgada a todos os uruários que fazem uso dos ativos da informação.
+
+A politica é feita exclusivamente para a empresa, não funciona em 2 empressas diferentes, mesmo que a implementação de politica seja um padrão, as empresas diferentes atuam de forma diferente, até mesmo a cultura da empresa acaba afetando nas questões de política da empresa como um todo.
+Ex.: GM e Ford não tem culturas iguais, isso ja afetaria nos resultados
+
+AO implementar uma politica conseguimos verificar alguns pontos de atenção:
+podemos ver o conceito que as informações são um ativo importante para a organização;
+podemos verificar o envolvimento da alta administração com relação à segurança da informação;
+	A alta gestão precisa ter conhecimento profundo da politica
+a responsabilidade formal dos colaboradores da empresa sobre a salvaguarda dos recursos da informação
+	Todo mundo precisa ter ciencia do conteudo e as penalidades precisam aparecer de forma clara para todos os usuários
