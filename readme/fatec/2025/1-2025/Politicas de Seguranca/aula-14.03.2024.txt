@@ -1,0 +1,25 @@
+Titularidade das Informações 
+
+- a politia de assegurar que a organização detém todos os direitos, independente de seu conteúdo.
+- mesmo em casos onde precisa-se abrir uma mídia para um processo forense EM AMBIENTE SEGURO é importante assinar um determinado documento informando que há a ciencia de que este processo será feito da devida forma
+- as senhas devem ser mantidas como confidenciais, sem permissão de compartilhamento
+	- um dos processo de se auditar o comportamento dos usuários é verificar se os usuários estão acessando arquivos ou documentos fora do horario de trabalho. O proximo passo é a verificação dos endereços do usuário que está acessando...mediante isso pode-se iniciar um processo de investigação do ocorrido;
+	- senhas não podem ser compartilhadas, nem mediante solicitação de chefes, informações também não devem ser compartilhadas fora do contexto e sem que haja a obrigação deste compartilhamento
+- deve ocorrer punição toda vez que um colaborador procurara burlar a segurança, desabilitar quaisquer dispositivos atrelados a segurança;
+- informaçoes classificadas como confidenciais não devem ser compartilhadas para individuos fora da empresa;
+	- para casos onde a empresa precisa ter comunicação com outros paises as politicas de compartilhamento
+	- exemplo: existem proessos de auditoria de acesso lógico, que verificam o perfil do usuário e as permissões de acesso que as credenciais proporcionam. O objetivo disso é verificar se deterinado usuário não terá nem mais nem menos acesso que o necessário pelo período estritamente necessário
+- em momento algum as chaves criptograficas devem ser transmitidas junto com a informação, sempre devem ser considerados meios diferentes para a transmissão dos dados e para a transmissão da chave criptografica
+- a autorização dos recursos deve ser ao nível ideal para o usuário específico
+	- o unico caminho para o permissionamento deve ser o de subordinação direta, ou seja, um nivel herariquico só pode receber acesso de um nivel imediatamente superior ao seu e o nivel que pode dar acesso só pode dar acesso aos sistemas inerentes ao seu setor;
+- deve existir um rigido controle de patrimônio e inventário, identificando cada equipamento de acordo com sua posição e proprietário;
+
+
+Formas de proteção, das mais smples:
+ativar proteção de tela de forma automatica, caso não tenha dar kick pelo timeout;
+em estações remotas deve haver formas de impedir o acesso não autorizado às informações;
+
+Termos de confidencialidade
+o usuário primeiro passa por treinamentos, estando de acordo com as politicas podera sim ter acesso aos equipamentos;
+
+Usar o modelo de políticas de segurança presente no SIGA 

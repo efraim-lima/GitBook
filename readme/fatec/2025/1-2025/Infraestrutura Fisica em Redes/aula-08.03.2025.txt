@@ -66,7 +66,7 @@ Half Duplex 	|	<- -> 	| a transmissão ocorre em ambos sentidos, mas uma transmi
 Full Dubplex	|	<=> 	| a transmissão ocorre em ambos sentidos, de forma simultanea
 
 1 - paralel link
-2 - ruido
+2 - distorção aleatória
 3 - full duplex
 4 - 10 * log (400/1) = 26
 5 - 10 * log (1000/1) = 30 | chegarã 27.6

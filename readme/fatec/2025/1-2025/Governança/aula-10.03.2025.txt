@@ -1,0 +1,86 @@
+aula-10.03.2025
+
+Gerencimantode escopo
+
+-> Definição 
+| Representa o limite deo proeto a ser executado
+
+-> Problemas  de um Wscopo Mal Definido
+| não conseguir finalizar 
+| custos elevados por incorporar mais uma função
+
+Gerenciameno de escopo
+-> Definição
+| Inclui os processos para assegurara que o projeto possui todo o trabalho necessario , e apenas o  necessario, para terminar o projeto com sucesso
+| Stakeholders são os interessados que farão a aprovação, mas são não apenas os aprovadores, são as partes que ifluenciam nos processos
+
+-> Tipos de Escopo
+| Escopo do Projeto: o trabalho que precisa ser realizado para entregar um produto, serviço ou resultado com as caracter~isticas e funções especificadas
+| é algo mais técnico, está mais atrelado às cracteristicas do projeto
+| são especificações do produto/projeto
+| PMBok pede para que coloquemos o escopo de produto, mas na prática (na vida real) não utilizamos o escopo de produto
+
+-> Escopo do Produto
+| Características e funções que descrevem o prduto, serviço ou resultado
+
+-> Projeto de Sucesso
+| Triplice restrição
+--> Executar o que foi especificado no Escopo
+--> Não ultrapassar o Custo previsto
+--> Dentro do Prazo acordado
+(essas alterações vieram depois de 2017)
+
+| Entrega o que a pessoa pediu
+
+
+PROCESSOS
+| Gerenciamento do Plano do Escopo (5.1)
+-> Reuniões iniciais do projeto
+	-> é quando vamos até o cliente, ou quando ele delega alguém para iformar as necessidades e os requisitos do projeto;
+	-> Coletar Rquisitos - Ferramentas e Técnicas
+		-> Entrevistas > descobrir informações das partes interessadas atraves de conversas diretas por meio formal ou informal;
+		-> pode-se fazer observação em campo, enquetes, questionários, mas o melhor é fazer uma entrevista ou dinâmica em grupo. (usar mapa mental e mapa conceitual)
+	-> toda reunião precisa ter ata, para formalizar e organizar os resultados
+-> Definições macros
+	-> Macros são as fases do projeto
+-> Direcionamento
+	-> Dinamicas de Grupo
+		-> Focado no grupo e as perguntas são direcionadas aos participantes
+		-> GP trabalha como um mediador
+
+| Coleta de Requisitos (5.2)
+-> Coletar Requisitos
+	-> Definição > Processo de definição e documentaçãodas neesiddes da spartes interessadas para alcançasr os objetivos do projeto
+	-> Ncessidades documentadas
+	-> Expectativas do sponsor, clientes e outras partes interessadas
+-> Gerenciamento de Escopo
+	-> Questionários não cabem a um 	trabalho em uma empresa
+		-> Geralmente as pessoas não gostam de responder a questionarios e pesquisas, mas pode ser usado se houver um grande numero de entrevistados, mas isso deve ser feito de acordo com os modelos de pesquisa	
+
+| Definição do Escopo (5.3)
+	-> Descrição dos limites do projeto
+		-> a definição de escopo precisa ter um orçamento determinado, mas para casos onde o ambiente é diferente do que se foi alinhado durante o levantamento de requisitos pode-se atualizar o escopo mediante:
+	-> Atualização do Termo de Abertura do Projeto (TAP)
+		-> para casos onde se entra em um ambiente que não está de acordo com o que foi levantado pelo cliente (quando o cliente levanta todos os requisitos e, por dificuldade tecnica não indica pontos que podem ser criticos)
+		-> este é o unico momento em que é aconselhavel ter alterações em escopo e valores
+
+| Criação da Estrutura Analytica de Processos (5.4)
+-> Criação da Estrutura Analytica de Proessos (EAP) ou 
+	-> onde se faz a decomposição das atividades em subatividades ou pacotes de trabalho;
+		-> podemos criar um dicionário, assim como o abaixo:
+		+---------------+---------------------------------------+
+		| EAP		| #101					|
+		+---------------+---------------------------------------+
+		| Processo	| Vendedor Alterar			|
+		+---------------+---------------------------------------+
+		| Descrição	| Vendedor deve pegar informação XPTO	|
+		|		| e a partir disso deve dar seguencia	|
+		|		| em algumas coisas a mais.		|
+		+---------------+---------------------------------------+
+
+-> até que ponto pode-se decompor uma atividade:
+	-> todas atividades devem ser decompostas até onde observa-se que esta atividade ao todo levaria um dia para ser feito
+
+| Validação do Escopo (5.5)
+
+| Controle do Escopo (5.6)

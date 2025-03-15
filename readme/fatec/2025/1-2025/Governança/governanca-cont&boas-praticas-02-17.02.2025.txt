@@ -52,6 +52,7 @@ Componentes da Governança de TI
 	Relacionamento com usuários
 	Relacionamento com fornecedores (importante mencionar a classificação dos fornecedores, de forma a rotular cada um de acordo com suas qualidades)
 
+GESTOR DE PROJETOS-GP: conhecimento, desempenho e comportamentais
 
 BOAS PRATICAS
 PMBOK (mantido pelo PMI)

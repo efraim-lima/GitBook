@@ -1,6 +1,7 @@
 Governança - Aula 01
 
 OBJETIVOS
+A governança promove  alinhamento da area de TI ao negócio.
 
 Todo tipo de processo/serviço de TI implementado precisa atingir aos objetivos estratégicos de TI.
 
@@ -17,7 +18,9 @@ INTRODUÇÃO
 Qual a função de um gestor de TI, o que ele faz e quem é ele? O gestor de TI geralmente é um gerente funcional, sem ter a obrigação de fazer (ele não precisa saber fazer). O papel dele é fazer a gestão de pessoas, processos 
 
 Hierarquia e funcionalidades:
-Governança - visão estratégica/tática e organizacional | direcionar, priorizar e monitorar
+Governança - visão estratégica/tática e organizacional |
+
+3 pilares: direcionar, priorizar e monitorar
 
 Supervisão - visão operacional especialista de tarefas dos subordinados, traduzindo o que a gestão preciso
 
@@ -31,8 +34,8 @@ Durante um processo de definição de pré-requisitos para um novo passo estrat�
 
 Analogia da Gestão:
 A empresa é um barco
-O CEO é o capitão do barco
-A governança seria o piloto
+O CEO é o capitão do barco 
+A governança seria o piloto - A governaça dá a direção
 A gestão seriam os primeiros imediatos
 A supervisão seriam os capatazes
 Os funcionarios seriam os serviçais
