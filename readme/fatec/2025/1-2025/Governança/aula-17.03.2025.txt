@@ -1,0 +1,70 @@
+Estrutura Organizacional Matricial
+A estrutura organizacional matricial é um modelo híbrido que combina elementos de estruturas funcionais e baseadas em projetos. Nela, os funcionários se reportam tanto a um gerente funcional quanto a um gerente de projeto, promovendo colaboração multifuncional e flexibilidade. Existem três tipos principais de estruturas matriciais: fraca, equilibrada e forte.
+
+Matriz Fraca
+Características: Na matriz fraca, o gerente de projeto tem autoridade limitada. O gerente de departamento mantém o controle sobre o orçamento e o cronograma do projeto.
+	- Desafios: Pode levar a conflitos de autoridade e dificuldades de comunicação, além de priorizar as demandas departamentais sobre as do projeto.
+	- Aplicação: É mais semelhante à estrutura funcional, onde o projeto é coordenado entre departamentos sem um gerente de projeto designado.
+
+Matriz Forte
+Características: Na matriz forte, o gerente de projeto tem autoridade máxima sobre o projeto. Ele lidera uma equipe multifuncional dedicada e tem controle sobre recursos e decisões.
+	- Vantagens: Oferece clareza nos objetivos do projeto e uso eficiente de recursos, pois o gerente de projeto tem total propriedade sobre o projeto.
+	- Aplicação: É semelhante à estrutura projetizada, onde o gerente de projeto é central e os departamentos cedem recursos para o projeto.
+
+Neste modelo podem aparecer as equipes administrativas da gestão de projetos, que atuam como um comite se encontrando toda vez que for necessário para projetos específicos.
+
+Um bom gerenciamento do tempo conta com uma tabela que possuem os seguintes campos
+Index
+ID EAP
+Nome da Atividade
+Descrição da Atividade
+Dt. Prevista de Entrega
+Predecessoras
+Sucessoras
+Responsável
+Local
+Tempo (Dias)
+
+Vinculando as atividades predecessoras e sucessoras a seus devidos IDs podemos crar um diagrama de rede.
+
+Dependencias de um projeto:
+- Dependencias obrigatorias
+	As contratuais ligadas ao projeto, não podem ser alteradas, sendo de clientes internos e externos, onde dependemos de outros
+- Dependencias arbitrarias
+	Atividades que, mediante experiencia previa do gerente de projetos, podem ser executadas de forma sobrepostas ou em outras ordns
+	Dependências arbitrarias também podem ser definidas pela equipe de acordo com uma experiência geral
+- Dependencias Externas
+	Envolvem empresas e pssoas externas ao projeto, quando estamos dependendo de pessoas que não tem nada com nosso projeto de forma direta
+
+Tipos de dependencias ou relações logicas
+Termino para Inicio = Finish Start
+Termino com Termino = Finish Finish
+Inicio para Inicio = Start Start
+Inicio para Termino = Start Finish
+
+PERT
+em projetos é uma forma de vermos o tempo definido em media ponderada, utilizando dimensões otimistas, pessimistas e realistas nos valores das variáveis. O PERT precisa ser aplicado a cada atividde
+
+
+PERT = (TO + TP + (4*TMR))/6
+
+TO = Tempo Otimista
+TP = Tempo Pessimista
+TMR = Tempo Mais Realista
+
+Critical Path Method (CPM ou Caminho Critico)
+Os tempos das atividades são somados de acordo com a atividade que não pode de forma alguma se atrasar
+
+
+
+A pessoa que estava escrevendo as ideias do Stefen errou um 0 durante a elaboração da taxa de usuários que serão içados
+Não fizeram a revisão final devido a pressa de Stefen
+Não houve planejamento por parte do engenheiro (nem previa e nem 
+Um email foi enviado para o endereço antigo devido a falhas de pessoas e processos de checagem
+Atrasos para ler o descritivo por outra parte que faria o dimensionamento (Paul)
+O rapaz que recebeu a ligação (Sean) de Janice não passou o recado da forma correta para Paul, ela havia visto o erro de dimensionamento
+
+
+Durante a reunião com Stefen, Paul e o engenheiro foi assinado o dimensionamento (Project Plan)
+
+O Gerenciamento do plano de Escopo foi feito após a assinatura do dimesionamento, mas não ocorreu de forma assertiva em nenhum momento

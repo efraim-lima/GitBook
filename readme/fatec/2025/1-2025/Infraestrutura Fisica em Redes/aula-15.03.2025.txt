@@ -1,0 +1,60 @@
+Conforme a capacidade do cabo pode-se utilizar detetrminadas areas do raio ou do perímetro do cabo
+
+Indução, Resistencia e capacitancia pode afetar na impedância.
+
+O cabo CAT5e precisa de 24 a 22 AWG nos fios e pode possuir de 4 a 25 pares de fios (pesquisar sobre isso) - issa é a norma
+
++---------------+---------------+-----------------------+---------------+--------+
+| Categoria	| Taxa Máx.	| Largura de Band	| Impedância	| Bitola |
++---------------+---------------+-----------------------+---------------+--------+
+| Cat 1		| 64k Kbps	| 100khz		| 150 Ohms	| 26 AWG |
+| Cat 2		| 2 Mbps	| 1 mhz			| 100 Ohms	| 26 AWG |
+| Cat 3		| 10 kbps	| 16 hz			| 100 Ohms	| 24 AWG |
+| Cat 4		| 16 kbps	| 20 hz			| 100 Ohms	| 24 AWG |
+| Cat 5		| 100 kbps	| 100 hz		| 100 Ohms	| 24 AWG |
+| Cat 5e	| 1 kbps	| 100 hz		| 100 Ohms	| 24 AWG |
+| Cat 6		| 1 kbps	| 150 hz		| 100 Ohms	| XX AWG |
+| Cat 6A	| 10 kbps	| 150 hz		| 100 Ohms	| XX AWG |	
++---------------+---------------+-----------------------+---------------+--------+
+
+Cabeamento também gera problemas intermitentes, não apenas switches ou routers causam isso...e problemas itermitentes são os piores
+
+Tipos de de cabo:
+- Foiled (os pares são enrolados em uma malha de aluminio)
+- Shielded (o cabo é enrolado em uma malha de aluminio)
+- Shielded + Foiled (este possui cada par encolado em malha de aluminio e todo o restante do cabo depois também é enrolado em outra malha de aluminio)
+- Fibra (não precisa ser blindado pois não transfere eletrons e sim fotons, como não transfere eletrons não sofre interferência eletromagnética)
+- Coaxial (existe um nucleo condutor e uma malha de alumionio envolvendo este núcleo)
+
+Quanto mais fino o cabo, maior a atuenuação
+
+Cabeamento não estruturado
+- sem planejamento previo
+- não considera modificações e expansões
+- utiliza estrutura existente para passagem de cabos
+- não respeita normas ou padrões
+- não utiliza organizadores de cabos
+- nao envolve obra civil
+- não tem flexibilidade
+- sem documentação
+
+Cabeamento total
+- Define um projeto definitivo
+- Usuários trocam de lugar e não os equipamentos (supermercados,telemarketing)
+
+
+Comparativo de projeto para 8 computadores em uma rede:
++---------------------------------------+---------------------------------------+
+| Estruturado				| Não Estruturado			|
++---------------------------------------+---------------------------------------+
+| Cabo Cat 5e (R$800)			| Cabo Cat 5e (R$800)			|
+| Patch panel (R$ 150)			| 100 RJ45 Macho (R$ 40)		|
+| 8 Keystone (R$ 320)			|					|
+| Cordão Cat 5e - Patch Cord (R$560)	|					|
++---------------------------------------+---------------------------------------+
+
+POE
+Power Over Ethernet é o tipo de alimentação de dispositivos pelo próprio cabo de rede, para isso precisamos de cabos e switches capazes de proparaem energia pela rede. Por isso sempre voltaremos nos princípios: Potencia, Resistencia, Corrente e Tensão.
+
+Phanthon Power - transimitr energia pelo mesmo cabo dos dados
+Injetor / Separador POE
