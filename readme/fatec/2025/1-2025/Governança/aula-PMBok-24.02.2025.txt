@@ -58,6 +58,29 @@ O gerenciamento de projetos é a aplicação de conhecimento, habilidades, ferra
 As fases de um projeto:
 
 - Iniciação: momento onde vamos até o cliente para compreender as necessidades do projeto
+
+
+
+Gerenciamentos
+Gerenciamentos
+
+
+Os tipos de gerenciamento de projetos, conforme o PMBOK (Project Management Body of Knowledge), incluem as seguintes áreas de conhecimento:
+
+1. **Gerenciamento de Integração**: Envolve a coordenação dos vários elementos do projeto para garantir que funcionem juntos de forma harmoniosa.
+2. **Gerenciamento de Escopo**: Define e controla o que está incluído e o que está fora do projeto.
+3. **Gerenciamento de Tempo**: Planeja, agenda e controla o tempo necessário para completar o projeto.
+4. **Gerenciamento de Custos**: Planeja, estima, orça e controla os custos para que o projeto seja concluído dentro do orçamento aprovado.
+5. **Gerenciamento da Qualidade**: Assegura que o projeto irá satisfazer as necessidades para as quais foi empreendido.
+6. **Gerenciamento de Recursos Humanos**: Organiza, gerencia e lidera a equipe do projeto.
+7. **Gerenciamento das Comunicações**: Garante que as informações do projeto sejam geradas, coletadas, distribuídas, armazenadas e gerenciadas adequadamente.
+8. **Gerenciamento de Riscos**: Identifica, analisa e responde aos riscos do projeto.
+9. **Gerenciamento de Aquisições**: Adquire produtos, serviços ou resultados externos à organização executante.
+10. **Gerenciamento das Partes Interessadas**: Identifica todas as pessoas ou organizações impactadas pelo projeto, analisa suas expectativas e impacto no projeto, e desenvolve estratégias apropriadas para engajar e gerenciar as partes interessadas.
+
+Essas áreas de conhecimento são cruciais para garantir o sucesso do projeto e são amplamente utilizadas como base para a prática de gerenciamento de projetos.
+
+
 	- Gerenciamento da Integração do Projeto: Aqui vamos definir os processos e as atividades de integram os diversos elementos do gerenciamento de projetos. Aqui faz-se a avaliação do que já existe no ambiente, um levantamento das necessidades de acordo com os recursos já existentes, isso geralmente é feito pelo cliente, de forma descritiva pois não deve-se permitir que varias consultorias adentrem o ambiente do cliente para fazer este levantamento. O nome dado ao orçamento inicial do projeto, que deve ser feito antes de assinatura com o cliente é Termo de Abertura de Projeto (TAP) -- o TAP é desenvolvido mas não garante recursos ou aprovação do lado do cliente, não existe garantia de aceite. O TAP permite ajustes de valores posteriormente devido ao processo de levantamento real do ambiente do cliente (pois o cliente falou o que ele estava vendo, principalmente por não ser técnico).
 
 - Gerenciamento do Escopo do Projeto:
