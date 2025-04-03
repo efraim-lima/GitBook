@@ -1,0 +1,29 @@
+aula-27.02.2025
+
+Teremos atividades que deverão ser entregues para compor nota na materia.
+
+Professor recomendou que utilizemos um security tube
+
+A prove terá 2 partes:
+
+Teorica:
+Avaliação específica como prova comum
+
+A arividade pratica consiste basicamente em:
+O professor entregará um cenário e, apartir daí deveremos trabalhar com alguns ativos, validar as ameaças mais singnificativas de acordo com o CID (confidencialidade, integridade e disponibilidade) do ativo e com a criticidade para a empresa. Para cada ameaça o professor informou que pode pedir mais de uma vulnerabilidade.
+
+Professor informará no teams as 40 ameaças e devemos selecionar em quais atuaremos durante a semana
+
+
+=========================================================================
+
+Trabalharemos com 2 estrategias no projeto:
+a preventiva e a detectiva, neste caso estaremos tratando dos funcionarios, não de uma ameaça externa.
+
+Uma boa forma de organizar tudo é derivar cada vulnerabilidade em várias tarefas (não usar tudo em uma linha do excel, mas sim diversas linhas); podemos e devemos usar IA para organizar isso 
+
+A partir da composição as ameaças devemos deriver as vulnerabilidades. As vulnerabilidades podem ser derivadas no mesmo campo, determinando  que pode ocorrer de forma mais detalhada
+
+Importante escrever e forma clara o suficiente para que o material se auto-explique sem a nossa presença
+termos para inserir no decritivo "falta de", "ausencia", "defificiencia", "inexistencia". Começando com esses termos é sucesso
+
