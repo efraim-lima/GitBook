@@ -1,0 +1,32 @@
+aula-25.04-forense
+
+Modification time 
+acess time 
+Change tim
+
+
+
+Esterilizar todas as midias que serão utilizads ou usar mididas novas a cada investiga~ção
+certificar-se de que todas as ferramentas são devidamente licenciadas e prontas para utilizção  
+verificar se todos equipamentos e materiais necessãrios estão à disposição
+quando chegar ao local da investigação o perito deve providenciar para que nada seja tocado sem seu consentimento para proteger e coletar todos os tipos de evidencias
+os investigadores devem filmar ou fotografar o ambiente e registrar detalhes sobre os equipamentos como: 
+	marca
+	modelo
+	numeros de serie
+	componentes internos
+	periféricos, etc
+manter a cadeia de custódia
+
+não podemos verificar todo o conteudo da HD, deve-se procurar as evidencias corretas de acordo com o incidente
+
+Nada pode ser desconsiderado a princípio
+Uma maquina semi aberta (laptop com a tampa aberta)
+Hashes de componentes eletronicos que armazenem ou processem informações
+Buffer de impressoras
+
+Levantar asa Jurisprudencias para levantar processos semelhantes de como devemos tratar os eventos 
+
+perguntar de houses de perícia
+perguntar de metadados em redes sociais
+perguntar se pode existir casos onde o perito precisa reconstituir do 0 

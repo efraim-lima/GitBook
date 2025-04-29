@@ -1,0 +1,101 @@
+CNETRAL DE SERVIÇOS
+Suporte a Reclamações, Duvidas, Tratamento das Requisições da Mudança.
+
+- Representam o fornecedor dos serviços para o cliente
+- Atingir a satisfação do cliente
+- Utilizam tecnologia, processos e pessoas para solução de problemas
+
+A central de serviços é o primeiro ponto de contato com o cliente, nela encontram-se os suportes N1, eles fazem a primeira triagem e aplicam as soluções de acordo com as bases de conhecimento e aplicam os devidos scripts para solução dos problemas iniciais. O N1 gerencia todas as etapas do atendimento, podendo passar para o setor técnico. 
+
+O setor técnico pode finalizar o atendimento e não encerrar; o tecnico deve documentar devidamente o processo de solução para que eventuais revisitas ao mesmo problema no mesmo ambiente sejam tratados de acordo com o histórico, o que permite que haja historico de problemas para que não ocorra retrabalho, possíveis problemas ocultos e também para que construa-se a base de conhecimento a partir desse problema.
+
+Ao fim deve ser enviada uma pesquisa de satisfação.
+
+Help-Desk
+Faz o tratamento de incidentes em uma organização (não entram em nível gerencial, analisando metricas, volumes, indicadores e KPIs --> isso é trabalho do Service Desk, eles fazem a gestão das métricas). Suporte seria a melhor indicação da aplicação do Help-Desk.
+
+Service Desk
+É o pessoal que atende aos chamados, analisa e gerencia o volume de chamados para entregar melhores serviços aos seus clientes.
+
+Call Center
+Atende um grande volume de chamados, sendo limitados até mesmo em tempo de atendimento.
+
+
+a Central de Serviços pode ter o processo de responder aos incidentes de forma reativa ou proativa, sendo a reativa a que aguarda o problema chegar e a proativa pode usar de mecanismos de predição de incidentes e trazer uma solução mais abrangente   para que o cenário encontrado não se repita em função da possibilidade de isso ocorrer novamente (por exemplo: ocorre um padrão de acionamentos e o analista observa que determinado tipo de problema pode se repetir em outros equipamentos que possuem configurações semelhantes. A partir daí o analista pode propor uma solução de patches para resolver nos demais equipamentos).
+
+N1 - Solução Paleativa (temporária)
+N2 - Investiga as causas do problema (gestão de problemas, precisa trazer a slução definitiva)
+
+==================================================
+
+Desenho de Serviço
+ITL leva em consideração os 4 Ps: Pessoas (determina as responsabilidades), Processos (Precisa ser mensuravel), Produtos (são os serviços ofertados), Parceiros (são os fornecedores - pode ser uma cloud, um link, por exemplo).
+
+Modelos de Entrega:
+Insourcing - serviços desenvolvidos dentro da própria empresa
+outsourcing - serviços desenvolvidos fora da empresa
+co-sourcing - serviço que combina ambos anteriores
+multi-sourcing / partnership - empresas que fazem arranjo formal para trabalhar em conjunto (ex.: sociedade, grupo pão de açúcar contratando terceiros para todo o grupo)
+
+Business Processs Outsourcing (BPO)
+fornece e gerencia processos de negócio de outra empresa
+
+Application Service Provision (ASP)
+fornece serviços de apliação compartilhados
+
+Knowledge Process Outsourcing (KPO)
+terceiriza expertise de processos de negócio
+
+SLM -> prove o gerenciamento, estamos falando do documento que determina prazos, atividades e requisitos
+
+Conceitos:
+1- Requisito de Nivel e de Serviço (o que o cliente pode esperar, atrelado ao Escopo)
+
+Meta de Nível de Serviço
+	SLA (Acordo de Nível de Serviço)
+	- determina as prioridades de cada situação
+	- são as categorias e janelas de atendimento de acordo com a prioridade de cada serviço;
+	SMART (Específico, Mensuravel, Realizável, Relevante e em Tempo)
+	- precisamos utilizar as metricas SMART para criar nossos SLAs
+
+Definição de Requisitos
+
+Acordo de Nível de Serviço
+	Tipode de Acordo de Nível de Serviço
+		ANS Baseado em Serviço
+		- seria o tempo que fecho em função do serviço
+		ANS baseado em cliente
+		- seria o tempo que fecho em função do cliente
+		ANS multi-nível
+
+Acordo de Nível Operacional
+- seria o tempo de acordo em função do fornecedor e do serviço do fornecedor
+
+Contrato de Apoio
+- casos onde os serviços ou empresas são contratados para apoiar um setor específico que fechou um acordo com outra empresa de um serviço relacionado à TI, mas sem passar pelo setor de TI
+
+2- Transição de Serviço
+Gerenciamento de Mudança
+Garante que métodos e procedimentos padronizados são usandos para um tratamento rápido e eficiente de todas as mudanças
+
+Objetivos
+Gerenciar os processos de:
+- Requisição de mudanças
+- Avaliação de mudanças
+- Autorização de mudanças
+- Implementação de mudanças
+
+Evitar mudanças não autorizadas
+Minimizar as interrupções
+Assegurar investigações adequadas opiniões relevantes
+Coordenar construção,teste implementação
+
+Elementos fundamentais:
+Requisição de Mudança (RDM)
+Comite e Controle de Mudanças (CCM)
+COmite de Emergencia do CCM (CCM/CE)
+Programação Futura de Mudanças (PFM)
+Disponibilidade do Serviço Projetado (DSP)
+Modelo de Mudança (MDM)
+==========================================================
+Próxima aula faremos a primeira atividade do ITIL
