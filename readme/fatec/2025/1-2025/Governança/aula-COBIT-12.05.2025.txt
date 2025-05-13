@@ -1,0 +1,75 @@
+aula-COBIT-12.05.2025
+Entrega de valor: Entregar o benefício que a empresa espera, Otimizar riscos e recursos
+
+
+Precisamos saber quem recebe os benefícios, QUem assume os riscos e Quais são os recursos necessários.
+
+-> Transformar as necessidades dos stakeholders em estratégias corporativas | Alinhamento estratégico entre TI e negócio
+
+----------------------------------------
+Primeira ferramenta do COBIT
+Cascata de objetivos - define os objetivos tangiveis e relevantes em varios niveis de responsabilidadde, filtra a base de conhecimento do COBIT, identifica e comunica a importancia dos habilitadores para alcançar os objetivos corporativos. Resumindo, a cascata serve para comprovar que a area de TI está alinhada aos negócios.
+
+- Direcionadores dos Stakeholders 
+(ambiente, evolulução tecnologica)
+	=> influencias
+		Mudanças de estratégia
+		Mudanças dos negócios
+		Mudanças no ambiente regulatório
+		Novas tecnologias
+
+- Necessidades das partes interessadas
+(Realização de Beneficios, Otimização de Risco, Otimização dos Processos)
+	=> Desdobra em Apendice 0
+
+- Objetivos Corporativos
+São resultados das necessidades das partes interessadas (em outras palavras, seria o que a alta cupula decide), no COBIT são definidos 17 objetivos corporativos genéricos (proveniente de pesquisas feitas com um X numero de empresas e, com essas respostas categorizaram nesses 17 objetivos mais genéricos e exemplares para se iniciar a cascata de objetivos)
+As 17 categorias são classificadas nas 4 dimensões do BSC (Financeira, Cliente, Interna, Treinamento e Crescimento), em seguida são separadas em relação às 3 perspectivas de entrega de valor aos stakeholders (Realização de Beneficios, Otimização de Risco, Otimização dos Processos), essa ultima separação ocorre entre Primarios e Secundários.
+
+- Objetivos de TI
+Tais objetivos são divididos em 17 objetivos e 4 dimensões, mas estes objetivos são o efeito dos Objetivos Corporativos (que são a causa dos Objetivos do Negócio), neste caso esxiste uma correlação direta, mas na forma master slave entre esses objetivos, eles estão associados em: Objetivos Corporativos = Master, Objetivos de TI - Slave. Os objetigos de TI não podem ficar sem correlação com os objetivos corporativos, pois dessa forma não possuiriam valor algum para o negócio
+
+-Objetivos do Habilitador
+E a estrutura organizacional, os processos, as pessoas e tudo o que está relacionado a aplicar 
+
+Necessidades:
+Governança -> Avalis, Direciona e Monitora
+Gestão -> Planeja(APO), constroi(BAI), entrega(DSS) e monitora(MEA)
+
+============================================================
+2ª Ferramenta: Modelos de Maturidade
+Muito semelhante ao presente no ITIL, para o pessoal de desenvolvimento é o CMMI; o COBIT é genérico, da para criar um Modelo de Maturidade para qualquer coisa, praticamente; ele é bem generalista.
+Fornece um perfil genérico de estágios para os processos, fornecendo apenas a ideia; os modelos de maturidade foca na maturidade e não na abrangência e profundidade  dos controles; não são uma base formal de certificação, mas podem ajudar a alcançar uma certificação formal.
+
+Tres principais pontos dos modelos de maturidade:
+capacidade, abrangencia e controle
+
+Melhorar a maturidade reduz riscos e aprimora a eficiencia, levando a uma menor quantidade de erros, processos mais previsíveis e uso eficiente dos recursos sob o ponto de vista de custos.
+
+São criados a partir de sua ideia principal.
+
+1- Inexistente
+Não existe nada referente a isso na empresa
+
+Inicial/Ad hoc
+Uma pesso faz de forma isolada, de forma pioneira
+
+2- Repetivel, porem intuitivo
+As pessoas repetem uma politica criada inicalmente (caminho padrão) no momento inicial
+
+3- Processo definido
+As pessoas começam a documentar e comunicar os processos a partir de quando  possuem mais conhecimento do que estão fazendo
+
+4- Grenciado e Mensurável
+Como já existem, o caminho agora é monitorar, medir, planejar  e construir melhores processos
+
+5- Otimizado
+é um momento onde as boas praticas já são seguidas e automatizadas e o objetivo é otimizar os processos para entregar mais valor para a organização.
+
+Os modelos de maturidade estipurlam também que existe uma forma de se estabelecer um benchmark a partir da empresa e sua construção de metas. A média das empresas vem por parte de consultorias, onde há o contato com diversas empresas e pode-se construir uma média do mercado referente a estes processos.
+Nem todas as organizações almejam o nivel mais alto de maturidade, pois nem sempre almejar maior maturidade estará de acordo com os objetivos corporativos. Implementar medidas para alcançar melhores formas de fazer gestão pode implicar em custos a mais que não trarão maior valor agregado para o negócio. Por outro ponto, é importante ter o mínimo de organização, estando num nuvel 3  do modelo, por exemplo, para que haja o minimo de organização dos processos. Agora como posicionamento estratégico pode-se almeijar estar pouco acima da média do mercado para se obter vantagem competitivo, mas não é obrigatório para a empresa estar nem ao menos na média do mercado.
+Verificar o modelo de maturidade da LGPD do Governo Federal.
+
+As vantagens dos modelos de maturidade são direcionar os gerentes a colocarem-se  em uma escala e avaliar o que está envolvido no apromoramento da performance (isso significa que quanto mais matura, menos tecniquês o gerente precisa saber);
+Também é importante validar que a evolução do processo vem através de uma escala simples, ou seja de de 0 a 5.
+

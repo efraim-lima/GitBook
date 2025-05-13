@@ -1,0 +1,47 @@
+Transição
+
+Armazenar historico de ativos (patrimonio) faz parte do ciclo de vida dos atributos, precisamos ter dados atuais e dados historicos.
+
+Configuração == Documentação
+Precisa-se listar todo o inventário do ambiente, tanto de hardware quanto de software.
+
+Liberação e implantação
+Politica e planejamento de liberações
+Projeto, construção e configuração de liberações
+Todos os aspectos de uma liberação no ambiente de produção precisam ser considerados
+
+Para devsecops deve-se verificar o versionamento do código para garantir que o cliente possui a versão mais atual da aplicação; 
+isso pode ser feito por numero de versão.
+
+A parte de gestão de vulnerabilidades infere que deve haver um documento com um numero que identifique a versão do código.
+
+Devem haver políticas de liberação de acesso a um ambiente, recurso ou ativo. Isso também demanda documentação (politicas de segurança).
+
+O unico que pode determinar quem tem acesso ou não a uma informação é o dono da informação, nenhum outro pode determinar quem acessará essa informação.
+A versão holistica une: quem pode liberar e assegurar a detenção da informação, o processo de liberação e o que deve ser feito caso ocorra uma falha.
+Nessa documentação pode haver um procedimento de rollback caso ocorra alguma coisa errada após uma falha.
+
+BDGC - Banco de Dados de Gerenciamento e Configuração
+
+Operação de Serviço
+
+Um dos objetivos é tratar da gestão de conflitos como:
+- Visão interna (TI) x visão externa (Negócios) -> a TI ao entender o negócio consegue ter também visão mais crítica sobre o ambiente
+- Estabilidade x Capacidade de Resposta
+- Qualidade x Custo
+- Reatividade x Proatividade
+
+Processos dentro de Operação de Serviço
+- Gerenciamento de Incidente 
+- Gerenciamento de Evento
+- Gerenciamento de Rquisição
+- Gerenciamento de Problema
+- Gerenciamento de Acesso
+
+Gerenciamento de Incidente
+Muito usado na ITIL, é um evento que tira o ambiente da normalidade, colocando o ambiente em uma anormalidade. Gestão de Incidente == Central de Serviços
+
+
+===============================================
+A gestão de problemas 
+
