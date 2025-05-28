@@ -1,0 +1,30 @@
+Pg 10
+Statement
+frases comparativas
+
+
+atividade-pg-10
+
+A. 
+1- Can I get you a drink?				a) Making an offer
+2- Could I confirm your e-mail address?			c) Making a request
+3- Can I use spreadsheets?				c) Making a request
+4- Can you speak any other languages?			c) Making a request
+5- Could you tell us more about your present job?	c) Making a request
+6- Could you tell me your current salary?		c) Making a request
+7- Would you let us know your decision 
+as soon as possible?					c) Making a request
+8- When can you start?					c) Making a request
+9- Would you like some more tea?			a) Making an offer
+
+B.
+1- Can I get you a drink?				f) I'd love some. Thank you. 
+2- Could I confirm your e-mail address?			e) The address is correct, but I've got a new mobile number. 
+3- Can you use spreadsheets?				b) Not very well, but I'm doing a course next week. 
+4- Can you speak any other languages?			h) Yes, I can speak Korean and Japanese. 
+5- Could you tell us more about your present job?	g) Well, I'm currently supervising an HR project.
+6- Could you tell me your current salary?		a) It's €60,000 a year. 
+7- Would you let us know your decision 
+as soon as possible?					c) I can let you know next week. 
+8- When can you start?					i) My notice period is two months. 
+9- Would you like some more tea?			d) Thank you. A cup of tea, please. 
