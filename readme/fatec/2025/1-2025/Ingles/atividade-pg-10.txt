@@ -1,10 +1,6 @@
-Pg 10
-Statement
-frases comparativas
-
-
 atividade-pg-10
 
+Pg. 10
 A. 
 1- Can I get you a drink?				a) Making an offer
 2- Could I confirm your e-mail address?			c) Making a request
