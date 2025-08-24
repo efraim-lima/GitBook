@@ -1,0 +1,9 @@
+atividade-01
+
+Os papeis de gestão de redes e admnistração de diferem por suas atividades e até mesmo competencias.
+A administração de redes tem ênfase em disponibilizar os serviços e aplicações para a infraestrutura e rede, como serviços de direorio ou cotas de discos.
+Já a gerencia de redes foca em monitorar e acompanhar o funcionamento da rede, avaliando o desempenho, buscando por indicadores de uso ou identificando falhas, por exemplo.
+
+
+Para ter uma boa gerencia e redes é imprescindível ter uma boa organização da rede, contando com inventários, diagramas, gestão de ativos, backups de configurações e registro de eventos.
+Para, a partir desses recursos, poder-se analisar o ambiente e garantir sua integridade e plenitude operacional.

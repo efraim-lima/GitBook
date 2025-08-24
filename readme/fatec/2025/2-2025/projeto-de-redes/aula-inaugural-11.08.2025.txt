@@ -1,0 +1,4 @@
+Em um projeto de redes precisamos definir primeiro as camadas superiores do OSI, ou seja, iniciamos pela camada de aplicação e depois passamos para as camadas inferiores.
+
+Um bom exemplo do motivo disso é a mitigação de problemas de VOIP, pois essa aplicação depende muito de velocidade e qualidade de conexão, por trabalhar com pacotes UDP. Com isso, se a camada física for definida anteriormente não existirá margem para implementar um serviço de VOIP devido a possíveis limitações que podem ocorrer (uma rede fisica definida 100% de forma wireless, por exemplo, faria com que a aplicação VOIP pudesse ter o mínimo de qualidade para sua implementação).
+

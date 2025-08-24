@@ -1,0 +1,48 @@
+Titulo
+1. Introdução
+- 2 ou 3 paragrafos para contextualizar o problema ou pergunta problema
+- uma boa pergunta problema deve ser iniciada de forma aberta, procurando focar em algum tipo e processo
+- em monografia não é obrigatório pergunta problema, é obrigatório uma contextualização
+
+
+1.1 Objetivo Geral
+- Este objetivo é obrigatório a monografia, a falta deste objetivo geral reprova o trabalho logo de cara, assim como o não o cumprimento deste objetivo ao decorrer da monografia
+- neste caso o orientador pode direcionar o estudo para atingir este obejtivo
+- falhas no referencial teorico podem descontar pontos do trabalho. Para um trabalho nota 10 devemos conseguir atingir os pontos:
+	- referencial
+	- discussão
+	- atingiu os objetivos
+- objetivo geral deve iniciar com verbos de ação ("desenvolver uma ferramenta para analisar um modelo de maturidade tendo como base o COBIT nº XPTO"). Não pode-se deixar lacunas e nem duvidas no objetivo geral;
+- o referencial teorico ajuda a complementar o objetivo geral, sendo importante para os demais pontos e as demais etapas, em PG1 teremos um paragrafo ainda incipiente, pois ele será lapidado junto o referencial teorico com embasamento de conteúdo
+
+1.1.1 Objetivos Específicos
+- estes objetivos são opcionais (caso não adicionemos eles), ao adicionar os objetivos específicos nossa nota será baseada no cumprimento destes objetivos também;
+- aqui indicaremos as "subtarefas" do objetivo geral, por exemplo, "analisar o COBIT", "como o COBIT enxerga o modelo de maturidade", "realizer um levantamento bibliográfico a saber como é a base para o objetivo geral"...os objetivos específicos darão embasamento para o desenvolvimento dos objetivos gerais
+
+2. Justificativa
+- precisamos deixar claro a importancia deste tema para o leitor, precisa ser algo coerente e pautado em algo que seja relevante;
+- para a consolidação deste campo Podemos nos valer de estatísticas ("os ataques ciberneticos aumentaram em x% desde 2025")
+- pode-se falar de algum autor específico, que traz algum context, mas neste caso seria apenas em forma de citação;
+- justificative (mostra a importancia) não é contextualização (mostra o por quê do artigo);
+- cuidado para levantar pesquisas de 10 anos atras (de muito tempo atrás, por exemplo), pois nosso setor é dinâmico e muda constantemente
+
+3. Hipótese
+- desenvolvemos o texto indicando o que achamos que este trabalho irá contribuir para o ambiente
+- Podemos colocar o que achamos, mas não precisamos atingir este objetivo, a hipotese não precisa ser comprovada e nem refutada
+- não confundir hipotese (no que iremos concluir) com justificative (mostra a importancia) ou contextualização (mostra o por quê do artigo);
+
+4. Metodologia
+- Precisamos indicar em um paragrafo como é a natureza deste rabalho (aplicada, levantamento, questionarios, etc)
+
+5. Resultados Esperados (apenas PG1, se transformará em Considerações Finais)
+- é a descrição, em detalhes, qual o produto que será entregue no como produto no segundo semestre. Ele será lido pelo aprovador da pré-banca e questionará o produto a ser criado
+
+6. Cronograma
+- um Quadro simples elencando as atividades a serem concluidas a partir de agora até Junh/2026 (pode ser check-list)
+
+7. Capitulos
+- o orientador pode definer que todo o referencial teorico seja tratado neste semestre
+- O objetivo geral já dará um norte para a criação destes capítulos, mas o orientador pode opinar Nessa organização também
+
+8. Referências
+- colocaremos todas as referencias levantadas (limite e 10 referencias para este semestre).

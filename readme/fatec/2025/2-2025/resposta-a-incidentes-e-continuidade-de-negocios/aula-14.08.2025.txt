@@ -1,0 +1,19 @@
+aula-14.08.2025
+
+PCN - Plano de Continuidade de Negócios
+	PRD - Plano de Recuperação de Desastres
+		Foco em Ativos de TI
+		Este plano trata de indisponibilidades de longo prazo, que não são previstos pelos acordos de disponibilidade dos serviços. Geralmente é acionado em forma de escalonamento quando o PCO não comporta o evento 
+	PRN - Plano de Restabelecimento dos Negócios
+		Foco em Processos de Valor
+		Foi substituido pelo PRI (Plano de de Recuperação de Incidentes)
+	PRI - Plano de Recuperação de Incidentes
+		Foco no CID
+		Este plano trata de indisponibilidades de curto prazo relacionadas a incidentes que firam o CID.
+	PCO - Plano de Continuidade Operacional
+		Foco em Ativos de TI
+		É o plano que trata de quaisquer indisponibilidades previstas nos acordos de disponibilidade de serviços. Caso o PCO não comporte o nível do evento, a tratativa deve ser escalonadas ao PRD.
+	PCC - Plano de Comunicação de Crises
+		Foco nos processos de comunicação, onde nós não criamos e não é nossa responsabilidade, mas auxilamos no processo
+	PED - Plano de Emergencia Ocupacional
+		Foco na integridade das pessoas e equipamentos

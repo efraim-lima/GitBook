@@ -1,0 +1,52 @@
+trabalho-N2-aula-21.08.2025
+
+Teremos alguns topicos a serem contemplados neste trabalho, basicamente serão:
+
+1. PCN
+1.1 Introdução/Sumário Executivo
+1.2 Mapeamento dos Processos Críticos de Negócio (3 Processos -> 2 ativos de TI)
+1.3 Análise de Risco
+1.4 BIA
+1.5 Regras de Acionamento (Gatilhos)
+1.6 Equipe do PCN
+1.7 Revisão e Manutenção
+1.8 Auditoria, Treinamento e Teste
+
+
+1.4 BIA
+Tabela de analise de impacto nos negocios
+- será analisado se tem sentido o conteúdo apresentado na tabela
+- a parametrização de horas indica o tempo habil para a tomada de decisão e de avaliação, 
+- importante dar a oportunidade de a alta gestão avaliar a criticidade 
+- pode-se implementar correlação na BIA com SLA
+
+1.5 Gatilhos
+- Onde relacionamos os eventos com os planos
+	- os eventos são enontrados no item 1.3 (precisa ser um Ctrl + C e Ctrl + V, sem por nem tirar)
+- importante ter um processo bem desenhado considerando tempo em que cada plano será iniciado, a partir de qual controle (tempo, ação, indivíduo) e como deve ser feito o processo de execução 
+	- um fluxograma detalhado, apresentando: Plano a ser acionado, equipe responsável, tempo a ser aguardado até o acionamento deste plano, qual o gatilho para iniciar este plano, qual a ação a ser tomada em si;
+	- precisamos contemplar todos os planos de continuidade de negócios, sem desconsiderar nenhum deles
+- A Equipe de PCN é a que sempre, SEMPRE starta quais quer atividades de utros planos, eles quem acionam as demais equipes e os demais planos
+
+1.6 Equipe do PCN
+- listar o cargo, a atividade dentro do PCN (o que a equipe responsável faz), os contatos empresariais deste element (no mínimo 2 formas de contato)
+- uma boa prática é, ao final da apresentação, adicionar uma planilha que contém os dados mais atualizados dos esponsáveis por cada ETAPA do plano, inserindo seus nomes, telefones atualizados, etc. (pode ser um hyperlink, por exemplo)
+- No PCN estamos tratando de atividades a nível estratégico, nisso teremos sempre os pontos chaves de processos (chamados headers, mas que interpret melhor como heads das equipes);
+- o RH pode ser um ponto de entrada também, estratégicamente,pois eles têm conhecimento dos demais 
+
+1.7 Revisão e Manutenção
+- Revisão (ocorrem em maiores contâncas) passa pelo processo do primeiro algoritmo, ou seja, se ocorre uma revisão o plano implica em alterações na primeira casa de versionamento, ou seja, de 1.0 passa para 2.0
+- Manutenção (geralmente ocorrem em constancias menores) indica alterações pontuais no documento, implicando em alterações na segunda casa decimal, ou seja, passando de 1.0 para 1.1
+- o historico de revisões deve ser colocado ao final para evitar prolemas de formatação do documento, importante seguir o seguinte formato para documentar essas manutenções:
+	- vs. 1.1 xx/xx/xxxx Efraim lima
+
+1.8 Auditoria, Treinamento e Teste
+- 
+
+1.9 Historico de Revisão
+
+
+
+
+Tabela -> apresenta dados estatísticos
+Quadro -> Tabela explicative, apenas descritiva, sem dados estatísticos
