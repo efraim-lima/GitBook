@@ -1,0 +1,63 @@
+1. PRI
+1.1 Escopo
+- importante levantar quais eventos ocorrem na organização que estão relacionados a incidentes, caso não haja um PCN
+	- analise de risco
+	- mapeamento de eventos
+1.2 Requisitos de Qualidade
+- o foco é em qualidade ou velocidade?
+- a solução nem sempre consegue compreender aos 2 mundos
+	- importante compreender o conceito de rapidez e qualidade, alinhar as expectativas do cliente
+- num ambiente real, pode ocorrer a necessidade de acionar um PRD, pois podem ocorrer atrados na restauração do ambiente devido a N fatores (diretor com problemas, incidente não ocorrido no passado e sem playbooks para essa ação);
+1.3 Medidas de proteção empregada na organização
+- seria como um Raio-X da organização, compreendendo os setores da empresa, suas ferramentas e como essas areas de comunicam, interagem entre si;
+- PCN ou PRI só ocorrem se a empresa tiver uma equipe de segurança da informação;
+1.4 Definição da CSIRT
+- este setor pode ser interno ou terceirizado
+- inserção do quadro indicando os participantes da CSIRT
+	- importante inserir equipe técnica
+	- inserir os setores responsáveis atrelados aos possíveis incidentes de segurança (correlacionar escopo com medidas de proteção empregada na organização - item 1.3)
+	- juridico, auditoria e compliance, donos dos processos, até mesmo RH pode ser interessante de se pensar
+- na CSIRT temos um lider tecnico e um gestor
+	- lider tecnico direciona as atividades com os setores
+	- gestor traduz para a equipe o que a Direção faz e vice-versa
+1.5 Formas de inserir, notificar, e armazenar as informações
+- todos incidentes devem chegar em uma unica central de serviços, e essa central de serviços deve distribuir para os setores responsáveis
+1.6 Resposta Inicial
+- para cada evento no escopo precisamos criar uma resposta inicial
+- entre contenção e provas a prioridade de cada etapa deve ser definida e pode ser alterada sua ordem, pois existem situações em que precisa-se fazer a contenção para depois coletar as provas, vai de acordo com o caso
+- Evento
+	- proveniente do escopo
+	- o evento pode ser composto por pequenos eventos, que juntos, disparam um evento
+- Identificação
+	- formas de identificar, através dos eventos, a presença de um incidente (varias tentativas de login consumindo-se em um bruteforce)
+- Contenção
+- Provas
+- Solução
+	- aqui podem ser emitidas sugestões para a solução assim como num relatorio pericial, indicando as soluções, como será feita e quem deve fazer não é a pessoa que fez o relatório
+1.7 Investigação e analise forense
+- forma de sistematizar tudo o que é feito na empresa para que este processo seja feito nos melhores moldes possíveis;
+1.8 Relatório
+	- quem reportou, 
+	- qual dia
+	- qual hora
+	- evento
+	- quem tratou
+	- quais ações tomadas
+	- quais ações de contorno
+	- qual solução definitiva
+- o principal problema da CSIRT, o relator (seria interessante que tenha, mas não necessariamente ocorreria)d
+1.9 Revisao e Manutenção
+1.10 Treinamento
+1.11 Historico de Revisao
+
+
+
+
+
+
+
+
+
+
+
+

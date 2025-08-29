@@ -1,6 +1,6 @@
 aula-14.08.2025
 
-PCN - Plano de Continuidade de Negócios
+PCN - Plano de Continuidade de Negócios (starta todos os demais eventos)
 	PRD - Plano de Recuperação de Desastres
 		Foco em Ativos de TI
 		Este plano trata de indisponibilidades de longo prazo, que não são previstos pelos acordos de disponibilidade dos serviços. Geralmente é acionado em forma de escalonamento quando o PCO não comporta o evento 

@@ -1,0 +1,47 @@
+Sumário Executivo: Uma visão geral de alto nível de todo o relatório, incluindo o propósito do caso, o escopo da investigação, as principais descobertas e as conclusões. Ele é projetado para leitores que precisam compreender as informações essenciais rapidamente.
+
+Informações do Caso: Esta seção detalha as informações administrativas sobre o caso, tais como:
+
+Número e título do caso
+Investigadores envolvidos
+Data do relatório
+Partes envolvidas (por exemplo, cliente, suspeito)
+Autoridade legal ou solicitação para a investigação.
+Escopo da Investigação: Define claramente o que foi e o que não foi coberto na investigação. Isso inclui:
+
+Dispositivos específicos examinados (por exemplo, discos rígidos, telefones celulares, contas em nuvem)
+Períodos de interesse
+Objetivos ou perguntas específicas que a investigação visava responder.
+Metodologia: Explica as ferramentas, técnicas e procedimentos utilizados durante o exame forense. Isso garante que a investigação seja reproduzível e esteja em conformidade com os padrões forenses aceitos. Pode cobrir:
+
+Processos de criação de imagens (imaging)
+Softwares forenses utilizados
+Técnicas de análise (por exemplo, buscas por palavras-chave, análise de linha do tempo, recuperação de arquivos por assinatura - file carving)
+Passos tomados para preservar a integridade dos dados.
+Descobertas/Achados: Este é o cerne do relatório, apresentando os dados objetivos descobertos durante o exame. Deve ser apresentado de forma clara e factual, muitas vezes com evidências de apoio. Isso pode incluir:
+
+Arquivos relevantes encontrados (documentos, e-mails, imagens, registros de chat)
+Atividade na internet (histórico de navegação, downloads)
+Instalações e uso de software
+Eventos do sistema (logons, acesso a arquivos, conexões de dispositivos externos)
+Dados excluídos que foram recuperados
+Análise de artefatos específicos relacionados ao caso (por exemplo, evidência de exfiltração de dados, infecção por malware).
+Lista de Evidências/Cadeia de Custódia: Um registro detalhado de todas as evidências digitais coletadas, incluindo:
+
+Identificadores únicos (por exemplo, valores hash) para cada peça de evidência
+Datas e horas de aquisição
+Pessoal que manuseou a evidência
+Local de armazenamento.
+Esta seção é crucial para manter a admissibilidade da evidência em processos legais.
+Conclusão: Resume as principais descobertas e tira inferências lógicas com base nas evidências apresentadas. Aborda diretamente os objetivos descritos no "Escopo da Investigação" e responde às perguntas feitas no início. Evita introduzir novas evidências aqui.
+
+Recomendações (Opcional): Em alguns relatórios, o examinador forense pode oferecer recomendações com base em suas descobertas, como sugestões para melhorar a segurança, investigações adicionais ou medidas preventivas.
+
+Glossário (Opcional): Define termos técnicos usados no relatório, tornando-o mais acessível a leitores não técnicos.
+
+Apêndices (Opcional): Contém materiais suplementares que apoiam as descobertas, mas que podem ser muito detalhados para o corpo principal do relatório. Isso pode incluir:
+
+Registros de dados brutos (logs)
+Listas de arquivos específicos
+Capturas de tela
+Análises detalhadas da linha do tempo.

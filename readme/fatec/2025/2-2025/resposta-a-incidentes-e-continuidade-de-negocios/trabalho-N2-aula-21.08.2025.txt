@@ -45,6 +45,22 @@ Tabela de analise de impacto nos negocios
 
 1.9 Historico de Revisão
 
+2.0 PRD
+2.1 Site alternativo
+2.2 Procendito
+3.0 PRI
+3.1 Resposta Inicial
+- Importante aqui implementar uma resposta definitiva para erradicar o incidente
+- A equipe que cuida disso é a CSIRT
+3.2 Relatório
+- Deve ser feito a tempo do incidente (a documentação deve ser feita durante a tratativa)
+- O relatório seguirá o padrão forense pericial;
+	- Acessar o modelo de relatório forense inserido no primeiro semestre de 2025
+4.0 PCO
+4.1 Estratégia de Alta Disponibilidade
+5.0 Comunicação
+6.0 Estratégia Conv
+
 
 
 
