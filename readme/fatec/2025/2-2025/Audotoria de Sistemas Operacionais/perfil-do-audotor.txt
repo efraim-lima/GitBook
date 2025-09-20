@@ -1,0 +1,26 @@
+Padroes e Pergil
+
+ISACA 
+Independencia profissional
+Etica profissional
+Competencia
+Planejamento
+- ter um plano A, B e C pensando no risco
+- evitar o fracasso, pensar em maneiras de se mitigar
+Emissão de relatorio
+- emitir um relatorio na conclusao do trabalho
+- Escopo
+- Objetivos
+- Periodo de abrangencia
+- Identificar a organização (usuarios desejaveis e restrição da sua criculação)
+- Observaçãoes, recomendações e ressalva
+- conclusoes
+
+FOllow Ip 
+- requisitar e avlaliar informações, em caso de inconsistencias validar a correção das mesmas
+Exercer fnções com objetividade, diligencia e zelo profissionalde acordo com padroes e as melores praticas
+Servir aos stakeholders de forma legal e honesta
+
+Equipes de auditoria
+-> Provaveis contratações externas
+Conhecimentos basicos englobam sistemas operacionais, softwares basicos, bancos de dados, redes de computadores, avançando até softwares de controle de acesso, planos de contingenias e de recuperação  e metodologias de desenvolimento de ssistemas

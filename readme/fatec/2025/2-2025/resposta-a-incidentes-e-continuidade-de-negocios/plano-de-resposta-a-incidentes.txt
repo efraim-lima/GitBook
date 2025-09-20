@@ -1,3 +1,5 @@
+aula-28.08.25
+
 1. PRI
 1.1 Escopo
 - importante levantar quais eventos ocorrem na organização que estão relacionados a incidentes, caso não haja um PCN
