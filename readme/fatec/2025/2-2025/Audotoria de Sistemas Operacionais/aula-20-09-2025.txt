@@ -1,0 +1,61 @@
+aula-20-09-2025
+
+ISO: 
+Definir o objetivo
+Escalrecer o que sera avaliado (proessos, controles, conformidade)
+
+Delimitar o escopo
+Determinar as areas a serem auditadas
+
+Estabelecer criterios
+Definir normas, politicas e regulamentos que servirão de referencia
+
+Montar a equipe
+Selecionar auditores com conhecimento adequado ao tema
+
+Elaborar o cronograma
+prazos estapas e responsaveis
+
+Preparar recursos
+Reunir ferramentas, checklists e documentos necessários
+
+Comunicar as partes envolvidas
+Avisar setores e responsaveis sobre a auditoria para garantir cooperação
+
+
+
+----------------------------------------
+Auditor interno
+processo independente focando em melhorias dentro da propria organização, verificando confirmidades, riscos e melhorias.
+
+Externos
+avalia de forma externa, sendo o principal agente legal. Focando em leis, normas, riscos, praticas ambientais, trabalhistas e também melhorias.
+
+de Certificação
+Avalia conformidade com normas, leis ou regulamentos. Realizada em ciclos que podem resultar em certificações ou atestados formais. Isso aumenta a credibilidade no mercado mas pode acarretar em perda de certificação ou sanções regulatorias.
+
+
+
+----------------------------------------
+Os principios da boa auditoria
+
+Profissionalismo
+Apresentação Justa
+Confidencialidade
+Imparialidade
+Abordagem baseada em evidencias
+Abordagem baseada em riscos
+
+
+-----------------
+Roteiro de auditoria
+
+Planejamento levantamento de recursos -> precisa-se levantar os requisitos, o escopo, os ativos,organizar de acordo com as atividades a serem desempenhadas e, enfim o início das atividades...a partir de tudo isso devemos determinar o que, como, quem e quando para os pontos abaixo:
+
+Entrevistas 
+Testes tecnicos
+Revisão documental
+Chackpoint
+Relatorio Final
+
+*inserir os exemplos capturados nas fotos
