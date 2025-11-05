@@ -11,6 +11,8 @@ Teremos alguns topicos a serem contemplados neste trabalho, basicamente serão:
 1.6 Equipe do PCN
 1.7 Revisão e Manutenção
 1.8 Auditoria, Treinamento e Teste
+1.9 Historico de Revisão
+
 
 
 1.4 BIA

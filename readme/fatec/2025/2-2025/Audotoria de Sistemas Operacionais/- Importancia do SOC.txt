@@ -1,0 +1,42 @@
+- Importancia do SOC
+-> Monitoria não apenas de possiveis ataques, mas da saude do ambiente e de comportamentos dos usuários que possam comprometer mesmo que 
+
+
+
+TRILIUMNEXT, GitHub - TriliumNext/Trilium: Build your personal knowledge base with Trilium Notes, GitHub, disponível em: <https://github.com/TriliumNext/Trilium>. acesso em: 27 ago. 2025, (Este texto esta na citação).
+
+TRILIUMNEXT. GitHub - TriliumNext/Trilium: Build your personal knowledge base with Trilium Notes. GitHub. Disponível em: <https://github.com/TriliumNext/Trilium>. Acesso em: 27 ago. 2025. Este texto esta na citação.
+
+
+
+
+https://doi.org/10.48550/arXiv.2503.23278
+
+
+sudo dnf update -y
+sudo dnf install -y dnf-utils
+needs-restarting –r
+systemctl list-units–failed
+sudo dnf update --security –y
+sudo reboot
+/lib/systemd/system/ctrl-alt-del.target
+sudo systemctl mask ctrl-alt-del.target
+systemctl status ctrl-alt-del.targe
+vim /etc/profile
+Precisa ser de 3 min, abaixo está no formato 10 * 60
+ • TMOUT=600
+ • exportTMOUT
+source /etc/profile
+nmap localhost
+
+Remover 
+- Rshd
+ • Rlogind
+ • telnet
+ • ftpd
+
+chkconfig–level 123456 sendmail off]
+yum remove sendmail
+yum groupremove “MySQL Database”
+chattr +i /etc/passwd
+chattr +i /etc/shadow

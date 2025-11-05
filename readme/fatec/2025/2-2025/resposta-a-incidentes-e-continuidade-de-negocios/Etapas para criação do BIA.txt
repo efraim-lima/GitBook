@@ -1,0 +1,90 @@
+Etapas para criação do BIA:
+-> quantificar os impactos dos Riscos inerentes
+	- maturidade lv1
+		existe quantificação
+		não existe padronização
+		não existe documentação 
+		não existe metrificação 
+	- maturidade lv2
+		existe quantificação
+		existe padronização
+		não existe documentação 
+		não existe metrificação 
+	- maturidade lv3
+		existe quantificação
+		existe padronização 
+		existe documentação 
+		não existe metrificação 
+	- maturidade lv4
+		existe quantificação 
+		existe padronização
+		existe documentação
+		existe metrificação 
+-> parametrizar tempo para tomada de decisão e avaliação
+	- maturidade lv1
+		existe parametrização 
+		// não existe padronização
+		não existe documentação
+		não existe plano redundante
+	- maturidade lv2
+		existe parametrização 
+		// existe padronização
+		não existe documentação
+		não existe plano redundante 
+	- maturidade lv3
+		existe parametrização 
+		// existe padronização
+		existe documentação
+		não existe plano redundante
+	- maturidade lv4
+		existe parametrização 
+		// existe padronização
+		existe documentação
+		existe plano redundante
+-> analisar consequencias financeiras
+	- maturidade lv1
+		existe ciencia das conseguencias 
+		não existe planejamento financeiro
+		não existe planejamento estratégico
+		não existe plano reduntante
+	- maturidade lv2
+		existe ciencia das conseguencias 
+		existe planejamento financeiro
+		não existe planejamento estratégico
+		não existe plano reduntante
+	- maturidade lv3
+		existe ciencia das conseguencias 
+		existe planejamento financeiro
+		existe planejamento estratégico
+		não existe plano reduntante
+	- maturidade lv4
+		existe ciencia das conseguencias 
+		existe planejamento financeiro
+		existe planejamento estratégico
+		existe plano reduntante
+
+Etapas para criação de Regras de Acionamentos
+-> relacionar regras com eventos da Análise de Risco
+	- maturidade lv1
+		existe ciencia das conseguencias 
+		existe planejamento financeiro
+		existe planejamento estratégico
+		existe plano reduntante
+	- maturidade lv2
+	- maturidade lv3
+	- maturidade lv4
+-> criar fluxograma detalhado
+	- maturidade lv1
+	- maturidade lv2
+	- maturidade lv3
+	- maturidade lv4
+-> correlacionar ações com controles e processos (plano a ser acionado, equipe responsável, etc)
+	- maturidade lv1
+	- maturidade lv2
+	- maturidade lv3
+	- maturidade lv4
+
+nn 
+sn
+ss
+ss e otm
