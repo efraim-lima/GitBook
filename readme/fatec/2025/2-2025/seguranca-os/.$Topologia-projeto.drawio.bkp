@@ -1,0 +1,55 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.7 Chrome/138.0.7204.251 Electron/37.7.1 Safari/537.36" version="28.2.7">
+  <diagram name="Page-1" id="eqrW9qjxuhga0RvBiur4">
+    <mxGraphModel dx="1220" dy="1696" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uyeuv4G0vsWUfmcImyqQ-2" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/firewall.svg;" vertex="1" parent="1">
+          <mxGeometry x="160" y="70.75" width="30.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uyeuv4G0vsWUfmcImyqQ-3" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/internet_cloud.svg;" vertex="1" parent="1">
+          <mxGeometry x="30" y="80" width="50" height="31.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uyeuv4G0vsWUfmcImyqQ-4" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/web_server.svg;" vertex="1" parent="1">
+          <mxGeometry x="530" y="-60" width="40" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uyeuv4G0vsWUfmcImyqQ-5" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/database_server.svg;" vertex="1" parent="1">
+          <mxGeometry x="220" y="-60" width="41" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uyeuv4G0vsWUfmcImyqQ-6" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/generic_server.svg;" vertex="1" parent="1">
+          <mxGeometry x="290" y="-60" width="28.000000000000004" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uyeuv4G0vsWUfmcImyqQ-7" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/input_output_filter.svg;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="33.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uyeuv4G0vsWUfmcImyqQ-8" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/key.svg;" vertex="1" parent="1">
+          <mxGeometry x="318" y="84" width="50" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="uyeuv4G0vsWUfmcImyqQ-9" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/laptop_client.svg;" vertex="1" parent="1">
+          <mxGeometry x="520" y="390" width="45" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uyeuv4G0vsWUfmcImyqQ-10" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/not_secure.svg;" vertex="1" parent="1">
+          <mxGeometry x="540" y="77" width="44" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uyeuv4G0vsWUfmcImyqQ-11" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/router.svg;" vertex="1" parent="1">
+          <mxGeometry x="100" y="73.5" width="50" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="uyeuv4G0vsWUfmcImyqQ-12" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/sql_server.svg;" vertex="1" parent="1">
+          <mxGeometry x="152" y="-60" width="38.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uyeuv4G0vsWUfmcImyqQ-13" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/tunnel.svg;" vertex="1" parent="1">
+          <mxGeometry x="517.5" y="310" width="50" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="uyeuv4G0vsWUfmcImyqQ-15" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/workstation_client.svg;" vertex="1" parent="1">
+          <mxGeometry x="104" y="220" width="42.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uyeuv4G0vsWUfmcImyqQ-20" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/laptop_client.svg;" vertex="1" parent="1">
+          <mxGeometry x="440" y="390" width="45" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uyeuv4G0vsWUfmcImyqQ-21" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/laptop_client.svg;" vertex="1" parent="1">
+          <mxGeometry x="600" y="390" width="45" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

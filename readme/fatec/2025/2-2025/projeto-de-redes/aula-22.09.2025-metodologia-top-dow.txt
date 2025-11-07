@@ -1,0 +1,14 @@
+aula-22.09.2025-metodologia-top-down
+
+O processo para desenvolver um bom projeto de redes é a metodologia Top Down, iniciando de cima para baixo nas camadas OSI.
+
+Primeiro precisa-se definir a camada de aplicação, para seguir para as demais camadas
+
+No wi-fi precisar implementar controle de colisão, implementar qualidade de serviço (dependendo do caso), validar tempo de resposta.
+
+Grandes redes precisam dessa implementação de forma modular
+Identificar os objetivos do negocio, compreender o que o negocio faz e como faz
+Estrutura organizacional, ramo de atividade, concorrência
+
+Muitas vezes o projeto de rede reflete a estrutura organizacional.
+

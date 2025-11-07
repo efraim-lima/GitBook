@@ -1,0 +1,40 @@
+Nossos pre-requisitos como empresa:
+
+100 maquinas, são aprox 6 home-office
+maximo 5 visitantes no site 
+2 localidades
+trabalho em horario comercial das 8 as 17h30
+uma sala de servidor 
+
+=======================================================================
+Levantamento de requisitos do nosso cliente:
+BETA TRend
+Av Luiz carlos Berrini 1694 - 7 andar
+Direto: Daniel - 11963006951
+1 wifi
+equipos legados de IOT: automação de luzes
+iot
+
+Rack TI
+tudo cbeado
+
+applicação web - plataforma de bet
+aterramento 
+
+climatização
+
+28 fucionários
+
+1 VOIP APlicaçãeo WEb
+3 links de internet
+Nobreak
+
+Plataforma de bet funciona 24hs/dia
+Escritorio da 8 as 17 de Seg a Sab
+Sem politica de acesso para visitantes
+Rodizio de funcionarios 25 x 25, uma semana vai uma equipe e outra semana vai outro
+
+
+Aplicação em nuvem, 
+
+3 TVs -> parede a esquerda, parede superior a esquerda, pare
