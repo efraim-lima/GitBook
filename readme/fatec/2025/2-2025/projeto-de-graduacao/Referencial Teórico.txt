@@ -1,0 +1,132 @@
+Referencial Teórico
+1. Inteligência Artificial (IA)
+A Inteligência Artificial (IA) representa uma força transformadora em nossa sociedade, auxiliando o intelecto humano e alavancando o potencial de desenvolvimento em diversas áreas. A IA tem remodelado setores como saúde, manufatura, e-commerce, educação e serviços ao cliente. A IA atualmente é o resultado da integração multi disciplinar, integrando Aprendizado de Máquina (Machine Learning), Aprendizado Profundo (Deep Learning) e Processamento de Linguagem Natural (NLP), disciplinas que juntas permitiram uma evolução significativa na Interação Humano-Computador (HCI). Uma vertente crucial dessa transformação é a IA Conversacional, que confere às máquinas a capacidade de compreender, processar e responder a seres humanos utilizando a linguagem natural.
+
+2. Agentes de Inteligência Artificial (Agentes de IA)
+Os Agentes de IA são definidos como entidades de software autônomas que possuem a capacidade de executar tarefas complexas com um nível de inteligência assemelhando-se ao do ser humano. A arquitetura de um agente de IA se baseia na união de princípios fundamentais da IA, como o aprendizado de máquina e a tomada de decisão autônoma. O componente central, ou a espinha dorsal (backbone), desses agentes é frequentemente um Large Language Model (LLM), que é responsável por interpretar a entrada do usuário (prompt) e gerar as ações subsequentes.
+Para interagir com o ambiente externo e completar tarefas complexas, os agentes são equipados com ferramentas (tools). Essas ferramentas são funções externas ou APIs que permitem ao agente interagir com sistemas de terceiros, executar comandos locais ou realizar consultas em serviços remotos. Os agentes funcionam de forma independente, realizando fluxos de trabalho em nome dos usuários, demonstrando um alto grau de autonomia na seleção dinâmica e uso apropriado dessas ferramentas, sempre dentro de instruções e guardrails definidos.
+
+3. Protocolo de Contexto do Modelo (MCP)
+O Model Context Protocol (MCP) é um padrão de protocolo aberto, introduzido pela Anthropic no final de 2024, que visa padronizar e simplificar a conexão de assistentes e agentes de IA a fontes de dados, APIs e sistemas externos. O MCP é frequentemente comparado ao "USB-C para agentes de IA", pois estabelece um padrão unificado para a interoperabilidade entre LLMs e o ecossistema de ferramentas.
+A arquitetura do MCP é baseada em um modelo cliente-servidor:
+• Servidores MCP: Wrappers autônomos que hospedam as funcionalidades das ferramentas e as expõem de maneira padronizada. *wrapper é um módulo, biblioteca ou serviço
+• Clientes MCP: Aplicações de IA (como editores de codigo ou aplicativos de desktop) que gerenciam a comunicação entre o LLM e os servidores.
+
+O MCP padroniza a interação através de três componentes principais:
+• Tools (Ferramentas): São o principal mecanismo para executar ações (por exemplo, adicionar dados a um banco de dados, enviar mensagens) e são ativadas por decisões do próprio LLM.
+• Resources (Recursos): Permitem que os clientes MCP obtenham dados (como arquivos, bancos de dados ou imagens) para serem utilizados como contexto de forma eficiente pelo LLM (semelhante ao RAG). A chamada de um recurso é explicitamente determinada pela aplicação cliente, e não pelo modelo.
+• Prompts: Oferecem prompts estruturados e reutilizáveis, cuja seleção é feita pelo usuário.
+
+4. Segurança do MCP
+A segurança é uma preocupação crítica para o MCP, visto que o protocolo, por natureza, não é seguro por padrão. O MCP funciona como uma ponte entre os LLMs e o mundo real, mediando o acesso a sistemas sensíveis como bancos de dados e sistemas de arquivos. A natureza dinâmica e não determinística do controle de fluxo, inerente à decisão da IA sobre qual ferramenta invocar, introduz novos riscos que não são encontrados no software tradicional.
+Para mitigar esses riscos, é fundamental que as implementações do MCP adotem controles de segurança rigorosos e sigam o Princípio do Menor Privilégio (Least Privilege), limitando as permissões de acesso dos agentes. A segurança deve ser vista como uma defesa em camadas (layered defense), incorporando:
+• Controles de Autenticação e Autorização: Uso de protocolos robustos e scoped tokens para garantir que cada componente opere dentro de seu escopo de acesso estrito, evitando a escalada de privilégios.
+• Zero Trust Architecture: Adotar uma abordagem de confiança zero e protocolos de revogação de emergência para limitar o impacto de um componente comprometido.
+• Sandboxing e Limitação de Recursos: Executar servidores MCP em ambientes isolados para restringir o acesso a recursos locais (CPU, memória, sistema de arquivos), prevenindo a execução de comandos maliciosos.
+
+5. Vulnerabilidades (Geral e Principais do MCP)
+O ecossistema MCP está sujeito a vulnerabilidades de software tradicionais, muitas vezes potencializadas pelo contexto de IA, e a ameaças específicas do protocolo.
+
+5.1. Vulnerabilidades Gerais de Software (Comuns no MCP)
+A análise estática em repositórios de MCP Servers revelou que 7.2% deles contêm vulnerabilidades. As vulnerabilidades mais comuns e críticas, detectadas por ferramentas tradicionais, incluem:
+• Exposição de Credenciais (Credential Exposure): É a falha de segurança mais frequente no MCP, afetando 3.6% dos servidores analisados. Isso ocorre quando segredos sensíveis, como chaves de API de LLMs (OpenAI, Gemini), tokens (GitHub) ou chaves de contas de serviço, são deixados expostos diretamente nos códigos ou arquivos de configuração.
+• Falta de Controle de Acesso (Lack of Access Control): A ausência de validações de permissão adequadas pode permitir que usuários acessem recursos que deveriam ser restritos ao servidor.
+• Injeção de Comandos (Command Injection): Sem a sanitização rigorosa das entradas, LLMs podem ser induzidos a passar a entrada do usuário diretamente para comandos shell ou funções do sistema, resultando na Execução Remota de Código (RCE).
+
+5.2. Vulnerabilidades Específicas do MCP (Alta Gravidade)
+As vulnerabilidades específicas do MCP exploram a confiança que o LLM deposita no contexto e nos metadados fornecidos pelas ferramentas, sendo consideradas de alta severidade.
+• Tool Poisoning (Envenenamento de Ferramentas): Considerada uma vulnerabilidade severa, ocorre quando metadados de uma ferramenta (como sua descrição ou argumentos) contêm instruções maliciosas incorporadas. O LLM, tratando essas descrições como instruções legítimas, é coagido a executar ações não intencionais, como vazar arquivos confidenciais ou executar tarefas não autorizadas. Ferramentas de análise específicas do MCP detectaram tool poisoning em 5.5% dos servidores testados.
+• Prompt Injection (Injeção de Prompt): Envolve a inserção de comandos maliciosos em conteúdo externo que o agente consome (como o texto de um documento, um e-mail ou uma issue de repositório), forçando o LLM a desviar-se de suas instruções de segurança originais ou a revelar dados sensíveis.
+• Escalonamento de Privilégio (Privilege Escalation): Uma ferramenta maliciosa pode se passar por outra ou abusar de permissões não restritas, permitindo que um serviço de baixo nível acesse privilégios de administrador ou execute ações destrutivas.
+• Contexto Persistente (Persistent Context): Sessões MCP podem armazenar entradas e resultados de ferramentas por mais tempo do que o necessário, resultando em vazamento de informações sensíveis ou contaminação da "memória" do agente ao longo do tempo.
+• Tool Squatting & Rug Pulling: Um servidor MCP pode ser publicado com descrições de ferramentas inofensivas, mas ser maliciosamente atualizado posteriormente com lógica perigosa após ganhar a confiança dos usuários e ser amplamente adotado.
+
+
+
+
+
+
+
+
+
+-------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Referencial Teórico
+1. Inteligência Artificial (IA)
+A Inteligência Artificial (IA) representa uma força transformadora em nossa sociedade, auxiliando o intelecto humano e alavancando o potencial de desenvolvimento em diversas áreas (KUSAL et al., 2022). A IA busca complementar o intelecto humano, oferecendo o potencial para auxiliar a sociedade a prosperar (KUSAL et al., 2022). A IA tem remodelado setores como saúde, manufatura, e-commerce, educação e serviços ao cliente (KUSAL et al., 2022). A IA atualmente é o resultado da integração multi disciplinar, integrando Aprendizado de Máquina (Machine Learning), Aprendizado Profundo (Deep Learning) e Processamento de Linguagem Natural (NLP), disciplinas que juntas permitiram uma evolução significativa na Interação Humano-Computador (HCI) (KUSAL et al., 2022). Uma vertente crucial dessa transformação é a IA Conversacional, que confere às máquinas a capacidade de compreender, processar e responder a seres humanos utilizando a linguagem natural (KUSAL et al., 2022).
+
+2. Agentes de Inteligência Artificial (Agentes de IA)
+Os Agentes de IA são definidos como entidades de software autônomas que possuem a capacidade de executar tarefas complexas com um nível de inteligência que se assemelha ao do ser humano (DURGAPRASAD et al., 2024). Esses sistemas são capazes de realizar fluxos de trabalho em nome dos usuários com um alto grau de independência (OPENAI, S.D.). A arquitetura de um agente de IA se baseia na união de princípios fundamentais da IA, como o aprendizado de máquina, o Processamento de Linguagem Natural (NLP) e a tomada de decisão autônoma (DURGAPRASAD et al., 2024).
+O componente central, ou a espinha dorsal (backbone), desses agentes é frequentemente um Large Language Model (LLM), que é essencialmente o que impulsiona o raciocínio e a tomada de decisão do agente. O LLM é responsável por interpretar a entrada do usuário (prompt) e gerar as ações subsequentes (HE et al., 2024), reconhecendo quando um fluxo de trabalho está completo ou quando é necessário corrigir ações.
+Para interagir com o ambiente externo e completar tarefas complexas, os agentes são equipados com ferramentas (tools) (HE et al., 2024; OPENAI, S.D.). Essas ferramentas são funções externas, APIs ou APIs que permitem ao agente interagir com sistemas de terceiros, executar comandos locais ou realizar consultas em serviços remotos. O uso de tools estende as capacidades do agente e permite que ele execute ações (OPENAI, S.D.). Os agentes funcionam de forma independente, realizando fluxos de trabalho em nome dos usuários (DURGAPRASAD et al., 2024), demonstrando um alto grau de autonomia na seleção dinâmica e uso apropriado dessas ferramentas, sempre operando dentro de instruções explícitas e guardrails claramente definidos (OPENAI, S.D.). As instruções de alta qualidade são críticas, pois reduzem a ambiguidade e aprimoram a tomada de decisão do agente.
+
+3. Protocolo de Contexto do Modelo (MCP)
+O Model Context Protocol (MCP) é um padrão de protocolo aberto, introduzido pela Anthropic no final de 2024 (em 25 de novembro) (ANTHROPIC, 2025; HASAN et al., 2025). Este protocolo visa padronizar e simplificar a conexão de assistentes e agentes de IA a fontes de dados, APIs e sistemas externos.
+Devido à sua função de unificar a comunicação entre modelos de linguagem (LLMs) e o vasto ecossistema de ferramentas, o MCP é frequentemente comparado ao "USB-C para agentes de IA". Este padrão unificado substitui as integrações fragmentadas existentes por uma arquitetura mais confiável e escalável.
+A arquitetura do MCP é baseada em um modelo cliente-servidorl, seguindo a estrutura estabelecida pela Anthropic em seu guia de introdução ao MCP temos alguns campos importantes para a nossa compreensão:
+• Servidores MCP: São wrappers autônomos que hospedam as funcionalidades das ferramentas e as expõem de maneira padronizada. Eles atuam como intermediários que envolvem serviços externos ou fontes de dados.
+• Clientes MCP: São as aplicações de IA (como editores de código, aplicativos de desktop ou o Claude Desktop) que gerenciam a comunicação entre o LLM e os servidores. O cliente é responsável por obter as descrições dos esquemas de ferramentas e mediar as chamadas guiadas pelo Foundation Model (FM).
+
+O MCP padroniza a interação através de três componentes principais, que estendem a funcionalidade dos agentes:
+• Tools (Ferramentas): São o principal mecanismo para executar ações, como adicionar dados a um banco de dados ou enviar mensagens. A característica distintiva é que as Tools são ativadas por decisões do próprio LLM, sendo este o motor de raciocínio que determina quando e qual ferramenta chamar.
+• Resources (Recursos): Permitem que os clientes MCP obtenham dados (como arquivos, bancos de dados ou imagens) para serem utilizados como contexto de forma eficiente pelo LLM, similar ao Retrieval-Augmented Generation (RAG). No entanto, a chamada de um recurso é explicitamente determinada pela aplicação cliente e não pelo modelo.
+• Prompts: Oferecem prompts estruturados e reutilizáveis, cuja seleção é feita pelo usuário, permitindo a utilização de instruções padronizadas para tarefas recorrentes.
+
+4. Segurança do MCP
+A segurança é uma preocupação crítica para o MCP, visto que o protocolo, por natureza, não é seguro por padrão. O MCP (Model Context Protocol) funciona como uma ponte entre os LLMs e o mundo real, mediando o acesso a sistemas sensíveis como bancos de dados, sistemas de arquivos e endpoints de API. A natureza dinâmica do controle de fluxo, inerente à decisão da Inteligência Artificial (IA) sobre qual ferramenta invocar, introduz novos riscos que não são encontrados no software tradicional. A razão para isso é que a autonomia do LLM em decidir o uso de ferramentas levanta novas preocupações de segurança que não existiam anteriormente.
+Para mitigar esses riscos, é fundamental que as implementações do MCP adotem controles de segurança rigorosos e sigam o Princípio do Menor Privilégio (Least Privilege) como mencionado pela Microsoft em seu artigo de 2025, limitando as permissões de acesso dos agentes. Abaixo podemos verificar alguns pontos de atenção sobre como a segurança deve ser vista, sendo no formato de defesa em camadas (layered defense mechanism), incorporando:
+• Controles de Autenticação e Autorização: É crucial isolar as permissões das ferramentas e impor autenticação em cada chamada. O uso de protocolos robustos e scoped tokens limita as permissões de acesso (SOCRADAR, 2025) e garante que cada componente opere dentro de seu escopo de acesso estrito, evitando a escalada de privilégios.
+• Zero Trust Architecture: Adotar uma abordagem de confiança zero (zero-trust architecture)  e protocolos de revogação de emergência (SOCRADAR, 2025; SANKRITYAYAN, 2025) para desabilitar componentes comprometidos rapidamente e limitar o impacto de um componente comprometidom sendo uma recomendação adotada nos artigos tanto da Microsoft quanto pela SOC Radar em seu artigo "Top 10 MCP Server Vulnerabilities".
+• Sandboxing e Limitação de Recursos: Executar servidores MCP em ambientes isolados (sandboxing) para restringir o acesso a recursos locais como CPU, memória e sistema de arquivos, prevenindo a execução de comandos maliciosos.
+
+5. Vulnerabilidades (Geral e Principais do MCP)
+O ecossistema Model Context Protocol (MCP), embora promissor para a integração de Agentes de IA está sujeito a vulnerabilidades de software tradicionais, muitas vezes potencializadas pelo contexto da IA e ameaças específicas do protocolo. O fato de os Agentes de IA executarem ações com um fluxo de controle não determinístico, guiado por LLMs, introduz novos riscos que não são encontrados em sistemas tradicionais.
+
+5.1. Vulnerabilidades Gerais de Software (Comuns no MCP)
+Uma análise empírica e em larga escala (a primeira desse tipo) realizada em 1.899 servidores MCP de código aberto revelou que 7.2% deles contêm vulnerabilidades de software gerais (HASAN et al., 2025). Essas vulnerabilidades, detectadas por ferramentas de análise estática tradicionais como o SonarQube, incluem:
+• Exposição de Credenciais (Credential Exposure): Esta é a falha de segurança mais frequente detectada nos repositórios de servidores MCP. Afeta 3.6% dos servidores analisados. Ocorre quando segredos sensíveis, como chaves de API de LLMs (e.g., OpenAI, Gemini), tokens (e.g., GitHub), ou chaves de contas de serviço, são deixados expostos diretamente nos códigos ou arquivos de configuração. Essa exposição representa riscos significativos de perda financeira (devido ao uso não autorizado de APIs) e grandes violações de dados.
+• Falta de Controle de Acesso (Lack of Access Control): A ausência de validações de permissão adequadas é uma vulnerabilidade comum. Ela pode permitir que usuários acessem recursos que deveriam ser restritos ao servidor, levando a possíveis escaladas horizontais de privilégios.
+• Injeção de Comandos (Command Injection): Essa falha ocorre quando o LLM passa a entrada do usuário diretamente para comandos shell ou funções do sistema sem sanitização rigorosa das entradas. Isso pode induzir o Agente a executar comandos maliciosos, resultando em Execução Remota de Código (RCE) e vazamento de dados. Pesquisas mostraram que 43% das implementações testadas continham falhas de injeção de comandos (BETTER STACK, 2025).
+O risco geral do MCP é acentuado pelo fato de o protocolo servir como um intermediário entre os LLMs e recursos críticos, como sistemas de arquivos e bancos de dados. Essa interconexão torna os servidores MCP alvos atraentes para exploração.
+
+5.2. Vulnerabilidades Específicas do MCP
+As vulnerabilidades específicas do MCP exploram a confiança que o Large Language Model (LLM) deposita no contexto e nos metadados fornecidos pelas ferramentas, sendo consideradas de alta severidade.
+• Tool Poisoning (Envenenamento de Ferramentas): Considerada uma vulnerabilidade severa, ocorre quando metadados de uma ferramenta (como sua descrição ou argumentos) contêm instruções maliciosas incorporadas. O LLM, tratando essas descrições como instruções legítimas, é coagido a executar ações não intencionais, como vazar arquivos confidenciais ou executar tarefas não autorizadas. Ferramentas de análise específicas do MCP detectaram tool poisoning em 5.5% dos servidores testados (HASAN et al., 2025).
+• Prompt Injection (Injeção de Prompt): Envolve a inserção de comandos maliciosos em conteúdo externo que o agente consome (como o texto de um documento, um e-mail, uma página web ou uma issue de repositório). Esse ataque força o LLM a desviar-se de suas instruções de segurança originais ou a revelar dados sensíveis. Quando a instrução maliciosa está oculta em conteúdo externo, é frequentemente classificada como injeção indireta de prompt.
+• Escalonamento de Privilégio (Privilege Escalation): Esta vulnerabilidade, classificada como severa por SANKRITYAYAN em seu artigo "" de 2025, ocorre quando uma ferramenta maliciosa pode se passar por outra ou abusar de permissões não restritas. A falha no controle rigoroso dos escopos de acesso permite que um serviço de baixo nível acesse privilégios de administrador ou execute ações destrutivas, como a leitura de secrets ou o pivot para outros namespaces.
+• Contexto Persistente (Persistent Context): Sessões MCP podem armazenar entradas e resultados de ferramentas por mais tempo do que o necessário, resultando em vazamento de informações sensíveis ou contaminação da "memória" do agente ao longo do tempo. Esta vulnerabilidade é classificada entre baixa e moderada.
+• Tool Squatting & Rug Pulling: Um servidor MCP pode ser publicado com descrições de ferramentas inofensivas (e.g., "get random fact of the day") (BETTER STACK, 2025), mas ser maliciosamente atualizado posteriormente com lógica perigosa, após ganhar a confiança dos usuários e ser amplamente adotado. Esta tática de modificação dinâmica de ferramentas é classificada como rug pulling ou sleeper attack.
+
+DURGAPRASAD et al. - 2024 AI_Agents_and_Conversation_System.pdf, a-practical-guide-to-building-agents.pdf
+HE et al., 2024 - Security_of_AI_Agents.pdf
+ANTHROPIC, 2025 - Introducing the Model Context Protocol \ Anthropic
+HASAN et al., 2025 - MCP_first_glance.pdf
+SANKRITYAYAN, 2025 - 6 Security Risks in MCP: Identifying Major Vulnerabilities - Analytics Vidhya
+FULL CYCLE, S.D. - Model Context Protocol: Guia que todo Dev precisa saber
+SANKRITYAYAN, 2025; - 6 Security Risks in MCP: Identifying Major Vulnerabilities - Analytics Vidhya
+GABARDA, 2025 - Model Context Protocol (MCP): Understanding security risks and controls - Red Hat
+BETTER STACK, 2025 - MCP Servers are Security Nightmares...
+INVARIANT LAB, 2025 - Vulnerabilidade crítica usando MCP Server oficial do GitHub!
+HABLER, 2025 - MCP_first_glance.pdf
+BATISTA et al., 2025 - Agentes MCP - Uma abordagem pratica dos processos de segurança de servidores MCP aplicada a serviços Kubernetes.pdf
+KUSAL et al., 2022 - Based_Conversational_Agents_A_Scoping_Review_From_Technologies_to_Future_Directions.pdf
+SOCRADAR, 2025 - Top 10 MCP Server Vulnerabilities - SOCRadar
