@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${fileBasenameNoExtension}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "name": "Launch ListInt",
+            "request": "launch",
+            "mainClass": "ListInt",
+            "projectName": "Network Analyzer",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/src"
+        }
+    ]
+}
