@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class NetworkInterfaceSelector {
 
-    private static final int IPV4_ADDRESS_LENGTH = 4;
+    private static final int IPV4_ADDRESS_LENGTH = 10;
 
     public static void main(String[] args) {
         try {
@@ -58,9 +58,15 @@ public class NetworkInterfaceSelector {
     }
 
     private static void displayInterfaceSummary( int number, PcapNetworkInterface device) {
-        System.out.println("[ " + number + " ]" + device.getName());
-        System.out.println("Description: \n" + device.getDescription());
+        System.out.println("[" + number + "] - " + device.getName());
+        System.out.println("Description: " + device.getDescription());
         System.out.println("IP Addresses: " + device.getAddresses().size());
+
+        for (PcapAddress pcapAddress : device.getAddresses()){
+            System.out.println("- " + pcapAddress.getAddress());
+        };
+
+        System.out.println("\n");
     }
 
     private static int readNumericInput(Scanner input, int minimum, int maximum){
