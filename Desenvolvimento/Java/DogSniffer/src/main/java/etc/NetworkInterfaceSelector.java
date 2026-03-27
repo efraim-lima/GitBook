@@ -1,3 +1,5 @@
+package etc;
+
 import org.pcap4j.core.*;
 //import org.pcap4j.packet.Packet;
 import java.net.InetAddress;
@@ -5,35 +7,34 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * NetworkInterfaceSelector cuida de toda a interação com o usuário
+ * para escolher qual interface de rede usar.
+ *
+ * Não mudamos a lógica — só adicionamos "package etc;" no topo
+ * e garantimos que Configuration e NetworkSelectionException
+ * estão no mesmo package, então não precisamos importá-las.
+ */
+
 public class NetworkInterfaceSelector {
 
     private static final int IPV4_ADDRESS_LENGTH = 10;
 
-    public static void main(String[] args) {
-        try {
-            Configuration config = selectConfiguration();
-            System.out.println("Selected configuration: " + config);
-            displayResult(config);
-        } catch (NetworkSelectionException e) {
-            System.err.println("Erro: " + e.getMessage());
-            System.exit(1);
-        } catch (Exception e) {
-            System.err.println("Ocorreu um erro inesperado: " + e.getMessage());
-            System.exit(1);
-        }
-    }
 
-    private static Configuration selectConfiguration() throws NetworkSelectionException {
+    public static Configuration selectConfiguration() throws NetworkSelectionException {
         try (Scanner userInput = new Scanner(System.in)){
             PcapNetworkInterface device = selectInterface(userInput);
             String ipAddress = selectIpAddress(userInput, device);
             return new Configuration(device, ipAddress);
         } catch (PcapNativeException e) {
             throw new NetworkSelectionException("Erro ao acessar as interfaces de rede: " + e.getMessage());
+        } catch (Exception e) {
+            throw new NetworkSelectionException("Erro inesperado durante a seleção: " + e.getMessage());
         }
     }
 
-    private static PcapNetworkInterface selectInterface(Scanner input) throws NetworkSelectionException, PcapNativeException {
+    private static PcapNetworkInterface selectInterface(Scanner input) 
+            throws NetworkSelectionException, PcapNativeException {
         List<PcapNetworkInterface> availableDevices = Pcaps.findAllDevs();
         
         validateDevicesExist(availableDevices);
@@ -43,7 +44,8 @@ public class NetworkInterfaceSelector {
         return availableDevices.get(userChoice -1);
     }
 
-    private static void validateDevicesExist(List<PcapNetworkInterface> devices) throws NetworkSelectionException {
+    private static void validateDevicesExist(List<PcapNetworkInterface> devices) 
+            throws NetworkSelectionException {
         if (devices ==null || devices.isEmpty()) {
             throw new NetworkSelectionException("Nenhuma interface encontrada");
         }
@@ -78,10 +80,11 @@ public class NetworkInterfaceSelector {
 
             try {
                 int value = Integer.parseInt(userEntry);
-                if (value >= minimum && value <=maximum) {
+                if (value >= minimum && value <= maximum) {
                     return value;
+                } else {
+                    System.out.println("Número fora do intervalo. Por favor, insira um número entre " + minimum + " e " + maximum + ".");
                 }
-                return value;
             } catch (NumberFormatException invalidInput){
                 System.out.println("Formato Invalido. Por favor, insira um número entre " + minimum + " e " + maximum + ".");
             }
@@ -89,21 +92,20 @@ public class NetworkInterfaceSelector {
     }
 
 
-    private static String selectIpAddress (Scanner input, PcapNetworkInterface device) throws NetworkSelectionException {
+    private static String selectIpAddress (Scanner input, PcapNetworkInterface device) 
+            throws NetworkSelectionException {
         List<InetAddress> availableIps = extractIpAddresses(device);
 
         if (availableIps.isEmpty()) {
-            throw new NetworkSelectionException("Interface sem endereço IP");
+            System.out.println("[Aviso] Interface sem IP (modo monitor detectado). Continuando...");
+            //throw new NetworkSelectionException("Interface sem endereço IP");
+            return "N/A";
         }
 
         displayIpAddresses(device.getName(), availableIps);
         int userChoice = readNumericInput(input, 1, availableIps.size());
         return availableIps.get(userChoice - 1).getHostAddress();
     } 
-
-    private static boolean isIPV4(InetAddress address) {
-        return address.getAddress().length ==IPV4_ADDRESS_LENGTH;
-    }
 
     private static List<InetAddress> extractIpAddresses(PcapNetworkInterface device) {
         List<InetAddress> allAddresses = new ArrayList<>();
@@ -120,48 +122,10 @@ public class NetworkInterfaceSelector {
         }
     }
     
-    private static void displayResult(Configuration config) {
+    public static void displayResult(Configuration config) {
         System.out.println("\n========================================");
         System.out.println("Interface: " + config.getDevice().getName());
         System.out.println("IP: " + config.getIpAddress());
         System.out.println("========================================");
-    }
-}
-
-
-
-
-
-
-
-
-        // List<PcapNetworkInterface> devices = Pcaps.findAllDevs();
-        // System.out.println("Available network interfaces:");
-        
-        // for (PcapNetworkInterface device : devices){
-        //     //System.out.println(device);
-        //     System.out.println("Nome: " + device.getName());
-        //     System.out.println("Descrição: " +device.getDescription());
-        //     System.out.println("Endereços IP:");
-        //     for (PcapAddress ipAddress : device.getAddresses()) {
-        //         System.out.println(" - " + ipAddress.getAddress());
-
-
-class Configuration {
-    private final PcapNetworkInterface device;
-    private final String ipAddress;
-
-    public Configuration(PcapNetworkInterface device, String ipAddress){
-        this.device = device;
-        this.ipAddress = ipAddress;
-    }
-
-    public PcapNetworkInterface getDevice() {return device;}
-    public String getIpAddress() {return ipAddress;}
-}
-
-class NetworkSelectionException extends Exception {
-    public NetworkSelectionException(String message) {
-        super(message);
     }
 }

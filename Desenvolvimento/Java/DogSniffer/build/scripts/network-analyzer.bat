@@ -63,10 +63,10 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\network-analyzer-1.0.jar;%APP_HOME%\lib\pcap4j-packetfactory-static-1.8.2.jar;%APP_HOME%\lib\pcap4j-core-1.8.2.jar;%APP_HOME%\lib\slf4j-simple-1.7.36.jar;%APP_HOME%\lib\jna-5.3.1.jar;%APP_HOME%\lib\slf4j-api-1.7.36.jar
+set CLASSPATH=%APP_HOME%\lib\network-analyzer-1.0.jar;%APP_HOME%\lib\pcap4j-packetfactory-static-1.8.2.jar;%APP_HOME%\lib\pcap4j-core-1.8.2.jar;%APP_HOME%\lib\slf4j-simple-1.7.36.jar;%APP_HOME%\lib\jSerialComm-2.10.4.jar;%APP_HOME%\lib\jna-5.3.1.jar;%APP_HOME%\lib\slf4j-api-1.7.36.jar
 
 @rem Execute network-analyzer
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %NETWORK_ANALYZER_OPTS%  -classpath "%CLASSPATH%" ListInt %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %NETWORK_ANALYZER_OPTS%  -classpath "%CLASSPATH%" DogSnifferApp %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell

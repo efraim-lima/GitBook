@@ -1,3 +1,13 @@
+// build.gradle
+
+// gradle dependencies
+// gradle clean
+// gradle classes
+// gradle build
+// gradle run
+
+
+
 apply plugin: 'java'
 apply plugin: 'application'
 
@@ -15,10 +25,11 @@ dependencies {
     implementation 'org.pcap4j:pcap4j-core:1.8.2'
     implementation 'org.pcap4j:pcap4j-packetfactory-static:1.8.2'
     implementation 'org.slf4j:slf4j-simple:1.7.36'
+    implementation 'com.fazecast:jSerialComm:2.10.4'
 }
 
 // Configuração do mainClass (sintaxe antiga)
-mainClassName = 'NetworkInterfaceSelector'
+mainClassName = 'DogSnifferApp'
 
 // Configuração da libpcap
 run {

@@ -1,0 +1,37 @@
+body {
+	color: #0000FF;
+	background-color:#FFFFFF;
+	font-family: arial;
+	font-size: 18pt;
+    background-image: url("./src/img/background.jpg");
+
+    background-repeat   : repeat;
+    background-position : center;
+    background-size     : cover;
+    background-attachment: fixed;
+}
+
+header {
+    color: #000000;
+    font-family: arial;
+    font-size: 18pt;
+}
+
+h1 {
+    color: #000000;
+    font-family: arial;
+    font-size: 36pt;
+}
+
+h2 {
+    color: #000000;
+    font-family: arial;
+    font-size: 24pt;
+}
+
+h3 {
+    color: #000000;
+    font-family: tahoma;
+    font-size: 18;
+}
+
