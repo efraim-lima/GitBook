@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <title> || Ducks Tech </title>
+        <meta name="description" content="Curso da Fatec">
+        <meta name="author" content="Efraim Lima">
+        <style type="text/css">
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                color: #e9e9e9;
+            }
+
+            table.layout {
+                width: 100vw;
+                height: 100vh;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            table.layout td {
+                width: 100%;
+                border: 3px dotted #d6d9de;
+                vertical-align: top;
+                padding: 14px;
+            }
+
+            .header-cell {
+                background-color: #371f79;
+                color: #ffffff;
+                font-size: 24px;
+                font-weight: 700;
+                text-align: center;
+                padding: 18px;
+            }
+
+            .header-cell img {
+                vertical-align: middle;
+                height: 44px;
+                margin-left: 12px;
+            }
+
+            .leftcol {
+                width: 200px;
+                position: relative;
+            }
+
+            .login-box {
+                position: absolute;
+                bottom: 14px;
+                left: 14px;
+                right: 14px;
+                background-color: #1e0f40cc;
+                border: 2px solid #7a15df;
+                border-radius: 10px;
+                padding: 12px;
+            }
+
+            .centercol {
+                width: auto;
+            }
+
+            .rightcol {
+                width: 250px;
+            }
+
+            .center-scroll {
+                height: calc(100vh - 120px);
+                overflow-y: auto;
+                padding-right: 6px;
+                line-height: 1.5;
+            }
+
+            .center-scroll iframe {
+                width: 100%;
+                height: 220px;
+                border: 1px solid #c2c8d2;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+
+            .contact-item {
+                margin-bottom: 14px;
+                font-size: 15px;
+            }
+
+            .contact-item img {
+                width: 52px;
+                height: 52px;
+                border-radius: 50%;
+                margin-right: 8px;
+                vertical-align: middle;
+                object-fit: cover;
+            }
+
+            .contact-item span {
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="layout">
+            <tr><td class="header-cell" colspan="3">
+                <img src="./img/ducks.enc" width="" height="100" alt="Logo Ducks">
+                <span>Ducks Tech</span>
+        </td></tr>
+            <tr>
+                <td class="leftcol" style="background-image: url('./img/background-cadastro.jpg');">
+                <h2 style="color: #000000;">Índice</h2>
+                <div class="left-links">
+                    <a href="./forms/cadastro.html">Cadastro</a>
+                    <a href="./dash/tabela.html">Dashboard</a>
+                </div>
+                <div class="login-box">
+                    <h3>Login</h3>
+                    <form method="POST">
+                        <label>Usuário</label>
+                        <input type="text" name="usuario" style="border-radius: 10px;"><br><br>
+                        <label>Senha</label>
+                        <input type="password" name="senha" style="border-radius: 10px;">
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+                </td>
+            <td class="centercol">
+            <h2>Apresentação</h2>
+            <div class="center-scroll">
+                <p id="sobre"><strong>Bem-vindo à Ducks Tech.</strong> Somos uma empresa voltada para inovação em soluções digitais com foco em acessibilidade, design e experiência do usuário.</p>
+                <p id="servicos">Oferecemos serviços de desenvolvimento web, consultoria em usabilidade e criação de sistemas personalizados. Nosso compromisso é entregar valor em cada projeto.</p>
+                <p id="produtos">Produtos: plataforma de gestão, painel de dados em tempo real, integração de APIs, aplicativos mobile e sistemas de e-commerce.</p>
+                <p id="contato">A linha central está com scroll ativo para navegar pelos conteúdos institucional e informativos.</p>
+            </div></td>
+            <td class="rightcol">
+            <h2>Contatos</h2>
+                <div class="contact-item"><strong>Telefone:</strong> (11) 4002-8922</div>
+                <div class="contact-item"><strong>Email:</strong> contato@duckstech.com.br</div>
+                <div class="contact-item"><strong>Endereço:</strong> Av. Startup, 123, São Paulo - SP</div>
+            <h3>Participantes</h3>
+                <div class="contact-item"><img src="./img/efraim.enc" alt="Efraim"><span>Efraim Lima</span></div>
+                <div class="contact-item"><img src="./img/gabriel.enc" alt="Gabriel"><span>Gabriel Pereira</span></div>
+                <div class="contact-item"><img src="./img/giovanna.enc" alt="Giovanna"><span>Giovanna Pardini</span></div></td></tr>
+        </table>
+    </body>
+</html>

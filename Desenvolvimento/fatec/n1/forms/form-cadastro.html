@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<meta chaset="UTF-8">
+		<style type="text/css">
+			body {    
+				background-image: url("../img/background-cadastro.jpg");
+				size: fixed;
+				font-family: Arial, sans-serif;
+				color: white;
+			}
+
+			input[type="submit"] {
+				background-color: #e5ebe5;
+				color: black;
+				border: none;
+				padding: 10px 20px;
+				font-size: 16px;
+				cursor: pointer;
+				transition: all 0.2s ease;
+				border-radius: 10px;
+				border-style:nome; 
+				border-width: 5px; 
+				border-color: #3354b6; 
+				border-radius: 10px; 
+				padding: 5px;
+			}
+
+			input[type="submit"]:hover {
+				background-color: #7723ff;
+				transform: scale(1.04);
+				border-radius: 1px;
+			}
+
+			input[type="submit"]:active {
+				transform: scale(1);
+			}
+
+			
+			input[type="reset"] {
+				background-color: #e5ebe5;
+				color: black;
+				border: none;
+				padding: 10px 20px;
+				font-size: 16px;
+				cursor: pointer;
+				transition: all 0.2s ease;
+				border-radius: 10px;
+				border-style:nome; 
+				border-width: 5px; 
+				border-color: #3354b6; 
+				border-radius: 10px; 
+				padding: 5px;
+			}
+
+			input[type="reset"]:hover {
+				background-color: #7723ff;
+				transform: scale(1.04);
+				border-radius: 1px;
+			}
+
+			input[type="reset"]:active {
+				transform: scale(1);
+			}
+
+			h2 {
+				color: black;
+			}
+
+			text {
+				color: black;
+			}
+		</style>
+	</head>
+	<body>                                                                                                      
+			<form method="GET">
+			<h2>Dados para cadastro</h2>
+			Nome:   <input type="text" name="contatopadrao" size="30" maxlength="30" 
+			 style="border-style:nome; border-width: 5px; border-color: #ff9267; border-radius: 10px; padding: 5px; width: 100%;"> <br><br>
+			E-mail: <input type="text" name="contatopadrao" size="30" maxlength="30"
+			style="border-style:nome; border-width: 5px; border-color: #ff9267; border-radius: 10px; padding: 5px; width: 100%" > <br><br>
+			Fone:   <input type="text" name="contatopadrao" size="30" maxlength="30" 
+			style="border-style:nome; border-width: 5px; border-color: #ff9267; border-radius: 10px; padding: 5px; width: 100%"> <br><br>
+			Endereço: <input type="text" name="contatopadrao" size="30" maxlength="30" 
+			style="border-style:nome; border-width: 5px; border-color: #ff9267; border-radius: 10px; padding: 5px; width: 100%"> <br><br>
+
+
+			Convidado: <input type="radio" name="contato" value="celular" > <br>
+			Convocado: <input type="radio" name="contato" value="fixo" > <br>
+			Auto Acesso: <input type="radio" name="contato" value="email" > <br> <br>
+
+			Profissão
+			<select name="profissao" style="border-style:nome; border-width: 5px; border-color: #3354b6; border-radius: 10px; padding: 5px;">
+				<option value="select"> Selecione </option>
+				<option value="estudante"> Estudante </option>
+				<option value="analista"> Analista </option>
+				<option value="empresario"> Empresário </option>
+				<option value="desesperado"> Open to Work</option>
+			</select><br>
+
+			<textarea name="observacao" rows="7" cols="100"
+			style="border-style:nome; border-width: 5px; border-color: #ff9267; border-radius: 10px; padding: 5px; width: 100%"></textarea><br>
+
+			<input type="submit" value="Enviar" size="10" style="border-style:nome; border-width: 5px; border-color: #3354b6; border-radius: 10px; padding: 5px;">
+			<input type="reset" value="Resetar" size="10" style="border-style:nome; border-width: 5px; border-color: #3354b6; border-radius: 10px; padding: 5px;">
+
+
+			</form>
+	</body>
+</html>

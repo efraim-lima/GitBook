@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
   <diagram name="Page-1" id="NlkZYWQ_KVcreRUpj3uz">
-    <mxGraphModel dx="3109" dy="1787" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3192" dy="1828" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -128,46 +128,46 @@
           <mxGeometry x="280" y="152" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="JHVIek1bxbyq5jVyk1vU-49" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="-725" y="-910" width="1354" height="921" as="geometry" />
+          <mxGeometry x="-721" y="-668" width="1456.542836041359" height="1018.7788490770902" as="geometry" />
         </mxCell>
         <mxCell id="JHVIek1bxbyq5jVyk1vU-46" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="JHVIek1bxbyq5jVyk1vU-49" vertex="1">
-          <mxGeometry width="470" height="340" as="geometry" />
+          <mxGeometry width="470.3471196454949" height="213.37676438653637" as="geometry" />
         </mxCell>
         <mxCell id="JHVIek1bxbyq5jVyk1vU-26" value="GV" style="rounded=1;whiteSpace=wrap;html=1;" parent="JHVIek1bxbyq5jVyk1vU-49" vertex="1">
-          <mxGeometry x="170" y="70" width="120" height="60" as="geometry" />
+          <mxGeometry x="170.12555391432792" y="43.93051031487513" width="120.08862629246678" height="37.65472312703583" as="geometry" />
         </mxCell>
         <mxCell id="JHVIek1bxbyq5jVyk1vU-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="JHVIek1bxbyq5jVyk1vU-49" source="JHVIek1bxbyq5jVyk1vU-27" target="JHVIek1bxbyq5jVyk1vU-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="JHVIek1bxbyq5jVyk1vU-27" value="SaaS" style="rounded=1;whiteSpace=wrap;html=1;" parent="JHVIek1bxbyq5jVyk1vU-49" vertex="1">
-          <mxGeometry x="170" y="140" width="120" height="60" as="geometry" />
+          <mxGeometry x="170.12555391432792" y="87.86102062975026" width="120.08862629246678" height="37.65472312703583" as="geometry" />
         </mxCell>
         <mxCell id="JHVIek1bxbyq5jVyk1vU-28" value="Email Protection" style="rounded=1;whiteSpace=wrap;html=1;" parent="JHVIek1bxbyq5jVyk1vU-49" vertex="1">
-          <mxGeometry x="170" y="210" width="120" height="60" as="geometry" />
+          <mxGeometry x="170.12555391432792" y="131.7915309446254" width="120.08862629246678" height="37.65472312703583" as="geometry" />
         </mxCell>
         <mxCell id="JHVIek1bxbyq5jVyk1vU-30" value="Recon" style="rounded=1;whiteSpace=wrap;html=1;" parent="JHVIek1bxbyq5jVyk1vU-49" vertex="1">
-          <mxGeometry x="40" y="70" width="120" height="60" as="geometry" />
+          <mxGeometry x="40.02954209748893" y="43.93051031487513" width="120.08862629246678" height="37.65472312703583" as="geometry" />
         </mxCell>
         <mxCell id="JHVIek1bxbyq5jVyk1vU-32" value="Gerenciamento de Patches" style="rounded=1;whiteSpace=wrap;html=1;" parent="JHVIek1bxbyq5jVyk1vU-49" vertex="1">
-          <mxGeometry x="300" y="70" width="120" height="60" as="geometry" />
+          <mxGeometry x="300.22156573116695" y="43.93051031487513" width="120.08862629246678" height="37.65472312703583" as="geometry" />
         </mxCell>
         <mxCell id="Jj2LBuBIAdHEPYUArqaq-6" value="" style="group" parent="JHVIek1bxbyq5jVyk1vU-49" vertex="1" connectable="0">
-          <mxGeometry x="625" y="354" width="729" height="567" as="geometry" />
+          <mxGeometry x="625.4615952732645" y="222.1628664495114" width="831.0812407680945" height="796.6159826275788" as="geometry" />
         </mxCell>
         <mxCell id="Jj2LBuBIAdHEPYUArqaq-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="Jj2LBuBIAdHEPYUArqaq-6" vertex="1">
-          <mxGeometry x="-6" y="8.06" width="735" height="558.94" as="geometry" />
+          <mxGeometry x="-6.004431314623338" y="5.05828447339848" width="735.542836041359" height="350.7788490770902" as="geometry" />
         </mxCell>
         <mxCell id="Jj2LBuBIAdHEPYUArqaq-2" value="Network Protection" style="rounded=0;whiteSpace=wrap;html=1;" parent="Jj2LBuBIAdHEPYUArqaq-6" vertex="1">
-          <mxGeometry x="6.079338842975207" y="8.063713290194125" width="454.93719008264463" height="80.63713290194124" as="geometry" />
+          <mxGeometry x="6.083828753494391" y="5.060614855300982" width="455.2731850531636" height="50.60614855300981" as="geometry" />
         </mxCell>
         <mxCell id="omJtJDtHG3TjwU-hScu0-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;NG Firewall&lt;/h1&gt;&lt;p&gt;Implementar um NG Firewall para bloquear acesso de sites específicos, protocolos e portas também. Sendo esta uma primeira barreira&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="Jj2LBuBIAdHEPYUArqaq-6" vertex="1">
-          <mxGeometry x="15.198347107438018" y="103.48432055749127" width="331.8305785123967" height="164.25783972125433" as="geometry" />
+          <mxGeometry x="15.209571883735979" y="64.94455730969594" width="332.07565279490217" height="103.08472460248099" as="geometry" />
         </mxCell>
         <mxCell id="omJtJDtHG3TjwU-hScu0-4" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;p style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;Para Proteção de Intrusão&lt;/p&gt;&lt;p style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="Jj2LBuBIAdHEPYUArqaq-6" vertex="1">
-          <mxGeometry x="15.198347107438018" y="228.47187655550022" width="174.78099173553719" height="164.25783972125433" as="geometry" />
+          <mxGeometry x="15.209571883735979" y="143.38408756686115" width="174.91007666296375" height="103.08472460248099" as="geometry" />
         </mxCell>
-        <mxCell id="ltrvb-yTxWj_hHEfyjnM-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;WAF&lt;/h1&gt;&lt;p&gt;Garantir a segurança dos serviços presentes&amp;nbsp; no ambiente, garantindo resistencia a ataques sofisticados&lt;/p&gt;&lt;p&gt;Importante:&lt;/p&gt;&lt;p&gt;- filtragem de trafego HTTP;HTTPS&lt;br&gt;- bloqueio de ameças OWASP TOP 10&lt;br&gt;- gerenciamento de presença de BOTs;&lt;br&gt;- mitigação de DDoS&lt;br&gt;- segurança de APIs&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Analise COmportamental com IA&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="Jj2LBuBIAdHEPYUArqaq-6">
-          <mxGeometry x="357" y="98.10851169736188" width="331.8305785123967" height="164.25783972125433" as="geometry" />
+        <mxCell id="ltrvb-yTxWj_hHEfyjnM-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;WAF&lt;/h1&gt;&lt;p&gt;Garantir a segurança dos serviços presentes&amp;nbsp; no ambiente, garantindo resistencia a ataques sofisticados&lt;/p&gt;&lt;p&gt;Importante:&lt;/p&gt;&lt;p&gt;- filtragem de trafego HTTP;HTTPS&lt;br&gt;- bloqueio de ameças OWASP TOP 10&lt;br&gt;- gerenciamento de presença de BOTs;&lt;br&gt;- mitigação de DDoS&lt;br&gt;- segurança de APIs&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Analise COmportamental com IA&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="Jj2LBuBIAdHEPYUArqaq-6" vertex="1">
+          <mxGeometry x="357.26366322008863" y="61.57174809989143" width="332.0750738552437" height="235.27298588490768" as="geometry" />
         </mxCell>
         <mxCell id="JHVIek1bxbyq5jVyk1vU-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="JHVIek1bxbyq5jVyk1vU-43" target="JHVIek1bxbyq5jVyk1vU-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -187,7 +187,7 @@
         <mxCell id="Jj2LBuBIAdHEPYUArqaq-9" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;NG Firewall&lt;/h1&gt;&lt;p&gt;Implementar um NG Firewall para bloquear acessos dos usuários indevidos no ambiente&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="Jj2LBuBIAdHEPYUArqaq-5" vertex="1">
           <mxGeometry x="269.5" y="76.78" width="327.5" height="122.22" as="geometry" />
         </mxCell>
-        <mxCell id="Jj2LBuBIAdHEPYUArqaq-10" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Roteador de Borda&lt;/h1&gt;&lt;p&gt;Implementar um roteador de borda para filtrar pacotes maliciosos &lt;br&gt;&lt;br&gt;- Inspeção de pacotes (SPI)&lt;br&gt;- criptografia de comunicação (VPN + MFA) para autenticação na caixa apenas,&lt;br&gt;-&amp;nbsp; controle de acesso (WPA3 e RBAC)&amp;nbsp;&amp;nbsp;(Jogar pra autenticação local - Data Domain) -&amp;gt; consome recursos do roteador&lt;br&gt;- mensurar tempo de reboot, de patches update&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="Jj2LBuBIAdHEPYUArqaq-5" vertex="1">
+        <mxCell id="Jj2LBuBIAdHEPYUArqaq-10" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Roteador de Borda&lt;/h1&gt;&lt;p&gt;Implementar um roteador de borda para filtrar pacotes maliciosos &lt;br&gt;&lt;br&gt;- Inspeção de pacotes (SPI)&lt;br&gt;- criptografia de comunicação (VPN + MFA) para autenticação na caixa apenas,&lt;br&gt;-&amp;nbsp; controle de acesso (WPA3)&lt;br&gt;- mensurar tempo de reboot, de patches update&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="Jj2LBuBIAdHEPYUArqaq-5" vertex="1">
           <mxGeometry x="6.5" y="76.78" width="234.5" height="269.22" as="geometry" />
         </mxCell>
         <mxCell id="omJtJDtHG3TjwU-hScu0-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;p style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;Para Proteção de Autenticação&lt;/p&gt;&lt;p style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;- Para proteção de acesso&lt;br&gt;- Listas de ACL&lt;br&gt;- LDAP/RADIUS (Jogar pra autenticação local - Data Domain) -&amp;gt; consome recursos do roteador&lt;br&gt;- VPN + MFA&lt;br&gt;- 802.1X&lt;br&gt;- DPI (inspeção de pacotes) -&amp;gt; dinamica a partir do CTI&lt;br&gt;- IPS&lt;br&gt;- Control application&lt;/p&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="Jj2LBuBIAdHEPYUArqaq-5" vertex="1">
@@ -201,6 +201,66 @@
         </mxCell>
         <mxCell id="Jj2LBuBIAdHEPYUArqaq-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.513;entryY=-0.014;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Jj2LBuBIAdHEPYUArqaq-3" target="Jj2LBuBIAdHEPYUArqaq-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-101.54" y="-10" width="1325.54" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Jj2LBuBIAdHEPYUArqaq-4" target="qBCxrTD1t-5IboGwivxb-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-9" value="Data Domain" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-93.00457597324112" y="0.0034813048123396584" width="455.2731850531636" height="50.60614855300981" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-93" y="60" width="457" height="283" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-11" value="VMs" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-86" y="67" width="159.27" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-12" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-86" y="455" width="457" height="249" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-13" value="Databases" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-79" y="462" width="159.27" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="391" y="60" width="457" height="249" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-15" value="Enterpreise Components" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="398" y="67" width="159.27" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="417" y="455" width="457" height="249" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-17" value="Clients" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="424" y="462" width="159.27" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-18" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Kubernetes -&amp;gt; Docker&lt;/h1&gt;&lt;p&gt;Implementar virtualização para serviços específicos, aplicações de uso interno/externo, organização dos ambientes de desenvolvimento e de produção.&lt;br&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-74" y="105" width="332.07565279490217" height="103.08472460248099" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-19" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;p style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;Proteção:&lt;br&gt;- servidores guest devidamente hardenizados&amp;nbsp;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- portas abertas estritamente necessárias,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- serviços rodando apenas sendo os necessários,&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-74" y="183.44" width="208" height="147.56" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-20" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;p style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;não permitir root over ssh&lt;br&gt;- acesso remoto apenas criptografado e com par de chaves, &lt;br&gt;- containers em redes apartadas&lt;br&gt;- configuração de redundância nos Pods para balanceamento de carga&lt;/span&gt;&lt;/p&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="134" y="193" width="208" height="144.56" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-22" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;p style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;- RBAC -&amp;gt; com foco em permitir autenticação dos usuários ao sistema,&lt;br&gt;- VPN -&amp;gt; para tunelar o tráfego externo e garantir&amp;nbsp;&lt;/p&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="403.47" y="198.44" width="208" height="144.56" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-23" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Servidores&lt;/h1&gt;&lt;p&gt;Servidores on premise conectados à rede, servindo de redundância e também para disponibilizar serviços específicos.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="403.47" y="105" width="332.07565279490217" height="103.08472460248099" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-24" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;p style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;AAA&amp;nbsp; -&amp;gt; para garantir a integridade do ambiente, assim como disponibilizar recursos de auditoria&lt;/p&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="630" y="198.44" width="208" height="95.56" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-25" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;p style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;- RBAC -&amp;gt; com foco em permitir autenticação dos usuários ao sistema,&lt;br&gt;- VPN -&amp;gt; para tunelar o tráfego externo e garantir&amp;nbsp;&lt;/p&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-63.52999999999997" y="600.44" width="208" height="144.56" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-26" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Servidores&lt;/h1&gt;&lt;p&gt;Servidores on premise conectados à rede, servindo de redundância e também para disponibilizar serviços específicos.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-63.52999999999997" y="507" width="332.07565279490217" height="103.08472460248099" as="geometry" />
+        </mxCell>
+        <mxCell id="qBCxrTD1t-5IboGwivxb-27" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;p style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;AAA&amp;nbsp; -&amp;gt; para garantir a integridade do ambiente, assim como disponibilizar recursos de auditoria&lt;/p&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="163" y="600.44" width="208" height="95.56" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

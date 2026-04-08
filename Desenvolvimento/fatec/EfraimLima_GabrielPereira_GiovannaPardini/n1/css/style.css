@@ -1,0 +1,176 @@
+body {
+	color: #0076ca;
+	background-color:#aaaaaa;
+	font-family: arial;
+	font-size: 18pt;
+    background-image: url("../img/background-home.jpg");
+
+    background-repeat   : repeat;
+    background-position : center;
+    background-size     : cover;
+    background-attachment: fixed;
+    margin: 0;
+
+    padding: 0;
+    display: flex;           /* Torna o body um container flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    min-height: 100vh;       /* Garante que o body ocupe toda a altura da tela */
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+form {
+            background-color: #1a1a1a;
+            padding: 30px;
+            border: 2px solid #FF0000;
+            border-radius: 15px;
+            color: #FFFFFF;
+            width: 300px; }
+
+                   table.layout {
+                width: 100vw;
+                height: 100vh;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            table.layout td {
+                width: 100%;
+                border: 3px dotted #d6d9de;
+                vertical-align: top;
+                padding: 14px;
+            }
+
+            .header-cell {
+                background-color: #371f79;
+                color: #ffffff;
+                font-size: 24px;
+                font-weight: 700;
+                text-align: center;
+                padding: 18px;
+            }
+
+            .header-cell img {
+                vertical-align: middle;
+                height: 44px;
+                margin-left: 12px;
+            }
+
+            .leftcol {
+                width: 200px;
+            }
+
+            .centercol {
+                width: auto;
+            }
+
+            .rightcol {
+                width: 250px;
+            }
+
+            .left-links a {
+                display: block;
+                margin: 4px 0;
+                color: #000000;
+                border-radius: 6px;
+                border-color: #7a15df;
+                border-width: 2px;
+                transition: background-color 0.2s ease, transform 0.2s ease;
+            }
+
+            .left-links a:hover {
+                background-color: #d7ac2d;
+                transform: translateX(2px);
+            }
+
+            .left-links a:visited {
+                color: #03ff03;
+                border-color: #00f600;
+                font-weight: 900;
+                text-decoration: none;
+            }
+
+            .center-scroll {
+                height: calc(100vh - 120px);
+                overflow-y: auto;
+                padding-right: 6px;
+            }
+
+            table.clientes {
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 14px;
+                color: #1a1a1a;
+            }
+
+            table.clientes thead tr {
+                background-color: #371f79;
+                color: #ffffff;
+            }
+
+            table.clientes th {
+                padding: 10px 12px;
+                text-align: left;
+                border: 1px solid #5a3aad;
+                white-space: nowrap;
+            }
+
+            table.clientes tbody tr {
+                background-color: #f4f0ff;
+            }
+
+            table.clientes tbody tr:nth-child(even) {
+                background-color: #e2d9f3;
+            }
+
+            table.clientes tbody tr:hover {
+                background-color: #d7ac2d;
+            }
+
+            table.clientes td {
+                padding: 9px 12px;
+                border: 1px solid #c5b8e8;
+                vertical-align: top;
+            }
+
+            .contact-item {
+                margin-bottom: 14px;
+                font-size: 15px;
+            }
+
+            .contact-item img {
+                width: 52px;
+                height: 52px;
+                border-radius: 50%;
+                margin-right: 8px;
+                vertical-align: middle;
+                object-fit: cover;
+            }
+
+            .contact-item span {
+                vertical-align: middle;
+            }
+
+
+            .left-links a {
+                display: block;
+                margin: 4px 0;
+                color: #000000;
+                border-radius: 6px;
+                border-color: #9430f8;
+                border-width: 2px;
+                transition: background-color 0.2s ease, transform 0.2s ease;
+            }
+
+            .left-links a:hover {
+                background-color: #d7ac2d;
+                transform: translateX(2px);
+            }
+
+            .left-links a:visited {
+                color: #0d1259;
+                border-color: #00f600;
+                font-weight: 900;
+                text-decoration: none;
+            }
