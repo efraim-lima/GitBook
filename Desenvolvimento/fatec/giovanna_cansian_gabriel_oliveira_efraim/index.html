@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="Me site da aula1">
+	<meta name="robots" content="robots.txt">
+	<meta name="author" content="Efraim Lima, Gabriel Pereira, Giovanna Cansian">
+    <link rel="stylesheet" href="style.css">
+    <title>Duck Tech - Menu</title>
+</head>
+<body>
+	<!--  
+	add iframe para parte de home e login
+	colocar css interno no header, sobre, 
+	estilo para tabela com background diferente,
+	css mais elaborado para as tabelas
+	css mais elaborado para os buttons de enviar
+	-->
+    <style type="text/css">
+        body {
+            background-image: url("duck_bg_menu.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        table {
+            color: #FAFAFA;
+        }
+        a:link {
+            color: #FDB40F;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #5d0000;
+            text-decoration: none;
+        }
+        a:active {
+            color: #948B8A;
+            font-weight: bold;
+        }
+        a:hover {
+            background-color: #40344C;
+            text-decoration: none;
+        }
+    </style>
+    <div class="superior">
+        <iframe src="header.html" frameborder="0" width="100%" height="290" scrolling="no" align="left" name="cabecalho"></iframe>
+        <table width="100%" border="1" height="600">
+            <tr>
+                <td width="200" valign="top">
+                    <ul>
+                        <br>
+                        <li><a href="home.html" target="conteudo">Home</a></li>
+                        <li><a href="sobre.html" target="conteudo">Sobre</a></li>
+                        <li><a href="lista.html" target="conteudo">Listagem</a></li>
+                        <li><a href="cadastro.html" target="conteudo">Cadastro</a></li>
+                    </ul>
+                    <hr>
+                    <h3>Login</h3>
+                    Usuário:<br>
+                    <input type="text" name="usuario" size="15"><br><br>
+                    Senha:<br>
+                    <input type="password" name="senha" size="15"><br><br>
+                    <input type="button" value="LOGIN">
+                </td>
+                <td valign="top">
+                    <iframe name="conteudo" src="home.html" width="100%" height="100%" frameborder="0"></iframe>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

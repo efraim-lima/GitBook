@@ -1,0 +1,21 @@
+body {
+    font-family: 'Roboto', 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a:link {
+    color: #FDB40F;
+    text-decoration: none;
+}
+a:visited {
+    color: #FAFAFA;
+    text-decoration: none;
+}
+a:active {
+    color: #948B8A;
+    font-weight: bold;
+}
+a:hover {
+    background-color: #948B8A;
+    text-decoration: none;
+}

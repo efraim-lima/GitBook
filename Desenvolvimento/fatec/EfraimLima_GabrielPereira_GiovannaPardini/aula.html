@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Duck Tech</title>
+</head>
+<body>
+    <style type="text/css">
+        input {
+            border-style: solid;
+            border-color: #FDB40F;
+            border-width: 1px;
+            background-color: #FAFAFA;
+        }
+        textarea {
+            border-style: dotted;
+            border-color: #40344C;
+            border-width: 2px;
+            background-color: #948B8A;
+        }
+    </style>
+    <form method="GET">
+        Nome do Pato: <input type="text" name="nome" size="9" maxlength="10"><br>
+        Contato Preferido: <br> Celular: <input type="radio" name="contato" value="celular" checked> <br>
+        Fixo: <input type="radio" name="contato" value="fixo"><br>
+        Observações: <br> <textarea name="obs" rows="5" cols="50"></textarea><br>
+        <input type="submit" value="envia"> <input type="rest" value="reset">
+    </form>
+</body>
+</html>
