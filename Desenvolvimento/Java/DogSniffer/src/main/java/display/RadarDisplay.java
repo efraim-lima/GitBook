@@ -16,7 +16,8 @@ public class RadarDisplay implements Runnable {
 
     private static final int REFRESH_MS  = 500;
     private static final int GRAPH_WIDTH = 50;
-    private static final int RADAR_SIZE  = 9;
+    private static final int RADAR_SIZE  = 19;
+    private static final double RADAR_MAX_DISTANCE_METERS = 30.0;
 
     private static final String RESET   = "\033[0m";
     private static final String RED     = "\033[31m";
@@ -101,9 +102,10 @@ public class RadarDisplay implements Runnable {
     }
 
     private void printRadarWithColumns(List<CacheEntry> entries) {
+        SensorData currentSensor = sensorSupplier.get();
         List<String> left = buildLeftPanel(entries);
-        List<String> center = buildRadarLines(entries);
-        List<String> right = buildRightPanel(entries);
+        List<String> center = buildRadarLines(entries, currentSensor);
+        List<String> right = buildRightPanel(entries, currentSensor);
 
         int leftWidth = 46;
         int maxLines = Math.max(center.size(), Math.max(left.size(), right.size()));
@@ -135,10 +137,10 @@ public class RadarDisplay implements Runnable {
         return lines;
     }
 
-    private List<String> buildRightPanel(List<CacheEntry> entries) {
+    private List<String> buildRightPanel(List<CacheEntry> entries, SensorData currentSensor) {
         List<String> lines = new ArrayList<>();
-        lines.add(BOLD + "  RSSI   Dist    Protocolo      Intensidade" + RESET);
-        lines.add("  " + "─".repeat(45));
+        lines.add(BOLD + "  RSSI   Dist    Dir    Protocolo      Intensidade" + RESET);
+        lines.add("  " + "─".repeat(53));
 
         for (int i = 0; i < entries.size() && i < 8; i++) {
             CacheEntry e = entries.get(i);
@@ -147,14 +149,18 @@ public class RadarDisplay implements Runnable {
             for (int j = 0; j < bars; j++) intensity += "▮";
             for (int j = bars; j < 12; j++) intensity += " ";
 
-            lines.add(String.format("  %4.0f dBm %5.1fm  %-10s %s",
-                e.getSmoothedRssi(), e.getEstimatedDistanceMeters(),
+            double dir = currentSensor.isValid()
+                ? normalizeAngle360(e.getAngleZ() - currentSensor.getAngleZ())
+                : normalizeAngle360(e.getAngleZ());
+
+            lines.add(String.format("  %4.0f dBm %5.1fm %5.0f°  %-10s %s",
+                e.getSmoothedRssi(), e.getEstimatedDistanceMeters(), dir,
                 trunc(nvl(e.getProtocol()), 10), intensity));
         }
         return lines;
     }
 
-    private List<String> buildRadarLines(List<CacheEntry> entries) {
+    private List<String> buildRadarLines(List<CacheEntry> entries, SensorData currentSensor) {
         int center = RADAR_SIZE / 2;
         int radius = center - 1;
 
@@ -164,9 +170,15 @@ public class RadarDisplay implements Runnable {
 
         for (int i = 0; i < entries.size() && i < NET_COLORS.length; i++) {
             CacheEntry e = entries.get(i);
-            double rad = Math.toRadians(e.getAngleZ());
-            int col = center + (int) Math.round(Math.sin(rad) * radius);
-            int row = center - (int) Math.round(Math.cos(rad) * radius);
+            double relativeAngle = currentSensor.isValid()
+                ? normalizeAngle360(e.getAngleZ() - currentSensor.getAngleZ())
+                : normalizeAngle360(e.getAngleZ());
+            double rad = Math.toRadians(relativeAngle);
+            double distanceRatio = clamp(e.getEstimatedDistanceMeters() / RADAR_MAX_DISTANCE_METERS, 0.1, 1.0);
+            int pointRadius = Math.max(1, (int) Math.round(distanceRatio * radius));
+
+            int col = center + (int) Math.round(Math.sin(rad) * pointRadius);
+            int row = center - (int) Math.round(Math.cos(rad) * pointRadius);
             col = Math.max(0, Math.min(RADAR_SIZE - 1, col));
             row = Math.max(0, Math.min(RADAR_SIZE - 1, row));
             grid[row][col] = (char) ('A' + i);
@@ -174,8 +186,8 @@ public class RadarDisplay implements Runnable {
         }
 
         List<String> lines = new ArrayList<>();
-        lines.add("  " + BOLD + "RADAR" + RESET + "       N");
-        lines.add("               ↑");
+        lines.add("  " + BOLD + "RADAR" + RESET + " (N relativo ao sensor)       N");
+        lines.add("                           ↑");
 
         for (int r = 0; r < RADAR_SIZE; r++) {
             StringBuilder row = new StringBuilder();
@@ -194,10 +206,19 @@ public class RadarDisplay implements Runnable {
             lines.add(row.toString());
         }
 
-        lines.add("               ↓");
-        lines.add("               S");
+        lines.add("                           ↓");
+        lines.add("                           S");
         lines.add("");
         return lines;
+    }
+
+    private double normalizeAngle360(double angle) {
+        double normalized = angle % 360.0;
+        return normalized < 0 ? normalized + 360.0 : normalized;
+    }
+
+    private double clamp(double value, double min, double max) {
+        return Math.max(min, Math.min(max, value));
     }
 
     private void printNetworkTable(List<CacheEntry> entries) {

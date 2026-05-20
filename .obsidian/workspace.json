@@ -4,48 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "358e2efb96231033",
-        "type": "tabs",
-        "dimension": 45.69471624266145,
-        "children": [
-          {
-            "id": "8df5badb1f8ea512",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "readme/__init__.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "__init__"
-            }
-          },
-          {
-            "id": "793a605c108add18",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Untitled 1.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Untitled 1"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
         "id": "5d0d52247bf9c935",
         "type": "tabs",
-        "dimension": 54.30528375733855,
         "children": [
           {
             "id": "57cd248ccb3574b4",
@@ -53,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readme/fatec/__init__.md",
+                "file": "fatec/2026/1-2026/English/Think 3 problemas at Fatec.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "__init__"
+              "title": "Think 3 problemas at Fatec"
             }
           }
         ]
@@ -80,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -133,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 1.canvas",
+                "file": "fatec/2026/1-2026/English/Think 3 problemas at Fatec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Untitled 1"
+              "title": "Backlinks for Think 3 problemas at Fatec"
             }
           },
           {
@@ -181,26 +142,106 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "f7c80f4d3ed76ef7",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "fatec/2026/1-2026/English/Think 3 problemas at Fatec.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
+          },
+          {
+            "id": "e290590216ec3683",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "087039d6c936fcf0",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 6
+      },
+      {
+        "id": "01eddf255614500f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8df5badb1f8ea512",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 570.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "markdown-importer:Open format converter": false,
+      "publish:Publish changes...": false,
+      "zk-prefixer:Create new unique note": false,
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "793a605c108add18",
+  "active": "57cd248ccb3574b4",
   "lastOpenFiles": [
+    "Work/To Do/Under/Apresentações/Melhorias/Melhorias nas Apresentações.md",
+    "Desenvolvimento/fatec/aula13.6.php",
+    "Desenvolvimento/fatec/aula13.5.php",
+    "Desenvolvimento/fatec/aula13.4.php",
+    "Desenvolvimento/fatec/index.php",
+    "Desenvolvimento/fatec/aula13.3.php",
+    "Desenvolvimento/fatec/aula13.3.html",
+    "2026-05-13.md",
+    "Untitled 2.canvas",
+    "cyberetico/temas/roteiros/malware-analysis.md",
+    "fatec/2026/1-2026/English/Think 3 problemas at Fatec.md",
+    "fatec/Pesquisa/TCC/Testes do Gateway do AgentK.md",
+    "fatec/2026/1-2026/English",
+    "fatec/2026/1-2026/Estudos Avançados/Diagrama Agentk.drawio.png",
+    "fatec/2026/1-2026/Estudos Avançados/Diagrama Agentk.drawio",
+    "Work/To Do/Under/Apresentações/Melhorias/Adição de Slide.md",
+    "readme/__init__.md",
+    "Work/To Do/Under/Apresentações/CLIENTES/IBEMA/Solicitações/Solicitações Ultima Call de Check Point GC.md",
+    "Work/To Do/Under/Apresentações/CLIENTES/IBEMA/Solicitações",
+    "Work/To Do/Under/Apresentações/CLIENTES/IBEMA",
+    "Work/README.md",
     "Untitled 1.canvas",
     "2024-12-30.md",
     "Untitled.canvas",
@@ -213,27 +254,11 @@
     "readme/fatec/Pesquisa/Cronograma/__init__.md",
     "readme/fatec/Pesquisa/Ferramentas/__init__.md",
     "readme/fatec/Pesquisa/Pesquisa/__init__.md",
-    "readme/fatec/Pesquisa/Cronograma",
-    "readme/fatec/Pesquisa/Rascunhos",
-    "readme/fatec/Pesquisa/Trabalho",
-    "readme/fatec/Pesquisa/Ferramentas",
-    "readme/fatec/Pesquisa/Pesquisa",
     "Untitled.md",
-    "readme/__init__.md",
-    "readme/fatec/Pesquisa",
     "readme/fatec/2024/2-2024/__init__.md",
     "readme/cyberetico/__init__.md",
     "readme/cyberetico/temas/__init__.md",
     "readme/cyberetico/temas/roteiros/__init__.md",
-    "__init__.md",
-    "readme/tools/intel/cyber-kill-chain.md",
-    "SUMMARY.md",
-    "readme/tools/learn/__init__.md",
-    "readme/tools/intel/__init__.md",
-    "readme/tools/__init__.md",
-    "readme/tools/Untitled.md",
-    "readme/soc/soc-level-1-or-analista-de-seguranca-jr/__init__.md",
-    "readme/soc/soc-level-1-or-analista-de-seguranca-jr/cyber-kill-chain.md",
-    "Untitled 1"
+    "__init__.md"
   ]
 }

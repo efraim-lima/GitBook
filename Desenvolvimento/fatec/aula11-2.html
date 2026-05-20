@@ -1,0 +1,39 @@
+<html>
+	<head>
+	<meta chaset="UTF-8">
+	<meta name="description" content="Me site da aula1">
+	<meta name="robots" content="robots.txt">
+	<meta name="author" content="Efraim Lima">
+		<body>                  
+			<script type="text/javascript">
+			
+				alunos = [];
+				
+				function incluiAluno(nome, posicao) {
+					alunos[posicao] = nome;
+				}
+				
+				function encontraAluno(buscar) {
+					for( a = 0; a < 3; a++){
+						if(buscar==alunos[a]){
+							alert("Aluno "+buscar+" esta na posicao: "+(a+1));
+						}
+					}
+				}
+				
+				var indice;
+				var nomeAluno;
+				
+				for(indice = 0; indice < 3; indice++){
+					nomeAluno = prompt("Informe o dome do Aluno");
+					incluiAluno(nomeAluno, indice);
+				}
+				
+				var encontrar;
+				encontrar = prompt("Informe o nome a ser buscado");
+				encontraAluno(encontrar);
+				
+			</script>
+		</body>
+	</head>
+</html>

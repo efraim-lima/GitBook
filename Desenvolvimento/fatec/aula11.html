@@ -1,0 +1,30 @@
+<html>
+	<head>
+	<meta chaset="UTF-8">
+	<meta name="description" content="Me site da aula1">
+	<meta name="robots" content="robots.txt">
+	<meta name="author" content="Efraim Lima">
+		<body>                  
+			<script type="text/javascript">
+				function ConvertReal(reais, cotacaoHoje){
+					//var cotacaoHoje = 5.30;
+					dolares=reais/cotacaoHoje;
+					return dolares;
+				}
+				
+				var reais, reaisb, cotacaoHoje, cotacaoHojeB;
+				var reaisb=0.00;
+				
+				reais =  prompt("Informe o valor em reais(R$)", "0.00");
+				reaisb = parseFloat(reais);
+				//alert("Total em doles: " + ConvertReal(reaisb));
+					
+				cotacaoHoje =  prompt("Informe a cotacao do dolar de hoje: ", '0.00');
+				cotacaoHojeB = parseFloat(cotacaoHoje);
+				alert("Total em doles: " + ConvertReal(reaisb, cotacaoHojeB));
+				
+				
+			</script>
+		</body>
+	</head>
+</html>
