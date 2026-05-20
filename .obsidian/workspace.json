@@ -13,12 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fatec/2026/1-2026/English/Think 3 problemas at Fatec.md",
+                "file": "fatec/Pesquisa/Cronograma/temas-e-tempo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Think 3 problemas at Fatec"
+              "title": "temas-e-tempo"
+            }
+          }
+        ]
+      },
+      {
+        "id": "234d58443c04b44d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1fe641e395f56eec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fatec/Pesquisa/Cronograma/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -94,7 +114,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fatec/2026/1-2026/English/Think 3 problemas at Fatec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +123,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Think 3 problemas at Fatec"
+              "title": "Backlinks"
             }
           },
           {
@@ -148,9 +167,7 @@
             "type": "leaf",
             "state": {
               "type": "footnotes",
-              "state": {
-                "file": "fatec/2026/1-2026/English/Think 3 problemas at Fatec.md"
-              },
+              "state": {},
               "icon": "lucide-file-signature",
               "title": "Footnotes"
             }
@@ -200,7 +217,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 570.5
+    "width": 434.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,8 +236,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "57cd248ccb3574b4",
+  "active": "8df5badb1f8ea512",
   "lastOpenFiles": [
+    "fatec/Pesquisa/Cronograma/temas-e-tempo.md",
+    "fatec/Pesquisa/Cronograma/README.md",
+    "fatec/2026/1-2026/Estudos Avançados/Security Architecture.png",
+    "fatec/2026/1-2026/Estudos Avançados/Diagrama de Criação.png",
+    "fatec/2026/1-2026/Estudos Avançados/Diagrama Agentk.drawio.png",
+    "fatec/2026/1-2026/Estudos Avançados/Arquitetura de Segurança.pdf",
+    "fatec/2026/1-2026/English/Think 3 problemas at Fatec.md",
     "Work/To Do/Under/Apresentações/Melhorias/Melhorias nas Apresentações.md",
     "Desenvolvimento/fatec/aula13.6.php",
     "Desenvolvimento/fatec/aula13.5.php",
@@ -231,16 +255,13 @@
     "2026-05-13.md",
     "Untitled 2.canvas",
     "cyberetico/temas/roteiros/malware-analysis.md",
-    "fatec/2026/1-2026/English/Think 3 problemas at Fatec.md",
     "fatec/Pesquisa/TCC/Testes do Gateway do AgentK.md",
     "fatec/2026/1-2026/English",
-    "fatec/2026/1-2026/Estudos Avançados/Diagrama Agentk.drawio.png",
     "fatec/2026/1-2026/Estudos Avançados/Diagrama Agentk.drawio",
     "Work/To Do/Under/Apresentações/Melhorias/Adição de Slide.md",
     "readme/__init__.md",
     "Work/To Do/Under/Apresentações/CLIENTES/IBEMA/Solicitações/Solicitações Ultima Call de Check Point GC.md",
     "Work/To Do/Under/Apresentações/CLIENTES/IBEMA/Solicitações",
-    "Work/To Do/Under/Apresentações/CLIENTES/IBEMA",
     "Work/README.md",
     "Untitled 1.canvas",
     "2024-12-30.md",
@@ -258,7 +279,6 @@
     "readme/fatec/2024/2-2024/__init__.md",
     "readme/cyberetico/__init__.md",
     "readme/cyberetico/temas/__init__.md",
-    "readme/cyberetico/temas/roteiros/__init__.md",
-    "__init__.md"
+    "readme/cyberetico/temas/roteiros/__init__.md"
   ]
 }
