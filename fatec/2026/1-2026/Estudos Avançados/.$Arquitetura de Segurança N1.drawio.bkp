@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
   <diagram name="Page-1" id="NlkZYWQ_KVcreRUpj3uz">
-    <mxGraphModel dx="2801" dy="2052" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2975" dy="2471" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,7 +17,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Jj2LBuBIAdHEPYUArqaq-7" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Internet&lt;/font&gt;" vertex="1">
-          <mxGeometry height="80" width="120" x="-107.95999999999998" y="-1051" as="geometry" />
+          <mxGeometry height="135" width="193" x="90" y="-1086" as="geometry" />
         </mxCell>
         <mxCell id="Jj2LBuBIAdHEPYUArqaq-12" edge="1" parent="1" source="Jj2LBuBIAdHEPYUArqaq-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.513;entryY=-0.014;entryDx=0;entryDy=0;entryPerimeter=0;" target="Jj2LBuBIAdHEPYUArqaq-4">
           <mxGeometry relative="1" as="geometry" />
@@ -79,7 +79,7 @@
         <mxCell id="RzzEl4RtM9gMvDJJZMXP-6" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Dados&lt;/h1&gt;&lt;p&gt;Considerando a mesma visão dos servidores, mas com p&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;roteção da camada de persistência de dados.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;- RBAC (Role-Based Access Control): Acesso estritamente limitado por função de usuário/aplicação;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Criptografia em Repouso (At-Rest): Garantir que os dados no disco estejam cifrados&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Auditoria de Consultas (AAA): Logs detalhados de quem acessou qual dado e quando (Audit Trail);&lt;br&gt;- DLP (Data Loss Prevention) para evitar perda de dados, com bloqueio na transferencia de dados e monitoramento de trafego de dados;&lt;br&gt;- Sensores de SIEM e XDRs&lt;/span&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="229" width="398.27" x="-113.27" y="449" as="geometry" />
         </mxCell>
-        <mxCell id="RzzEl4RtM9gMvDJJZMXP-8" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Monitoramento&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Inserção de agentes/sensores que permitam monitorar dados, processos e demais elementos do ambiente.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;-&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;Gestão de Identidade e Acesso (IAM - Zero Trust):&lt;br&gt;- MFA Obrigatório;&lt;br&gt;- Criptografia de Disco;&lt;br&gt;- NAC (Network Access Control - 802.1X) para garantir que apenas dispositivos com certificados digitais válidos e conformidade de segurança (patching em dia, EDR ativo) possam se conectar à rede;&lt;br&gt;- MDM / UEM (Unified Endpoint Management): Garantir que o sistema operacional esteja atualizado e com as configurações de segurança (GPOs) aplicadas antes de permitir o acesso ao Data Domain;&lt;br&gt;- Sensores de SIEM e XDR;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+        <mxCell id="RzzEl4RtM9gMvDJJZMXP-8" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Estações&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Inserção de agentes/sensores que permitam monitorar dados, processos e demais elementos do ambiente.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;-&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;Gestão de Identidade e Acesso (IAM - Zero Trust):&lt;br&gt;- MFA Obrigatório;&lt;br&gt;- Criptografia de Disco;&lt;br&gt;- NAC (Network Access Control - 802.1X) para garantir que apenas dispositivos com certificados digitais válidos e conformidade de segurança (patching em dia, EDR ativo) possam se conectar à rede;&lt;br&gt;- MDM / UEM (Unified Endpoint Management): Garantir que o sistema operacional esteja atualizado e com as configurações de segurança (GPOs) aplicadas antes de permitir o acesso ao Data Domain;&lt;br&gt;- Sensores de SIEM e XDR;&lt;/span&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="229" width="398.27" x="-585" y="745" as="geometry" />
         </mxCell>
         <mxCell id="RzzEl4RtM9gMvDJJZMXP-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
@@ -116,7 +116,7 @@
           <mxGeometry height="277.22" width="300.54" x="163.46000000000004" y="-811" as="geometry" />
         </mxCell>
         <mxCell id="RzzEl4RtM9gMvDJJZMXP-4" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;DDOS Mitigation &amp;amp; Scrubbing&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Filtragem de tráfego em larga escala para garantir a disponibilidade, Este aqui estaria atrelado ao Firewall.&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;Importante:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;-&amp;nbsp;Mitigação de Camada 3, 4 e 7: Bloqueio de ataques de inundação (SYN, UDP flood) e ataques de exaustão de recursos HTTP;&lt;br&gt;-&amp;nbsp;Reputação de IP Global: Bloqueio automático de IPs conhecidos por botnets antes de atingirem a rede local.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="235.27298588490768" width="332.0750738552437" x="496.99525849335305" y="-823.2153854505973" as="geometry" />
+          <mxGeometry height="235.27298588490768" width="332.0750738552437" x="508.99525849335305" y="-845.2153854505973" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

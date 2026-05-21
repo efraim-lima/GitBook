@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
   <diagram name="Page-1" id="NlkZYWQ_KVcreRUpj3uz">
-    <mxGraphModel dx="2801" dy="2052" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2975" dy="2471" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,7 +17,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Jj2LBuBIAdHEPYUArqaq-7" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Internet&lt;/font&gt;" vertex="1">
-          <mxGeometry height="80" width="120" x="-107.95999999999998" y="-1051" as="geometry" />
+          <mxGeometry height="135" width="193" x="90" y="-1086" as="geometry" />
         </mxCell>
         <mxCell id="Jj2LBuBIAdHEPYUArqaq-12" edge="1" parent="1" source="Jj2LBuBIAdHEPYUArqaq-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.513;entryY=-0.014;entryDx=0;entryDy=0;entryPerimeter=0;" target="Jj2LBuBIAdHEPYUArqaq-4">
           <mxGeometry relative="1" as="geometry" />
@@ -107,7 +107,7 @@
           <mxGeometry height="69.80392156862746" width="910.6165289256198" x="-575.8876033057851" y="-893.0196078431372" as="geometry" />
         </mxCell>
         <mxCell id="Jj2LBuBIAdHEPYUArqaq-9" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;NG Firewall&lt;/h1&gt;&lt;p&gt;Implementar um NG Firewall para bloquear acessos dos usuários indevidos no ambiente&lt;br&gt;&lt;/p&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;p style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;Para Proteção de Autenticação&lt;/p&gt;&lt;p style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;- Para proteção de acesso&lt;br&gt;- Listas de ACL&lt;br&gt;- LDAP/RADIUS (Jogar pra autenticação local - Data Domain) -&amp;gt; consome recursos do roteador&lt;br&gt;- 802.1X&lt;br&gt;-&amp;nbsp;IPS/IDS: Detecção e prevenção de intrusão baseada em assinaturas e anomalias;&lt;br&gt;- Control application&lt;br&gt;&lt;/p&gt;&lt;/h1&gt;" vertex="1">
-          <mxGeometry height="277.22" width="321" x="-195.54000000000002" y="-811" as="geometry" />
+          <mxGeometry height="277.22" width="321" x="-195.54000000000002" y="-818" as="geometry" />
         </mxCell>
         <mxCell id="Jj2LBuBIAdHEPYUArqaq-10" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Roteador de Borda&lt;/h1&gt;&lt;p&gt;Implementar um roteador de borda para filtrar pacotes maliciosos &lt;br&gt;&lt;br&gt;- Inspeção de pacotes (SPI)&lt;br&gt;- criptografia de comunicação (VPN + MFA) para autenticação na caixa apenas,&lt;br&gt;-&amp;nbsp; controle de acesso (WPA3)&lt;br&gt;- mensurar tempo de reboot, de patches update&lt;/p&gt;" vertex="1">
           <mxGeometry height="269.22" width="337" x="-567" y="-811" as="geometry" />
@@ -116,7 +116,7 @@
           <mxGeometry height="277.22" width="300.54" x="163.46000000000004" y="-811" as="geometry" />
         </mxCell>
         <mxCell id="RzzEl4RtM9gMvDJJZMXP-4" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;DDOS Mitigation &amp;amp; Scrubbing&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Filtragem de tráfego em larga escala para garantir a disponibilidade, Este aqui estaria atrelado ao Firewall.&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;Importante:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;-&amp;nbsp;Mitigação de Camada 3, 4 e 7: Bloqueio de ataques de inundação (SYN, UDP flood) e ataques de exaustão de recursos HTTP;&lt;br&gt;-&amp;nbsp;Reputação de IP Global: Bloqueio automático de IPs conhecidos por botnets antes de atingirem a rede local.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="235.27298588490768" width="332.0750738552437" x="496.99525849335305" y="-823.2153854505973" as="geometry" />
+          <mxGeometry height="235.27298588490768" width="332.0750738552437" x="508.99525849335305" y="-845.2153854505973" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
