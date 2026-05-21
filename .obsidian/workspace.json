@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fatec/Pesquisa/Cronograma/README.md",
+                "file": "__init__.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "__init__"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 326.5
   },
   "right": {
     "id": "a706770663434870",
@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "__init__.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for __init__"
             }
           },
           {
@@ -220,49 +221,55 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "57cd248ccb3574b4",
+  "active": "1fe641e395f56eec",
   "lastOpenFiles": [
+    "README.md",
+    "Untitled.canvas",
+    "SUMMARY.md",
+    "Untitled 1.canvas",
+    "2026-05-13.md",
+    "Untitled 2.canvas",
+    "cyberetico/image (9).png",
+    "fatec/2025/1-2025/Forense/image (8).png",
+    "fatec/2025/1-2025/Forense/A Web Forensic System Based On Semantic Checking.pdf",
+    "fatec/2025/1-2025/Forense/PERÍCIA FORENSE DE REDE.pdf",
+    "fatec/2025/1-2025/Forense/Validating the Integrity of Audit Logs Against Execution.pdf",
+    "cyberetico/image (1).png",
+    "cyberetico/image (1) (1).png",
+    "cyberetico/image (1) (1) (1).png",
+    "cyberetico/image (2).png",
+    "cyberetico/image (2) (1).png",
+    "cyberetico/image (3) (1).png",
+    "cyberetico/image (4).png",
+    "cyberetico/image (3).png",
+    "fatec/2024/2-2024/protocolos/labs/laboratorio-02.md",
+    "fatec/2025/1-2025/Forense/Validating the Integrity of Audit Logs Against Execution (2).pdf",
+    "fatec/2025/1-2025/Forense/Validating the Integrity of Audit Logs Against Execution (1).pdf",
+    "fatec/2025/1-2025/Forense/TRACKING THE HACKER WITH CYBER FORENSICS.pdf",
+    "fatec/2025/1-2025/Forense/SDNLog-Foren Ensuring the Integrity and Tamper Resistance of Log Files for SDN Forensics using Blockchain.pdf",
+    "fatec/2025/1-2025/Forense/SDNLog-Foren Ensuring the Integrity and Tamper Resistance of Log Files for SDN Forensics using Blockchain (1).pdf",
+    "fatec/projeto-5.pkt",
+    "fatec/projeto-4.pkt",
+    "fatec/2024/2-2024/protocolos/labs/README.md",
+    "fatec/2024/2-2024/protocolos/labs/__init__.md",
+    "fatec/2024/1-2024/01-2024.md",
+    "fatec/FATEC.md",
+    "fatec/2024/2-2024/2-2024.md",
+    "fatec/2024/2-2024/protocolos/PROTOCOLOS.md",
+    "fatec/2026/1-2026/Estudos Avançados/N2.md",
     "fatec/2026/1-2026/Estudos Avançados/Estudos Avançados.md",
     "fatec/2026/1-2026/01-2026.md",
     "fatec/2026/2026.md",
-    "fatec/2026/1-2026/Estudos Avançados/N2.md",
     "fatec/Pesquisa/Cronograma/temas-e-tempo.md",
     "fatec/Pesquisa/Cronograma/README.md",
-    "fatec/2026/1-2026/Estudos Avançados/Security Architecture.png",
-    "fatec/2026/1-2026/Estudos Avançados/Diagrama de Criação.png",
-    "fatec/2026/1-2026/Estudos Avançados/Diagrama Agentk.drawio.png",
-    "fatec/2026/1-2026/Estudos Avançados/Arquitetura de Segurança.pdf",
     "fatec/2026/1-2026/English/Think 3 problemas at Fatec.md",
     "Work/To Do/Under/Apresentações/Melhorias/Melhorias nas Apresentações.md",
-    "Desenvolvimento/fatec/aula13.6.php",
-    "Desenvolvimento/fatec/aula13.5.php",
-    "Desenvolvimento/fatec/aula13.4.php",
-    "Desenvolvimento/fatec/index.php",
-    "Desenvolvimento/fatec/aula13.3.php",
-    "Desenvolvimento/fatec/aula13.3.html",
-    "2026-05-13.md",
-    "Untitled 2.canvas",
     "cyberetico/temas/roteiros/malware-analysis.md",
     "fatec/Pesquisa/TCC/Testes do Gateway do AgentK.md",
-    "fatec/2026/1-2026/English",
-    "fatec/2026/1-2026/Estudos Avançados/Diagrama Agentk.drawio",
     "Work/To Do/Under/Apresentações/Melhorias/Adição de Slide.md",
     "readme/__init__.md",
     "Work/To Do/Under/Apresentações/CLIENTES/IBEMA/Solicitações/Solicitações Ultima Call de Check Point GC.md",
-    "Work/To Do/Under/Apresentações/CLIENTES/IBEMA/Solicitações",
     "Work/README.md",
-    "Untitled 1.canvas",
-    "2024-12-30.md",
-    "Untitled.canvas",
-    "readme/fatec/Pesquisa/ARTIGO.md",
-    "readme/fatec/__init__.md",
-    "readme/fatec/Pesquisa/__init__.md",
-    "readme/fatec/Pesquisa/Untitled.md",
-    "readme/fatec/Pesquisa/Trabalho/__init__.md",
-    "readme/fatec/Pesquisa/Rascunhos/__init__.md",
-    "readme/fatec/Pesquisa/Cronograma/__init__.md",
-    "readme/fatec/Pesquisa/Ferramentas/__init__.md",
-    "readme/fatec/Pesquisa/Pesquisa/__init__.md",
-    "Untitled.md"
+    "2024-12-30.md"
   ]
 }
