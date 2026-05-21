@@ -1,4 +1,6 @@
 [
   "obsidian-git",
-  "heatmap-calendar"
+  "heatmap-calendar",
+  "dataview",
+  "auto-classifier"
 ]

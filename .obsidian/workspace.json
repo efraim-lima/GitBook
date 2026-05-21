@@ -11,14 +11,12 @@
             "id": "1fe641e395f56eec",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "__init__.md",
-                "mode": "source",
-                "source": false
+                "file": "fatec/2025/1-2025/Forense/Validating the Integrity of Audit Logs Against Execution.pdf"
               },
-              "icon": "lucide-file",
-              "title": "__init__"
+              "icon": "lucide-file-text",
+              "title": "Validating the Integrity of Audit Logs Against Execution"
             }
           }
         ]
@@ -94,7 +92,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "__init__.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +101,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for __init__"
+              "title": "Backlinks"
             }
           },
           {
@@ -221,8 +218,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1fe641e395f56eec",
+  "active": "57cd248ccb3574b4",
   "lastOpenFiles": [
+    "fatec/2025/1-2025/Forense/Validating the Integrity of Audit Logs Against Execution.pdf",
+    "Desenvolvimento/fatec/EfraimLima_GabrielPereira_GiovannaPardini/n1/img/chapeu.webp",
+    "Desenvolvimento/fatec/EfraimLima_GabrielPereira_GiovannaPardini/n1/img/background-cadastro.jpg",
+    "Desenvolvimento/fatec/EfraimLima_GabrielPereira_GiovannaPardini/n1/img/background-home.jpg",
+    "fatec/AdminSO/2 - Apostila GNU Linux -Professor LUCAS PEREIRA DA ROCHA.pdf",
+    "__init__.md",
     "README.md",
     "Untitled.canvas",
     "SUMMARY.md",
@@ -233,15 +236,11 @@
     "fatec/2025/1-2025/Forense/image (8).png",
     "fatec/2025/1-2025/Forense/A Web Forensic System Based On Semantic Checking.pdf",
     "fatec/2025/1-2025/Forense/PERÍCIA FORENSE DE REDE.pdf",
-    "fatec/2025/1-2025/Forense/Validating the Integrity of Audit Logs Against Execution.pdf",
     "cyberetico/image (1).png",
     "cyberetico/image (1) (1).png",
     "cyberetico/image (1) (1) (1).png",
     "cyberetico/image (2).png",
     "cyberetico/image (2) (1).png",
-    "cyberetico/image (3) (1).png",
-    "cyberetico/image (4).png",
-    "cyberetico/image (3).png",
     "fatec/2024/2-2024/protocolos/labs/laboratorio-02.md",
     "fatec/2025/1-2025/Forense/Validating the Integrity of Audit Logs Against Execution (2).pdf",
     "fatec/2025/1-2025/Forense/Validating the Integrity of Audit Logs Against Execution (1).pdf",
@@ -249,7 +248,6 @@
     "fatec/2025/1-2025/Forense/SDNLog-Foren Ensuring the Integrity and Tamper Resistance of Log Files for SDN Forensics using Blockchain.pdf",
     "fatec/2025/1-2025/Forense/SDNLog-Foren Ensuring the Integrity and Tamper Resistance of Log Files for SDN Forensics using Blockchain (1).pdf",
     "fatec/projeto-5.pkt",
-    "fatec/projeto-4.pkt",
     "fatec/2024/2-2024/protocolos/labs/README.md",
     "fatec/2024/2-2024/protocolos/labs/__init__.md",
     "fatec/2024/1-2024/01-2024.md",
@@ -269,7 +267,6 @@
     "Work/To Do/Under/Apresentações/Melhorias/Adição de Slide.md",
     "readme/__init__.md",
     "Work/To Do/Under/Apresentações/CLIENTES/IBEMA/Solicitações/Solicitações Ultima Call de Check Point GC.md",
-    "Work/README.md",
-    "2024-12-30.md"
+    "Work/README.md"
   ]
 }
