@@ -12,7 +12,7 @@ password pastelaria
 login
 transport input ssh
 exit
-banner motd @ *** ACESSO RESTRITO FATEC SCS *** @
+banner motd @ *** ACESSO RESTRITO [[FATEC]] SCS *** @
 line console 0
 password pastel2
 login

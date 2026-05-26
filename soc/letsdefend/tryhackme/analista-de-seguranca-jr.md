@@ -6,7 +6,7 @@ description: Primeiro laboratório da trilha SOC Tier 1
 
 Aqui temos a introdução aos desafios de um analista de segurança junior e o primeiro laboratóro que consiste basicamente no processo de analisar um IP encontrado como um IOC, ou seja, um Indicador de Comprometimento.
 
-Para isso vamos detectar o evento que está presente nos logs coletados na ferramenta agregadora de logs.
+Para isso vamos detectar o evento que está presente nos [[logs]] coletados na ferramenta agregadora de [[logs]].
 
 O log a ser considerado é o de acesso não autorizado, que está marcado em vermelho no print abaixo
 

@@ -4,7 +4,7 @@ Primeiro, quando tivermos algum primeiro Indicador de Comprometimento, precisamo
 
 -Tráfego proveniente de regiões estranhas;
 
--Tráfego em redes e portas incomuns;
+-Tráfego em redes e [[portas]] incomuns;
 
 -Tráfego que esteja fora do padrão;
 
@@ -38,4 +38,4 @@ aqui podemos confiar na data de criação, mas não na organização que criou e
 
 Próximo passo é analisar o User-Agent com o site WhatIsMyBrowser e entender o Navegador proveniente. Caso não encontremos um User-Agent ja temos um indicador de alerta, pois conexões web geralmente são feitas por navegadores e estes possuem User-Agent.
 
-Depois, caso tenhamos algum host para avaliar, basta acessarmos o site Vírus Total, onde poderemos saber se este domínio está associado a atividades maliciosas
+Depois, caso tenhamos algum host para avaliar, basta acessarmos o site Vírus Total, onde poderemos saber se este domínio está associado a [[ATIVIDADES]] maliciosas

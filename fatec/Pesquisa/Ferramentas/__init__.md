@@ -1,18 +1,18 @@
 # \_\_init\_\_
 
-\[\[readme/fatec/Pesquisa/Ferramentas/Aplicativos/**init**|Aplicativos]]
+\[\[[[soc/tools/operational-systems/windows/README|README]]/[[FATEC]]/Pesquisa/Ferramentas/[[fatec/Pesquisa/Pesquisa/ferramentas/aplicativos|aplicativos]]/**init**|[[fatec/Pesquisa/Pesquisa/ferramentas/aplicativos|aplicativos]]]]
 
-\[\[readme/fatec/Pesquisa/Ferramentas/Desenvolvimento/**init**|Desenvolvimento]]
+\[\[[[soc/tools/operational-systems/windows/README|README]]/[[FATEC]]/Pesquisa/Ferramentas/[[fatec/Pesquisa/Pesquisa/ferramentas/desenvolvimento|desenvolvimento]]/**init**|[[fatec/Pesquisa/Pesquisa/ferramentas/desenvolvimento|desenvolvimento]]]]
 
-\[\[readme/fatec/Pesquisa/Ferramentas/Commands/**init**|Commands]]
+\[\[[[soc/tools/operational-systems/windows/README|README]]/[[FATEC]]/Pesquisa/Ferramentas/Commands/**init**|Commands]]
 
-\[\[readme/fatec/Pesquisa/Ferramentas/Commands/Linux/init|Linux]]
+\[\[[[soc/tools/operational-systems/windows/README|README]]/[[FATEC]]/Pesquisa/Ferramentas/Commands/Linux/init|Linux]]
 
-\[\[readme/fatec/Pesquisa/Ferramentas/Commands/Windows/**init**|Windows]]
+\[\[[[soc/tools/operational-systems/windows/README|README]]/[[FATEC]]/Pesquisa/Ferramentas/Commands/Windows/**init**|Windows]]
 
-\[\[readme/fatec/Pesquisa/Ferramentas/Papers Search/**init**|Papers Search]]
+\[\[[[soc/tools/operational-systems/windows/README|README]]/[[FATEC]]/Pesquisa/Ferramentas/Papers Search/**init**|Papers Search]]
 
-\[\[readme/fatec/Pesquisa/Ferramentas/Pentesting/**init**|Pentesting]]
+\[\[[[soc/tools/operational-systems/windows/README|README]]/[[FATEC]]/Pesquisa/Ferramentas/[[fatec/Pesquisa/Pesquisa/ferramentas/pentesting|pentesting]]/**init**|[[fatec/Pesquisa/Pesquisa/ferramentas/pentesting|pentesting]]]]
 
-\[\[readme/fatec/Pesquisa/Ferramentas/Playbooks/**init**|Playbooks]]
+\[\[[[soc/tools/operational-systems/windows/README|README]]/[[FATEC]]/Pesquisa/Ferramentas/[[fatec/Pesquisa/Pesquisa/ferramentas/playbooks|playbooks]]/**init**|[[fatec/Pesquisa/Pesquisa/ferramentas/playbooks|playbooks]]]]
 

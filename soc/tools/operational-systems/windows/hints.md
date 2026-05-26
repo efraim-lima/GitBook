@@ -115,7 +115,7 @@ As ferramentas comuns que são usadas para monitoramento de segurança de rede i
 * NetFlow
 * Sistemas de gerenciamento de eventos e informações de segurança (SIEM)
 
-Também é comum que analistas de segurança confiem em arquivos de log e SNMP (Simple Network Management Protocol) para detecção de comportamento de rede.
+Também é comum que analistas de segurança confiem em arquivos de log e [[snmp]] (Simple Network Management Protocol) para detecção de comportamento de rede.
 
 Observação: \*\*windump\*\* é uma variante do Microsoft Windows do \*\*tcpdump\*\*. \*\*tshark\*\* é uma ferramenta de linha de comando Wireshark semelhante a \*\*tcpdump\*\*.
 
@@ -133,8 +133,8 @@ Há um canal Cisco Stealthwatch no YouTube que fornece muitos detalhes sobre o S
 
 Os sistemas SIEM incluem as seguintes funções essenciais:
 
-* Análise forense — A capacidade de pesquisar logs e registros de eventos de fontes em toda a organização. Ele fornece informações mais completas para análise forense.
-* Correlação — examina logs e eventos de diferentes sistemas ou aplicativos, acelerando a detecção e reação a ameaças de segurança.
+* Análise forense — A capacidade de pesquisar [[logs]] e registros de eventos de fontes em toda a organização. Ele fornece informações mais completas para análise forense.
+* Correlação — examina [[logs]] e eventos de diferentes sistemas ou [[fatec/Pesquisa/Pesquisa/ferramentas/aplicativos|aplicativos]], acelerando a detecção e reação a ameaças de segurança.
 * Agregação - A agregação reduz o volume de dados de eventos consolidando registros de eventos duplicados.
 * Reporting - Reporting apresenta os dados de eventos correlacionados e agregados em monitoramento em tempo real e resumos de longo prazo.
 

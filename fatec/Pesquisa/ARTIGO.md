@@ -200,14 +200,14 @@ O output deste comando nos retornará alguns dados que podem ser interpretados c
 * **UNIT FILE:** Nome do arquivo de unidade. Isso inclui o tipo de unidade (por exemplo, .service, .mount, .socket).
 *   **STATE:** Estado de habilitação da unidade. Os estados comuns incluem:
 
-    > * enabled: A unidade está habilitada e será iniciada automaticamente no boot.
+    > * enabled: A unidade está habilitada e será iniciada automaticamente no [[boot]].
     > * disabled: A unidade está desabilitada e não será iniciada automaticamente.
     > * static: A unidade não pode ser habilitada diretamente, pois é usada apenas como dependência de outras unidades ou é ativada por outra unidade.
     > * masked: A unidade está mascarada, o que significa que ela está simbolicamente vinculada a /dev/null e não pode ser iniciada.
 
 Outra abordagem que pode ser abordada para analisar os processos é através do diretório /proc, que organiza os processos de forma hierarquica; junto a isso podemos fazer uma analise dos processos e seus PIDs detectados para analisarmos o que cada processo tem feito no sistema através das ferramentas como `top` e `htop` para levantar qual seria o processo a ser analisado e seus PID. Com o PID em mãos podemos utilizar ferramentas como `ps -f <PID>`, `lsof -p <PID>` e `pstree -p -s <PID>`, assim teremos maior noção da ação que este processo está tomando no sistema operacional tanto em detalhes de recursos que o mesmo está acessando no background como de cadeia de processos que circundam o mesmo.
 
-1\. **Identificando a sessão de boot correspondente ao incidente:** Com a persistencia de logs agora conseguimos analisar os logs de acordo com o boot ID e seu timestamp, selecionando a data em que houve o incidente no sistema, para encontrar o boot ID já sabemos, basta usar o commando `journalctl --boot-list` e coletar o boot ID equivalente a data do incidennte (ou do evento que precisa analisar); tendo o Boot ID em mãos insira no comando `journalctl -b <boot ID>`, com isso terá acesso a todos os logs gerados naquele dia de forma completa. Mas mesmo tendo acesso aos logs pode ser difícil extrair dados no meio do volume de dados coletados, para isso podemmos usar comandos e prompts para facilitar na busca, segue abaixo alguns comandos que podem ser utilizados para encontrarmos dados que poderiam ser coerentes.
+1\. **Identificando a sessão de boot correspondente ao incidente:** Com a persistencia de logs agora conseguimos analisar os logs de acordo com o boot ID e seu timestamp, selecionando a data em que houve o incidente no sistema, para encontrar o boot ID já sabemos, basta usar o commando `journalctl --boot-list` e coletar o boot ID equivalente a data do incidennte (ou do evento que precisa analisar); tendo o Boot ID em mãos insira no comando `journalctl -b <boot ID>`, com isso terá acesso a todos os [[logs]] gerados naquele dia de forma completa. Mas mesmo tendo acesso aos [[logs]] pode ser difícil extrair dados no meio do volume de dados coletados, para isso podemmos usar [[comandos]] e prompts para facilitar na busca, segue abaixo alguns [[comandos]] que podem ser utilizados para encontrarmos dados que poderiam ser coerentes.
 
 ```bash
 journalctl -b <boot_id> | grep -i 'COMMAND'
@@ -227,7 +227,7 @@ systemctl list-unit-files --type=service
 journalctl -b <boot_id> -u <service_name>.service
 ```
 
-Tendo uma boa noção dos comandos que podemos utilizar podemos agora emitir o comando e analisar sua saída para termos uma idéia de como os dados são coletados e como podem ser analizados. O comando utilizado para este caso foi o `journalctl -b -3 | grep 'COMMAND'`. Vamos analisar um pouco o output de tal comando:
+Tendo uma boa noção dos [[comandos]] que podemos utilizar podemos agora emitir o comando e analisar sua saída para termos uma idéia de como os dados são coletados e como podem ser analizados. O comando utilizado para este caso foi o `journalctl -b -3 | grep 'COMMAND'`. Vamos analisar um pouco o output de tal comando:
 
 ```bash
 ago 01 10:15:04 zorin pkexec[4875]: efraim: Executing command [USER=root] [TTY=unknown] [CWD=/home/efraim] [COMMAND=/usr/lib/update-notifier/package-system-locked]
@@ -258,14 +258,14 @@ ago 01 22:16:05 zorin sudo[56218]:   efraim : TTY=pts/0 ; PWD=/home/efraim ; USE
 * **Executing command:** - Aqui está o comando que foi executado.
 * **\[USER=root]:** - O usuário efetivo sob o qual o comando foi executado.
 * **\[TTY=unknown]:** - Representa o terminal (TTY) de onde o comando foi executado. No caso de pkexec, pode ser unknown porque o comando pode não estar ligado a um terminal específico.
-* **\[CWD=/home/efraim]:** - Representa o diretório de trabalho (CWD significa Current Working Directory) do usuário quando ele executou o comando.
+* **\[CWD=/home/efraim]:** - Representa o diretório de [[trabalho]] (CWD significa Current Working Directory) do usuário quando ele executou o comando.
 * **\[COMMAND=/usr/lib/update-notifier/package-system-locked]:** - Indica O comando que foi executado.
 
 ## DEPENDENCIES
 
-Pode ser imprescindível analizar o quê está instalado no sistema, se os apps são legí timos ou podem estar comprometendo o sistema.
+Pode ser imprescindível analizar o quê está instalado no sistema, se os [[apps]] são legí timos ou podem estar comprometendo o sistema.
 
-Para isso temos alguns comandos que podem ser emitidos no terminal para conseguirmos estes dados como informação.
+Para isso temos alguns [[comandos]] que podem ser emitidos no terminal para conseguirmos estes dados como informação.
 
 Um primeiro comando que podemos emitir é o `lsmod` para verificarmos, na ordem do output, os módulos do Kernel, seu tamamho e quantidade em uso.
 
@@ -276,13 +276,13 @@ parport_pc             53248  0
 vmmon                 167936  0
 ```
 
-Também precisamos analisar todos pacotes instalados, pode haver algo no meio, pra isso podemos usar comandos como `dpkg -l`, `dpkg-query -l`, `apt list --installed`, `flatpak list` e/ou `snap list` e verificar cada item e sua proveniência.
+Também precisamos analisar todos pacotes instalados, pode haver algo no meio, pra isso podemos usar [[comandos]] como `dpkg -l`, `dpkg-query -l`, `apt list --installed`, `flatpak list` e/ou `snap list` e verificar cada item e sua proveniência.
 
 Algumas ferramentas que podemos utilizar para desenvolver um processo de monitoramento do sistema no linux, algo semelhante ao Sysmon no Windows:
 
 
 
-* **Auditd**: O Audit Daemon é uma ferramenta poderosa para monitoramento e auditoria de eventos no Linux. Ele pode registrar atividades do sistema e arquivos.
+* **Auditd**: O Audit Daemon é uma ferramenta poderosa para monitoramento e auditoria de eventos no Linux. Ele pode registrar [[ATIVIDADES]] do sistema e arquivos.
   * **Instalação**: `sudo apt-get install auditd` (Debian/Ubuntu) ou `sudo yum install audit` (RHEL/CentOS).
   * **Uso básico**: Configure regras no arquivo `/etc/audit/audit.rules` e use `auditctl` para adicionar ou modificar regras de auditoria.
 * **Osquery**: Uma ferramenta que permite realizar consultas SQL em dados do sistema, semelhante a um banco de dados.
@@ -290,7 +290,7 @@ Algumas ferramentas que podemos utilizar para desenvolver um processo de monitor
   * **Uso básico**: Execute `osqueryi` para iniciar o shell interativo e realizar consultas SQL.
 * **Falco**: Um monitor de segurança e integridade de contêineres e sistemas, que pode fornecer alertas sobre comportamentos anômalos.
   * **Instalação**: Siga as instruções em https://falco.org/docs/getting-started/.
-  * **Uso básico**: O Falco roda como um serviço e usa regras configuradas para gerar alertas sobre atividades suspeitas.
+  * **Uso básico**: O Falco roda como um serviço e usa regras configuradas para gerar alertas sobre [[ATIVIDADES]] suspeitas.
 * **Lsof**: Uma ferramenta para listar arquivos abertos e os processos que os abriram.
   * **Instalação**: Geralmente já está disponível em distribuições Linux.
   * **Uso básico**: Execute `lsof` para listar arquivos abertos e `lsof /path/to/file` para verificar processos relacionados a um arquivo específico.
@@ -307,18 +307,18 @@ Algumas ferramentas que podemos utilizar para desenvolver um processo de monitor
 
 
 
-* no maximo 20 paginas contando com referencias, imagens e tudo mais
-  * analisar protocolos especificos em um artigo
+* no maximo 20 paginas contando com [[fatec/Pesquisa/Pesquisa/trabalho/referencias|referencias]], imagens e tudo mais
+  * analisar [[PROTOCOLOS]] especificos em um artigo
   * analise de equipamento ligado ou desligado
 * redes
 * SO
 * usuário
 * aplicaçẽs instaladas em momentos diferentes
-* logs
+* [[logs]]
 * formatação
 * eventos que ocorreram dentro de um micro
 * sistemas embarcados
-* interação entre aplicativos
+* interação entre [[fatec/Pesquisa/Pesquisa/ferramentas/aplicativos|aplicativos]]
 * processo de avaliar uma HD (por exemplo em caso de Pedo\*\*\*)
   * como foi feita a coleta
     * malware
@@ -328,12 +328,12 @@ Algumas ferramentas que podemos utilizar para desenvolver um processo de monitor
   * se falar do SO como pode ser o processo
 * afunilar sobre as diferenças entre distros (separar por cada OS diferente)
   * destrinchar se nos demais distro rodam apenas em linha de comando ou outras ferramentas
-  * aprofundar para o processo de formatação pois logs podem ser alterados de forma estratégicaa
+  * aprofundar para o processo de formatação pois [[logs]] podem ser alterados de forma estratégicaa
     * analisar mudanças na base do linux (por exemplo no github)
     * verificar se ele pode sr burlavel ou não e se essa ação deixa rastros
-* identificar artigos e livros que apresentem o conteúdo que estamos abordando a forma que isso de desenrola --> precisamos ter uma informação em algum idioma que possa determinar que não é possivel fazer modificação em registros de logs
+* identificar artigos e livros que apresentem o conteúdo que estamos abordando a forma que isso de desenrola --> precisamos ter uma informação em algum idioma que possa determinar que não é possivel fazer modificação em registros de [[logs]]
   * fazer um levantamento se funcionou ou se não funcionou
-  * modificação na base de eventos de logs
+  * modificação na base de eventos de [[logs]]
 * no momento de fazer validação precisamos identificar formas de burlar o sistema (pesquisar as possiilidades em cada situação)
 * fazer simulações para levantar o que pode acontecer
   * por exemplo, baixar executaveis, clicar em links maliciosos
@@ -341,5 +341,5 @@ Algumas ferramentas que podemos utilizar para desenvolver um processo de monitor
   * sistama criado para rodar windows no linux
     * pode rodar via linha de comando
 * um cenário do que pretendemos falar sobre a tematica e um problema para solucionarmos com o artigo
-  * mutabilidade de logs pode ser o tema principal
+  * mutabilidade de [[logs]] pode ser o tema principal
 * criar um arquivo word dentro do docs e compartilhar com o professor Kleber

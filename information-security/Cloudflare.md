@@ -34,7 +34,7 @@ Possui diversas Tools que permitem observabilidade e capilaridde na cobertura do
 
 - portais de MCP server: faz append de todas as funções de todos os agentes, workers, documentações e funções no ambiente de forma a permitir que um agente tenha acesso a todo o ambiente disponibilizado pela Cloudflare, permitindo que haja segurança, accounting e auditoria no uso dos agentes, uma vez que o portal centraliza o trafego de agentes em um só local
 -- utiliza ZeroTrust para acesso ao ambiente, inclusive com uso de OAuth
--- o portal permite a configuração de DOminio, logs, servidores MCP participantes (o cadastro desses servidores ẽ feito fora), politicas de acesso e testar o portal a partir de AI playground, claude desktop ou outros clientes;
+-- o portal permite a configuração de DOminio, [[logs]], servidores MCP participantes (o cadastro desses servidores ẽ feito fora), politicas de acesso e testar o portal a partir de AI playground, claude desktop ou outros clientes;
 -- em workers tem um agente que pode ser utilizado para aplicar em um modelo de forma rapida e otimizada;
 
 ## Protect AI-powered Apps
@@ -50,7 +50,7 @@ Funciona quando um endpoint é configurado como uma LLM endpoint, tendo uma flag
 
 ### AI Gateway
 É o Guardrail da CLoudflare, serve para clientes que não possuem WAF da Cloudflare, com essa ferramenta podemos setar algumas regras:
-- coleta de logs
+- coleta de [[logs]]
 - cache de respostas
 - auth gateway
 - limite de requisições
@@ -61,11 +61,11 @@ Dentro do AI Gateway pode-se criar rotas dinamicas, funcionando como um fallback
 O AI Gateway serve também como um orqustrador de modelos, podendo redirecionar prompts para modelos diferenciados.
 A cloudflare consegue cachear as respostas do modelo, reduzindo o custo de interações desnecessárias com IA.
 
-Basicamente os modelos da CLoudflare atuam no trafego HTTP (sim, HTTP) pegando Requests e Responses em HTTP e filtrando o json neste meio termo, lembrando que o tráfego está sendo proxiado pela cloudflare, sendo uma solução impressionante no processo de desenvolvimento da empresa.
+Basicamente os modelos da CLoudflare atuam no trafego HTTP (sim, HTTP) pegando Requests e Responses em HTTP e filtrando o json neste meio termo, lembrando que o tráfego está sendo proxiado pela cloudflare, sendo uma solução impressionante no processo de [[fatec/Pesquisa/Pesquisa/ferramentas/desenvolvimento|desenvolvimento]] da empresa.
 
 A Gateway consegue ler imagens subidas para modelos multimodais (limite de 15Mb) em busca de subida de PIIs ou dados sensíveis. Mas a ferramenta consegue fazer a leitura de dados via OCR tanto para DLP quanto para evitar alimentar modelos com dados sensíveis.
 
-Um agente de IA pode ser subido no Worker da Cloudflare e direcionar seus agentes e tools para o MCP Server Portal, sendo o trabalho de hard code direcionado apenas no processo de criar a VPS com o servidor.
+Um agente de IA pode ser subido no Worker da Cloudflare e direcionar seus agentes e tools para o MCP Server Portal, sendo o [[trabalho]] de hard code direcionado apenas no processo de criar a VPS com o servidor.
 
 Importante:
 Cloudflare não conecta com outros players que tenham ZTNA ou SASE 

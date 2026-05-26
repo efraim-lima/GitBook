@@ -1,7 +1,7 @@
 # \_\_init\_\_
 
-\[\[readme/fatec/Pesquisa/Pesquisa/SharePoint/**init**|SharePoint]]
+\[\[[[soc/tools/operational-systems/windows/README|README]]/[[FATEC]]/Pesquisa/Pesquisa/[[fatec/Pesquisa/Pesquisa/trabalho/sharepoint|sharepoint]]/**init**|[[fatec/Pesquisa/Pesquisa/trabalho/sharepoint|sharepoint]]]]
 
-\[\[readme/fatec/Pesquisa/Pesquisa/Referências/**init**|Referencias]]&#x20;
+\[\[[[soc/tools/operational-systems/windows/README|README]]/[[FATEC]]/Pesquisa/Pesquisa/Referências/**init**|[[fatec/Pesquisa/Pesquisa/trabalho/referencias|referencias]]]]&#x20;
 
-\[\[readme/fatec/Pesquisa/Pesquisa/Base Literária/**init**|Base Literária]]&#x20;
+\[\[[[soc/tools/operational-systems/windows/README|README]]/[[FATEC]]/Pesquisa/Pesquisa/Base Literária/**init**|Base Literária]]&#x20;

@@ -1,4 +1,6 @@
 <html>
+	<!-- Para rodar o PHP devemos ir no terminal e rodar nosso servidor antes, que indexará o index.php antes de tudo mais -->
+	<!-- Comando: php -S localhost:8000 -->
 	<head>
 	<meta chaset="UTF-8">
 	<meta name="description" content="Me site da aula1">

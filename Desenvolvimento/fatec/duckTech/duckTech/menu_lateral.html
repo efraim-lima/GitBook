@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Lateral</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 15px 12px;
+            background-color: #1C1526;
+            font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #F2F2F2;
+            overflow: hidden;   /* esconde scroll do próprio body */
+        }
+        h3#menu-titulo {
+            color: #F2A413;
+            border-bottom: 2px solid #F2A413;
+            display: inline-block;
+            margin-top: 0;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            display: block;
+            padding: 8px 10px;
+            background-color: #2D2540;
+            border-radius: 40px;
+            text-decoration: none;
+            color: #F2F2F2;
+            text-align: center;
+            border: 1px solid #734A19;
+            font-size: 0.9rem;
+        }
+        a:hover {
+            background-color: #F2A413;
+            color: #1C1526;
+        }
+        hr {
+            border-color: #734A19;
+            margin: 15px 0;
+        }
+        div#login-area {
+            background-color: #2D2540;
+            border-radius: 28px;
+            padding: 12px;
+            border: 1px solid #734A19;
+        }
+        div#login-area label {
+            display: block;
+            font-size: 0.8rem;
+            margin-bottom: 3px;
+        }
+        div#login-area input {
+            width: 100%;
+            padding: 6px 8px;
+            margin-bottom: 10px;
+            font-size: 0.85rem;
+            box-sizing: border-box;
+        }
+        div#login-area button {
+            width: 100%;
+            background-color: #F2A413;
+            color: #1C1526;
+            border: none;
+            padding: 8px;
+            border-radius: 40px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+        div#login-area button:hover {
+            background-color: #A67721;
+            color: white;
+        }
+        div#menu-info {
+            font-size: 0.7rem;
+            text-align: center;
+            margin-top: 15px;
+            color: #A67721;
+        }
+    </style>
+</head>
+<body style="margin:0; padding:15px 12px;">
+    <h3 id="menu-titulo">Duck Tech</h3>
+    <ul>
+        <li><a href="home.html" target="conteudo">Home</a></li>
+        <li><a href="sobre.html" target="conteudo">Sobre</a></li>
+        <li><a href="listagem.php" target="conteudo">Listagem</a></li>
+        <li><a href="cadastro.html" target="conteudo">Cadastro</a></li>
+    </ul>
+    <hr>
+    <div id="login-area">
+        <form action="login.php" target="conteudo" method="post">
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="********">
+            <button type="submit">LOGIN</button>
+        </form>
+    </div>
+    <div id="menu-info">
+        Tecnologia emplumada<br>© Duck Tech
+    </div>
+</body>
+</html>

@@ -10,7 +10,7 @@ icon: grid
   * Checking for data breaches | [breachdirectory.org](http://breachdirectory.org/)
   * Checking for scam databases | scamsearch.io
   * Gmail account information | [gmail-osint.activetk.jp](http://gmail-osint.activetk.jp/) | GHunt ( [https://lnkd.in/eD6qjCRj](https://lnkd.in/eD6qjCRj))
-  * Search accounts + data breaches + scam + gmail info | [usersearch.ai](http://usersearch.ai/)
+  * Search accounts + data breaches + scam + gmail [[info]] | [usersearch.ai](http://usersearch.ai/)
   * Analysing email headers | WhatMail ( [https://lnkd.in/ebpGXsnt](https://lnkd.in/ebpGXsnt))
   * Checking attachments files/links | [https://lnkd.in/eiANZTCx](https://lnkd.in/eiANZTCx) | [hybrid-analysis.com](http://hybrid-analysis.com/)
   * WHOIS data by email | [whoxy.com](http://whoxy.com/) | [reversewhois.io](http://reversewhois.io/)

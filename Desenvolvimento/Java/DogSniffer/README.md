@@ -1,8 +1,10 @@
+[[Desenvolvimento]]
+
 # DogSniffer App
 
 ## Motivação
 
-Esta ferramenta foi desenvolvida com o objetivo de levantar através de sinais de rádio frequencia (wifi) a posição estivada da origem do sinal.
+Esta ferramenta foi desenvolvida com o objetivo de levantar através de sinais de rádio frequencia ([[wifi]]) a posição estivada da origem do sinal.
 Foi desenvolvida em Java para fins de aprendizado do desenvolvedor Efraim Lima, mas o objetivo é ter uma forma de tornar este código aplicável a outras plataformas além do Linux.
 
 

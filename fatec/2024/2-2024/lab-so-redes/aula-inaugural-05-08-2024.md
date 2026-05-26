@@ -2,10 +2,10 @@
 
 ### Informações sobre atividades e provas
 
-A N1 é prova normal valendo 7 e outra atividade valendo 3. Na N2, teremos um laboratório de SO contendo Administração de SO, Inglês e Empreendedorismo.\
-A N2 valerá 7 pontos e todos os grupos precisarão ter ao menos uma pessoa cursando todas as matérias.
+A N1 é prova normal valendo 7 e outra atividade valendo 3. Na [[fatec/2026/1-2026/Estudos Avançados/N2|N2]], teremos um laboratório de SO contendo Administração de SO, Inglês e Empreendedorismo.\
+A [[fatec/2026/1-2026/Estudos Avançados/N2|N2]] valerá 7 pontos e todos os grupos precisarão ter ao menos uma pessoa cursando todas as matérias.
 
-A ideia é fazer um projeto criando um servidor para uma empresa "real", onde faremos todo o deploy de maneira semi-real, criando um projeto multidisciplinar com o objetivo de se usar todas as matérias compreendidas em apenas um trabalho.
+A ideia é fazer um projeto criando um servidor para uma empresa "real", onde faremos todo o deploy de maneira semi-real, criando um projeto multidisciplinar com o objetivo de se usar todas as matérias compreendidas em apenas um [[trabalho]].
 
 O professor perguntou a todos se temos conhecimento de script DOS.
 

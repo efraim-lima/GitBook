@@ -16,8 +16,8 @@ script para trabalhar com hashing no python:
 
 import hashlib
 
-string2hash = Texto result = hashlib.md5(sting2hash.encode()) print(result.hexdigest())
+string2hash = Texto result = hashlib.[[md5]](sting2hash.encode()) print(result.hexdigest())
 
 result = hashlib.sha256(sting2hash.encode()) print(result.hexdigest())
 
-Comando para acompanhar os logs em tempo real: watch -n 1 cat var/log/syslog
+Comando para acompanhar os [[logs]] em tempo real: watch -n 1 cat var/log/syslog

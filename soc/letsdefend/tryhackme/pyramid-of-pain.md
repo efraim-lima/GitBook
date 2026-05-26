@@ -6,7 +6,7 @@ description: >-
 
 # Pyramid Of Pain
 
-Atividades Pyramid of Pain
+[[ATIVIDADES]] Pyramid of Pain
 
 1. Hashing:&#x20;
 

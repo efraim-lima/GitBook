@@ -11,6 +11,6 @@ Criei um sharepoint para centralizar minhas atividades e meu trabalho, contando 
 O link para acessar é:&#x20;
 
 {% embed url="https://fatecspgov.sharepoint.com/:u:/r/sites/CyberEtico/SitePages/Atividades---Artigos.aspx?csf=1&e=eyaMMi&web=1" %}
-Sharepoint da Fatec | Artigo
+Sharepoint da [[FATEC]] | [[ARTIGO]]
 {% endembed %}
 

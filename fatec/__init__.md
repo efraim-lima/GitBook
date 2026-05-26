@@ -12,4 +12,4 @@ hidden: true
 
 ## FATEC
 
-\[\[readme/fatec/2024/**init**|2024]] \[\[readme/fatec/Pesquisa/**init**|Pesquisa]]
+\[\[[[soc/tools/operational-systems/windows/README|README]]/[[FATEC]]/2024/**init**|2024]] \[\[[[soc/tools/operational-systems/windows/README|README]]/[[FATEC]]/Pesquisa/**init**|Pesquisa]]

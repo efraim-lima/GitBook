@@ -31,7 +31,7 @@ Neste momento o atacante vai explorar as vulnerabilidades do sistema de fato, ge
 Na instalação o estágio inicial é executado e já está rodando na máquina comprometida, mas para compreendermos melhor como a fase de instalação chega ao alvo podemos compreender melhor as metas e a natureza deste comprometimento.
 
 * Droppers: Os droppers podem entregar o malware ao sistema alvo, esta ferramenta é uma pequena peça designada para instalar o malware no sistema e executar. Podendo ser entregue por anexos de e-mail, sites maliciosos ou táticas de engenharia social;
-* Backdoors: Os backdoors são malwares desenvolvidos parar porporcionar acesso contínuo ao sistema comprometido, ele pode ser instalado no processo de exploitation ou através de um dropper sendo util para executar ataques furtivos ou roubar data do sistema comprometido;
+* Backdoors: Os backdoors são [[soc/tools/malwares|malwares]] desenvolvidos parar porporcionar acesso contínuo ao sistema comprometido, ele pode ser instalado no processo de exploitation ou através de um dropper sendo util para executar ataques furtivos ou roubar data do sistema comprometido;
 * Rootkits: Já os rootkits são um tipo de malware que é desenvolvido para ocultar a presença do atacante no sistema comprometido e são muitas vezes utilizados no estágio de instalação para evadir a detecção por parte dos antivirus e outras ferramentas de segurança. Os rootkits também são instalados pelo atacante durante a fase de exploitation e entregues ao sistema a partir de um dropper;
 
 &#x20;
@@ -85,7 +85,7 @@ Neste momento o atacante vai explorar as vulnerabilidades do sistema de fato, ge
 Na instalação o estágio inicial é executado e já está rodando na máquina comprometida, mas para compreendermos melhor como a fase de instalação chega ao alvo podemos compreender melhor as metas e a natureza deste comprometimento.
 
 * Droppers: Os droppers podem entregar o malware ao sistema alvo, esta ferramenta é uma pequena peça designada para instalar o malware no sistema e executar. Podendo ser entregue por anexos de e-mail, sites maliciosos ou táticas de engenharia social;
-* Backdoors: Os backdoors são malwares desenvolvidos parar porporcionar acesso contínuo ao sistema comprometido, ele pode ser instalado no processo de exploitation ou através de um dropper sendo util para executar ataques furtivos ou roubar data do sistema comprometido;
+* Backdoors: Os backdoors são [[soc/tools/malwares|malwares]] desenvolvidos parar porporcionar acesso contínuo ao sistema comprometido, ele pode ser instalado no processo de exploitation ou através de um dropper sendo util para executar ataques furtivos ou roubar data do sistema comprometido;
 * Rootkits: Já os rootkits são um tipo de malware que é desenvolvido para ocultar a presença do atacante no sistema comprometido e são muitas vezes utilizados no estágio de instalação para evadir a detecção por parte dos antivirus e outras ferramentas de segurança. Os rootkits também são instalados pelo atacante durante a fase de exploitation e entregues ao sistema a partir de um dropper;
 
 &#x20;

@@ -16,7 +16,7 @@ E ainda mais: não precisa de extrema expertise na detecção de incidentes e ne
 \
 
 
-Estava pesquisando maneiras de se detectar se um email é autêntico ou se é phishing, com isso criei um artigo (que você poderá ler em primeira mão no meu GitBook, mas poderá acessar aqui no LinkedIn no futuro).
+Estava pesquisando maneiras de se detectar se um email é autêntico ou se é phishing, com isso criei um [[ARTIGO]] (que você poderá ler em primeira mão no meu GitBook, mas poderá acessar aqui no LinkedIn no futuro).
 
 \
 

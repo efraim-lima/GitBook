@@ -49,7 +49,7 @@ Quando um sinal cai pela metade dizemos que cai 3dbs Se tivermos um servidor de 
 
 C) Quedas curtas/short-breaks ups (Uninterruptable Power-Supply), equipamento que mantém a saída alimentada/energizada, mesmo com ausência do sinal de entrada. Esse dispositivo mantém a saída por pequenos intervalos de tempo. O tempo depende da cappacidade da bateria e o consumo da cargaa (computador); não ligamos impressoras, ou outrros equipamentos semelhantes no no-break pois vai consumir toda a energia do mesmo em caso de queda de energia. Premissa semelhante ao uso de bluetooth, onde gasta-se mais energia para enviar um bit via bluetooth do que para zipar um arquivo.
 
-Recomenda-se sair (shitdown) de forma segura. Smart ups-iot
+Recomenda-se sair (shitdown) de forma segura. Smart ups-[[iot]]
 
 O no-break (ups) pdoe ser de dois tipo: on-line e of-line.
 
@@ -67,7 +67,7 @@ PVA = (Pwatts/(M\*FP))
 
 PVA = Potencia em Volt x Amperé Pwatts = Potência em watts M = (éta \[letra grega]) -> redimento FP = Fator de Potencia
 
-M (éta) - rendimento-capacidade do dispsitivo de converter portencia de entrada em trabalho na saída.
+M (éta) - rendimento-capacidade do dispsitivo de converter portencia de entrada em [[trabalho]] na saída.
 
 As fontes de alimentação (ATX) têm rendimento acima de 80%. Motor a combustão (gasolina) tem baixo rendimento.
 
@@ -91,9 +91,9 @@ REVISÃO: Ferramenta de Diagnósitico:
 
 Função - Medição de grandezas eletricas -tensão: alternada, entrada/rede continua - bateria/saida -resistencia: resistores -corrente: alternada e cotínua -diodo: led \[+] -->|- \[-] -capacitância (F) miF pF nF
 
-Empresas especializadas em desenvolvimento de BIOS: Awards, AMI, Phoenix, Intel.
+Empresas especializadas em [[fatec/Pesquisa/Pesquisa/ferramentas/desenvolvimento|desenvolvimento]] de [[bios]]: Awards, AMI, Phoenix, Intel.
 
-Devido às características intrínsecas do bios devemos ter cuidados especiais no processo de atualização/upgrade do BIOS.
+Devido às características intrínsecas do [[bios]] devemos ter cuidados especiais no processo de atualização/upgrade do [[bios]].
 
 ```
 -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -106,7 +106,7 @@ Devido às características intrínsecas do bios devemos ter cuidados especiais 
 
 A resposta é negativa, a atualização deve ser feita em situações que é necessaria para o correto funcionamento do sistema.
 
-A) Em geral quando ocorrem mudanças no sistema que necessitam do suporte do BIOS para seu funcionamento.
+A) Em geral quando ocorrem mudanças no sistema que necessitam do suporte do [[bios]] para seu funcionamento.
 
 ```
 windows 11 -> suporte TPM
@@ -114,11 +114,11 @@ windows 11 -> suporte TPM
 
 B) Disponibilidadede novas funcionalidades como o USB 4.0, SATA III, pois devido ao time-to-market (tempo que leva-se para conseguirmos acessar uma funcionalidade no mercado, tipo configurações específicas para chipsets específicos), o hardware possui a funcionalidade, mas não é disponibilizada de imediato.
 
-C) Avaliar o release p verificar se a atualização irá trazer algum benefício para o sistema. Em tempo, devido a sistemas frágeis, devemos nos certificar que oa Bios utilizada é livre de falhas, pois é comum a perda completa do sistema devido à falha de gravação de uma nova versão de BIOS (firmware), como por exemplo, a queda de energia durante o processo, especialmente para dispositivos de ti embedded como impressoras, routers, monitores, displays, etc...
+C) Avaliar o release p verificar se a atualização irá trazer algum benefício para o sistema. Em tempo, devido a sistemas frágeis, devemos nos certificar que oa [[bios]] utilizada é livre de falhas, pois é comum a perda completa do sistema devido à falha de gravação de uma nova versão de [[bios]] (firmware), como por exemplo, a queda de energia durante o processo, especialmente para dispositivos de ti embedded como impressoras, routers, monitores, displays, etc...
 
 O nível entre o hardwre e o software é o sistema de instruções do sistema, código de máquina. Tudo o que fazemos em software podemos criar um hardware que se comunique com isso, tudo que fazemos em hardware podemos emular em software.
 
-Em mudanças bruscas de sitema (tipo uma BIOS nova) deve-se sempre fazer primeiro um projeto piloto antes de soltar em todo o sistema para evitar falhas e panes totais no sistema que podem ocorrer.
+Em mudanças bruscas de sitema (tipo uma [[bios]] nova) deve-se sempre fazer primeiro um projeto piloto antes de soltar em todo o sistema para evitar falhas e panes totais no sistema que podem ocorrer.
 
 Para testar a memória do computador deve-se pegar a memória e preencher a memória com os seguintes padrões (para toda a memória):
 
@@ -146,27 +146,27 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1010101010
 		    -- DEPOIS --
 ```
 
-QUando fechamos o computador e ele suspende suas configurações e aplicativos atuais ele salva o que estiver na RAM na memória swap
+QUando fechamos o computador e ele suspende suas configurações e [[fatec/Pesquisa/Pesquisa/ferramentas/aplicativos|aplicativos]] atuais ele salva o que estiver na RAM na memória swap
 
 Atividade in class -> para entrega na próxima semana - individual Responda às seguintes questões:
 
-1. Aonde fica armazenada o BIOS? R: Placa mae
+1. Aonde fica armazenada o [[bios]]? R: Placa mae
 2. Aonde ficam armazenados os parametros configurados pelo usuário? R: RAM CMOS, na flash ficam os parametros de babrica/default.
 3. Aonde fica disponível a data e hora do sistema? R: Na bateria da placa mãe, no RTC (Real Time Clock)
 4. Qual a função da bateria de lithium da placa-mãe? R: Manter o tempo do sistema just in time
-5. Qual o sintoma de um computadore que tem o BIOS corrompido? (Exemplo: apagamento de todas as psoições da memória flash com 0xFFFF). R: No momento inicial não acontecerá nada, mas ao desligar o computador e religar a tela não ligará, sequer teremos sinal de que o dispositivo está energizado
-6. Como você recomenta um roteiro seguro para a configuração do BIOS para um sistema instável? R: Uma das possibilidades de solução aqui é: entrar no BIOS e colocar valor default, se der certo é porque uma das configurações estavam conflitando com o sistema.
+5. Qual o sintoma de um computadore que tem o [[bios]] corrompido? (Exemplo: apagamento de todas as psoições da memória flash com 0xFFFF). R: No momento inicial não acontecerá nada, mas ao desligar o computador e religar a tela não ligará, sequer teremos sinal de que o dispositivo está energizado
+6. Como você recomenta um roteiro seguro para a configuração do [[bios]] para um sistema instável? R: Uma das possibilidades de solução aqui é: entrar no [[bios]] e colocar valor default, se der certo é porque uma das configurações estavam conflitando com o sistema.
 
 Homework
 
 Escolha um computador qualquer:
 
 1. Identifique-o: modelo/marca/CPU/memória/SO
-2. Descreva como acessar o BIOS
+2. Descreva como acessar o [[bios]]
 3. Descreva pelo menos 10 características passiveis de configuração
 4. Relacione pelo menos 5 características associada à segurança/disponibilidade da informação.
 5. Pesquise os efeitos da perda/descarga da bateria.
 
-\-a data hora é configurada direto no relógio -para resetar a bios basta desconectar da tomada, bateria e plugar uma chave de fenda no conector da bateria
+\-a data hora é configurada direto no relógio -para resetar a [[bios]] basta desconectar da tomada, bateria e plugar uma chave de fenda no conector da bateria
 
-Apresentação: não precisa de slides e nem de um trabalho à la ABNT, mas vale a pena mostrar um cronograma da apresentação e o que pode ser apresentado
+Apresentação: não precisa de slides e nem de um [[trabalho]] à la ABNT, mas vale a pena mostrar um cronograma da apresentação e o que pode ser apresentado

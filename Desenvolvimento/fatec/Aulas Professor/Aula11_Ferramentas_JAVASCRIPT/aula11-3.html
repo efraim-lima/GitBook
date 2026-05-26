@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Meu Site</title>
+</head>
+<body>
+<script type="text/javascript">
+window.onload = function() {
+  alert("Bem Vindo ao Site!");
+};
+</script>
+<form method="GET" onsubmit="alert('clicou submit');">
+Nome: <input type="text" name="usuario" onchange="alert('mudou para outro campo');"><br>
+Quero receber a newsletter: 
+<input type="checkbox" name="newsletter" value="sim" checked ><br>
+Email..: <input type="text" name="contato" onmouseover="alert('mouse passou aqui');"><br>
+Contato Padrão: 
+<select name="estado" onchange="alert('selecionou opção');">
+<option>Selecione</option>
+<option value="MG" >Minas Gerais</option>
+<option value="RJ"  >Rio de Janeiro</option>
+</select>
+<br>
+<input type="submit" Value="Envia" >
+<input type="reset" Value="Reset" onclick="alert('clicou reset');">
+</form>
+</body></html>
+

@@ -16,7 +16,7 @@ As formas mais comuns de detectar e evitar se tornar uma vítima de phishing sã
 
 Agora, neste material gostaria de aprofundar a análise dos metadados dos emails, uma prática mais avançada de análise, mas eficiente e que proporciona mais ferramentas para evitar que caiamos em golpes ou phishings.\
 \
-Primeiro precisamos entender o conceito de metadados (BUSCAR REFERENCIAS).\
+Primeiro precisamos entender o conceito de metadados (BUSCAR [[fatec/Pesquisa/Pesquisa/trabalho/referencias|referencias]]).\
 \
 Com isso em mente teremos maior propriedade para fazer esta análise e precisamos primeiro acessar tais metadados, para isso verifique como acessá-los em seu cliente de e-mail preferido, neste caso vamos utilizar o Outlook como referência e nele o processo consiste em abrir o e-mail de forma individual (clicando duas vezes sobre o e-mail), acessando o ícone de Arquivo e procurando por Propriedades, localizado no elemento Informações que encontra-se na coluna à esquerda.\
 
@@ -51,7 +51,7 @@ Tendo posse dos metadados e também das ferramentas listadas podemos seguir os p
        * Data de Criação: Domínios recém criados são extremamente suspeitos
        * Data de Atualização: Domínios não renovados e/ou não atualizados indicam um problema sério;
 2. **Analise os Links e URLs**:
-   * Ao se deparar com links e URLs no e-mail, faremos um processo mais detalhado e seguro para analisar este conteúdo, pois não podemos acionar nenhum link presente neste email, pois isso pode disparar o processo de instalação de malwares e afins. Para isso podemos fazer de algumas formas, como:
+   * Ao se deparar com links e URLs no e-mail, faremos um processo mais detalhado e seguro para analisar este conteúdo, pois não podemos acionar nenhum link presente neste email, pois isso pode disparar o processo de instalação de [[soc/tools/malwares|malwares]] e afins. Para isso podemos fazer de algumas formas, como:
      * A primeira forma de se verificar a URL é passando o mouse sobre os links no e-mail (sem clicar) para ver o URL real, caso a URL real seja diferente precisamos acender um alerta e seguir para o próximo passo apenas se quisermos garantir;
      * Abrir o e-mail na forma de "ver original" ou "ver codigo-fonte";
        * procurar por elementos como \<a href=\[URL]>;

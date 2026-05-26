@@ -7,7 +7,7 @@ Para o próximo projeto precisamos criar um serviço DHCP a partir de um host ao
 enable
 configure terminal
 username user password pass
-ip domain-name fatec.edu.com
+ip domain-name [[FATEC]].edu.com
 crypto key generate rsa general-keys modulus 1024
 ip ssh version 2
 enable secret pass

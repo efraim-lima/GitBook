@@ -8,7 +8,7 @@ UDP connectionless => não orientado à conexão ---> server para DNS services, 
 
 TCP connectione => orientado à conexão
 
-O processo de conexão TCP (handshake):&#x20;
+O processo de conexão TCP ([[handshake]]):&#x20;
 
 SYN&#x20;
 

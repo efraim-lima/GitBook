@@ -1,3 +1,3 @@
 # \_\_init\_\_
 
-\[\[readme/fatec/Pesquisa/Trabalho/Texto Escrito/**init**|Texo Escrito]]
+\[\[[[soc/tools/operational-systems/windows/README|README]]/[[FATEC]]/Pesquisa/[[trabalho]]/Texto Escrito/**init**|Texo Escrito]]

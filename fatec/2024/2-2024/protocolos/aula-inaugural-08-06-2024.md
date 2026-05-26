@@ -4,7 +4,7 @@
 
 ## Aula inaugural
 
-Introdução a alguns conceitos de redes e de processos em que os protocolos se desenrolam nos meios e no sistema como um todo, por exemplo, como analisarmos cada nó na rede para sabermos qual o caminho físico que os pacotes estão fazendo quando usamos o traceroute (tracert) e qual a relação dos IPs com os nós na rede real (cabeada, basicamente);
+Introdução a alguns conceitos de redes e de processos em que os [[PROTOCOLOS]] se desenrolam nos meios e no sistema como um todo, por exemplo, como analisarmos cada nó na rede para sabermos qual o caminho físico que os pacotes estão fazendo quando usamos o traceroute (tracert) e qual a relação dos IPs com os nós na rede real (cabeada, basicamente);
 
 Apresentou as ferramentas como ip address detail, que apresentam dados dos nós de forma física.
 

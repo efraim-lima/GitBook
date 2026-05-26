@@ -22,6 +22,6 @@ EXEMPLO:
 
 Início: Dr Fulano (advogado) liga para o help desk e reporta que seu notebook ficou com tela azul.
 
-\-> Problema: notebook fica com tela azul; -> Diagnóstico: após ligar o computador nota-se varios códigos hexa no monitor; -> Causa: Windows com arquivos corrompidos (exemplo, muito comum em desktop que desliga sem nobreak) -> Solução: reinstalar o Windows; -> Manutenção: pegar a ISO, instalar o windows, instalar os aplicativos. Usar uma hd padrão para extrair a memória presente.
+\-> Problema: notebook fica com tela azul; -> Diagnóstico: após ligar o computador nota-se varios códigos hexa no monitor; -> Causa: Windows com arquivos corrompidos (exemplo, muito comum em desktop que desliga sem nobreak) -> Solução: reinstalar o Windows; -> Manutenção: pegar a ISO, instalar o windows, instalar os [[fatec/Pesquisa/Pesquisa/ferramentas/aplicativos|aplicativos]]. Usar uma hd padrão para extrair a memória presente.
 
 Existem manutenções preditivas, preventivas e PROCURAR NO CHATGPT (kkkkkkkk)

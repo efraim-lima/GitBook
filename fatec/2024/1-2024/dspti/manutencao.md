@@ -8,7 +8,7 @@ Manutenção Corretiva (ocorre durante o problema) -> Tomar ações no sentido d
 
 Manutenção Preventiva (ocorre antes do problema)
 
-* feita de forma periodica de tempos em tempos para evitar parada no sistema --> Palavras Chave: periodicidade, frequência, pro-ativa --> Pontos Fortes: paradas previstas, tempo de intervenção estimado (consigo saber quanto tempo vou levar), maior produtividade, maior qualidade/vida util, diminuir a quantidade de manutenção corretiva --> Pontos Fracos: não elimina 100% a necessidade de correção, pode ocorrer efeito colateral, introduzir falhas que não existiam, a manutenção é um dos primeiros custos que as empresas cortam quando há dificuldades financeiras --> Quando Usar: Quando uma eventual parada tem um impacto médio para o negócio da empresa; workstation, backup entra aqui hmm -> horario de menor movimento
+* feita de forma periodica de tempos em tempos para evitar parada no sistema --> Palavras Chave: periodicidade, frequência, pro-ativa --> Pontos Fortes: paradas previstas, tempo de intervenção estimado (consigo saber quanto tempo vou levar), maior produtividade, maior qualidade/vida util, diminuir a quantidade de manutenção corretiva --> Pontos Fracos: não elimina 100% a necessidade de correção, pode ocorrer efeito colateral, introduzir falhas que não existiam, a manutenção é um dos primeiros custos que as empresas cortam quando há dificuldades financeiras --> Quando Usar: Quando uma eventual parada tem um impacto médio para o negócio da empresa; workstation, [[backup]] entra aqui hmm -> horario de menor movimento
 
 Manutenção Preditiva (ocorre antes do problema)
 

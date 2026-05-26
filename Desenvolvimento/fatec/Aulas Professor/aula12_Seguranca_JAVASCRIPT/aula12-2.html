@@ -1,0 +1,24 @@
+<html><head><title>Meu Site</title></head><body>
+<script type="text/javascript">
+function verifica_formulario() {
+  if (cadastro.estado.selectedIndex==0){
+      alert("Selecione o estado");
+      cadastro.estado.focus();
+      return false;
+  }
+  alert("indice do estado: "+cadastro.estado.selectedIndex);
+  return true;
+}
+</script>
+<form name="cadastro" method="GET" action="aula10.html" 
+                      onsubmit="return verifica_formulario()">
+UF: 
+<select name="estado"> 
+<option>Selecione</option>
+<option>Minas Gerais</option>
+<option>Rio de Janeiro</option>
+</select>
+<input type="submit" Value="Envia" >
+</form>
+</body></html>
+

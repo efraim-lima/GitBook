@@ -1,6 +1,6 @@
 # IDs de Eventos
 
-O processo de análise de LOGs infere que precisamos reconstruir uma cadeia de eventos com o objetivo de se compreender a linha de tempo do que ocorreu e ter uma melhor visibilidade de como pode ter ocorrido um incidente, levantando cada etapa do incidente seja antes ou depois do mesmo ocorrer. Portanto é importante saber correlacionar os eventos detectados com etapas de um incidente, isso trará clareza e consciência de cada etapa e também a possiblidade de inferir qual foi a intenção da ação do atacante no ambiente.&#x20;
+O processo de análise de [[logs]] infere que precisamos reconstruir uma cadeia de eventos com o objetivo de se compreender a linha de tempo do que ocorreu e ter uma melhor visibilidade de como pode ter ocorrido um incidente, levantando cada etapa do incidente seja antes ou depois do mesmo ocorrer. Portanto é importante saber correlacionar os eventos detectados com etapas de um incidente, isso trará clareza e consciência de cada etapa e também a possiblidade de inferir qual foi a intenção da ação do atacante no ambiente.&#x20;
 
 A partir disso é interessante correlacionar o framework Cyber Kill Chain, que descreve as etapas de um ataque cibernético e IDs de eventos específicos do Windows que levantarão eventos que podem ser associados a cada etapa do incidente.
 

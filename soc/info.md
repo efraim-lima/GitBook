@@ -16,7 +16,7 @@ Websites que podem ser usados para inteligencia de ameaças:
   * [https://x.com/Certego\_Intel](https://x.com/Certego_Intel) - Aponta domínios e IPs que foram detectados como indicadores de ameaça cibernética (auxiliando na tomada de decisão)
   * [https://x.com/cipherstorm](https://x.com/cipherstorm) - Coleta e compartilha informações de data breaches, incidentes e eventos que podem impactar  empresas de forma geral
   * [https://x.com/MsftSecIntel](https://x.com/MsftSecIntel) - Portal de comunicação da Microsoft Threat Intelligence
-  * [https://x.com/vxunderground](https://x.com/vxunderground) - Coleção de codigo fonte de malwares, exemplos e notícias sobre segurança
+  * [https://x.com/vxunderground](https://x.com/vxunderground) - Coleção de codigo fonte de [[soc/tools/malwares|malwares]], exemplos e notícias sobre segurança
 
 Websites que podem ser utilizados para adquirir informações sobre vulnerabilidades e procedimentos:
 

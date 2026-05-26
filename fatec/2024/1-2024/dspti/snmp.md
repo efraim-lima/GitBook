@@ -6,7 +6,7 @@ Podemos fazer o acompanhamento destes sinais em uma ferramenta chamada NAGIOS
 
 propor um roteiro com 5 intens de uma manutenção fisica preventiva: -limpeza de pó, apertar parafusos, troca de pasta termica, alteração de pata para sata
 
-propor um roteiro com 5 intens de uma manutenção lógica preventiva: -ponto de restauração, desinstalar aplicativos não utilizados, varredura de malwares, defragmentação, limpeza de cookies;
+propor um roteiro com 5 intens de uma manutenção lógica preventiva: -ponto de restauração, desinstalar [[fatec/Pesquisa/Pesquisa/ferramentas/aplicativos|aplicativos]] não utilizados, varredura de [[soc/tools/malwares|malwares]], defragmentação, limpeza de cookies;
 
 KPIs
 
@@ -18,7 +18,7 @@ Existem equipamentos que possuem uma característica de perder totalmente sua ca
 
 bbath curve -> a curva da banheira determina que os defeitos em função do tempo ocorrem mais nos seus primeiros momentos (morte infantil ou prematura) ou ocorrer depois de muito tempo de uso (desgaste ou obsolescencia).
 
-bath curve serve tanto para harwares quanto para softwares, pois podem ocorrer erros nos primeiros instantes ou depois de muito uso, ambas as duas tecnologias possuem a mesma curva.
+bath curve serve tanto para harwares quanto para [[softwares]], pois podem ocorrer erros nos primeiros instantes ou depois de muito uso, ambas as duas tecnologias possuem a mesma curva.
 
 QUESTÃO DE PROVA: Se uma rede possui uma MTBF de 97% significa que possui uma relação ruim de qualidade, a AWS garante 99.999% e para adicionar mais um 9 a este numero seriam gastos milhões de dolares.
 

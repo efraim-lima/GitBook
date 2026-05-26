@@ -1,0 +1,122 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro Duck Tech</title>
+    <style>
+        body {
+            background-color: #1C1526;
+            margin: 0;
+            padding: 30px;
+            font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        div.form-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #2D2540;
+            border-radius: 28px;
+            padding: 25px;
+            border: 1px solid #734A19;
+        }
+        h2 { color: #F2A413; text-align: center; margin-top: 0; }
+        table { width: 100%; color: #F2F2F2; background-color: #2D2540; }
+        td { padding: 10px 12px; vertical-align: middle; }
+        td:first-child, td:nth-child(3) { color: #F2F2F2; font-weight: bold; }
+        input[type="text"], input[type="password"], select {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #734A19;
+            background-color: #1C1526;
+            color: #F2F2F2;
+        }
+        input[type="submit"] {
+            background-color: #F2A413;
+            color: #1C1526;
+            border: none;
+            padding: 10px 40px;
+            border-radius: 40px;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover { background-color: #A67721; color: white; }
+    </style>
+</head>
+	
+<body>
+    <div class="form-wrapper">
+    <h2>Cadastro Duck Tech</h2>
+    <form method="post" action="cadastro.php">
+    <table border="0" width="100%" cellpadding="5">
+        <tr>
+            <th colspan="4" style="background-color:#F2A413; color:#1C1526; padding:12px; font-size:1.1rem; border-radius:4px;">Cadastro Duck Tech</th>
+        </tr>
+        <tr>
+            <td>Nome:</td>
+            <td colspan="3"><input type="text" name="nome" size="50"></td>
+        </tr>
+        <tr>
+            <td>Endereço:</td>
+            <td><input type="text" name="endereco" size="25"></td>
+            <td>Num:</td>
+            <td><input type="text" name="numero" size="5"></td>
+        </tr>
+        <tr>
+            <td>Complem.:</td>
+            <td><input type="text" name="complemento" size="25"></td>
+            <td>Celular:</td>
+            <td><input type="text" name="celular" size="15"></td>
+        </tr>
+        <tr>
+            <td>Bairro.:</td>
+            <td><input type="text" name="bairro" size="25"></td>
+            <td>CEP:</td>
+            <td><input type="text" name="cep" size="15"></td>
+        </tr>
+        <tr>
+            <td>Cidade.:</td>
+            <td><input type="text" name="cidade" size="25"></td>
+            <td>UF:</td>
+            <td><select name="UF">
+                <option value="" selected>Selecione</option>
+                <option value="AC">AC</option><option value="AL">AL</option><option value="AP">AP</option>
+                <option value="AM">AM</option><option value="BA">BA</option><option value="CE">CE</option>
+                <option value="DF">DF</option><option value="ES">ES</option><option value="GO">GO</option>
+                <option value="MA">MA</option><option value="MT">MT</option><option value="MS">MS</option>
+                <option value="MG">MG</option><option value="PA">PA</option><option value="PB">PB</option>
+                <option value="PR">PR</option><option value="PE">PE</option><option value="PI">PI</option>
+                <option value="RJ">RJ</option><option value="RN">RN</option><option value="RS">RS</option>
+                <option value="RO">RO</option><option value="RR">RR</option><option value="SC">SC</option>
+                <option value="SP">SP</option><option value="SE">SE</option><option value="TO">TO</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Email.:</td>
+            <td><input type="text" name="email" size="25"></td>
+            <td>Cargo:</td>
+            <td><select name="Cargo">
+                <option value="" selected>Selecione</option>
+                <option value="programador">Pato Programador</option>
+                <option value="analista">Pato Analista</option>
+                <option value="empresario">Pato Executivo</option>
+                <option value="coordenador">Pato Coordenador</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Usuário.:</td>
+            <td><input type="text" name="usuario" size="25"></td>
+            <td>Senha:</td>
+            <td><input type="password" name="senha" size="15"></td>
+        </tr>
+        <tr>
+            <td>Departamento.:</td>
+            <td><select name="Departamento">
+                <option value="" selected>Selecione</option>
+                <option value="gestao">Pato Gestão</option>
+                <option value="ti">Pato TI</option>
+                <option value="rh">Pato RH</option>
+            </select></td>
+            <td><input type="submit" name="Enviar" size="25" value="Enviar"></td>
+        </tr>
+    </table>
+    </form>
+    </div>
+</body>
+</html>

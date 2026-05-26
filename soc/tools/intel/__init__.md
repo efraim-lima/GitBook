@@ -6,6 +6,6 @@ hidden: true
 
 # \_\_init\_\_
 
-\[\[readme/tools/intel/cyber-kill-chain|cyber-kill-chain]]
+\[\[[[readme/README|README]]/tools/intel/[[soc/cyber-kill-chain|cyber-kill-chain]]|[[soc/cyber-kill-chain|cyber-kill-chain]]]]
 
 ## INTEL

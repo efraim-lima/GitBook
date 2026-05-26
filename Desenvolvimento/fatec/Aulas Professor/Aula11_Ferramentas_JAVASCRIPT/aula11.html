@@ -1,0 +1,20 @@
+<html><head><title>Meu Site</title>
+<meta charset="UTF-8">
+</head><body>
+Converte Real para Dólares<BR>
+<script type="text/javascript">
+function Converte_Real_Dolar(reais)
+{
+var cotacaodolarhoje=5.30;
+dolares=reais/cotacaodolarhoje;
+return dolares;
+}
+var reais,reaisb;
+var reaisb=0.00;
+reais=prompt("Informe valor em reais (R$)",'0.00'); /*string reais */
+reaisb=parseFloat(reais);                               /* converte string para float */
+document.write("Valor em Reais:  "+reais+"<br>");
+document.write("Total em Dólares:"+Converte_Real_Dolar(reaisb));
+</script>
+</table>
+</body></html>

@@ -2,20 +2,20 @@
 [[readme/cyberetico/temas/roteiros/__init__|__init__]]
 
 * diferenças entre IPv4 e IPv6
-* 3 way handshake
+* 3 way [[handshake]]
 * servidor cliente
-* protocolos de rede
-* modelos OSI e TCP/IP
+* [[PROTOCOLOS]] de rede
+* modelos [[osi]] e [[tcp]]/IP
 * Encapsulamento
-* portas de serviços / sockets
+* [[portas]] de serviços / sockets
 * apis
 * postman
 * buffer (sala de espera)
 * buffer de transmissão e recepção
 * GitHub
-* comandos básicos
+* [[comandos]] básicos
 * pra quê usar no dia a dia
-* criando um belo README.md
+* criando um belo [[soc/tools/operational-systems/windows/README|README]].md
 * como criar um repositório
 * como administrar um repositório
 * como organizar um repositório
@@ -24,7 +24,7 @@
 * sistema de arquivos linux
 * rwx linux
 * chmod 777 linux
-* malwares
+* [[soc/tools/malwares|malwares]]
 * como criar um malware simples
 * como diagnosticar malware
 * como conter malware

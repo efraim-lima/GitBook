@@ -18,8 +18,37 @@
               "icon": "lucide-file-text",
               "title": "Validating the Integrity of Audit Logs Against Execution"
             }
+          },
+          {
+            "id": "85d5d2036691fa6e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fatec/2024/2-2024/criptografia/aula-criptografia-08-29-2024.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "aula-criptografia-08-29-2024"
+            }
+          },
+          {
+            "id": "7c932510dc265cc3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Desenvolvimento/Desenvolvimento.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Desenvolvimento"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -175,6 +204,18 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "86574454cc00e1fe",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "pinned": true,
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
           }
         ],
         "currentTab": 6
@@ -199,7 +240,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5
+    "width": 662.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -215,16 +256,49 @@
       "publish:Publish changes...": false,
       "zk-prefixer:Create new unique note": false,
       "workspaces:Manage workspace layouts": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "card-board:CardBoard": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Lookup: Open lookup view": false,
+      "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "57cd248ccb3574b4",
+  "active": "087039d6c936fcf0",
   "lastOpenFiles": [
-    "fatec/2025/1-2025/Forense/Validating the Integrity of Audit Logs Against Execution.pdf",
+    "Desenvolvimento/Desenvolvimento.md",
+    "Desenvolvimento/Java/DogSniffer/README.md",
+    "Tarefas.md",
+    "Desenvolvimento/fatec/n2/N2.md",
+    "fatec/2026/1-2026/Desenvolvimento/ATIVIDADES.md",
+    "fatec/2026/1-2026/Desenvolvimento/Uso do XAMPP para acesso.md",
+    "Desenvolvimento/fatec/n2/cadastro.php",
+    "Desenvolvimento/fatec/AGENTS.md",
+    "Desenvolvimento/fatec/n2/style.css",
+    "Desenvolvimento/fatec/n2/sobre.html",
+    "Desenvolvimento/fatec/n2/lista.html",
+    "Desenvolvimento/fatec/n2/index.html",
+    "Desenvolvimento/fatec/n2/home.html",
+    "Desenvolvimento/fatec/n2/header.html",
+    "Desenvolvimento/fatec/n2/duck_header.jpg",
+    "Desenvolvimento/fatec/n2/duck_chefe.jpg",
+    "Desenvolvimento/fatec/n2/duck_cadastro_bg.jpg",
+    "Desenvolvimento/fatec/n2/duck_bg_menu.jpg",
+    "Desenvolvimento/fatec/n2/cadastro.html",
+    "Desenvolvimento/fatec/n2",
+    "Desenvolvimento/fatec/AULA14_Seguranca_PHP/cadastro.php",
+    "fatec/2026/1-2026/Desenvolvimento/Desenvolvimento.md",
+    "fatec/2024/2-2024/criptografia/aula-criptografia-08-29-2024.md",
+    "fatec/2024/2-2024/criptografia/__init__.md",
+    "fatec/2024/1-2024/redes/osi.md",
+    "fatec/Pesquisa/Ferramentas/os/linux/hints.md",
+    "fatec/Pesquisa/Ferramentas/pentesting.md",
+    "fatec/Pesquisa/Ferramentas/papers-search.md",
+    "fatec/Pesquisa/Ferramentas/playbooks.md",
     "Desenvolvimento/fatec/EfraimLima_GabrielPereira_GiovannaPardini/n1/img/chapeu.webp",
     "Desenvolvimento/fatec/EfraimLima_GabrielPereira_GiovannaPardini/n1/img/background-cadastro.jpg",
     "Desenvolvimento/fatec/EfraimLima_GabrielPereira_GiovannaPardini/n1/img/background-home.jpg",
-    "fatec/AdminSO/2 - Apostila GNU Linux -Professor LUCAS PEREIRA DA ROCHA.pdf",
     "__init__.md",
     "README.md",
     "Untitled.canvas",
@@ -234,39 +308,13 @@
     "Untitled 2.canvas",
     "cyberetico/image (9).png",
     "fatec/2025/1-2025/Forense/image (8).png",
-    "fatec/2025/1-2025/Forense/A Web Forensic System Based On Semantic Checking.pdf",
-    "fatec/2025/1-2025/Forense/PERÍCIA FORENSE DE REDE.pdf",
     "cyberetico/image (1).png",
-    "cyberetico/image (1) (1).png",
-    "cyberetico/image (1) (1) (1).png",
-    "cyberetico/image (2).png",
-    "cyberetico/image (2) (1).png",
     "fatec/2024/2-2024/protocolos/labs/laboratorio-02.md",
-    "fatec/2025/1-2025/Forense/Validating the Integrity of Audit Logs Against Execution (2).pdf",
-    "fatec/2025/1-2025/Forense/Validating the Integrity of Audit Logs Against Execution (1).pdf",
-    "fatec/2025/1-2025/Forense/TRACKING THE HACKER WITH CYBER FORENSICS.pdf",
-    "fatec/2025/1-2025/Forense/SDNLog-Foren Ensuring the Integrity and Tamper Resistance of Log Files for SDN Forensics using Blockchain.pdf",
-    "fatec/2025/1-2025/Forense/SDNLog-Foren Ensuring the Integrity and Tamper Resistance of Log Files for SDN Forensics using Blockchain (1).pdf",
-    "fatec/projeto-5.pkt",
     "fatec/2024/2-2024/protocolos/labs/README.md",
     "fatec/2024/2-2024/protocolos/labs/__init__.md",
     "fatec/2024/1-2024/01-2024.md",
     "fatec/FATEC.md",
     "fatec/2024/2-2024/2-2024.md",
-    "fatec/2024/2-2024/protocolos/PROTOCOLOS.md",
-    "fatec/2026/1-2026/Estudos Avançados/N2.md",
-    "fatec/2026/1-2026/Estudos Avançados/Estudos Avançados.md",
-    "fatec/2026/1-2026/01-2026.md",
-    "fatec/2026/2026.md",
-    "fatec/Pesquisa/Cronograma/temas-e-tempo.md",
-    "fatec/Pesquisa/Cronograma/README.md",
-    "fatec/2026/1-2026/English/Think 3 problemas at Fatec.md",
-    "Work/To Do/Under/Apresentações/Melhorias/Melhorias nas Apresentações.md",
-    "cyberetico/temas/roteiros/malware-analysis.md",
-    "fatec/Pesquisa/TCC/Testes do Gateway do AgentK.md",
-    "Work/To Do/Under/Apresentações/Melhorias/Adição de Slide.md",
-    "readme/__init__.md",
-    "Work/To Do/Under/Apresentações/CLIENTES/IBEMA/Solicitações/Solicitações Ultima Call de Check Point GC.md",
-    "Work/README.md"
+    "fatec/2024/2-2024/protocolos/PROTOCOLOS.md"
   ]
 }

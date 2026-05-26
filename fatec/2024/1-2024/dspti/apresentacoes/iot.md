@@ -4,7 +4,7 @@ A conectividade proporcionada por IoT também trouxe varias brechas de seguranç
 
 As principais ameaças a IoT são:
 
-DDOS, malwares, MitM
+DDOS, [[soc/tools/malwares|malwares]], MitM
 
 Vulnerabilidades mais comuns: Conectividade não segura, Credenciais fracas ou muito padronizadas, firmwares desatualizados, criptografia fraca.
 
@@ -22,6 +22,6 @@ Implementações bem sucedidas
 
 Monitoramento Industrial em Fábticas Alemãs Agricultura Inteligente Smart City em Barcelona -> usam criptografia e autenticação para segurança do sistema Saúde Conectada (dispositivos de leitura de diabetes, por exemplo)
 
-Ameaças Emergentes: Novos ataques proporcionados pelo uso de IA estão aumentando Ransomwares Ataques sofisticados tirando proveito de falhas de seguranã nos dispositivos e sistemas Algumas ameaças traicionais como malwares, invasão de sistemas e roubo de dados.
+Ameaças Emergentes: Novos ataques proporcionados pelo uso de IA estão aumentando Ransomwares Ataques sofisticados tirando proveito de falhas de seguranã nos dispositivos e sistemas Algumas ameaças traicionais como [[soc/tools/malwares|malwares]], invasão de sistemas e roubo de dados.
 
 Desafios e soluções potenciais Alguns fabricantes possuem problemas de compatibilidade entre dispositivos

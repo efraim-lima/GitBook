@@ -18,7 +18,7 @@ Para dicas de SOC neste sistema operacional: [windows](../../../../../soc/tools/
 ESTUDAR CMDLETS
 
 * Os dados que o arquivo contém são armazenados no atributo $DATA;
-* fluxos de dados alternativos (ADSs) podem ser usados para injetar malwares no sistema pois é facil ocultar dados em um ADS. Ex.: No sistema de arquivos NTFS, um arquivo com um ADS é identificado após o nome do arquivo e dois pontos, por exemplo, Testfile.txt:ADS.
+* fluxos de dados alternativos (ADSs) podem ser usados para injetar [[soc/tools/malwares|malwares]] no sistema pois é facil ocultar dados em um ADS. Ex.: No sistema de arquivos NTFS, um arquivo com um ADS é identificado após o nome do arquivo e dois pontos, por exemplo, Testfile.txt:ADS.
 * pra ver se há um arquivo ads no Windows precisamos usar o atributo dir /r.
 
 &#x20;
@@ -31,7 +31,7 @@ ENCONTRAR DADOS DO FABRICANTE:
 
 &#x20;
 
-A tabela lista alguns comandos que você pode usar. Digite help seguido do comando para saber mais sobre o comando.
+A tabela lista alguns [[comandos]] que você pode usar. Digite help seguido do comando para saber mais sobre o comando.
 
 | Comando MS-DOS              | Descrição                                                             |
 | --------------------------- | --------------------------------------------------------------------- |
@@ -188,7 +188,7 @@ A tabela descreve as cinco guias do Monitor de Recursos.
 
 nslookup and netstat
 
-O Sistema de Nomes de Domínio (DNS, Domain Name System) também deve ser testado porque é essencial encontrar o endereço dos hosts traduzindo-o a partir de um nome, como uma URL. Use o comando nslookup para testar o DNS. Digite nslookup [cisco.com](http://cisco.com/) no prompt de comando para localizar o endereço do servidor Web Cisco. Quando o endereço é retornado, você sabe que o DNS está funcionando corretamente. Você também pode verificar quais portas estão abertas, onde elas estão conectadas e qual é seu status atual. Digite netstat na linha de comando para ver detalhes das conexões de rede ativas, conforme mostrado na saída do comando. O comando netstat será examinado mais adiante neste módulo.
+O Sistema de Nomes de Domínio (DNS, Domain Name System) também deve ser testado porque é essencial encontrar o endereço dos hosts traduzindo-o a partir de um nome, como uma URL. Use o comando nslookup para testar o DNS. Digite nslookup [cisco.com](http://cisco.com/) no prompt de comando para localizar o endereço do servidor Web Cisco. Quando o endereço é retornado, você sabe que o DNS está funcionando corretamente. Você também pode verificar quais [[portas]] estão abertas, onde elas estão conectadas e qual é seu status atual. Digite netstat na linha de comando para ver detalhes das conexões de rede ativas, conforme mostrado na saída do comando. O comando netstat será examinado mais adiante neste módulo.
 
 &#x20;
 
@@ -198,7 +198,7 @@ C:\Users\USER >netstat
 
 &#x20;
 
-Ir até virtualização da maquina e ajustar manualmente início e fim da memória para o tamanho da RAM para aliviar a %PAGE FILE SYS
+Ir até virtualização da maquina e ajustar manualmente início e fim da memória para o tamanho da RAM para aliviar a %[[page]] FILE SYS
 
 &#x20;
 

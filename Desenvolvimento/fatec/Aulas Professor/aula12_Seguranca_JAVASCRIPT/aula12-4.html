@@ -1,0 +1,18 @@
+<html><head><title>Meu Site</title></head><body>
+<script type="text/javascript">
+function verifica_formulario() {
+      if ((cadastro.news.checked==false)&&(cadastro.noticias.checked==false)) {
+         alert("Informar se deseja receber newsletter ou noticias");
+         return false;
+      }
+  return true;
+}
+</script>
+<form name="cadastro" method="GET" action="aula10.html" 
+                      onsubmit="return verifica_formulario()">
+Newsletter:<input type="checkbox" name="news"     value="news"><br>
+Noticias  :<input type="checkbox" name="noticias" value="noticias"><br>
+<input type="submit" Value="Envia" >
+</form>
+</body></html>
+

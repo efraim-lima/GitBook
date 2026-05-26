@@ -10,10 +10,10 @@ O curso de criptografia possuirá apresentações de seminários antes das prova
 * CTF
 * Web Hacking
 * Engenharia Social
-* Desenvolvimento de Exploits
+* [[fatec/Pesquisa/Pesquisa/ferramentas/desenvolvimento|desenvolvimento]] de Exploits
 * Aplicações de Segurança com Python
 * Segurança na Nuvem
-* Wifi Hacking
+* [[wifi]] Hacking
 * Aplicações com Criptografia usando CTF
 
 As apresentações terão critérios para a apresentação, sendo um tempo de 20 a 30 minutos e contendo uma apresentação PowerPoint.
@@ -41,7 +41,7 @@ Publicações de segurança com repercussão na mídia podem ser encontradas nos
 
 Pesquisar sobre os 10 mandamentos da ética profissional e de computadores.
 
-Uma boa ferramenta para fazermos testes e laboratórios de pentesting, seja em rede, seja em web e muitos outros recursos, é acessando os laboratórios da Wargames através do website: https://overthewire.org/wargames/
+Uma boa ferramenta para fazermos testes e laboratórios de [[fatec/Pesquisa/Pesquisa/ferramentas/pentesting|pentesting]], seja em rede, seja em web e muitos outros recursos, é acessando os laboratórios da Wargames através do website: https://overthewire.org/wargames/
 
 ### TEÓRICO
 

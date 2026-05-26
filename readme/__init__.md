@@ -4,4 +4,4 @@ hidden: false
 
 # \_\_init\_\_
 
-\[\[readme/cyberetico/**init**|cyberetico]] \[\[readme/fatec/**init**|fatec]] \[\[readme/soc/**init**|soc]] \[\[readme/tools/**init**|tools]] \[\[Pesquisa]]
+\[\[[[soc/tools/operational-systems/windows/README|README]]/cyberetico/**init**|cyberetico]] \[\[[[soc/tools/operational-systems/windows/README|README]]/[[FATEC]]/**init**|[[FATEC]]]] \[\[[[soc/tools/operational-systems/windows/README|README]]/soc/**init**|soc]] \[\[[[soc/tools/operational-systems/windows/README|README]]/tools/**init**|tools]] \[\[Pesquisa]]

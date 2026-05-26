@@ -5,6 +5,6 @@ hidden: true
 
 # \_\_init\_\_
 
-\[\[readme/cyberetico/temas/**init**|temas]]
+\[\[[[soc/tools/operational-systems/windows/README|README]]/cyberetico/temas/**init**|temas]]
 
 ## CYBERETICO

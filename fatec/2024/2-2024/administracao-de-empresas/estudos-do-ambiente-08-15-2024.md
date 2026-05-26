@@ -2,9 +2,9 @@
 
 A empesa é um ambriente formal, pois as regras são claras, expostas e documentadas.
 
-Algumas pessoas possuem lderanã natural, essas são as que conseguem liderar de maneira natural e leve...Taylor observou isso no processo de organização natural do trabalho.
+Algumas pessoas possuem lderanã natural, essas são as que conseguem liderar de maneira natural e leve...Taylor observou isso no processo de organização natural do [[trabalho]].
 
-Quando as pessoas passaram a inderagir mais no trabalho (conversando), comprovou-se que este tipo de interação aumentava a produtividade da empresa e das equipes.
+Quando as pessoas passaram a inderagir mais no [[trabalho]] (conversando), comprovou-se que este tipo de interação aumentava a produtividade da empresa e das equipes.
 
 Os gestores devem ser treinados para situações diferentes, pois é comum haverem falhas nessas posições e o objetivo não é que o gestor seja a prova de falhas, mas que saiba ajustar a rota ao decorrer das situações.
 
@@ -12,7 +12,7 @@ Algo natural: tratamos como somos tratados e respeitamos como somos respeitados 
 
 Penalidade social: ser rejeitado pelo bando, não chamando para festas/eventos, desmanchando as rodinhas, etc..
 
-Ao chegar em um grupo novo para trabalhar é interessante analisar como o grupo se comporta perante o trabalho e fazer de acordo com o que o grupo já fazia antes de chegarmos, isso pode nos ajudar a sermos melhor aceitos no grupo como integrante do mesmo.
+Ao chegar em um grupo novo para trabalhar é interessante analisar como o grupo se comporta perante o [[trabalho]] e fazer de acordo com o que o grupo já fazia antes de chegarmos, isso pode nos ajudar a sermos melhor aceitos no grupo como integrante do mesmo.
 
 A organização informal manifestou-se cmo:
 
@@ -25,7 +25,7 @@ Um lider precisa defender os interesses da empresa, por isso ele precisará faze
 
 O nível da produção é resultados das relações fisicas e não dos recursos A capacidade de alguém produzir, sua competência e eficienca estão relacionados com sua capacidade de integração social. Quanto maior a integração social do grupo, maior a disposição de produzir.
 
-Sempre enfatizar o trabalho de equipe em situações que formos apresentar algo que fizemos no passado, isso denota que temos capacidades sociais com o grupo.
+Sempre enfatizar o [[trabalho]] de equipe em situações que formos apresentar algo que fizemos no passado, isso denota que temos capacidades sociais com o grupo.
 
 O que motiva nos cativa, o resto nos come.
 
@@ -49,7 +49,7 @@ A liderança é o processo de saber conduzir o interesse das pessoas, também é
 
 Liderança é um processo de função do lider, dos seguidores (colaboradores) e das variáveis da situação (empresa que estamos).
 
-O líder tem traços específicos que faz com que as pessoas o selecionem como lider, por exemplo: características intelectuais, físicas, sociais e relacionados com a tarefas.
+O líder tem traços específicos que faz com que as pessoas o selecionem como lider, por exemplo: características intelectuais, físicas, sociais e relacionados com a [[Tarefas]].
 
 Estilos de liderança:
 

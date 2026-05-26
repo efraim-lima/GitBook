@@ -1,0 +1,24 @@
+<html><head><title>Meu Site</title></head><body>
+<script type="text/javascript">
+function verifica_formulario() {
+  if (cadastro.usuario.value==""){
+      alert("Preencher o nome");
+      cadastro.usuario.focus();
+      return false;
+  }
+  if (cadastro.email.value==""){
+      alert("Preencher o Email");
+      cadastro.email.focus();
+      return false;
+  }
+  return true;
+}
+</script>
+<form name="cadastro" method="GET" action="aula10.html" 
+                      onsubmit="return verifica_formulario()">
+Nome:    <input type="text" name="usuario" ><br>
+Email..: <input type="text" name="email" ><br>
+<input type="submit" Value="Envia" >
+</form>
+</body></html>
+

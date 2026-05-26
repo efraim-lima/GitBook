@@ -150,25 +150,25 @@ KORKIN, Igor ; TANDA, Satoshi. Detect Kernel-Mode Rootkits via Real Time Logging
 DETECT KERNEL-MODE ROOTKITS VIA REAL TIME LOGGING & CONTROLLING MEMORY ACCESS
 {% endfile %}
 
-YAGEMANN, Carter; NOUREDDINE, Mohammad A; WAJIH UL HASSAN; _et al_. Validating the Integrity of Audit Logs Against Execution Repartitioning Attacks. 2021.
+YAGEMANN, Carter; NOUREDDINE, Mohammad A; WAJIH UL HASSAN; _et al_. Validating the Integrity of Audit [[logs]] Against Execution Repartitioning Attacks. 2021.
 
-{% file src="../../../../.gitbook/assets/Validating the Integrity of Audit Logs Against Execution.pdf" %}
-Validating the Integrity of Audit Logs Against Execution Repartitioning Attacks
+{% file src="../../../../.gitbook/assets/Validating the Integrity of Audit [[logs]] Against Execution.pdf" %}
+Validating the Integrity of Audit [[logs]] Against Execution Repartitioning Attacks
 {% endfile %}
 
-Verificar a Integridade dos Logs | [https://www.beyondtrust.com/blog/entry/unix-linux-security-log-integrity-important](https://www.beyondtrust.com/blog/entry/unix-linux-security-log-integrity-important)
+Verificar a Integridade dos [[logs]] | [https://www.beyondtrust.com/blog/entry/unix-linux-security-log-integrity-important](https://www.beyondtrust.com/blog/entry/unix-linux-security-log-integrity-important)
 
 Garantindo integridade de Logas so Servidor para a Estação | [https://serverfault.com/questions/931488/what-is-the-best-practice-for-logs-integrity-and-authenticity](https://serverfault.com/questions/931488/what-is-the-best-practice-for-logs-integrity-and-authenticity)
 
-Checando a Integridade dos Logs | [https://digital-library.theiet.org/doi/10.1049/cp.2013.2026](https://digital-library.theiet.org/doi/10.1049/cp.2013.2026)
+Checando a Integridade dos [[logs]] | [https://digital-library.theiet.org/doi/10.1049/cp.2013.2026](https://digital-library.theiet.org/doi/10.1049/cp.2013.2026)
 
-SUTTON, Andrew ; SAMAVI, Reza. Blockchain Enabled Privacy Audit Logs. Lecture Notes in Computer Science, p. 645–660, 2017.
+SUTTON, Andrew ; SAMAVI, Reza. Blockchain Enabled Privacy Audit [[logs]]. Lecture Notes in Computer Science, p. 645–660, 2017.
 
-{% file src="../../../../.gitbook/assets/Blockchain Enabled Privacy Audit Logs.pdf" %}
-Blockchain Enabled Privacy Audit Logs
+{% file src="../../../../.gitbook/assets/Blockchain Enabled Privacy Audit [[logs]].pdf" %}
+Blockchain Enabled Privacy Audit [[logs]]
 {% endfile %}
 
-Compilado de datasets de logs para analises de IA | [https://github.com/logpai/loghub](https://github.com/logpai/loghub)
+Compilado de datasets de [[logs]] para analises de IA | [https://github.com/logpai/loghub](https://github.com/logpai/loghub)
 
 \####################################################################
 

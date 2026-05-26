@@ -12,13 +12,13 @@ http://www.dominio.com/../../winnt/system32/cmd.exe
 
 desse jeito poderiamos acessar o cmd direto do sistema operacional, em servidores eb mais antigos. Para testar isso podemos instalar: windows nt 4.0/IIS 4.0 (sem o service pack 4, apenas até o 3)
 
-nslookup --text=MX // para descobrir qual a url responsável por aquele serviço telnet 25 // usar portas não padrão do telnet
+nslookup --text=MX // para descobrir qual a url responsável por aquele serviço telnet 25 // usar [[portas]] não padrão do telnet
 
 ao dar telnet nunca apontar sem direcionar qual porta quer especificamente, pois pode ter umm ataque reverso configurado para aquela porta.
 
 Sniffer de rede para ataque reverso quando alguém tenta acessar uma porta X
 
-Portas mais importantes para se decorar Todas abaixo de 1024 são portas de entrada
+[[portas]] mais importantes para se decorar Todas abaixo de 1024 são [[portas]] de entrada
 
 21 FTP&#x20;
 
@@ -28,9 +28,9 @@ Portas mais importantes para se decorar Todas abaixo de 1024 são portas de entr
 
 25 SMTP ou SMTPS
 
-Todo servidor SMTP precisa de um comando EHLO para poder fazer conexão, sem isso ele não permite acesso, seria como um handshake.
+Todo servidor SMTP precisa de um comando EHLO para poder fazer conexão, sem isso ele não permite acesso, seria como um [[handshake]].
 
-diretorio boot tem os arquivos de kernel e modulos de kernel, o processo de bootstrap procura neste diretório o kernel para inicializar
+diretorio [[boot]] tem os arquivos de kernel e modulos de kernel, o processo de bootstrap procura neste diretório o kernel para inicializar
 
 diretorio dev tem os modulos de devices, onde o usuário consegue acessar o dispositivo por meio do dispositivo
 

@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Meu Site</title>
+</head>
+<body>
+<script type="text/javascript">
+function verifica_formulario() {
+  if (cadastro.nome.value==""){
+      alert("Preencher o nome");
+      cadastro.usuario.focus();
+      return false;
+  }
+  if (cadastro.endereco.value==""){
+      alert("Preencher o Endereco");
+      cadastro.endereco.focus();
+      return false;
+  }
+  return true;
+}
+</script>
+
+<form method="GET" action="cadastro.php" onsubmit="verifica_formulario()> 
+nome.......: <input type="text" name="nome" ><br>
+endereco...: <input type="type" name="endereco" size="8" maxlength="8"><br>
+numero.....: <input type="type" name="numero" size="8" maxlength="8"><br>
+complemento: <input type="type" name="complemento" size="8" maxlength="8"><br>
+bairro.....: <input type="type" name="bairro" size="8" maxlength="8"><br>
+cidade.....: <input type="type" name="cidade" size="8" maxlength="8"><br>
+uf.........: <input type="type" name="uf" size="8" maxlength="8"><br>
+cep........: <input type="type" name="cep" size="8" maxlength="8"><br>
+email......: <input type="type" name="email" size="8" maxlength="8"><br>
+departamento:<input type="type" name="departamento" size="8" maxlength="8"><br>
+cargo.......:<input type="type" name="cargo" size="8" maxlength="8"><br>
+usuario....: <input type="type" name="usuario" size="8" maxlength="8"><br>
+senha......: <input type="type" name="senha" size="8" maxlength="8"><br>
+<input type="submit" Value="Envia" >
+</form>
+</body></html>
+

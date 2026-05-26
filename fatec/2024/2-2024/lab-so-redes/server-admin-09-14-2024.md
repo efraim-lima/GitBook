@@ -2,7 +2,7 @@ Dentro do Windows server podemos criar uma estrutura de dependẽncias dentro da
 
 Quando precisarmos criar alguma estrutura lógica organizacional basta criarmos uma nova OU (Organizational Unit) dentro do domínio que estamos localizados; atenção que estas OUs serão sempre criadas automaticamente com uma proteção de segurança que inibe deleção acidental de OUs dentro do domínio (basta criar como novo)
 
-Ao adicionar uma nova estação de trabalho, no domínio devemos devemos ir em 
+Ao adicionar uma nova estação de [[trabalho]], no domínio devemos devemos ir em 
 
 ``` Configurações >  Sistema > Sobre > Configurações Avançadas do Sistema> Nome do Computador > Alterare adicionar 
 ```
