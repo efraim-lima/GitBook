@@ -1,6 +1,6 @@
 # DSPTI
 
-[[readme/fatec/2024/1-2024/dspti/apresentacoes/__init__|__init__]] - apresentações
+[[readme/fatec/2024/1-2024/dspti/apresentacoes/__init__|__init__]] - [[Apresentações]]
 [[backup]]
 [[boot]]
 [[eletrica]]

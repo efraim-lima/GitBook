@@ -6,7 +6,7 @@ Criei um sharepoint para centralizar minhas [[ATIVIDADES]] e meu [[trabalho]], c
 
 O link para acessar é:&#x20;
 
-{% embed url="https://fatecspgov.sharepoint.com/:u:/r/sites/CyberEtico/SitePages/[[ATIVIDADES]]---Artigos.aspx?csf=1&e=eyaMMi&web=1" %}
+{% embed url="https://fatecspgov.sharepoint.com/:u:/r/sites/[[cyberetico]]/SitePages/[[[[fatec/2026/1-2026/Desenvolvimento/ATIVIDADES|ATIVIDADES]]]]---Artigos.aspx?csf=1&e=eyaMMi&web=1" %}
 Sharepoint da [[FATEC]] | [[ARTIGO]]
 {% endembed %}
 

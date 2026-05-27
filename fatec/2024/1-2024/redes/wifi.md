@@ -2,7 +2,7 @@
 
 Topologias de wifi:
 
-BSS: Basic service set => em casas em em SOHO ad-hoc -> rede itinerante, vem dos conceitos militares onde todos conseguem se comunicar entre si, sendo capaz de detectar se os soldados estão em ação.
+BSS: Basic service set => em casas em em SOHO ad-hoc -> rede itinerante, vem dos conceitos militares onde todos conseguem se comunicar entre si, sendo capaz de detectar se [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] soldados estão em ação.
 
 BSS with AP: BSS com Access Point
 
@@ -30,6 +30,6 @@ Antigamente tinham hackers que acessavam as redes wifis anotando apenas o BSSID 
 
 WPA2 Enterprise: usado junto a um servidor de autenticação, para detectar a credeciais deste user é usado o protocolo EAP. Isso é Determinado pelo usuaruio e o padrão AAA (Accounting, Authorization and Authentication); isso tudo pode ser condigurado em um servidor RADIUS conectado à rede, até mesmo através de uma RaspberryPi
 
-\---> Miscrosoft Active Directory, SAMBA 4 (inclusive o AD não detecta que é Linux)
+\---> Miscrosoft Active Directory, SAMBA 4 (inclusive o AD não detecta que é [[soc/tools/operational-systems/linux/linux|linux]])
 
 Em casa: configurar um WPA2 Enterprise, servidor Radius e 2 hosts

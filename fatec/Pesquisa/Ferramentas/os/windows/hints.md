@@ -5,7 +5,7 @@ nformações importantes a serem guardadas para perícias forenses:
 \
 &#x20;
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_/WINDOWS
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_/[[soc/tools/operational-systems/windows/windows|windows]]
 
 
 
@@ -13,20 +13,20 @@ nformações importantes a serem guardadas para perícias forenses:
 
 
 
-Para dicas de SOC neste sistema operacional: [windows](../../../../../soc/tools/operational-systems/windows/ "mention")
+Para dicas de [[soc]] neste sistema operacional: [windows](../../../../../soc/tools/operational-systems/windows/ "mention")
 
 ESTUDAR CMDLETS
 
-* Os dados que o arquivo contém são armazenados no atributo $DATA;
+* [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] dados que o arquivo contém são armazenados no atributo $DATA;
 * fluxos de dados alternativos (ADSs) podem ser usados para injetar [[soc/tools/malwares|malwares]] no sistema pois é facil ocultar dados em um ADS. Ex.: No sistema de arquivos NTFS, um arquivo com um ADS é identificado após o nome do arquivo e dois pontos, por exemplo, Testfile.txt:ADS.
-* pra ver se há um arquivo ads no Windows precisamos usar o atributo dir /r.
+* pra ver se há um arquivo ads no [[soc/tools/operational-systems/windows/windows|windows]] precisamos usar o atributo dir /r.
 
 &#x20;
 
 \
 ENCONTRAR DADOS DO FABRICANTE:
 
-* Systeminfo : todos os dados do PC como fabricantes, placas NAT, chipset e afins
+* Systeminfo : todos [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] dados do PC como fabricantes, placas NAT, chipset e afins
 * Get-Ciminstance Win32\_Bios | Format-List Serialnumber,Manufacturer,Product: dados como numero de serie do dispositivo
 
 &#x20;
@@ -202,7 +202,7 @@ Ir até virtualização da maquina e ajustar manualmente início e fim da memór
 
 &#x20;
 
-Organizar a estrutura de memoria do Windows constantemente
+Organizar a estrutura de memoria do [[soc/tools/operational-systems/windows/windows|windows]] constantemente
 
 &#x20;
 

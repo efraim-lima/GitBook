@@ -193,21 +193,21 @@ cat /etc/crontab cat /etc/cron.hourly/ cat /etc/cron.daily/ cat /etc/cron.weekly
 
 sudo bash -c 'for user in $(cut -f1 -d: /etc/passwd); do entries=$(crontab -u $user -l 2>/dev/null | grep -v "^#"); if \[ -n "$entries" ]; then echo "$user: Crontab entry found!"; echo "$entries"; echo; fi; done' sudo ls -la /var/spool/cron/crontabs
 
-sudo systemctl list-units --- all --- type=service Um comando que pode ser muito útil para descobrir serviços configurados no sistema que podem ser maliciosos é o comando `systemctl list-unit-files`, este comando retorna os arquivos de configuração dos serviços, isso pode facilitar nossa busca por serviços maliciosos, como sempre preciasamos fazer no Linux vale a pena analizar o resultado do output filtrando os resultados com "grep", para este caso vamos enfatizar alguns termos que podem nos dar retornos mains interessantes para nossos serviços, tais termos são: \* service \* device \* mount \* socket
+sudo systemctl list-units --- all --- type=service Um comando que pode ser muito útil para descobrir serviços configurados no sistema que podem ser maliciosos é o comando `systemctl list-unit-files`, este comando retorna [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] arquivos de configuração dos serviços, isso pode facilitar nossa busca por serviços maliciosos, como sempre preciasamos fazer no [[soc/tools/operational-systems/linux/linux|linux]] vale a pena analizar o resultado do output filtrando [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] resultados com "grep", para este caso vamos enfatizar alguns termos que podem nos dar retornos mains interessantes para nossos serviços, tais termos são: \* service \* device \* mount \* socket
 
 O output deste comando nos retornará alguns dados que podem ser interpretados como:
 
 * **UNIT FILE:** Nome do arquivo de unidade. Isso inclui o tipo de unidade (por exemplo, .service, .mount, .socket).
-*   **STATE:** Estado de habilitação da unidade. Os estados comuns incluem:
+*   **STATE:** Estado de habilitação da unidade. [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] estados comuns incluem:
 
     > * enabled: A unidade está habilitada e será iniciada automaticamente no [[boot]].
     > * disabled: A unidade está desabilitada e não será iniciada automaticamente.
     > * static: A unidade não pode ser habilitada diretamente, pois é usada apenas como dependência de outras unidades ou é ativada por outra unidade.
     > * masked: A unidade está mascarada, o que significa que ela está simbolicamente vinculada a /dev/null e não pode ser iniciada.
 
-Outra abordagem que pode ser abordada para analisar os processos é através do diretório /proc, que organiza os processos de forma hierarquica; junto a isso podemos fazer uma analise dos processos e seus PIDs detectados para analisarmos o que cada processo tem feito no sistema através das ferramentas como `top` e `htop` para levantar qual seria o processo a ser analisado e seus PID. Com o PID em mãos podemos utilizar ferramentas como `ps -f <PID>`, `lsof -p <PID>` e `pstree -p -s <PID>`, assim teremos maior noção da ação que este processo está tomando no sistema operacional tanto em detalhes de recursos que o mesmo está acessando no background como de cadeia de processos que circundam o mesmo.
+Outra abordagem que pode ser abordada para analisar [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] processos é através do diretório /proc, que organiza [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] processos de forma hierarquica; junto a isso podemos fazer uma analise dos processos e seus PIDs detectados para analisarmos o que cada processo tem feito no sistema através das [[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]] como `top` e `htop` para levantar qual seria o processo a ser analisado e seus PID. Com o PID em mãos podemos utilizar [[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]] como `ps -f <PID>`, `lsof -p <PID>` e `pstree -p -s <PID>`, assim teremos maior noção da ação que este processo está tomando no sistema operacional tanto em detalhes de recursos que o mesmo está acessando no background como de cadeia de processos que circundam o mesmo.
 
-1\. **Identificando a sessão de boot correspondente ao incidente:** Com a persistencia de logs agora conseguimos analisar os logs de acordo com o boot ID e seu timestamp, selecionando a data em que houve o incidente no sistema, para encontrar o boot ID já sabemos, basta usar o commando `journalctl --boot-list` e coletar o boot ID equivalente a data do incidennte (ou do evento que precisa analisar); tendo o Boot ID em mãos insira no comando `journalctl -b <boot ID>`, com isso terá acesso a todos os [[logs]] gerados naquele dia de forma completa. Mas mesmo tendo acesso aos [[logs]] pode ser difícil extrair dados no meio do volume de dados coletados, para isso podemmos usar [[comandos]] e prompts para facilitar na busca, segue abaixo alguns [[comandos]] que podem ser utilizados para encontrarmos dados que poderiam ser coerentes.
+1\. **Identificando a sessão de boot correspondente ao incidente:** Com a persistencia de logs agora conseguimos analisar os logs de acordo com o boot ID e seu timestamp, selecionando a data em que houve o incidente no sistema, para encontrar o boot ID já sabemos, basta usar o commando `journalctl --boot-list` e coletar o boot ID equivalente a data do incidennte (ou do evento que precisa analisar); tendo o Boot ID em mãos insira no comando `journalctl -b <boot ID>`, com isso terá acesso a todos [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] [[logs]] gerados naquele dia de forma completa. Mas mesmo tendo acesso aos [[logs]] pode ser difícil extrair dados no meio do volume de dados coletados, para isso podemmos usar [[comandos]] e prompts para facilitar na busca, segue abaixo alguns [[comandos]] que podem ser utilizados para encontrarmos dados que poderiam ser coerentes.
 
 ```bash
 journalctl -b <boot_id> | grep -i 'COMMAND'
@@ -227,7 +227,7 @@ systemctl list-unit-files --type=service
 journalctl -b <boot_id> -u <service_name>.service
 ```
 
-Tendo uma boa noção dos [[comandos]] que podemos utilizar podemos agora emitir o comando e analisar sua saída para termos uma idéia de como os dados são coletados e como podem ser analizados. O comando utilizado para este caso foi o `journalctl -b -3 | grep 'COMMAND'`. Vamos analisar um pouco o output de tal comando:
+Tendo uma boa noção dos [[comandos]] que podemos utilizar podemos agora emitir o comando e analisar sua saída para termos uma idéia de como [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] dados são coletados e como podem ser analizados. O comando utilizado para este caso foi o `journalctl -b -3 | grep 'COMMAND'`. Vamos analisar um pouco o output de tal comando:
 
 ```bash
 ago 01 10:15:04 zorin pkexec[4875]: efraim: Executing command [USER=root] [TTY=unknown] [CWD=/home/efraim] [COMMAND=/usr/lib/update-notifier/package-system-locked]
@@ -263,11 +263,11 @@ ago 01 22:16:05 zorin sudo[56218]:   efraim : TTY=pts/0 ; PWD=/home/efraim ; USE
 
 ## DEPENDENCIES
 
-Pode ser imprescindível analizar o quê está instalado no sistema, se os [[apps]] são legí timos ou podem estar comprometendo o sistema.
+Pode ser imprescindível analizar o quê está instalado no sistema, se [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] [[apps]] são legí timos ou podem estar comprometendo o sistema.
 
 Para isso temos alguns [[comandos]] que podem ser emitidos no terminal para conseguirmos estes dados como informação.
 
-Um primeiro comando que podemos emitir é o `lsmod` para verificarmos, na ordem do output, os módulos do Kernel, seu tamamho e quantidade em uso.
+Um primeiro comando que podemos emitir é o `lsmod` para verificarmos, na ordem do output, [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] módulos do Kernel, seu tamamho e quantidade em uso.
 
 ```bash
 Module                  Size  Used by
@@ -278,11 +278,11 @@ vmmon                 167936  0
 
 Também precisamos analisar todos pacotes instalados, pode haver algo no meio, pra isso podemos usar [[comandos]] como `dpkg -l`, `dpkg-query -l`, `apt list --installed`, `flatpak list` e/ou `snap list` e verificar cada item e sua proveniência.
 
-Algumas ferramentas que podemos utilizar para desenvolver um processo de monitoramento do sistema no linux, algo semelhante ao Sysmon no Windows:
+Algumas [[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]] que podemos utilizar para desenvolver um processo de monitoramento do sistema no [[soc/tools/operational-systems/linux/linux|linux]], algo semelhante ao Sysmon no [[soc/tools/operational-systems/windows/windows|windows]]:
 
 
 
-* **Auditd**: O Audit Daemon é uma ferramenta poderosa para monitoramento e auditoria de eventos no Linux. Ele pode registrar [[ATIVIDADES]] do sistema e arquivos.
+* **Auditd**: O Audit Daemon é uma ferramenta poderosa para monitoramento e auditoria de eventos no [[soc/tools/operational-systems/linux/linux|linux]]. Ele pode registrar [[ATIVIDADES]] do sistema e arquivos.
   * **Instalação**: `sudo apt-get install auditd` (Debian/Ubuntu) ou `sudo yum install audit` (RHEL/CentOS).
   * **Uso básico**: Configure regras no arquivo `/etc/audit/audit.rules` e use `auditctl` para adicionar ou modificar regras de auditoria.
 * **Osquery**: Uma ferramenta que permite realizar consultas SQL em dados do sistema, semelhante a um banco de dados.
@@ -291,8 +291,8 @@ Algumas ferramentas que podemos utilizar para desenvolver um processo de monitor
 * **Falco**: Um monitor de segurança e integridade de contêineres e sistemas, que pode fornecer alertas sobre comportamentos anômalos.
   * **Instalação**: Siga as instruções em https://falco.org/docs/getting-started/.
   * **Uso básico**: O Falco roda como um serviço e usa regras configuradas para gerar alertas sobre [[ATIVIDADES]] suspeitas.
-* **Lsof**: Uma ferramenta para listar arquivos abertos e os processos que os abriram.
-  * **Instalação**: Geralmente já está disponível em distribuições Linux.
+* **Lsof**: Uma ferramenta para listar arquivos abertos e [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] processos que [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] abriram.
+  * **Instalação**: Geralmente já está disponível em distribuições [[soc/tools/operational-systems/linux/linux|linux]].
   * **Uso básico**: Execute `lsof` para listar arquivos abertos e `lsof /path/to/file` para verificar processos relacionados a um arquivo específico.
 * **Strace**: Uma ferramenta para rastrear chamadas de sistema e sinais de processos.
   * **Instalação**: `sudo apt-get install strace` (Debian/Ubuntu) ou `sudo yum install strace` (RHEL/CentOS).
@@ -326,10 +326,10 @@ Algumas ferramentas que podemos utilizar para desenvolver um processo de monitor
 * iniciar o conteúdo contextualizando
   * se falar de redes falar dos componentes de rede
   * se falar do SO como pode ser o processo
-* afunilar sobre as diferenças entre distros (separar por cada OS diferente)
-  * destrinchar se nos demais distro rodam apenas em linha de comando ou outras ferramentas
+* afunilar sobre as diferenças entre distros (separar por cada [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] diferente)
+  * destrinchar se nos demais distro rodam apenas em linha de comando ou outras [[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]]
   * aprofundar para o processo de formatação pois [[logs]] podem ser alterados de forma estratégicaa
-    * analisar mudanças na base do linux (por exemplo no github)
+    * analisar mudanças na base do [[soc/tools/operational-systems/linux/linux|linux]] (por exemplo no github)
     * verificar se ele pode sr burlavel ou não e se essa ação deixa rastros
 * identificar artigos e livros que apresentem o conteúdo que estamos abordando a forma que isso de desenrola --> precisamos ter uma informação em algum idioma que possa determinar que não é possivel fazer modificação em registros de [[logs]]
   * fazer um levantamento se funcionou ou se não funcionou
@@ -338,7 +338,7 @@ Algumas ferramentas que podemos utilizar para desenvolver um processo de monitor
 * fazer simulações para levantar o que pode acontecer
   * por exemplo, baixar executaveis, clicar em links maliciosos
   * processo de intalação virtual e conteinerizaçao
-  * sistama criado para rodar windows no linux
+  * sistama criado para rodar [[soc/tools/operational-systems/windows/windows|windows]] no [[soc/tools/operational-systems/linux/linux|linux]]
     * pode rodar via linha de comando
 * um cenário do que pretendemos falar sobre a tematica e um problema para solucionarmos com o artigo
   * mutabilidade de [[logs]] pode ser o tema principal

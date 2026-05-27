@@ -4,14 +4,14 @@ Processos se comunicam através de portas na rede, por exemplo: a padrão de web
 
 Um servico de servidor rodando dentro do system control pode ser chamado tanto pelo nome do serviço quanto pelo nome de daemon (daemon service), o que indica que o mesmo está rolando como um processo a parte no sistema.
 
-As portas são maneiras de diferenciar serviços dentro da rede (direcionando pacotes para os locais corretos).
+As portas são maneiras de diferenciar serviços dentro da rede (direcionando pacotes para [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] locais corretos).
 
 Estudar um pouco de iptables e ufw.
 
 Desligar o verificar o ufw: sudo ufw disable / status
 
-Para saber se uma porta está livre ou não, no linux:
+Para saber se uma porta está livre ou não, no [[soc/tools/operational-systems/linux/linux|linux]]:
 
 cat /etc/services sudo tail -f /etc/log/auth.log
 
-etc -> arquivos de configuração do linux
+etc -> arquivos de configuração do [[soc/tools/operational-systems/linux/linux|linux]]

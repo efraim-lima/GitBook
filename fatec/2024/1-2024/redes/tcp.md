@@ -30,4 +30,4 @@ No wireshark o hacker analisa as mensagens com a flag PSH (ou push)
 
 Estudar gerenciamento de serviços
 
-checar os rfcs do tcp e do udpm no site da ietf.org.
+checar [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] rfcs do tcp e do udpm no site da ietf.org.

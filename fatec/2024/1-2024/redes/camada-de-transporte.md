@@ -2,15 +2,15 @@
 
 Processo para analisar processos suspeitos.
 
-Encontrando [[portas]] registradas no linux:
+Encontrando [[portas]] registradas no [[soc/tools/operational-systems/linux/linux|linux]]:
 
 /etc/servces
 
-Encontrando os sockets conectados na rede: sudo netstat -putan sudo ss -putan'
+Encontrando [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] sockets conectados na rede: sudo netstat -putan sudo ss -putan'
 
-Analisando os [[logs]] dos ultimos processos: sudo tail -f auth.log
+Analisando [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] [[logs]] dos ultimos processos: sudo tail -f auth.log
 
-Os hackers atacam os sites por meio de proxy Random Socks Server -> Proxy Chains, são maquinas na rede que estão aleatoriamente na rede e ficam ligadas apenas em horários especificos, assim desligam estes servidores e não podem mais ser identificados
+[[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] hackers atacam [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] sites por meio de proxy Random Socks Server -> Proxy Chains, são maquinas na rede que estão aleatoriamente na rede e ficam ligadas apenas em horários especificos, assim desligam estes servidores e não podem mais ser identificados
 
 Camada 8 da [[osi]] = Usuário
 
@@ -26,11 +26,11 @@ MSS (Maximum Segment Size) MYU (Maximum Transport Unit) H (Headers) => cada Head
 
 Tamanho da carga util dos pacotes = MSS - (H + H) Logo, carga util = MSS bytes - 40bytes
 
-Para transportar dados muito grandes pela rede, o [[tcp]] fragmenta os pacotes e identifica o Sequence Number de cada frame para que possa ser novamente identificado na chegada e os dados (informação) sejam remontados no fim garantindo sua integridade.
+Para transportar dados muito grandes pela rede, o [[tcp]] fragmenta [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] pacotes e identifica o Sequence Number de cada frame para que possa ser novamente identificado na chegada e [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] dados (informação) sejam remontados no fim garantindo sua integridade.
 
 O [[tcp]] mantém uma copia dos dados no buffer do emissor, aguarda o ACK por uma quantidade de tempo de RTT (Round Trip Time) O RTT trabalha em cima da media movel exponencial ponderada e adiciona o coeficiente de "cagaço"
 
-O processo de investigar os processos no servidor é feito durante o [[handshake]]
+O processo de investigar [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] processos no servidor é feito durante o [[handshake]]
 
 No wireshark vale a pena fazer o diagrama de fluxo da conexão
 

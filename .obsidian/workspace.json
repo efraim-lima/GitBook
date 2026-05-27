@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Desenvolvimento/Desenvolvimento.md",
+                "file": "soc/forense/logs/logs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Desenvolvimento"
+              "title": "logs"
             }
           }
         ],
@@ -114,6 +114,7 @@
       {
         "id": "dc13de2168d037d0",
         "type": "tabs",
+        "dimension": 28.469241773962807,
         "children": [
           {
             "id": "598e170ca0ed8362",
@@ -216,6 +217,16 @@
               "icon": "smart-connections",
               "title": "Connections"
             }
+          },
+          {
+            "id": "81dec0d22ffabc08",
+            "type": "leaf",
+            "state": {
+              "type": "smart-lookup-view-connections",
+              "state": {},
+              "icon": "smart-lookup",
+              "title": "Lookup"
+            }
           }
         ],
         "currentTab": 6
@@ -223,6 +234,7 @@
       {
         "id": "e6fa56c359b9072a",
         "type": "tabs",
+        "dimension": 71.5307582260372,
         "children": [
           {
             "id": "57cd248ccb3574b4",
@@ -240,7 +252,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 662.5
+    "width": 1471.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -257,64 +269,64 @@
       "zk-prefixer:Create new unique note": false,
       "workspaces:Manage workspace layouts": false,
       "obsidian-git:Open Git source control": false,
-      "card-board:CardBoard": false,
       "smart-connections:Smart Connections: Open connections view": false,
       "smart-connections:Toggle Footer Connections": false,
       "smart-connections:Smart Connections: Open random connection": false,
       "smart-connections:Smart Lookup: Open lookup view": false,
-      "obisidian-note-linker:Note Linker": false
+      "obisidian-note-linker:Note Linker": false,
+      "card-board:CardBoard": false
     }
   },
   "active": "087039d6c936fcf0",
   "lastOpenFiles": [
-    "Desenvolvimento/Desenvolvimento.md",
-    "Desenvolvimento/Java/DogSniffer/README.md",
-    "Tarefas.md",
-    "Desenvolvimento/fatec/n2/N2.md",
-    "fatec/2026/1-2026/Desenvolvimento/ATIVIDADES.md",
-    "fatec/2026/1-2026/Desenvolvimento/Uso do XAMPP para acesso.md",
-    "Desenvolvimento/fatec/n2/cadastro.php",
-    "Desenvolvimento/fatec/AGENTS.md",
-    "Desenvolvimento/fatec/n2/style.css",
-    "Desenvolvimento/fatec/n2/sobre.html",
-    "Desenvolvimento/fatec/n2/lista.html",
-    "Desenvolvimento/fatec/n2/index.html",
-    "Desenvolvimento/fatec/n2/home.html",
-    "Desenvolvimento/fatec/n2/header.html",
+    "soc/forense/logs/logs.md",
+    "soc/forense/logs/linux-logs/README.md",
+    "cyberetico/temas/temas.md",
+    "cyberetico/Backup AI NO NAKA DE/Backup AI NO NAKA DE.md",
+    "cyberetico/cyberetico.md",
+    "obsidian/README.md",
+    "Obsidian/Welcome.md",
+    "Obsidian/Obsidian.md",
+    "Work/venv/venv.md",
+    "Work/To Do/To Do.md",
+    "Work/scripts/scripts.md",
+    "Work/relatorios/relatorios.md",
+    "Work/Processos e Análises/Stellar Cyber/Stellar Cyber.md",
+    "Work/Processos e Análises/Processos e Análises.md",
+    "Work/Automações/Automações.md",
+    "Work/Work.md",
+    "Teste/Teste.md",
+    "soc/tryhackme/tryhackme.md",
+    "soc/tools/operational-systems/operational-systems.md",
+    "soc/tools/operational-systems/windows/windows.md",
+    "soc/tools/operational-systems/linux/linux.md",
+    "soc/tools/intel/intel.md",
+    "soc/tools/tools.md",
+    "soc/phishing/analise-de-possivel-phishing/analise-de-possivel-phishing.md",
+    "soc/phishing/phishing.md",
+    "soc/malware-analysis/engenharia-reversa/engenharia-reversa.md",
+    "fatec/2026/1-2026/Estagio",
+    "reports/2026/05",
+    "reports/2026",
+    "reports",
+    "fatec/Pesquisa/TCC/APRESENTACAO_TCC_MCP_SEGURANCA.pptx",
+    "fatec/Pesquisa/TCC/criar_apresentacao.py",
+    "fatec/Pesquisa/TCC/Recomendações de segurança para o uso do MCP AI integrado à plataforma de orquestração de containers.docx.pdf",
+    "cyberetico/Backup AI NO NAKA DE/AI_NO_NAKA_DE.pdf",
+    "cyberetico/Backup AI NO NAKA DE/AI_NO_NAKA_DE-Voz.pdf",
+    "cyberetico/Backup AI NO NAKA DE/AI_NO_NAKA_DE-Violoncelo.pdf",
+    "Work/Pasted image 20260526094043.png",
+    "Work/Pasted image 20260521120614.png",
+    "Work/Interflow Search - Fonte de Logs.png",
     "Desenvolvimento/fatec/n2/duck_header.jpg",
     "Desenvolvimento/fatec/n2/duck_chefe.jpg",
     "Desenvolvimento/fatec/n2/duck_cadastro_bg.jpg",
     "Desenvolvimento/fatec/n2/duck_bg_menu.jpg",
-    "Desenvolvimento/fatec/n2/cadastro.html",
-    "Desenvolvimento/fatec/n2",
-    "Desenvolvimento/fatec/AULA14_Seguranca_PHP/cadastro.php",
-    "fatec/2026/1-2026/Desenvolvimento/Desenvolvimento.md",
-    "fatec/2024/2-2024/criptografia/aula-criptografia-08-29-2024.md",
-    "fatec/2024/2-2024/criptografia/__init__.md",
-    "fatec/2024/1-2024/redes/osi.md",
-    "fatec/Pesquisa/Ferramentas/os/linux/hints.md",
-    "fatec/Pesquisa/Ferramentas/pentesting.md",
-    "fatec/Pesquisa/Ferramentas/papers-search.md",
-    "fatec/Pesquisa/Ferramentas/playbooks.md",
     "Desenvolvimento/fatec/EfraimLima_GabrielPereira_GiovannaPardini/n1/img/chapeu.webp",
     "Desenvolvimento/fatec/EfraimLima_GabrielPereira_GiovannaPardini/n1/img/background-cadastro.jpg",
     "Desenvolvimento/fatec/EfraimLima_GabrielPereira_GiovannaPardini/n1/img/background-home.jpg",
-    "__init__.md",
-    "README.md",
     "Untitled.canvas",
-    "SUMMARY.md",
     "Untitled 1.canvas",
-    "2026-05-13.md",
-    "Untitled 2.canvas",
-    "cyberetico/image (9).png",
-    "fatec/2025/1-2025/Forense/image (8).png",
-    "cyberetico/image (1).png",
-    "fatec/2024/2-2024/protocolos/labs/laboratorio-02.md",
-    "fatec/2024/2-2024/protocolos/labs/README.md",
-    "fatec/2024/2-2024/protocolos/labs/__init__.md",
-    "fatec/2024/1-2024/01-2024.md",
-    "fatec/FATEC.md",
-    "fatec/2024/2-2024/2-2024.md",
-    "fatec/2024/2-2024/protocolos/PROTOCOLOS.md"
+    "Untitled 2.canvas"
   ]
 }

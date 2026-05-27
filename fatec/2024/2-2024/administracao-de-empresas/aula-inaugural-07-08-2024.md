@@ -2,16 +2,16 @@
 
 ### Visão geral de administração e organograma
 
-Os objetivos de administração da empresa resumem-se em:
+[[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] objetivos de administração da empresa resumem-se em:
 
 * Planejar
 * Organizar
 * Dirigir
 * Controlar
 
-O setor de TI é o "pau mandado", só fará o que os demais setores solicitam; ocorre que uma empresa possui alguns pilares para manter-se. Esses setores são: Produção, RH, Financeiro e Marketing. Além desses setores, nenhum outro deve ter demandas ativas, pois eles retêm todos os caminhos de levantar lucros para a empresa, e este é o principal motivo da existência da empresa.
+O setor de TI é o "pau mandado", só fará o que [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] demais setores solicitam; ocorre que uma empresa possui alguns pilares para manter-se. Esses setores são: Produção, RH, Financeiro e Marketing. Além desses setores, nenhum outro deve ter demandas ativas, pois eles retêm todos [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] caminhos de levantar lucros para a empresa, e este é o principal motivo da existência da empresa.
 
-Falaremos da teoria científica e a clássica da administração, da teoria das relações humanas, da abordagem humanista da administração, da abordagem sistêmica da administração, das estruturas das funções de produção, de marketing, de finanças e de recursos humanos na indústria. Falaremos de estratégia, cultura e clima organizacional e, por fim, de teorias da motivação para o [[trabalho]]... planejamento, direção e controle, ferramentas de gestão organizacional através de controles e exercícios.
+Falaremos da teoria científica e a clássica da administração, da teoria das relações humanas, da abordagem humanista da administração, da abordagem sistêmica da administração, das estruturas das funções de produção, de marketing, de finanças e de recursos humanos na indústria. Falaremos de estratégia, cultura e clima organizacional e, por fim, de teorias da motivação para o [[trabalho]]... planejamento, direção e controle, [[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]] de gestão organizacional através de controles e exercícios.
 
 O melhor esquema dessa aula é acompanhar e participar da aula por conta dos exemplos e associações.
 
@@ -19,7 +19,7 @@ As aulas são preparadas de acordo com a bibliografia, e o resumo do conteúdo e
 
 A comunicação com a professora é feita exclusivamente pelo e-mail institucional e pelo Siga.
 
-Os conceitos das aulas dessa matéria serão cobrados nos próximos semestres, portanto nossa participação é obrigatória.
+[[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] conceitos das aulas dessa matéria serão cobrados nos próximos semestres, portanto nossa participação é obrigatória.
 
 ### ANTECEDENTES HISTÓRICOS DA ADMINISTRAÇÃO
 
@@ -31,4 +31,4 @@ As principais teorias que embasaram o pensamento administrativo são a administr
 
 **Sistema** é um conjunto de componentes correlacionados para formar um todo.\
 **[[fatec/Pesquisa/Pesquisa/ferramentas/desenvolvimento|desenvolvimento]]** é sempre bom manter um pouco de [[fatec/Pesquisa/Pesquisa/ferramentas/desenvolvimento|desenvolvimento]] na mente, pois isso ajuda no raciocínio lógico e na solução de problemas. Nunca parar, mesmo após mudar de área.\
-Puxar as teorias de administração existentes caso tenhamos dúvidas e curiosidades sobre; precisamos levar em consideração que os nomes mudam, mas não seus princípios.
+Puxar as teorias de administração existentes caso tenhamos dúvidas e curiosidades sobre; precisamos levar em consideração que [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] nomes mudam, mas não seus princípios.

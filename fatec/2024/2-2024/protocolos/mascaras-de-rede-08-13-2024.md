@@ -2,7 +2,7 @@
 
 Uma boa maneira de compreender a máscara de rede representada por /XX é entender que este número se refere à quantidade de bits ativos na máscara. Um exemplo mais simples seria um endereço de máscara /4, que seria representado pelos bits: 11110000.00000000.00000000.00000000.
 
-Vamos compreender por qual motivo um IP 172.16.2.99 não consegue pingar um servidor 172.16.0.2/23.
+Vamos compreender por qual motivo um IP 172.16.2.99 não consegue pingar um servidor 172.[[16.0]].2/23.
 
 Para isso, vamos compreender primeiro como o range de endereços IP no servidor se comporta de forma física e lógica.
 
@@ -12,11 +12,11 @@ Máscara         255.255.254.0
 Bin             11111111.11111111.11111110.00000000
 ```
 
-Compreendemos o processo de conversão das máscaras de IP, agora vamos compreender como ler a quantidade de hosts disponíveis neste range. Para isso, precisamos analisar quantos espaços lógicos estão disponíveis para uso. Para isso, invertemos os 0 e os 1 da máscara de rede, com isso teremos:
+Compreendemos o processo de conversão das máscaras de IP, agora vamos compreender como ler a quantidade de hosts disponíveis neste range. Para isso, precisamos analisar quantos espaços lógicos estão disponíveis para uso. Para isso, invertemos [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] 0 e [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] 1 da máscara de rede, com isso teremos:
 
 | Descrição                                | IPs                                 |
 | ---------------------------------------- | ----------------------------------- |
-| IP                                       | 172.16.0.0/23                       |
+| IP                                       | 172.[[16.0]].0/23                       |
 | Máscara Binário                          | 11111111.11111111.11111110.00000000 |
 | Máscaras Binário Reversa (hosts na rede) | 00000000.00000000.00000001.11111111 |
 | Máscara Decimal                          | 255.255.254.0                       |

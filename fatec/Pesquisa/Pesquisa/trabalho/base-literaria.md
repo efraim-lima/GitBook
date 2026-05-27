@@ -1,6 +1,6 @@
 # Base Literária
 
-Termos que podem ser utilizados na busca para minha pesquisa:
+Termos que podem ser utilizados na busca para minha [[fatec/Pesquisa/Pesquisa|Pesquisa]]:
 
 &#x20;
 

@@ -25,7 +25,7 @@ Processo de leitura de um documento de Balanço Patrimonial
     - separar por setores pois eles dependem de muitos recursos e dispõem de muitos funcionários;
     - separar por produtos ou serviços quando ocorre dependencia de fornecedores ou materia prima ou ambos;
     - separar por geografia quando ocorrem de produtos diferentes terem maior demanda em locais diferentes;
-    - separar por clientela quando existem clientes de padrões diferentes que demandam outros recursos;
-    - separar por processos quando ocorre custo tecnológico para algumas [[ATIVIDADES]] especificas, mas que podem ser terceirizados para baratear os custos;
+    - separar por clientela quando existem [[CLIENTES]] de padrões diferentes que demandam outros recursos;
+    - separar por processos quando ocorre custo tecnológico para algumas [[ATIVIDADES]] especificas, mas que podem ser terceirizados para baratear [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] custos;
 
 Cada uma dessas abordagens possui suas vantagens e desvantagens

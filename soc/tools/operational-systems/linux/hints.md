@@ -6,17 +6,17 @@ Imprescindível ter conhecimento aprofundado sobre o sistema operacional para at
 
 <figure><img src="../../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-Os [[logs]] de host do Microsoft Windows são visíveis localmente pelo Visualizador de Eventos. O Visualizador de Eventos mantém quatro tipos de [[logs]]:
+[[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] [[logs]] de host do Microsoft [[soc/tools/operational-systems/windows/windows|windows]] são visíveis localmente pelo Visualizador de Eventos. O Visualizador de Eventos mantém quatro tipos de [[logs]]:
 
 * [[logs]] de [[fatec/Pesquisa/Pesquisa/ferramentas/aplicativos|aplicativos]] — Eles contêm eventos registrados por vários [[fatec/Pesquisa/Pesquisa/ferramentas/aplicativos|aplicativos]].
 * Registros do sistema — Isso inclui eventos relacionados à operação de drivers, processos e hardware.
-* Registros de instalação — Estes registram informações sobre a instalação de software, incluindo atualizações do Windows.
+* Registros de instalação — Estes registram informações sobre a instalação de software, incluindo atualizações do [[soc/tools/operational-systems/windows/windows|windows]].
 * Registros de segurança — Esses eventos registram relacionados à segurança, como tentativas de logon e operações relacionadas ao gerenciamento e acesso de arquivos ou objetos.
-* [[logs]] da linha de comando - Os invasores que obtiveram acesso a um sistema e alguns tipos de malware executam [[comandos]] da interface de linha de comando (CLI) em vez de uma GUI. A execução da linha de comando em log fornecerá visibilidade para esse tipo de incidente.
+* [[logs]] da linha de comando - [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] invasores que obtiveram acesso a um sistema e alguns tipos de malware executam [[comandos]] da interface de linha de comando (CLI) em vez de uma GUI. A execução da linha de comando em log fornecerá visibilidade para esse tipo de incidente.
 
 &#x20;
 
-Vários [[logs]] podem ter diferentes tipos de eventos. Os [[logs]] de segurança consistem apenas em mensagens de falha ou êxito de auditoria. Em computadores Windows, o log de segurança é realizado pelo Local Security Authority Subsystem Service (LSASS), que também é responsável por impor diretivas de segurança em um host Windows. O LSASS é executado como lsass.exe. Ele é frequentemente falsificado por malware. Ele deve estar sendo executado a partir do diretório System32 do Windows. Se um arquivo com esse nome, ou um nome camuflado, como 1sass.exe, estiver em execução ou em execução a partir de outro diretório, ele pode ser malware.
+Vários [[logs]] podem ter diferentes tipos de eventos. [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] [[logs]] de segurança consistem apenas em mensagens de falha ou êxito de auditoria. Em computadores [[soc/tools/operational-systems/windows/windows|windows]], o log de segurança é realizado pelo Local Security Authority Subsystem Service (LSASS), que também é responsável por impor diretivas de segurança em um host [[soc/tools/operational-systems/windows/windows|windows]]. O LSASS é executado como lsass.exe. Ele é frequentemente falsificado por malware. Ele deve estar sendo executado a partir do diretório System32 do [[soc/tools/operational-systems/windows/windows|windows]]. Se um arquivo com esse nome, ou um nome camuflado, como 1sass.exe, estiver em execução ou em execução a partir de outro diretório, ele pode ser malware.
 
 &#x20;
 
@@ -84,15 +84,15 @@ A tabela lista exemplos de atividades e ferramentas que são usadas em testes de
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | Análise de risco             | Indivíduos realizam uma análise abrangente dos impactos dos ataques nos ativos principais da empresa e no funcionamento         | Consultores internos ou externos, quadros de gestão de riscos           |
 | Avaliação de vulnerabilidade | Gerenciamento de patches, varreduras de host, varredura de [[portas]], outras verificações de vulnerabilidade e serviços            | OpenVAS, Analisador de Linha de Base da Microsoft, Nessus, Qualys, Nmap |
-| Teste de penetração          | Uso de técnicas e ferramentas de hacking para penetrar nas defesas da rede e identificar a profundidade de penetração potencial | Metasploit, CORE Impact, hackers éticos                                 |
+| [[Teste]] de penetração          | Uso de técnicas e [[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]] de hacking para penetrar nas defesas da rede e identificar a profundidade de penetração potencial | Metasploit, CORE Impact, hackers éticos                                 |
 
 &#x20;
 
 Soluções SOAR:
 
-* Fornece ferramentas de gerenciamento de casos que permitem que o pessoal de segurança cibernética pesquise e investigue incidentes, frequentemente integrando inteligência contra ameaças à plataforma de segurança de rede.
+* Fornece [[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]] de gerenciamento de casos que permitem que o pessoal de segurança cibernética pesquise e investigue incidentes, frequentemente integrando inteligência contra ameaças à plataforma de segurança de rede.
 * Use inteligência artificial para detectar incidentes e auxiliar na análise e resposta a incidentes.
-* Automatize procedimentos complexos de resposta a incidentes e investigações, que são [[Tarefas]] potencialmente intensas de mão-de-obra executadas pela equipe do centro de operações de segurança (SOC) executando livros de execução. Esses são [[fatec/Pesquisa/Pesquisa/ferramentas/playbooks|playbooks]] que executam ações como acessar e analisar dados relevantes, tomar medidas para isolar sistemas comprometidos e pesquisar ameaças para validar alertas e executar uma resposta a incidentes.
-* Oferece painéis e relatórios para documentar a resposta a incidentes para melhorar os principais indicadores de desempenho do SOC e pode melhorar consideravelmente a segurança da rede para as organizações.
+* Automatize procedimentos complexos de resposta a incidentes e investigações, que são [[Tarefas]] potencialmente intensas de mão-de-obra executadas pela equipe do centro de operações de segurança ([[soc]]) executando livros de execução. Esses são [[fatec/Pesquisa/Pesquisa/ferramentas/playbooks|playbooks]] que executam ações como acessar e analisar dados relevantes, tomar medidas para isolar sistemas comprometidos e pesquisar ameaças para validar alertas e executar uma resposta a incidentes.
+* Oferece painéis e relatórios para documentar a resposta a incidentes para melhorar [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] principais indicadores de desempenho do [[soc]] e pode melhorar consideravelmente a segurança da rede para as organizações.
 
-O SIEM ajuda a soar o alarme para [[ATIVIDADES]] mal-intencionadas. Os analistas terão que agir sobre a ameaça. A SOAR ajuda os analistas a responder à ameaça.
+O SIEM ajuda a soar o alarme para [[ATIVIDADES]] mal-intencionadas. [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] analistas terão que agir sobre a ameaça. A SOAR ajuda [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] analistas a responder à ameaça.

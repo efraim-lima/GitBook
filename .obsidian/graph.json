@@ -6,17 +6,46 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "line:(forense)",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "line:(os)",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "line:(seguranca)",
+      "color": {
+        "a": 1,
+        "rgb": 7579648
+      }
+    },
+    {
+      "query": "",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    }
+  ],
   "collapse-display": false,
-  "showArrow": true,
-  "textFadeMultiplier": -2.9,
-  "nodeSizeMultiplier": 1.20655487804878,
-  "lineSizeMultiplier": 1.64138719512195,
+  "showArrow": false,
+  "textFadeMultiplier": -2.5,
+  "nodeSizeMultiplier": 1.38262195121951,
+  "lineSizeMultiplier": 1.01181402439024,
   "collapse-forces": false,
-  "centerStrength": 0.244664634146341,
-  "repelStrength": 7.98127177700348,
-  "linkStrength": 0.330574912891986,
-  "linkDistance": 483,
-  "scale": 0.0772157055320197,
+  "centerStrength": 0.398519163763066,
+  "repelStrength": 11.6289198606272,
+  "linkStrength": 0.60866724738676,
+  "linkDistance": 481,
+  "scale": 0.0425543091462863,
   "close": true
 }

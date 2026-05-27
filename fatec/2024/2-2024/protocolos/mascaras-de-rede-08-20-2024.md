@@ -4,7 +4,7 @@ Uma maneira legal de se calcular as mascaras conriga e extrair o decimal a parti
 
 Exemplo: IP: 192.168.0.128/26 BIN: 11111111.11111111.11111111.11000000
 
-Calculando os binarios do ultimo octeto teremos 128 + 64 = 192, ou seja nossa mascara de rede em decimal e: 255.255.255.192, agora basta calcular quantos bits abertos temos fazendo a subtraçao do limite de IPs (255.255.255.255) da nossa mascara de rede em decimal. Abaixo segue uma tabela ilustrativa do processo passo a passo.
+Calculando [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] binarios do ultimo octeto teremos 128 + 64 = 192, ou seja nossa mascara de rede em decimal e: 255.255.255.192, agora basta calcular quantos bits abertos temos fazendo a subtraçao do limite de IPs (255.255.255.255) da nossa mascara de rede em decimal. Abaixo segue uma tabela ilustrativa do processo passo a passo.
 
 | Descrição                            | IP                                   |
 | ------------------------------------ | ------------------------------------ |

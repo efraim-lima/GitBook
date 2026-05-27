@@ -2,7 +2,7 @@
 
 Maiores problemas de redes que podemos ter:
 
-o meio broadcast, placas de rede em modo promíscuo (captura todos os dados, podem ser lidos sejam eles criptografados ou não)
+o meio broadcast, placas de rede em modo promíscuo (captura todos [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] dados, podem ser lidos sejam eles criptografados ou não)
 
 correlação de chaves: d-b(e-b(m))) sendo que m = mensagem, e = criptogragia, d = decriptografia
 
@@ -20,4 +20,4 @@ string2hash = Texto result = hashlib.[[md5]](sting2hash.encode()) print(result.h
 
 result = hashlib.sha256(sting2hash.encode()) print(result.hexdigest())
 
-Comando para acompanhar os [[logs]] em tempo real: watch -n 1 cat var/log/syslog
+Comando para acompanhar [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] [[logs]] em tempo real: watch -n 1 cat var/log/syslog

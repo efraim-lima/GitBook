@@ -21,13 +21,13 @@
 * como organizar um repositório
 * como excluir um repositório
 * boas práticas de administração
-* sistema de arquivos linux
-* rwx linux
-* chmod 777 linux
+* sistema de arquivos [[soc/tools/operational-systems/linux/linux|linux]]
+* rwx [[soc/tools/operational-systems/linux/linux|linux]]
+* chmod 777 [[soc/tools/operational-systems/linux/linux|linux]]
 * [[soc/tools/malwares|malwares]]
 * como criar um malware simples
 * como diagnosticar malware
 * como conter malware
 * como eliminar malware
 * como prevenir malware
-* detectando intrusões linux
+* detectando intrusões [[soc/tools/operational-systems/linux/linux|linux]]

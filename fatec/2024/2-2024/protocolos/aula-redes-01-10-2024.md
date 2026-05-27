@@ -1,6 +1,6 @@
 Quando colocamos um host automatiacmente na rede e ativamos o DHCP sem ter configurado um servidor DHCP a comuncação será estabelecida pelo protocolo APIPA (nos IPs 169.256.XXX.XXX)
 
-Para o próximo projeto precisamos criar um serviço DHCP a partir de um host ao lado do servidor, o processo deve ser feito também entre os gateways para proporcionar interoperabilidade entre as redes. O host ao lado do servidor deve ser empenhado para garantir que não criamos gargalos na rede por conta de configuração de dhcp. Para isso nós precisamos configurar no roteador um dhcp pool para cada subrede/vlan, isso evita conflitos na rede.
+Para o próximo projeto precisamos criar um serviço DHCP a partir de um host ao lado do servidor, o processo deve ser feito também entre [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] gateways para proporcionar interoperabilidade entre as redes. O host ao lado do servidor deve ser empenhado para garantir que não criamos gargalos na rede por conta de configuração de dhcp. Para isso nós precisamos configurar no roteador um dhcp pool para cada subrede/vlan, isso evita conflitos na rede.
 
 
 [ROUTER]
@@ -47,4 +47,4 @@ copy running-config startup-config // ou apenas write
 
 
 
-precisamos excluir o servidor da abrangencia dos ips dhcp, pois serviços como servidores, impressoras, bancos de dados não podem receber um ip dinamicamente a cada reboot do sistema, pois precisam ser enontrados na rede independentemente de seu reboot; para isso um a boa prática em topologias de rede é manter os 5 primeiros IPs de uma rede para esses serviços
+precisamos excluir o servidor da abrangencia dos ips dhcp, pois serviços como servidores, impressoras, bancos de dados não podem receber um ip dinamicamente a cada reboot do sistema, pois precisam ser enontrados na rede independentemente de seu reboot; para isso um a boa prática em topologias de rede é manter [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] 5 primeiros IPs de uma rede para esses serviços

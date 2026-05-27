@@ -8,6 +8,6 @@ hidden: true
 
 # \_\_init\_\_
 
-\[\[[[readme/README|README]]/tools/intel/**init**|intel]] \[\[[[readme/README|README]]/tools/learn/**init**|learn]] \[\[[[soc/tools/malwares|malwares]]]]
+\[\[[[readme/README|README]]/[[tools]]/[[intel]]/**init**|[[intel]]]] \[\[[[readme/README|README]]/[[tools]]/learn/**init**|learn]] \[\[[[soc/tools/malwares|malwares]]]]
 
 ## TOOLS

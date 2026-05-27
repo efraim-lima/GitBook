@@ -37,13 +37,13 @@ O transformador ajusta a tensão de entrada (127/220V) abaixando essa tensão pa
 
 VI) Anomalias da rede elétrica
 
-A) Ruídos/Espúrios/Spikes/Spark - são disturbios conduzidos pela rede eletrica; Para mitigar esse tipo de problema utilizamos filtro de linha, não confundir com barra de tomada (extensões). O filtro de linha elimina os ruidos, geralmente ade alta frequencia. O fusivel e o vanistor são dispositivos de proteção; Os indutores e capacitores filtram.
+A) Ruídos/Espúrios/Spikes/Spark - são disturbios conduzidos pela rede eletrica; Para mitigar esse tipo de problema utilizamos filtro de linha, não confundir com barra de tomada (extensões). O filtro de linha elimina [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] ruidos, geralmente ade alta frequencia. O fusivel e o vanistor são dispositivos de proteção; [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] indutores e capacitores filtram.
 
 Em voltagens mais altas a corrente é menor, por exemplo: 127V = 2 Amperes; 220V = 1 Amper
 
-O indutor é ótimo paa manter o fluxo de energia, trabalhando junto ao capacitor; os capacitores ainda filtram a entrada.
+O indutor é ótimo paa manter o fluxo de energia, trabalhando junto ao capacitor; [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] capacitores ainda filtram a entrada.
 
-B) Subtensão/Subretenção - para este tipo de anomalia é recomendado a utilização de estabilizadores, também conhecidos como reguladores de tensão. Um cuidado especial para sua utilização com equipamentos profissionais (servidores), verificar as especificações do estabilizador e do equipamento, não se surpreenda se as especificações do equipamento for melhor do que a especificação do estabilizador. Em geral, os estabilizadores possuem filtro de linha e várias tomadas de saída. Sua função é manter a saída estável, controlada, mesmo com alterações na entrada, chamada de range de variação, por exemplo: 114Vac até 137Vac => ele pega tudo isso e transforma em 127Vac. Os barulhos que ouvimos do estabilizador são as bubinas do primario sendo chaveadas para os primarios para manter a tensão correta para a saída do mesmo.
+B) Subtensão/Subretenção - para este tipo de anomalia é recomendado a utilização de estabilizadores, também conhecidos como reguladores de tensão. Um cuidado especial para sua utilização com equipamentos profissionais (servidores), verificar as especificações do estabilizador e do equipamento, não se surpreenda se as especificações do equipamento for melhor do que a especificação do estabilizador. Em geral, [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] estabilizadores possuem filtro de linha e várias tomadas de saída. Sua função é manter a saída estável, controlada, mesmo com alterações na entrada, chamada de range de variação, por exemplo: 114Vac até 137Vac => ele pega tudo isso e transforma em 127Vac. [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] barulhos que ouvimos do estabilizador são as bubinas do primario sendo chaveadas para [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] primarios para manter a tensão correta para a saída do mesmo.
 
 Quando um sinal cai pela metade dizemos que cai 3dbs Se tivermos um servidor de range de 96V a 290V podemos compreender que ele ja possui um filtro de linha embutido
 
@@ -53,15 +53,15 @@ Recomenda-se sair (shitdown) de forma segura. Smart ups-[[iot]]
 
 O no-break (ups) pdoe ser de dois tipo: on-line e of-line.
 
-O no-break online é menor, em geral mais caro, ele isola o equipamento de TI da rede, precisa ser carregado para depois ser utilizado, a vida util da bateria é metade não tem chaveamento de relé. Os no-breaks offline possuem um processo de retificar o a energia conduzida (AC) para AD pela rede armazenando-a em uma bateria, quando ocorre a queda de energia ele faz o processo de inverter AD para AC e fornecer para o dispositivo conectado.
+O no-break online é menor, em geral mais caro, ele isola o equipamento de TI da rede, precisa ser carregado para depois ser utilizado, a vida util da bateria é metade não tem chaveamento de relé. [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] no-breaks offline possuem um processo de retificar o a energia conduzida (AC) para AD pela rede armazenando-a em uma bateria, quando ocorre a queda de energia ele faz o processo de inverter AD para AC e fornecer para o dispositivo conectado.
 
-D) Quedas longas (blackout/brownout), são interrupções no fornecimento de energia da ordem de dezenas de minutos a´te horas ou dias. Nessas condições recomenda-se a utilização de geradores, dispositivos de motores autinomos (oleo dizel, gas, gasolina) que acionam os geradores (dínamos) que alimentam os circuitos de TI.
+D) Quedas longas (blackout/brownout), são interrupções no fornecimento de energia da ordem de dezenas de minutos a´te horas ou dias. Nessas condições recomenda-se a utilização de geradores, dispositivos de motores autinomos (oleo dizel, gas, gasolina) que acionam [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] geradores (dínamos) que alimentam [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] circuitos de TI.
 
 A ideia funciona de forma simples, um combustível alimenta um motor, que alimanta um gerador que é conectado a um banco de baterias e no-breaks; paralelamente a isso a entrada de energia está conectada ao mesmo motor através de um controle; caso caia a energia a rede fica conectada às baterias do banco e no-breaks até que o controle acione o motor (que deve estar com o combustível renovado) e volte a fornecer energia para a rede.
 
 VI) Dimensionamento de equipamentos de proteção (estabilizadores, no-breaks e geradores)
 
-Note que todos os equipamentos acima são especificados em vol x amperé (VA) e os equipamentos de TI (computador, roteador, impressora, monitor, etc) são especificados em watts. Infelizmente as duas gradezas não são iguais. Na escola, aprendemos que a potência é o produto entre tensão e corrente \[potencia = u (tensão) \* i (corrente)], isso é particularmente verdadeiro, pois só vale para cargas resistivas e na realidade as cargas são indutivas ou capacitivas A reação entre as potencias é:
+Note que todos [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] equipamentos acima são especificados em vol x amperé (VA) e [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] equipamentos de TI (computador, roteador, impressora, monitor, etc) são especificados em watts. Infelizmente as duas gradezas não são iguais. Na escola, aprendemos que a potência é o produto entre tensão e corrente \[potencia = u (tensão) \* i (corrente)], isso é particularmente verdadeiro, pois só vale para cargas resistivas e na realidade as cargas são indutivas ou capacitivas A reação entre as potencias é:
 
 PVA = (Pwatts/(M\*FP))
 
@@ -71,9 +71,9 @@ M (éta) - rendimento-capacidade do dispsitivo de converter portencia de entrada
 
 As fontes de alimentação (ATX) têm rendimento acima de 80%. Motor a combustão (gasolina) tem baixo rendimento.
 
-FP - Fator de Pottencia - é o coseno do angulo (omega) de defasagem entre a tensão e a corrente: Carga resistiva é uma relação entre defasagem de tensão e corrente par a par, de forma que ambas ocorrem ao mesmo tempo, Carga indutiva ocorre quando a defasagem da corrente ocorre em seguida, ela é induzida para o dispositivo Carga capacitiva é a que a defasagem da corrente antecede a tensão da rede, portanto geralmente possui rede própria para o dispositivo, assim como os elevadores dos prédios (estudar carga reativa).
+FP - Fator de Pottencia - é o coseno do angulo (omega) de defasagem entre a tensão e a corrente: Carga resistiva é uma relação entre defasagem de tensão e corrente par a par, de forma que ambas ocorrem ao mesmo tempo, Carga indutiva ocorre quando a defasagem da corrente ocorre em seguida, ela é induzida para o dispositivo Carga capacitiva é a que a defasagem da corrente antecede a tensão da rede, portanto geralmente possui rede própria para o dispositivo, assim como [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] elevadores dos prédios (estudar carga reativa).
 
-Regra Prática: devemos dimensionar os equipamentos de proteão com o dobro da potencia em watts. Justificativa: adotando um rendimento de 70% e uma defasagem menor que 50º temos:
+Regra Prática: devemos dimensionar [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] equipamentos de proteão com o dobro da potencia em watts. Justificativa: adotando um rendimento de 70% e uma defasagem menor que 50º temos:
 
 PVA = Pwatts/(0,7 x cos 50°) = Pwatts/(0,7 x 0,7) = Pwatts/0,49 ≃ Pwatts/0,5
 
@@ -91,7 +91,7 @@ REVISÃO: Ferramenta de Diagnósitico:
 
 Função - Medição de grandezas eletricas -tensão: alternada, entrada/rede continua - bateria/saida -resistencia: resistores -corrente: alternada e cotínua -diodo: led \[+] -->|- \[-] -capacitância (F) miF pF nF
 
-Empresas especializadas em [[fatec/Pesquisa/Pesquisa/ferramentas/desenvolvimento|desenvolvimento]] de [[bios]]: Awards, AMI, Phoenix, Intel.
+Empresas especializadas em [[fatec/Pesquisa/Pesquisa/ferramentas/desenvolvimento|desenvolvimento]] de [[bios]]: Awards, AMI, Phoenix, [[intel]].
 
 Devido às características intrínsecas do [[bios]] devemos ter cuidados especiais no processo de atualização/upgrade do [[bios]].
 
@@ -120,7 +120,7 @@ O nível entre o hardwre e o software é o sistema de instruções do sistema, c
 
 Em mudanças bruscas de sitema (tipo uma [[bios]] nova) deve-se sempre fazer primeiro um projeto piloto antes de soltar em todo o sistema para evitar falhas e panes totais no sistema que podem ocorrer.
 
-Para testar a memória do computador deve-se pegar a memória e preencher a memória com os seguintes padrões (para toda a memória):
+Para testar a memória do computador deve-se pegar a memória e preencher a memória com [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] seguintes padrões (para toda a memória):
 
 000000000000000000000000000000000000000000000000000000000000000000000
 
@@ -151,7 +151,7 @@ QUando fechamos o computador e ele suspende suas configurações e [[fatec/Pesqu
 Atividade in class -> para entrega na próxima semana - individual Responda às seguintes questões:
 
 1. Aonde fica armazenada o [[bios]]? R: Placa mae
-2. Aonde ficam armazenados os parametros configurados pelo usuário? R: RAM CMOS, na flash ficam os parametros de babrica/default.
+2. Aonde ficam armazenados [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] parametros configurados pelo usuário? R: RAM CMOS, na flash ficam [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] parametros de babrica/default.
 3. Aonde fica disponível a data e hora do sistema? R: Na bateria da placa mãe, no RTC (Real Time Clock)
 4. Qual a função da bateria de lithium da placa-mãe? R: Manter o tempo do sistema just in time
 5. Qual o sintoma de um computadore que tem o [[bios]] corrompido? (Exemplo: apagamento de todas as psoições da memória flash com 0xFFFF). R: No momento inicial não acontecerá nada, mas ao desligar o computador e religar a tela não ligará, sequer teremos sinal de que o dispositivo está energizado
@@ -165,8 +165,8 @@ Escolha um computador qualquer:
 2. Descreva como acessar o [[bios]]
 3. Descreva pelo menos 10 características passiveis de configuração
 4. Relacione pelo menos 5 características associada à segurança/disponibilidade da informação.
-5. Pesquise os efeitos da perda/descarga da bateria.
+5. Pesquise [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] efeitos da perda/descarga da bateria.
 
 \-a data hora é configurada direto no relógio -para resetar a [[bios]] basta desconectar da tomada, bateria e plugar uma chave de fenda no conector da bateria
 
-Apresentação: não precisa de slides e nem de um [[trabalho]] à la ABNT, mas vale a pena mostrar um cronograma da apresentação e o que pode ser apresentado
+[[Apresentação]]: não precisa de slides e nem de um [[trabalho]] à la ABNT, mas vale a pena mostrar um [[fatec/Pesquisa/Pesquisa/cronograma/cronograma|cronograma]] da [[Apresentação]] e o que pode ser apresentado

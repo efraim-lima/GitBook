@@ -7,7 +7,7 @@ icon: globe
 
 # INFO
 
-Algumas ferramentas que tomaremos nota aqui são focadas para a coleta de informações e notícias sobre incidentes e outras situações relacionadas a segurança da informação.
+Algumas [[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]] que tomaremos nota aqui são focadas para a coleta de informações e notícias sobre incidentes e outras situações relacionadas a segurança da informação.
 
 Websites que podem ser usados para inteligencia de ameaças:
 

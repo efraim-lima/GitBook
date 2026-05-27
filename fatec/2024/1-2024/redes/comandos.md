@@ -2,7 +2,7 @@
 
 COMANDOS PARA DETECTAR E ACIONAR O MODO MONITOR
 
-Caso o adaptador não esteja funcionando, digite: Win + R > services.msc e reinicie todos os serviços da VMWare.
+Caso o adaptador não esteja funcionando, digite: Win + R > services.msc e reinicie todos [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] serviços da VMWare.
 
 ```
 ifconfig                                #para ver se temos uma interface wlan0 conectada;

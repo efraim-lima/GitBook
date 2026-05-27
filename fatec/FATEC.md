@@ -1,3 +1,13 @@
-Aqui encontram-se todos os arquivos provenientes de aulas que tive na faculdade de tecnologia de são caetano do sul, ou FATEC Antonio Russo.
+Aqui encontram-se todos [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] arquivos provenientes de aulas que tive na faculdade de tecnologia de são caetano do sul, ou [[information-security/fatec/fatec|fatec]] Antonio Russo.
 
 O Curso teve duração de 3 anos e foi enfatizado em Segurança da Informação
+
+%% waypoint %%
+
+```Waypoint
+
+```
+%% Error: Cannot create a waypoint in a note that's not the folder note. For more information, check the instructions [here](https://github.com/IdreesInc/Waypoint) %%
+
+
+

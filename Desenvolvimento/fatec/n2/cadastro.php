@@ -28,16 +28,29 @@ function processa_formulário(){
       echo "<a href='javascript:history.back()'>Voltar</a>";
       exit;
    }
+   if ($_POST["UF"]==""){
+      echo "UF incorreto";
+      echo "<a href='javascript:history.back()'>Voltar</a>";
+      exit;
+   }
+   if ($_POST["Cargo"]==""){
+      echo "Cargo incorreto";
+      echo "<a href='javascript:history.back()'>Voltar</a>";
+      exit;
+   }
 
-   if ($_POST["nome"]!=""){
-      if ((strrpos($_POST["nome"],"drop")!==false)||
-          (strrpos($_POST["nome"],"update")!==false)||
-          (strrpos($_POST["nome"],"insert")!==false)||
-          (strrpos($_POST["nome"],"delete")!==false)||
-          (strrpos($_POST["nome"],"select")!==false   )){
-             echo "Nome Invalido";
-             echo "<a href='javascript:history.back()'>Voltar</a>";
-             exit;
+   $campos_texto = ["nome", "endereco", "complemento", "cidade", "bairro", "email", "usuario"];
+   foreach ($campos_texto as $campo) {
+      if (isset($_POST[$campo]) && $_POST[$campo] != "") {
+         if ((strrpos($_POST[$campo],"drop")!==false)||
+             (strrpos($_POST[$campo],"update")!==false)||
+             (strrpos($_POST[$campo],"insert")!==false)||
+             (strrpos($_POST[$campo],"delete")!==false)||
+             (strrpos($_POST[$campo],"select")!==false)){
+                echo ucfirst($campo)." Invalido";
+                echo "<a href='javascript:history.back()'>Voltar</a>";
+                exit;
+         }
       }
    }
 }

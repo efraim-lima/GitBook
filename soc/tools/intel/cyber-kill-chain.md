@@ -7,16 +7,16 @@ icon: file-magnifying-glass
 
 # RECON
 
-Ferramentas de reconhecimento.
+[[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]] de reconhecimento.
 
 Para coletar nomes, emails, IPs, subdomínios e URLs:
 
-* The Harvester - [https://github.com/laramies/theHarvester](https://github.com/laramies/theHarvester)
+* The [[Harvester]] - [https://github.com/laramies/theHarvester](https://github.com/laramies/theHarvester)
 
 Para coletar informações de email intituicional
 
 * Hunter - [https://hunter.io](https://hunter.io)
 
-Para encontrarmos mais ferramentas que nos auxiliem no processo de coleta de informações podemos usar o OSINT Framework, que é um compilado de ferramentas de OSINT organizadas de acordo com suas funcionalidades
+Para encontrarmos mais [[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]] que nos auxiliem no processo de coleta de informações podemos usar o OSINT Framework, que é um compilado de [[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]] de OSINT organizadas de acordo com suas funcionalidades
 
 * OSINT Framework - [https://osintframework.com](https://osintframework.com)

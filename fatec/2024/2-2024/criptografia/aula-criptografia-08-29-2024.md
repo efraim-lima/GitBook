@@ -6,7 +6,7 @@ aPara evitar a facil detecção da senha basta inserir o conceito de 'salt', que
 
 hmac -> muito mais seguro, usa como se fossee o salt, em provedores de nuvem e (esqueci o outro).
 
-Nas [[ATIVIDADES]] fazremos o processo de configurar o OpeSSL e tratar o processo como um processo de criptografia pura.
+Nas [[ATIVIDADES]] fazremos o processo de configurar o OpeSSL e tratar o processo como um processo de [[Criptografia]] pura.
 
-- [ ] Tarefa de Criptografia
+- [ ] Tarefa de [[Criptografia]]
 - [ ] 

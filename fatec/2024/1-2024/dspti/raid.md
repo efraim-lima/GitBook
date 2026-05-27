@@ -14,7 +14,7 @@ Raid é sistema de [[backup]] apenas para disponibilidade composto por uma contr
 
 RAID0 | Stripping => Performance O hardware de Raid 0 e 1 é o mesmo (usando sempre mais de um drive) O mesmo arquivo é separado pela metade de forma entrelaçada Velocidade de leitura e escrita muito maior Espaço disponivel maior
 
-RAID1 | Mirroring => Redundância Mesmo hardware do Raid0 O arqivo é escrito em todos os discos, tendo uma cópia do mesmo arquivo em ttodos A velocidade de leitura é identica, mas a de escrita é maior (o dobro) O armazenamento torna-se menor, pois precisa-se reservar os dois discos para
+RAID1 | Mirroring => Redundância Mesmo hardware do Raid0 O arqivo é escrito em todos [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] discos, tendo uma cópia do mesmo arquivo em ttodos A velocidade de leitura é identica, mas a de escrita é maior (o dobro) O armazenamento torna-se menor, pois precisa-se reservar [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] dois discos para
 
 Comparativo Raids
 
@@ -28,7 +28,7 @@ Quanto mais elementos inseridos em um sistema pode-se coniderar que o MTTR vai d
 
 RAID4 - Writing
 
-Comparando os bits mais significativos (o bit mais à esquerda, ou seja, o que vale 128b) faz com que criemos o id de nosso parity disk
+Comparando [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] bits mais significativos (o bit mais à esquerda, ou seja, o que vale 128b) faz com que criemos o id de nosso parity disk
 
 RAID5 Ponto de falha:
 
@@ -36,7 +36,7 @@ distancia de Hamming (?) composta por (dH/2)-1
 
 onde: dH = quantidade de elementos únicos, por exemplo, 8 discos;
 
-Portanto se tivermos 8 discos podemos ter até 3 pontos de falha A partir daqui podemos perder até 2 discos, antes poderia-se perder apenas 1 RAID1+0 Mais eficiente Combinação entre o RAID1 (duplica os dados entre dois discos fisicos) e RAID0 (fragmenta entre 2 discos lógicos) RAID0+1 Menos eficiente Combinação dentre o RAID0 (fragmenta os dados entre os discos físicos) e RAID1 (duplica os dados entre os discos lógicos)
+Portanto se tivermos 8 discos podemos ter até 3 pontos de falha A partir daqui podemos perder até 2 discos, antes poderia-se perder apenas 1 RAID1+0 Mais eficiente Combinação entre o RAID1 (duplica [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] dados entre dois discos fisicos) e RAID0 (fragmenta entre 2 discos lógicos) RAID0+1 Menos eficiente Combinação dentre o RAID0 (fragmenta [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] dados entre [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] discos físicos) e RAID1 (duplica [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] dados entre [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] discos lógicos)
 
 Fake RAID => o que conseguimos mudar em nossa [[bios]], pois é virtual Hardware RAID => o RAID correto, trabalhando com harwares
 

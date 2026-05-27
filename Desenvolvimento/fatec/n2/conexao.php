@@ -1,6 +1,3 @@
-<html><head><title>Conexao Duck Tech</title>
-<meta http-equiv="Cache-Control" content="No-Cache">
-</head><body>
 <?php
 $host    ="localhost";
 $username="root";
@@ -12,4 +9,3 @@ if (mysqli_connect_errno()) {
         exit();
 }
 ?>
-</body></html>

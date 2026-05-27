@@ -1,6 +1,6 @@
 # BIOS
 
-BIOS é um sistema operacional que é responsável pelo funcionamento e uso de algumas funcionalidades, ele é o primeiro a ser acionado e o responsável por operar o POST para averiguar se o os componentes estão operacionais.
+BIOS é um sistema operacional que é responsável pelo funcionamento e uso de algumas funcionalidades, ele é o primeiro a ser acionado e o responsável por operar o POST para averiguar se o [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] componentes estão operacionais.
 
 O BIOS fica armazenado na EPROM (memória volátil), na EPROM fica a BIOS em tempo de execução e as configurações setadas pelo usuário; na eprom também fica registrado todo o sistema de relógio do sitema BIOS, este é responsável pela manutenção de horas de todo o sistema e manter o bom funcionamento das aplicações do SO.
 

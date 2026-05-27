@@ -1,6 +1,6 @@
 # IOC - Indicadores de Comprometimento
 
-Primeiro, quando tivermos algum primeiro Indicador de Comprometimento, precisamos fazer algumas avaliações sobre os Indicadores. O primeiro é averiguar alguns possíveis meios de indício. Estes são:
+Primeiro, quando tivermos algum primeiro Indicador de Comprometimento, precisamos fazer algumas avaliações sobre [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] Indicadores. O primeiro é averiguar alguns possíveis meios de indício. Estes são:
 
 -Tráfego proveniente de regiões estranhas;
 

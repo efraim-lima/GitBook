@@ -19,27 +19,27 @@ Por exemplo:
 - restringir conteúdos a serem emitidos (dados sensíveis como CPF, PLL, Informações financeiras
 
 ### HTTP Request Logs
-Aqui podemos ver como os colaboradores 
+Aqui podemos ver como [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] colaboradores 
 - interagem em seus prompts,
 - o que enviaram que inflinge as politicas da empresa
-- ver os prompts
+- ver [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] prompts
 - ver quem emitiu
 
 ## Governança de AI
 Agentes perdem informações que servem para auditoria e monitoramento de agentes MCP, a melhor forma de fazer.
-llm.txt: serve para redirecionar bots (como um robots.txt) que redireciona bots para o servidor MCP de uma aplicação quando um agente faz uma varredura no ambiente em busca de APIs ou Tools para se conectar.
+llm.txt: serve para redirecionar bots (como um robots.txt) que redireciona bots para o servidor MCP de uma aplicação quando um agente faz uma varredura no ambiente em busca de APIs ou [[tools]] para se conectar.
 
 ### Workers Observability MCP Server
-Possui diversas Tools que permitem observabilidade e capilaridde na cobertura do ambiente.
+Possui diversas [[tools]] que permitem observabilidade e capilaridde na cobertura do ambiente.
 
-- portais de MCP server: faz append de todas as funções de todos os agentes, workers, documentações e funções no ambiente de forma a permitir que um agente tenha acesso a todo o ambiente disponibilizado pela Cloudflare, permitindo que haja segurança, accounting e auditoria no uso dos agentes, uma vez que o portal centraliza o trafego de agentes em um só local
+- portais de MCP server: faz append de todas as funções de todos [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] agentes, workers, documentações e funções no ambiente de forma a permitir que um agente tenha acesso a todo o ambiente disponibilizado pela Cloudflare, permitindo que haja segurança, accounting e auditoria no uso dos agentes, uma vez que o portal centraliza o trafego de agentes em um só local
 -- utiliza ZeroTrust para acesso ao ambiente, inclusive com uso de OAuth
--- o portal permite a configuração de DOminio, [[logs]], servidores MCP participantes (o cadastro desses servidores ẽ feito fora), politicas de acesso e testar o portal a partir de AI playground, claude desktop ou outros clientes;
+-- o portal permite a configuração de DOminio, [[logs]], servidores MCP participantes (o cadastro desses servidores ẽ feito fora), politicas de acesso e testar o portal a partir de AI playground, claude desktop ou outros [[CLIENTES]];
 -- em workers tem um agente que pode ser utilizado para aplicar em um modelo de forma rapida e otimizada;
 
 ## Protect AI-powered Apps
 Ao dizer bom dia para um chatbot de empresas pode-se ocorrer o direcionamento do usuário a um banco de dados vetorizado a partir de RAG para direcionar a resposta mais efetiva para o usuário a partir de sua pergunta.
-A Cloudflare utiliza um modelo para combater outro modelo atacante, tendo os modelos rodando na rede anycast, cada POP da Cloudflare roda todos os serviços e permite que em cada node, cada ponto possa ter o mesmo nível de proteçao e capilaridade.
+A Cloudflare utiliza um modelo para combater outro modelo atacante, tendo [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] modelos rodando na rede anycast, cada POP da Cloudflare roda todos [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] serviços e permite que em cada node, cada ponto possa ter o mesmo nível de proteçao e capilaridade.
 
 Um atacante procura impelir prompt injection ao sistema, a clouflare consegue bloquear isso nativamente no sistema assim como envenenar o modelo com informações erradas ou dados sensíveis
 
@@ -49,7 +49,7 @@ O WAF da cloudflare consegue rankear o nível de probabilidade de um elemento se
 Funciona quando um endpoint é configurado como uma LLM endpoint, tendo uma flag sendo setada (cf-llm)
 
 ### AI Gateway
-É o Guardrail da CLoudflare, serve para clientes que não possuem WAF da Cloudflare, com essa ferramenta podemos setar algumas regras:
+É o Guardrail da CLoudflare, serve para [[CLIENTES]] que não possuem WAF da Cloudflare, com essa ferramenta podemos setar algumas regras:
 - coleta de [[logs]]
 - cache de respostas
 - auth gateway
@@ -61,11 +61,11 @@ Dentro do AI Gateway pode-se criar rotas dinamicas, funcionando como um fallback
 O AI Gateway serve também como um orqustrador de modelos, podendo redirecionar prompts para modelos diferenciados.
 A cloudflare consegue cachear as respostas do modelo, reduzindo o custo de interações desnecessárias com IA.
 
-Basicamente os modelos da CLoudflare atuam no trafego HTTP (sim, HTTP) pegando Requests e Responses em HTTP e filtrando o json neste meio termo, lembrando que o tráfego está sendo proxiado pela cloudflare, sendo uma solução impressionante no processo de [[fatec/Pesquisa/Pesquisa/ferramentas/desenvolvimento|desenvolvimento]] da empresa.
+Basicamente [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] modelos da CLoudflare atuam no trafego HTTP (sim, HTTP) pegando Requests e Responses em HTTP e filtrando o json neste meio termo, lembrando que o tráfego está sendo proxiado pela cloudflare, sendo uma solução impressionante no processo de [[fatec/Pesquisa/Pesquisa/ferramentas/desenvolvimento|desenvolvimento]] da empresa.
 
 A Gateway consegue ler imagens subidas para modelos multimodais (limite de 15Mb) em busca de subida de PIIs ou dados sensíveis. Mas a ferramenta consegue fazer a leitura de dados via OCR tanto para DLP quanto para evitar alimentar modelos com dados sensíveis.
 
-Um agente de IA pode ser subido no Worker da Cloudflare e direcionar seus agentes e tools para o MCP Server Portal, sendo o [[trabalho]] de hard code direcionado apenas no processo de criar a VPS com o servidor.
+Um agente de IA pode ser subido no Worker da Cloudflare e direcionar seus agentes e [[tools]] para o MCP Server Portal, sendo o [[trabalho]] de hard code direcionado apenas no processo de criar a VPS com o servidor.
 
 Importante:
 Cloudflare não conecta com outros players que tenham ZTNA ou SASE 

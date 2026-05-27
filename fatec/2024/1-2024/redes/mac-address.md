@@ -4,11 +4,11 @@ MAC ADDRESS (endereço físico)
 
 Todo mac address tem um SSID que é o noma de arede e um BSSID que é o Mac Address
 
-SSID => nme da rede BSSID => endereço MAC (localiza a placa de rede) --> no momento da aula o MAC foi um hexa com base 16 no padrão Unix, ou seja, FF:FF:FF:FF:FF:FF (usando separadores ":"), em máquinas Windows usa-se o padrão FF-FF-FF-FF-FF-FF, em máquinas IOS ou Cisco usa-se o padrão FFFF.FFFF.FFFF.
+SSID => nme da rede BSSID => endereço MAC (localiza a placa de rede) --> no momento da aula o MAC foi um hexa com base 16 no padrão Unix, ou seja, FF:FF:FF:FF:FF:FF (usando separadores ":"), em máquinas [[soc/tools/operational-systems/windows/windows|windows]] usa-se o padrão FF-FF-FF-FF-FF-FF, em máquinas IOS ou Cisco usa-se o padrão FFFF.FFFF.FFFF.
 
 MAC = endereço físico (placa de rede) IP = endereço lógico (protocolo de endereçamento) -> ambos se correlacionam
 
-Os primeiros 6 dígitos identificam o fabricante e o numero de série (ou seja, os primeiros 64 bytes)
+[[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] primeiros 6 dígitos identificam o fabricante e o numero de série (ou seja, [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] primeiros 64 bytes)
 
 \--> na prova precisamos prestar atenção ao modelo pedido pelo professor no enunciado para inputar o modelo correto. Também precisamos detectar se a máquina interpreta ou não case sensitive.
 
@@ -20,7 +20,7 @@ Vamos atacar uma criptogragia WPA2-Personal que é uma tecnologia usada em locai
 
 Flags: CAFE:36AB:479X => está no padrão Cisco IOS, mas com ":", que seria do padrão UNIX e possui um X no final, isso está errado.
 
-Os 6 primeiros bytes identificam para onde o pacote está indo e os 6 demais de onde está vindo
+[[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] 6 primeiros bytes identificam para onde o pacote está indo e [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] 6 demais de onde está vindo
 
 A camada data link é dividida em 2 partes: LLC (Lgical Link Control) e MAC O LLC permite o intercêmbio de informação entre IPv4 e IPv6, para casos onde um protocolo precisa se comunicar com o outro
 

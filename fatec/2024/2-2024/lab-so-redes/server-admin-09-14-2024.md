@@ -1,4 +1,4 @@
-Dentro do Windows server podemos criar uma estrutura de dependẽncias dentro das formas organizacionais baseando-se na estrutura lógica mais apropriada para a organização da empresa como um todo
+Dentro do [[soc/tools/operational-systems/windows/windows|windows]] server podemos criar uma estrutura de dependẽncias dentro das formas organizacionais baseando-se na estrutura lógica mais apropriada para a organização da empresa como um todo
 
 Quando precisarmos criar alguma estrutura lógica organizacional basta criarmos uma nova OU (Organizational Unit) dentro do domínio que estamos localizados; atenção que estas OUs serão sempre criadas automaticamente com uma proteção de segurança que inibe deleção acidental de OUs dentro do domínio (basta criar como novo)
 
@@ -13,7 +13,7 @@ No samba4 as vezes precisamos delegar e atribuir as permissões necessárias par
 
 Passo a passo para configurar a descoberta de recursos detro do servidore no sistema
 - no servidor, ao fazer a instalação, precisamos configurar pontos cruciais:
-    - Instalar os serviços necessários
+    - Instalar [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] serviços necessários
 
 Ao criar um grupo precisamos ter em vista que ele pode ter alguns escopos de grupo. Estes escopos sao divididos entre local, global e universal, onde o local possui acesso apenas aos recursos de sua OU, o Global possui acesso ao domínio e o universal acesso a todos recursos de todos domínios que se conectem.
 

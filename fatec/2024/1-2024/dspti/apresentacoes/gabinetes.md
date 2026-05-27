@@ -1,6 +1,6 @@
 # Gabinetes
 
-Gabinete é uma estrutura que abriga e protege os componetes de um computador, ornece suporte fisico
+Gabinete é uma estrutura que abriga e protege [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] componetes de um computador, ornece suporte fisico
 
 Motherboard Processador (CPU) Memoria RAM Placa de Video (GPU) Fonte de alimentação (esquecia sigla) Unidade de Disco
 

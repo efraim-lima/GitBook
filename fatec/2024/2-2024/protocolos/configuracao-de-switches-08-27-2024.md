@@ -1,6 +1,6 @@
 # Configuração de Switches 08-27-2024
 
-Aqui temos o processo de configuração de uma rede que utiliza switches camada 2 e o script que pode ser utlizado para esta configuração. Tentarei anexar os scripts aqui e deixar em texto plano também.
+Aqui temos o processo de configuração de uma rede que utiliza switches camada 2 e o script que pode ser utlizado para esta configuração. Tentarei anexar [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] [[scripts]] aqui e deixar em texto plano também.
 
 {% file src="../../../../../.gitbook/assets/configuracao-switches-08272024.txt" %}
 
@@ -38,7 +38,7 @@ spanning-tree vlan 40 priority 0
 spanning-tree vlan 50 priority 0
 spanning-tree vlan 60 priority 0
 
-\#configurar os swithes apenas até a porta 5 e os hosts a partir da 6, para que a comunicação seja restringida naquela vlan para os hosts a partir desta porta
+\#configurar [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] swithes apenas até a porta 5 e [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] hosts a partir da 6, para que a comunicação seja restringida naquela vlan para [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] hosts a partir desta porta
 
 \#vlan do tipo tronco permite que noo mesmo router passem muitas VLANs para garantir que, caso um link caia exista redundancia, o modo ACCESS permite que haja apenas uma VLAN no mesmo, agora o modo TRUNK permite que varias vlans habitem no mesmo switch.
 
@@ -65,7 +65,7 @@ interface FastEthernet 0/11
 switchport access vlan 60
 exit
 
-\#configuração do router: cada interface precisa ter um IP específico pois estas serão os gateways padrão de cada switch, e estes IPs precisam ser os primeiros IPs úteis de cada cada rede presente em cada switch; imprescindível inserir mais interfaces no roteador para comportar a quantidade de interfaces, no caso foram inseridos 4 Ethernets para comportar as conexões
+\#configuração do router: cada interface precisa ter um IP específico pois estas serão [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] gateways padrão de cada switch, e estes IPs precisam ser [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] primeiros IPs úteis de cada cada rede presente em cada switch; imprescindível inserir mais interfaces no roteador para comportar a quantidade de interfaces, no caso foram inseridos 4 Ethernets para comportar as conexões
 
 enable
 configure terminal

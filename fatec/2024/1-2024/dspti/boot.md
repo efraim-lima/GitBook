@@ -12,11 +12,11 @@ II) memorias A memória principal é a RAM, ela possui acesso direto e determini
 
 SSD com cabo sata está limitado ao through put do cabo, o outro cabeamento é mais veloz, mas mesmo assim limitado ao meio.
 
-Os programas estão na memória secundária, pois a principal é volátil. -> no endereço 0 da memória estão as informações do boot
+[[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] programas estão na memória secundária, pois a principal é volátil. -> no endereço 0 da memória estão as informações do boot
 
 ***
 
-III) dispositivos de entrada Os dispositivos de entrada são os elementos que conectam nosso mundo analógico ao mundo digital, fornecendo dados para serem processados.
+III) dispositivos de entrada [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] dispositivos de entrada são [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] elementos que conectam nosso mundo analógico ao mundo digital, fornecendo dados para serem processados.
 
 Ex.: mouses, camera, sensores, teclados
 
@@ -26,4 +26,4 @@ IV) dispositivos de saida Responsáveis por transmitir dados do meio computacion
 
 ***
 
-V) barramentos Implementa todos os componentes permitindo o tráfego de instruções e dados no sistema.
+V) barramentos Implementa todos [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] componentes permitindo o tráfego de instruções e dados no sistema.

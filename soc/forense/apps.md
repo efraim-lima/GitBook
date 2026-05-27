@@ -19,6 +19,6 @@ icon: grid
 * CNPJ OSINT | [https://srwatson.co/](https://srwatson.co/)
 * Phone OSINT | [https://www.tellows.com.br/](https://www.tellows.com.br/)
 * Bbot - Threat Hunting | [https://github.com/blacklanternsecurity/bbot](https://github.com/blacklanternsecurity/bbot)
-* Terminal Warp para linux, super importante | [https://diolinux.com.br/video/17-aplicativos-de-terminal-linux.html](https://diolinux.com.br/video/17-aplicativos-de-terminal-linux.html)
+* Terminal Warp para [[soc/tools/operational-systems/linux/linux|linux]], super importante | [https://diolinux.com.br/video/17-aplicativos-de-terminal-linux.html](https://diolinux.com.br/video/17-aplicativos-de-terminal-linux.html)
 * DevDocs | Fonte: [https://devdocs.io/](https://devdocs.io/)
-* Encontrando produtos mais baratos na internet (para forense) | dupe.com/\<link do produto>
+* Encontrando produtos mais baratos na internet (para [[soc/forense/forense|forense]]) | dupe.com/\<link do produto>

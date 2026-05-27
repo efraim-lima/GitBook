@@ -1,13 +1,13 @@
 # Queryes de LOGs
 
-O processo de análise de [[logs]] infere que precisamos reconstruir uma cadeia de eventos com o objetivo de se compreender a linha de tempo do que ocorreu e ter uma melhor visibilidade de como pode ter ocorrido um incidente, levantando cada etapa do incidente seja antes ou depois do mesmo ocorrer. Portanto é importante saber correlacionar os eventos detectados com etapas de um incidente, isso trará clareza e consciência de cada etapa e também a possiblidade de inferir qual foi a intenção da ação do atacante no ambiente.&#x20;
+O processo de análise de [[logs]] infere que precisamos reconstruir uma cadeia de eventos com o objetivo de se compreender a linha de tempo do que ocorreu e ter uma melhor visibilidade de como pode ter ocorrido um incidente, levantando cada etapa do incidente seja antes ou depois do mesmo ocorrer. Portanto é importante saber correlacionar [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] eventos detectados com etapas de um incidente, isso trará clareza e consciência de cada etapa e também a possiblidade de inferir qual foi a intenção da ação do atacante no ambiente.&#x20;
 
-A partir disso é interessante correlacionar o framework Cyber Kill Chain, que descreve as etapas de um ataque cibernético e queryes especificas que podemos inputar no Linux que levantarão eventos que podem ser associados a cada etapa do incidente.&#x20;
+A partir disso é interessante correlacionar o framework [[CYBER]] Kill Chain, que descreve as etapas de um ataque cibernético e queryes especificas que podemos inputar no [[soc/tools/operational-systems/linux/linux|linux]] que levantarão eventos que podem ser associados a cada etapa do incidente.&#x20;
 
-Abaixo está uma lista detalhada dos IDs de eventos relevantes para o Windows, categorizados por cada etapa da Cyber Kill Chain.\
+Abaixo está uma lista detalhada dos IDs de eventos relevantes para o [[soc/tools/operational-systems/windows/windows|windows]], categorizados por cada etapa da [[CYBER]] Kill Chain.\
 
 
-Queries de Análise de [[logs]] para Análise Forense em Cada Etapa do Cyber Kill Chain
+Queries de Análise de [[logs]] para Análise [[soc/forense/forense|forense]] em Cada Etapa do [[CYBER]] Kill Chain
 
 #### 1. Reconhecimento
 
@@ -31,7 +31,7 @@ Queries de Análise de [[logs]] para Análise Forense em Cada Etapa do Cyber Kil
   * **Comando**: `ausearch -f /etc/passwd`
 * **Query**: Analisar [[logs]] de escalonamento de privilégios.
   * **Comando**: `grep "sudo" /var/log/auth.log`
-* **Query:** Analisar criação de serviços, scripts ou binários registrados em \`/var/log/syslog\` ou \`/var/log/auth.log\`. >>>>>>:::::::::::::::?????????????????????????
+* **Query:** Analisar criação de serviços, [[scripts]] ou binários registrados em \`/var/log/syslog\` ou \`/var/log/auth.log\`. >>>>>>:::::::::::::::?????????????????????????
 * **Query:** Verificar gatilhos específicos para criação de [[Tarefas]] agendadas
   * **Comando**: `cat /etc/crontab | grep "sudo"`
 
@@ -46,7 +46,7 @@ Queries de Análise de [[logs]] para Análise Forense em Cada Etapa do Cyber Kil
 
 * **Query**: Detectar conexões com servidores externos suspeitos.
   * **Comando**: `grep "CONNECT" /var/log/syslog | grep "suspicious_IP"`
-* **Query**: Analisar [[logs]] de execução de scripts ou [[comandos]] remotos.
+* **Query**: Analisar [[logs]] de execução de [[scripts]] ou [[comandos]] remotos.
   * **Comando**: `grep "bash" /var/log/auth.log`
 
 #### 6. Ação
@@ -63,7 +63,7 @@ Queries de Análise de [[logs]] para Análise Forense em Cada Etapa do Cyber Kil
 * **Query**: Analisar [[logs]] de tráfego de rede para detectar padrões anômalos.
   * **Comando**: `tcpdump -i eth0 port not 22`
 
-Essas queries são fundamentais para a análise forense em sistemas Linux, permitindo identificar e investigar [[ATIVIDADES]] suspeitas em cada etapa do Cyber Kill Chain, contribuindo para uma resposta rápida e eficaz a incidentes de segurança.\
+Essas queries são fundamentais para a análise [[soc/forense/forense|forense]] em sistemas [[soc/tools/operational-systems/linux/linux|linux]], permitindo identificar e investigar [[ATIVIDADES]] suspeitas em cada etapa do [[CYBER]] Kill Chain, contribuindo para uma resposta rápida e eficaz a incidentes de segurança.\
 \
 Referências:\
 [https://www.trendmicro.com/vinfo/br/security/news/cybercrime-and-digital-threats/a-look-at-linux-threats-risks-and-recommendations](https://www.trendmicro.com/vinfo/br/security/news/cybercrime-and-digital-threats/a-look-at-linux-threats-risks-and-recommendations)

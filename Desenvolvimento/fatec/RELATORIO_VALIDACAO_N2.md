@@ -1,7 +1,7 @@
 # Relatório de Validação — N2 vs Aulas Professor
-**Data:** 25/05/[[2026]]  
-**Diretório analisado:** `[[fatec/2026/1-2026/Estudos Avançados/N2|N2]]/`  
-**Referência:** `Aulas Professor/` (aulas 1–3, 5–6, 9, 11–15)
+**Data:** 25/[[05]]/[[2026]]  
+**Diretório analisado:** `[[[[information-security/fatec/fatec|fatec]]/[[reports/2026/2026|2026]]/1-[[reports/2026/2026|2026]]/[[Estudos Avançados]]/[[fatec/2026/1-2026/Estudos Avançados/N2|N2]]|[[fatec/2026/1-2026/Estudos Avançados/N2|N2]]]]/`  
+**Referência:** `[[Aulas Professor]]/` (aulas 1–3, 5–6, 9, 11–15)
 
 ---
 

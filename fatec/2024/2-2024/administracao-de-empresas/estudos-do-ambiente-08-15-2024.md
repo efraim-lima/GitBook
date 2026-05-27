@@ -6,7 +6,7 @@ Algumas pessoas possuem lderanã natural, essas são as que conseguem liderar de
 
 Quando as pessoas passaram a inderagir mais no [[trabalho]] (conversando), comprovou-se que este tipo de interação aumentava a produtividade da empresa e das equipes.
 
-Os gestores devem ser treinados para situações diferentes, pois é comum haverem falhas nessas posições e o objetivo não é que o gestor seja a prova de falhas, mas que saiba ajustar a rota ao decorrer das situações.
+[[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] gestores devem ser treinados para situações diferentes, pois é comum haverem falhas nessas posições e o objetivo não é que o gestor seja a prova de falhas, mas que saiba ajustar a rota ao decorrer das situações.
 
 Algo natural: tratamos como somos tratados e respeitamos como somos respeitados pelas autoridades impostas (um gestor, por exemplo)
 
@@ -21,7 +21,7 @@ A organização informal manifestou-se cmo:
 * demonstração de insatisfação com o sistema de pagamentos e incentivos por produção
 * liderança informal
 
-Um lider precisa defender os interesses da empresa, por isso ele precisará fazer coisas que antes julgava até mesmo imoral; ele pode até ficar doente por conta disso pois ser um líder seria uma máscara.
+Um lider precisa defender [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] interesses da empresa, por isso ele precisará fazer coisas que antes julgava até mesmo imoral; ele pode até ficar doente por conta disso pois ser um líder seria uma máscara.
 
 O nível da produção é resultados das relações fisicas e não dos recursos A capacidade de alguém produzir, sua competência e eficienca estão relacionados com sua capacidade de integração social. Quanto maior a integração social do grupo, maior a disposição de produzir.
 
@@ -57,7 +57,7 @@ Autocrática: ordens vem Top Down. Democrática: todos decidem juntos. Liberal: 
 
 Cada tipo de liderança tem utilidade, a ultima serve para jogos por exemplo
 
-A situação (empresa) jamais vai mudar por conta da liderança. Para uma empresa do estilo autocrática ocorre o que se chama cortina de fumaça, onde o lider decide e os demais obedecem, mas o lider pede a opinião de todos apenas como forma de "cortina de fumaça".
+A situação (empresa) jamais vai mudar por conta da liderança. Para uma empresa do estilo autocrática ocorre o que se chama cortina de fumaça, onde o lider decide e [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] demais obedecem, mas o lider pede a opinião de todos apenas como forma de "cortina de fumaça".
 
 A teoria das Relações Humanas é oposta à teoria classica das organizações, levando mais em consideração a visão humanitária da coisa.
 

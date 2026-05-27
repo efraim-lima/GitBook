@@ -12,7 +12,7 @@ CIRILO DE SOUZA, M. Estudo De Caso De Análise Forense De Arquivos Apagados Em �
 
 DUY, P. et al. SDNLog-Foren: Ensuring the Integrity and Tamper Resistance of Log Files for SDN Forensics using Blockchain. \[s.l: s.n.]. Acesso em: 29 dez. 2024.
 
-HSU, F. et al. Back to the Future: A Framework for Automatic Malware Removal and System Repair \*. \[s.l: s.n.]. Disponível em: \<https://pages.cs.wisc.edu/\~rist/papers/bttf.pdf>. Acesso em: 10 dez. 2024.
+HSU, F. et al. Back to the Future: A Framework for Automatic Malware Removal and System Repair \*. \[s.l: s.n.]. Disponível em: \<https://pages.cs.wisc.edu/\~rist/papers/bttf.pdf>. Acesso em: 10 dez. [[2024]].
 
 JELODAR, H. Identification of Internet Hackers’ Attacks through Keywords by Analyzing the Server Log File. ARPN Jounal of Systems and Software, v. 3, n. 6, out. 2013.
 
@@ -30,7 +30,7 @@ MA, R. Anomaly Detection for Linux System Log - University of Twente Student The
 
 MALIN, C. H. et al. Malware forensic field guide for Windows systems digital forensics field guides. \[s.l.] Amsterdam Elsevier Rockland, Mass. Syngress Waltham, Mass. Syngress, 2012.
 
-MANSFIELD-DEVINE, S. FIGHTING FORENSICSScienceDirect. \[s.l: s.n.]. Disponível em: \<https://www.sciencedirect.com/science/article/abs/pii/S1361372310701123>. Acesso em: 29 dez. 2024.
+MANSFIELD-DEVINE, S. FIGHTING FORENSICSScienceDirect. \[s.l: s.n.]. Disponível em: \<https://www.sciencedirect.com/science/article/abs/pii/S1361372310701123>. Acesso em: 29 dez. [[2024]].
 
 MAZIOLLI, G. Guia Foca. Disponível em: \<https://www.guiafoca.org>. Acesso em: 2 nov. 2024.
 
@@ -86,21 +86,21 @@ Introduction to Log File Analysis, By Zach Mewshaw
 
 Linux Log, artigo precisa ser pago | [https://ieeexplore.ieee.org/abstract/document/9453065](https://ieeexplore.ieee.org/abstract/document/9453065)
 
-HSU, Francis; CHEN, Hao; RISTENPART, Thomas; _et al_. Back to the Future: A Framework for Automatic Malware Removal and System Repair \*. \[s.l.: s.n., s.d.]. Disponível em: \<https://pages.cs.wisc.edu/\~rist/papers/bttf.pdf>. Acesso em: 10 dez. 2024.
+HSU, Francis; CHEN, Hao; RISTENPART, Thomas; _et al_. Back to the Future: A Framework for Automatic Malware Removal and System Repair \*. \[s.l.: s.n., s.d.]. Disponível em: \<https://pages.cs.wisc.edu/\~rist/papers/bttf.pdf>. Acesso em: 10 dez. [[2024]].
 
 {% file src="../../../../.gitbook/assets/Back to the Future A Framework for Automatic Malware Removal.pdf" %}
 Back to the Future: A Framework for Automatic Malware Removal and System Repair
 {% endfile %}
 
-MA, R. Anomaly detection for Linux system log - University of Twente Student Theses. Utwente.nl, 2020. Disponível em: [https://essay.utwente.nl/83142/](https://essay.utwente.nl/83142/). Acesso em: 10 dez. 2024.
+MA, R. Anomaly detection for [[soc/tools/operational-systems/linux/linux|linux]] system log - University of Twente Student Theses. Utwente.nl, 2020. Disponível em: [https://essay.utwente.nl/83142/](https://essay.utwente.nl/83142/). Acesso em: 10 dez. [[2024]].
 
-{% file src="../../../../.gitbook/assets/Anomaly detection for Linux System Log.pdf" %}
-Anomaly detection for Linux System log
+{% file src="../../../../.gitbook/assets/Anomaly detection for [[soc/tools/operational-systems/linux/linux|linux]] System Log.pdf" %}
+Anomaly detection for [[soc/tools/operational-systems/linux/linux|linux]] System log
 {% endfile %}
 
-Secure Data Deletion for Linux File Systems | [https://www.usenix.org/legacy/events/sec01/full\_papers/bauer/](https://www.usenix.org/legacy/events/sec01/full_papers/bauer/)
+Secure Data Deletion for [[soc/tools/operational-systems/linux/linux|linux]] File Systems | [https://www.usenix.org/legacy/events/sec01/full\_papers/bauer/](https://www.usenix.org/legacy/events/sec01/full_papers/bauer/)
 
-KORKIN, Igor ; TANDA, Satoshi. Detect Kernel-Mode Rootkits via Real Time Logging & Controlling Memory Access. arXiv.org. Disponível em: [https://arxiv.org/abs/1705.06784](https://arxiv.org/abs/1705.06784). Acesso em: 10 dez. 2024.
+KORKIN, Igor ; TANDA, Satoshi. Detect Kernel-Mode Rootkits via Real Time Logging & Controlling Memory Access. arXiv.org. Disponível em: [https://arxiv.org/abs/1705.06784](https://arxiv.org/abs/1705.06784). Acesso em: 10 dez. [[2024]].
 
 {% file src="../../../../.gitbook/assets/Detect Kernel-Mode Rootkits.pdf" %}
 DETECT KERNEL-MODE ROOTKITS VIA REAL TIME LOGGING & CONTROLLING MEMORY ACCESS
@@ -128,15 +128,15 @@ Compilado de datasets de [[logs]] para analises de IA | [https://github.com/logp
 
 \####################################################################
 
-MALIN, Cameron H; CASEY, Eoghan ; AQUILINA, James M. Malware forensics field guide for Linux systems : digital forensics field guides. Waltham, Ma: Syngress, 2014.
+MALIN, Cameron H; CASEY, Eoghan ; AQUILINA, James M. Malware forensics field guide for [[soc/tools/operational-systems/linux/linux|linux]] systems : digital forensics field guides. Waltham, Ma: Syngress, 2014.
 
-{% file src="../../../../.gitbook/assets/Malware Forensics Field Guide for Linux Systems - PDF Room.pdf" %}
-Malware Forensics Field Guide for Linux Systems
+{% file src="../../../../.gitbook/assets/Malware Forensics Field Guide for [[soc/tools/operational-systems/linux/linux|linux]] Systems - PDF Room.pdf" %}
+Malware Forensics Field Guide for [[soc/tools/operational-systems/linux/linux|linux]] Systems
 {% endfile %}
 
-MALIN, Cameron H; CASEY, Eoghan; AQUILINA, James M; _et al_. Malware forensic field guide for Windows systems digital forensics field guides. \[s.l.]: Amsterdam Elsevier Rockland, Mass. Syngress Waltham, Mass. Syngress, 2012.
+MALIN, Cameron H; CASEY, Eoghan; AQUILINA, James M; _et al_. Malware forensic field guide for [[soc/tools/operational-systems/windows/windows|windows]] systems digital forensics field guides. \[s.l.]: Amsterdam Elsevier Rockland, Mass. Syngress Waltham, Mass. Syngress, 2012.
 
-{% file src="../../../../.gitbook/assets/Malware Forensics Field Guide for Windows Systems.pdf" %}
-Malware Forensics Field Guide for Windows Systems
+{% file src="../../../../.gitbook/assets/Malware Forensics Field Guide for [[soc/tools/operational-systems/windows/windows|windows]] Systems.pdf" %}
+Malware Forensics Field Guide for [[soc/tools/operational-systems/windows/windows|windows]] Systems
 {% endfile %}
 
