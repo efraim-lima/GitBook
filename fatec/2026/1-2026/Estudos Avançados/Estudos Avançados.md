@@ -15,6 +15,7 @@
 	- [[Diagrama de Criação.png]]
 	- [[Estudos Avançados]]
 	- [[N2]]
+	- [[RELATORIO_VULNERABILIDADES_ARQUITETURA_SEGURANCA]]
 	- [[Security Architecture.drawio]]
 	- [[Security Architecture.png]]
 	- [[Untitled Diagram2.drawio]]

@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "soc/forense/logs/logs.md",
+                "file": "fatec/Pesquisa/TCC/TCC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "logs"
+              "title": "TCC"
             }
           }
         ],
@@ -217,16 +217,6 @@
               "icon": "smart-connections",
               "title": "Connections"
             }
-          },
-          {
-            "id": "81dec0d22ffabc08",
-            "type": "leaf",
-            "state": {
-              "type": "smart-lookup-view-connections",
-              "state": {},
-              "icon": "smart-lookup",
-              "title": "Lookup"
-            }
           }
         ],
         "currentTab": 6
@@ -252,7 +242,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 1471.5
+    "width": 737.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -279,6 +269,11 @@
   },
   "active": "087039d6c936fcf0",
   "lastOpenFiles": [
+    "fatec/Pesquisa/Pesquisa/Pesquisa.md",
+    "fatec/Pesquisa/Pesquisa.md",
+    "fatec/2026/1-2026/Estudos Avançados/RELATORIO_VULNERABILIDADES_ARQUITETURA_SEGURANCA.md",
+    "fatec/FATEC.md",
+    "SUMMARY.md",
     "soc/forense/logs/logs.md",
     "soc/forense/logs/linux-logs/README.md",
     "cyberetico/temas/temas.md",
@@ -300,11 +295,6 @@
     "soc/tools/operational-systems/operational-systems.md",
     "soc/tools/operational-systems/windows/windows.md",
     "soc/tools/operational-systems/linux/linux.md",
-    "soc/tools/intel/intel.md",
-    "soc/tools/tools.md",
-    "soc/phishing/analise-de-possivel-phishing/analise-de-possivel-phishing.md",
-    "soc/phishing/phishing.md",
-    "soc/malware-analysis/engenharia-reversa/engenharia-reversa.md",
     "fatec/2026/1-2026/Estagio",
     "reports/2026/05",
     "reports/2026",

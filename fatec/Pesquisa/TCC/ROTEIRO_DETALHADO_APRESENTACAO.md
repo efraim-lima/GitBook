@@ -520,7 +520,7 @@ IMPACTO MEASURABLE - CAMADA 1
 
 ### Possíveis Perguntas da Banca:
 1. **P:** "Por que TLS 1.3 e não TLS 1.2?"  
-   **R:** "TLS 1.3 é[[reports/2026/2026|2026]] mais rápido e remove algoritmos fracos que TLS 1.2 ainda permite. É o padrão moderno desde 2018. Mantemos suporte a TLS 1.2 para compatibilidade legada."
+   **R:** "TLS 1.3 é[[reports/2026/2026|20[[reports/2026/2026|2026]] mais rápido e remove algoritmos fracos que TLS 1.2 ainda permite. É o padrão moderno desde 2018. Mantemos suporte a TLS 1.2 para compatibilidade legada."
 
 2. **P:** "Rate limiting de 10 requisições por segundo — isso não é muito baixo?"  
    **R:** "Na verdade, 10 r/s é generoso. Um cliente legítimo que faz 100 requisições precisaria de 10 segundos. Para MCP, que é assíncrono, isso é normal. Testamos e clientes legítimos não sofrem impacto."

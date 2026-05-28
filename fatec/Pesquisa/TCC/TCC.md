@@ -7,6 +7,7 @@ type: folder_brief_live
 %% Begin Waypoint %%
 - **[[TCC]]**
 	- [[__init__]]
+	- [[2026-05-28 07-51-12.mp4]]
 	- [[APRESENTACAO_TCC_MCP_SEGURANCA.pptx]]
 	- [[Apresentação]]
 	- [[criar_apresentacao.py]]

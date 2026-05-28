@@ -84,7 +84,7 @@ A tabela lista exemplos de atividades e ferramentas que são usadas em testes de
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | Análise de risco             | Indivíduos realizam uma análise abrangente dos impactos dos ataques nos ativos principais da empresa e no funcionamento         | Consultores internos ou externos, quadros de gestão de riscos           |
 | Avaliação de vulnerabilidade | Gerenciamento de patches, varreduras de host, varredura de [[portas]], outras verificações de vulnerabilidade e serviços            | OpenVAS, Analisador de Linha de Base da Microsoft, Nessus, Qualys, Nmap |
-| [[Teste]] de penetração          | Uso de técnicas e [[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]] de hacking para penetrar nas defesas da rede e identificar a profundidade de penetração potencial | Metasploit, CORE Impact, hackers éticos                                 |
+| [[Teste]] de penetração          | Uso de técnicas e [[[[information-security/fatec/fatec|fatec]]/[[fatec/Pesquisa/Pesquisa|Pesquisa]]/[[fatec/Pesquisa/Pesquisa|Pesquisa]]/[[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]]/[[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]]|[[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]]]] de hacking para penetrar nas defesas da rede e identificar a profundidade de penetração potencial | Metasploit, CORE Impact, hackers éticos                                 |
 
 &#x20;
 

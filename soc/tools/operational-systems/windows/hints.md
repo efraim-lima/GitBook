@@ -107,7 +107,7 @@ sudo eject /dev/\<nome da unidade sd?> => ejeta o dispositivo
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_/[[soc/tools/operational-systems/windows/windows|windows]]
 
-[[soc/tools/operational-systems/windows/windows|windows]] ->  C:\[[soc/tools/operational-systems/windows/windows|windows]]\System32\drivers\etc\hosts
+[[soc/tools/operational-systems/windows/windows|windows]] ->  C:\[[[[soc]]/[[tools]]/[[operational-systems]]/[[soc/tools/operational-systems/windows/windows|windows]]/[[soc/tools/operational-systems/windows/windows|windows]]|[[soc/tools/operational-systems/windows/windows|windows]]]]\System32\drivers\etc\hosts
 
 As [[fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]] comuns que são usadas para monitoramento de segurança de rede incluem:
 

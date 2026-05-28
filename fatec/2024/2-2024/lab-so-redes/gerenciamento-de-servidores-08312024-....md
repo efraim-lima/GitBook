@@ -4,7 +4,7 @@
 
 Workgoroup (pode administrar seus recursos próprios) => Arquivo SAM (SAM/LOCAL/WINDOWS10) Dominio => Arquivo NTDS
 
-C:\[[soc/tools/operational-systems/windows/windows|windows]]\NTDS => pasta onde armazenaremos o database e [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] [[logs]] C:\[[soc/tools/operational-systems/windows/windows|windows]]\SYSVOL => onde colocamos [[scripts]] de usuários, como mapeamento de redes e serviços
+C:\[[[[soc]]/[[tools]]/[[operational-systems]]/[[soc/tools/operational-systems/windows/windows|windows]]/[[soc/tools/operational-systems/windows/windows|windows]]|[[soc/tools/operational-systems/windows/windows|windows]]]]\NTDS => pasta onde armazenaremos o database e [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] [[logs]] C:\[[[[soc]]/[[tools]]/[[operational-systems]]/[[soc/tools/operational-systems/windows/windows|windows]]/[[soc/tools/operational-systems/windows/windows|windows]]|[[soc/tools/operational-systems/windows/windows|windows]]]]\SYSVOL => onde colocamos [[scripts]] de usuários, como mapeamento de redes e serviços
 
 * aqui podemos simplesmente seguir dando next ou mudar [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] diretórios padrão destes elementos durante a configuração de gerenciamento de serviços.
 
