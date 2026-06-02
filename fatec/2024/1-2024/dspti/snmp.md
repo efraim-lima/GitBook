@@ -4,9 +4,9 @@ Sinais vitais que devemos prestar atenção na maquina: -temperatura -espaço e 
 
 Podemos fazer o acompanhamento destes sinais em uma ferramenta chamada NAGIOS
 
-propor um roteiro com 5 intens de uma manutenção fisica preventiva: -limpeza de pó, apertar parafusos, troca de pasta termica, alteração de pata para sata
+propor um [[Roteiro]] com 5 intens de uma manutenção fisica preventiva: -limpeza de pó, apertar parafusos, troca de pasta termica, alteração de pata para sata
 
-propor um roteiro com 5 intens de uma manutenção lógica preventiva: -ponto de restauração, desinstalar [[fatec/Pesquisa/Pesquisa/ferramentas/aplicativos|aplicativos]] não utilizados, varredura de [[soc/tools/malwares|malwares]], defragmentação, limpeza de cookies;
+propor um [[Roteiro]] com 5 intens de uma manutenção lógica preventiva: -ponto de restauração, desinstalar [[fatec/Pesquisa/Pesquisa/ferramentas/aplicativos|aplicativos]] não utilizados, varredura de [[soc/tools/malwares|malwares]], defragmentação, limpeza de cookies;
 
 KPIs
 

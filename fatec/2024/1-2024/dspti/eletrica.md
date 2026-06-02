@@ -155,7 +155,7 @@ Atividade in class -> para entrega na próxima semana - individual Responda às 
 3. Aonde fica disponível a data e hora do sistema? R: Na bateria da placa mãe, no RTC (Real Time Clock)
 4. Qual a função da bateria de lithium da placa-mãe? R: Manter o tempo do sistema just in time
 5. Qual o sintoma de um computadore que tem o [[bios]] corrompido? (Exemplo: apagamento de todas as psoições da memória flash com 0xFFFF). R: No momento inicial não acontecerá nada, mas ao desligar o computador e religar a tela não ligará, sequer teremos sinal de que o dispositivo está energizado
-6. Como você recomenta um roteiro seguro para a configuração do [[bios]] para um sistema instável? R: Uma das possibilidades de solução aqui é: entrar no [[bios]] e colocar valor default, se der certo é porque uma das configurações estavam conflitando com o sistema.
+6. Como você recomenta um [[Roteiro]] seguro para a configuração do [[bios]] para um sistema instável? R: Uma das possibilidades de solução aqui é: entrar no [[bios]] e colocar valor default, se der certo é porque uma das configurações estavam conflitando com o sistema.
 
 Homework
 

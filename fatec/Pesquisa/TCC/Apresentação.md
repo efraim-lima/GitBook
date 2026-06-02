@@ -14,7 +14,7 @@ Para uma apresentação nota 10, lembre-se: o slide é um **recurso visual** par
 
 --------------------------------------------------------------------------------
 
-Roteiro Estruturado para Apresentação de [[notas/16.0/Backup/TCC/TCC|TCC]]
+[[Roteiro]] Estruturado para Apresentação de [[notas/16.0/Backup/TCC/TCC|TCC]]
 
 Slide 1: Capa e Identificação (30s a 1min)
 

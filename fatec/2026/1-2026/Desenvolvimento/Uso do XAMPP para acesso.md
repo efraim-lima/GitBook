@@ -8,8 +8,8 @@ Para acessar o XAMPP no [[soc/tools/operational-systems/linux/linux|linux]] deve
 
 Nisso basta seguir [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] demais [[comandos]] para que possamos instalar o fulano
 
-`chmod 755 xampp-[[[[soc]]/[[tools]]/[[operational-systems]]/[[soc/tools/operational-systems/linux/linux|linux]]/[[soc/tools/operational-systems/linux/linux|linux]]|[[soc/tools/operational-systems/linux/linux|linux]]]]-*-installer.run`
-`sudo ./xampp-[[[[soc]]/[[tools]]/[[operational-systems]]/[[soc/tools/operational-systems/linux/linux|linux]]/[[soc/tools/operational-systems/linux/linux|linux]]|[[soc/tools/operational-systems/linux/linux|linux]]]]-*-installer.run`
+`chmod 755 xampp-[[[[[[soc]]]]/[[[[tools]]]]/[[[[operational-systems]]]]/[[[[soc]]/[[tools]]/[[operational-systems]]/[[soc/tools/operational-systems/linux/linux|linux]]/[[soc/tools/operational-systems/linux/linux|linux]]|[[soc/tools/operational-systems/linux/linux|linux]]]]/[[[[soc]]/[[tools]]/[[operational-systems]]/[[soc/tools/operational-systems/linux/linux|linux]]/[[soc/tools/operational-systems/linux/linux|linux]]|[[soc/tools/operational-systems/linux/linux|linux]]]]|[[[[soc]]/[[tools]]/[[operational-systems]]/[[soc/tools/operational-systems/linux/linux|linux]]/[[soc/tools/operational-systems/linux/linux|linux]]|[[soc/tools/operational-systems/linux/linux|linux]]]]]]-*-installer.run`
+`sudo ./xampp-[[[[[[soc]]]]/[[[[tools]]]]/[[[[operational-systems]]]]/[[[[soc]]/[[tools]]/[[operational-systems]]/[[soc/tools/operational-systems/linux/linux|linux]]/[[soc/tools/operational-systems/linux/linux|linux]]|[[soc/tools/operational-systems/linux/linux|linux]]]]/[[[[soc]]/[[tools]]/[[operational-systems]]/[[soc/tools/operational-systems/linux/linux|linux]]/[[soc/tools/operational-systems/linux/linux|linux]]|[[soc/tools/operational-systems/linux/linux|linux]]]]|[[[[soc]]/[[tools]]/[[operational-systems]]/[[soc/tools/operational-systems/linux/linux|linux]]/[[soc/tools/operational-systems/linux/linux|linux]]|[[soc/tools/operational-systems/linux/linux|linux]]]]]]-*-installer.run`
 
 
 Tendo instalado este carinha podemos seguir para [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] próximos passos, para acesso ao ambeinte GUI
@@ -19,6 +19,6 @@ Tendo instalado este carinha podemos seguir para [[fatec/Pesquisa/Pesquisa/ferra
 
 Assim podemos acessar nossa interface grafica via
 
-`sudo Downloads/xampp-[[[[soc]]/[[tools]]/[[operational-systems]]/[[soc/tools/operational-systems/linux/linux|linux]]/[[soc/tools/operational-systems/linux/linux|linux]]|[[soc/tools/operational-systems/linux/linux|linux]]]]-*-installer.run`
+`sudo Downloads/xampp-[[[[[[soc]]]]/[[[[tools]]]]/[[[[operational-systems]]]]/[[[[soc]]/[[tools]]/[[operational-systems]]/[[soc/tools/operational-systems/linux/linux|linux]]/[[soc/tools/operational-systems/linux/linux|linux]]|[[soc/tools/operational-systems/linux/linux|linux]]]]/[[[[soc]]/[[tools]]/[[operational-systems]]/[[soc/tools/operational-systems/linux/linux|linux]]/[[soc/tools/operational-systems/linux/linux|linux]]|[[soc/tools/operational-systems/linux/linux|linux]]]]|[[[[soc]]/[[tools]]/[[operational-systems]]/[[soc/tools/operational-systems/linux/linux|linux]]/[[soc/tools/operational-systems/linux/linux|linux]]|[[soc/tools/operational-systems/linux/linux|linux]]]]]]-*-installer.run`
 
 AAA

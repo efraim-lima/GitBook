@@ -2,8 +2,8 @@
 
 
 # Relatório de Auditoria de Segurança — Projeto Arquitetura de Segurança
-**Data:** 27/05/2026  
-**Agente:** SEVERINO (Information Security & Cyber Defense)
+**Data:** 27/[[05]]/[[reports/2026/2026|2026]]  
+**Agente:** SEVERINO (Information Security & [[CYBER]] Defense)
 
 ## 1) Escopo Avaliado
 
@@ -17,9 +17,9 @@
 
 ### Arquitetura avaliada (visão consolidada)
 - Camadas de borda: CDN/Edge, DDoS mitigation/scrubbing, roteador de borda, NGFW, WAF, block list.
-- Camadas internas: Data Domain com VMs, containers (Kubernetes/Docker), bases de dados, clientes, servidores.
+- Camadas internas: Data Domain com VMs, containers (Kubernetes/Docker), bases de dados, [[CLIENTES]], servidores.
 - Detecção e resposta: SIEM, EDR/XDR, CTI, observabilidade.
-- Fluxo AgentK: Streamlit, Gateway Webhook, Nginx (portas 443/22), Keycloak/OAuth2, envio para ChatGPT/OpenAI com classificação SAFE/SUSPECT/RISKY/UNSAFE.
+- Fluxo AgentK: Streamlit, Gateway Webhook, Nginx ([[portas]] 443/22), Keycloak/OAuth2, envio para ChatGPT/OpenAI com classificação SAFE/SUSPECT/RISKY/UNSAFE.
 
 ---
 
@@ -48,8 +48,7 @@
 | AS-008 | Falta de segmentação detalhada de plano de controle Kubernetes e segurança de runtime | VMs/Containers/Kubernetes/Docker | “containers em redes apartadas” e hardening genérico, sem controles de admission/runtime/pod security definidos | C: Alta, I: Alta, A: Alta | Alta | CVE-2024-21626 (runc container escape, se stack afetada) | Adotar Pod Security Standards, admission policies, runtime security, escaneamento de imagem, SBOM e controle de privilégios (rootless/least privilege) |
 | AS-009 | Controle IAM descrito sem detalhar ciclo de vida de identidade e segregação de funções | LDAP/RADIUS/Keycloak/RBAC | Há menção a RBAC, MFA, AAA, mas sem JML (joiner/mover/leaver) e SoD formal | C: Alta, I: Alta, A: Média | Alta | N/A | Implementar governança IAM: recertificação periódica, SoD, provisioning/deprovisioning automatizado e trilha auditável |
 | AS-010 | Falta de proteção explícita contra prompt injection e data poisoning no fluxo LLM | AgentK + Gateway + Prompt Parsing | Diagrama cita “Prompt Parsing”, mas não define controles anti-injeção e validação contextual robusta | C: Alta, I: Alta, A: Média | Alta | N/A | Guardrails de entrada/saída, políticas de contexto, isolamento de ferramentas, validação de instruções sensíveis e monitoramento de ataques indiretos |
-| AS-011 | Ausência de plano explícito de continuidade (BCP/DR) com RTO/RPO | Serviços críticos e dados | Material enfatiza disponibilidade técnica, sem plano BCP/DR formal com objetivos mensuráveis | C: Média, I: Média, A: Crítica | Alta | N/A | Formalizar BCP/DR, definir RTO/RPO por serviço, testes de restauração e exercícios periódicos de crise |
-| AS-012 | Ambiguidade entre controles propostos e controles implementados (risco de “paper security”) | Arquitetura inteira | Redação com verbos “implementar/garantir/deve ser adicionada” indica desenho alvo sem evidência de implantação | C: Média, I: Alta, A: Alta | Média | N/A | Criar matriz de rastreabilidade (controle vs evidência), checklist de implantação, testes de eficácia e auditoria contínua |
+
 
 ---
 
@@ -63,7 +62,7 @@
 6. AS-009 (Alta): lacunas IAM favorecem abuso de privilégio e persistência indevida.  
 7. AS-004 (Alta): sem gestão de segredos, credenciais viram ponto único de falha.  
 8. AS-002 (Alta): sem SLA de patch, janela de exploração permanece aberta.  
-9. AS-011 (Alta): indisponibilidade prolongada sem DR formal impacta negócio e compliance.  
+9. AS-006 (Alta): classificador SAFE/UNSAFE sem governança pode gerar falsos negativos críticos.  
 10. AS-003 (Média): blocklist isolada não resiste a ataques modernos e evasivos.
 
 ---
@@ -105,4 +104,4 @@
 
 ## 7) Conclusão Executiva
 
-A arquitetura proposta é sólida em intenção e cobre controles relevantes de defesa em profundidade, porém apresenta lacunas críticas de operacionalização e governança, principalmente em integração com LLM, gestão de acessos privilegiados, segurança de containers e forense de logs. O principal risco atual é a diferença entre desenho arquitetural e comprovação de implementação efetiva. A execução do plano 30/60/90 reduz substancialmente o risco residual e transforma a proposta em postura de segurança auditável e resiliente.
+A arquitetura proposta é sólida em intenção e cobre controles relevantes de defesa em profundidade, porém apresenta lacunas críticas de operacionalização e [[Governança]], principalmente em integração com LLM, gestão de acessos privilegiados, segurança de containers e [[soc/forense/forense|forense]] de [[soc/forense/logs/logs|logs]]. O principal risco atual é a diferença entre desenho arquitetural e comprovação de implementação efetiva. A execução do plano 30/60/90 reduz substancialmente o risco residual e transforma a proposta em postura de segurança auditável e resiliente.

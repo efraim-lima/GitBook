@@ -18,6 +18,7 @@ type: folder_brief_live
 	- [[Recomendações de segurança para o uso do MCP AI integrado à plataforma de orquestração de containers.docx.pdf]]
 	- [[RELATORIO_IMPLEMENTACAO_APRESENTACAO]]
 	- [[ROTEIRO_DETALHADO_APRESENTACAO]]
+	- [[Roteiro]]
 	- [[SUMARIO_DESIRE_ALFRED]]
 	- [[TCC]]
 	- [[Testes do Gateway do AgentK]]

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3ntssss
 # -*- coding: utf-8 -*-
 """
 Script para criar apresentação PowerPoint - TCC MCP Segurança

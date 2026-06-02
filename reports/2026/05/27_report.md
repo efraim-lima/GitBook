@@ -25,7 +25,7 @@ Nenhuma decisão crítica pendente de validação externa foi identificada neste
 | Item | Resultado |
 |------|-----------|
 | Parecer final | REPROVADO |
-| Contexto | Validação do report de 27/05 referente a atividade anterior de segurança |
+| Contexto | Validação do report de 27/[[05]] referente a atividade anterior de segurança |
 | Motivo principal | O relatório afirma 6 vulnerabilidades com CVEs reais, mas não apresenta a matriz técnica auditável no próprio documento |
 
 ### Principais achados
@@ -41,7 +41,7 @@ Nenhuma decisão crítica pendente de validação externa foi identificada neste
 ## Cycle Update — Publicação do Relatório de Vulnerabilidades
 
 ### Execução
-Foi delegada ao SEVERINO a elaboração do relatório textual completo de vulnerabilidades do projeto Arquitetura de Segurança, com escopo em DOCX/PDF/diagramas drawio do diretório de Estudos Avançados.
+Foi delegada ao SEVERINO a elaboração do relatório textual completo de vulnerabilidades do projeto Arquitetura de Segurança, com escopo em DOCX/PDF/diagramas drawio do diretório de [[Estudos Avançados]].
 
 ### Entrega
 O relatório foi publicado em:
