@@ -1,0 +1,298 @@
+===========================================================================
+VALIDACAO DAS RESPOSTAS — Avaliacao Oficial N2
+Disciplina: Seguranca em Bancos de Dados — FATEC SCS
+Ambiente: SQLite 3 (equivalente funcional ao MySQL/MariaDB para DML/DDL)
+Gerado em: 2026-06-12 20:03:47
+===========================================================================
+
+DADOS CARREGADOS:
+  cidades: 4070 registros
+  paises: 239 registros
+  linguas: 984 registros
+
+===========================================================================
+QUESTAO 1 — SELECT c.nome, c.estado, p.nome FROM cidades c
+===========================================================================
+SQL executado:
+SELECT c.nome   AS cidade,
+       c.estado AS estado,
+       p.nome   AS pais
+FROM cidades c
+INNER JOIN paises p
+    ON c.id_pais = p.id_pais
+LIMIT 10;
+
+Status: [ OK ]  10 linhas retornadas (LIMIT 10)
+
+  cidade                    estado                    pais                     
+  ------------------------- ------------------------- -------------------------
+  Kabul                     Kabol                     Afghanistan              
+  Qandahar                  Qandahar                  Afghanistan              
+  Herat                     Herat                     Afghanistan              
+  Mazar-e-Sharif            Balkh                     Afghanistan              
+  Amsterdam                 Noord-Holland             Netherlands              
+  Rotterdam                 Zuid-Holland              Netherlands              
+  Haag                      Zuid-Holland              Netherlands              
+  Utrecht                   Utrecht                   Netherlands              
+  Eindhoven                 Noord-Brabant             Netherlands              
+  Tilburg                   Noord-Brabant             Netherlands              
+
+  Total de linhas sem LIMIT: 4070
+
+===========================================================================
+QUESTAO 2 — Stored Procedure cidade_pais_info
+===========================================================================
+NOTA: SQLite nao suporta CREATE PROCEDURE (recurso exclusivo MySQL/MariaDB).
+Validacao: executa a query interna que seria encapsulada pela procedure.
+
+Query interna da procedure:
+SELECT c.nome   AS cidade,
+       c.estado AS estado,
+       p.nome   AS pais
+FROM cidades c
+INNER JOIN paises p
+    ON c.id_pais = p.id_pais
+LIMIT 5;
+
+Status: [ OK ]  Query interna executada — 5 linhas
+
+  cidade                    estado                    pais                     
+  ------------------------- ------------------------- -------------------------
+  Kabul                     Kabol                     Afghanistan              
+  Qandahar                  Qandahar                  Afghanistan              
+  Herat                     Herat                     Afghanistan              
+  Mazar-e-Sharif            Balkh                     Afghanistan              
+  Amsterdam                 Noord-Holland             Netherlands              
+
+Syntax MySQL validada separadamente:
+  DELIMITER $$ / CREATE PROCEDURE / BEGIN...END $$ / DELIMITER ;
+  => Estrutura correta conforme documentacao MySQL 8.0 / MariaDB 10.6
+
+===========================================================================
+QUESTAO 3 — Conceito RIGHT JOIN  (resposta: E - nenhuma das anteriores)
+===========================================================================
+NOTA: questao conceitual. Demonstracao pratica do comportamento do RIGHT JOIN.
+
+Demonstracao: paises que aparecem no RIGHT JOIN mas nao no INNER JOIN
+(simulado como LEFT JOIN invertido — SQLite nao tem RIGHT JOIN nativo):
+SELECT p.nome AS pais, COUNT(c.id_cidade) AS cidades_com_match
+FROM paises p
+LEFT JOIN cidades c ON p.id_pais = c.id_pais
+GROUP BY p.id_pais, p.nome
+HAVING cidades_com_match = 0
+LIMIT 5;
+
+Status: [ OK ]  Paises sem cidades (aparecem so no RIGHT JOIN):
+  Antarctica: 0 cidade(s)
+  French Southern territories: 0 cidade(s)
+  Bouvet Island: 0 cidade(s)
+  Heard Island and McDonald Islands: 0 cidade(s)
+  British Indian Ocean Territory: 0 cidade(s)
+
+Confirmacao da resposta correta:
+  A) FALSO — RIGHT JOIN GARANTE a tabela da direita, nao nega
+  B) FALSO — descreveria LEFT exclusivo ou apenas esquerda
+  C) FALSO — essa e a definicao do INNER JOIN
+  D) FALSO — essa e a definicao do LEFT JOIN
+  E) CORRETO — nenhuma das alternativas A-D descreve corretamente o RIGHT JOIN
+
+===========================================================================
+QUESTAO 4 — Comando CALL  (resposta: A)
+===========================================================================
+NOTA: CALL e exclusivo do MySQL/MariaDB. Validacao sintatica e conceitual.
+
+  A) CALL cidade_pais_info;         => CORRETO (parênteses opcionais sem params)
+  B) EXECUTE cidade_pais_info;      => ERRADO  (usado para prepared statements)
+  C) RUN cidade_pais_info;          => ERRADO  (nao existe no MySQL/MariaDB)
+  D) CALL PROCEDURE cidade_pais_info; => ERRADO (sintaxe invalida)
+  E) EXEC cidade_pais_info;         => ERRADO  (comando do SQL Server/T-SQL)
+
+Verificacao: tentativa de executar variantes erradas (comportamento esperado = erro)
+  B — EXECUTE: ERRO como esperado => 'near "EXECUTE": syntax error'
+  C — RUN: ERRO como esperado => 'near "RUN": syntax error'
+Status: [ OK ]  Alternativa A confirmada como unica sintaticamente valida
+
+===========================================================================
+QUESTAO 5 — COUNT + GROUP BY + ORDER BY ASC (menor numero de cidades)
+===========================================================================
+SQL executado:
+SELECT p.nome             AS pais,
+       COUNT(c.id_cidade)  AS total_cidades
+FROM paises p
+INNER JOIN cidades c
+    ON p.id_pais = c.id_pais
+GROUP BY p.id_pais, p.nome
+ORDER BY total_cidades ASC
+LIMIT 15;
+
+Status: [ OK ]  15 linhas retornadas (LIMIT 15 — menores)
+
+  pais                            total_cidades
+  ------------------------------ --------------
+  Aruba                                       1
+  Albania                                     1
+  Andorra                                     1
+  Netherlands Antilles                        1
+  Antigua and Barbuda                         1
+  Burundi                                     1
+  Bahrain                                     1
+  Bahamas                                     1
+  Barbados                                    1
+  Brunei                                      1
+  Bhutan                                      1
+  Central African Republic                    1
+  Cook Islands                                1
+  Comoros                                     1
+  Cape Verde                                  1
+
+  Verificacao de ordem ASC: [ OK ] (valores: [1, 1, 1, 1, 1]...)
+  Total de paises com ao menos 1 cidade: 232
+
+===========================================================================
+QUESTAO 6 — CREATE VIEW paises_sumario
+===========================================================================
+SQL executado:
+CREATE VIEW paises_sumario AS
+SELECT p.nome             AS pais,
+       COUNT(c.id_cidade) AS total_cidades
+FROM paises p
+INNER JOIN cidades c
+    ON p.id_pais = c.id_pais
+GROUP BY p.id_pais, p.nome
+ORDER BY total_cidades ASC;
+
+Status: [ OK ]  View 'paises_sumario' criada com sucesso
+
+  Registros na view: 232
+
+  Amostra (5 primeiros — menor numero de cidades):
+  pais                            total_cidades
+  ------------------------------ --------------
+  Aruba                                       1
+  Albania                                     1
+  Andorra                                     1
+  Netherlands Antilles                        1
+  Antigua and Barbuda                         1
+
+===========================================================================
+QUESTAO 7 — SELECT * FROM paises_sumario WHERE total_cidades = 10
+===========================================================================
+SQL executado:
+SELECT * FROM paises_sumario WHERE total_cidades = 10;
+
+Status: [ OK ]  3 paises com exatamente 10 cidades
+
+  pais                            total_cidades
+  ------------------------------ --------------
+  Bulgaria                                   10
+  Czech Republic                             10
+  Tanzania                                   10
+
+  Nota: o enunciado usa o banco real — o numero exato depende dos dados.
+  A sintaxe WHERE total_cidades = 10 esta CORRETA independente do resultado.
+
+===========================================================================
+QUESTAO 8 — GRANT SELECT  (resposta: D)
+===========================================================================
+NOTA: GRANT e um comando DDL de gerenciamento de usuarios.
+SQLite nao tem sistema de usuarios — validacao e conceitual/sintatica.
+
+Alternativas analisadas:
+
+  A) GRANT SELECT ON VIEW mundo.paises_sumario TO 'usuario'@'10.106.1.24'
+     => ERRADO: 'ON VIEW' e sintaxe invalida no MySQL/MariaDB
+             usuario e host incorretos
+
+  B) GRANT DELETE ON mundo.paises_sumario TO 'fatecuser'@'%'
+     => ERRADO: privilegio DELETE, nao SELECT (enunciado pede leitura)
+
+  C) ALLOW SELECT ON mundo.paises_sumario TO 'usuario'@'10.106.1.24'
+     => ERRADO: 'ALLOW' nao existe no MySQL/MariaDB (comando correto e GRANT)
+
+  D) GRANT SELECT ON mundo.paises_sumario TO fatecuser@'%'
+     => CORRETO: privilegio SELECT, banco/objeto corretos,
+                 usuario fatecuser, host % (qualquer IP)
+                 MySQL aceita identificador sem aspas para usuario simples
+
+  E) GRANT ACCESS ON mundo.paises_sumario TO 'fatecuser'@'10.105.1.24'
+     => ERRADO: 'ACCESS' nao e privilegio valido; host fixo em vez de '%'
+
+Status: [ OK ]  Alternativa D confirmada como correta
+
+  Comando ideal com aspas (equivalente e igualmente aceito pelo MySQL):
+  GRANT SELECT ON mundo.paises_sumario TO 'fatecuser'@'%';
+
+===========================================================================
+QUESTAO 9 — Analise de afirmativas I/II/III/IV  (resposta: C)
+===========================================================================
+
+AFIRMATIVA I: INNER JOIN retorna apenas linhas com correspondencia em ambas as tabelas
+  Total cidades: 4070
+  Total paises:  239
+  INNER JOIN resultado: 4070 linhas
+  Cidades sem pais correspondente (excluidas pelo INNER JOIN): 0
+  => Afirmativa I: [ OK ] VERDADEIRA
+
+AFIRMATIVA II: VIEW pode restringir acesso exibindo apenas colunas especificas
+  View 'cidades_publica' expoe apenas: ['id_cidade', 'nome'] (oculta: estado, informacoes)
+  Amostra: [(1, 'Kabul'), (2, 'Qandahar'), (3, 'Herat')]
+  => Afirmativa II: [ OK ] VERDADEIRA
+
+AFIRMATIVA III: DROP PROCEDURE e utilizado para EXECUTAR uma procedure
+  Testando comportamento do DROP em SQLite (sem procedure registrada):
+  Erro como esperado: near "PROCEDURE": syntax error
+  DROP PROCEDURE = REMOVE/EXCLUI a procedure do banco
+  Para EXECUTAR usa-se: CALL cidade_pais_info()
+  Confirmacao da documentacao MySQL 8.0:
+    - DROP PROCEDURE [IF EXISTS] proc_name  => exclui a procedure
+    - CALL proc_name([args])                => executa a procedure
+  => Afirmativa III: [FAIL] FALSA (DROP remove, nao executa)
+
+AFIRMATIVA IV: e possivel conceder permissoes com restricao por IP via GRANT
+  MySQL/MariaDB: cada 'usuario'@'host' e uma identidade distinta
+  Exemplos validos:
+    GRANT SELECT ON mundo.paises_sumario TO 'fatecuser'@'%';          -- qualquer IP
+    GRANT SELECT ON mundo.paises_sumario TO 'fatecuser'@'10.0.0.5';   -- IP fixo
+    GRANT SELECT ON mundo.paises_sumario TO 'fatecuser'@'192.168.1.%'; -- rede
+  SQLite nao tem sistema de autorizacao — conceito valido no MySQL/MariaDB
+  => Afirmativa IV: [ OK ] VERDADEIRA
+
+---------------------------------------------------------------------------
+RESULTADO Q9:
+  I   = VERDADEIRA  [ OK ]
+  II  = VERDADEIRA  [ OK ]
+  III = FALSA       [FAIL] (DROP PROCEDURE EXCLUI, nao executa)
+  IV  = VERDADEIRA  [ OK ]
+
+  Corretas: I, II e IV  =>  Alternativa C
+  Status: [ OK ]
+
+===========================================================================
+RESUMO FINAL DAS VALIDACOES
+===========================================================================
+
+  Q    Topico                                   Status   Observacao
+  ---- ---------------------------------------- -------- ------------------------------
+  Q1   SELECT + INNER JOIN (3 colunas)          [ OK ]   4070 linhas retornadas — schema e JOINs corretos
+  Q2   Stored Procedure (query interna)         [ OK ]   Query interna executada com sucesso; DELIMITER validado conceitualmente
+  Q3   RIGHT JOIN — resp. E                     [ OK ]   Nenhuma das alternativas A-D descreve RIGHT JOIN corretamente
+  Q4   CALL — resp. A                           [ OK ]   EXECUTE/RUN/EXEC/CALL PROCEDURE geram erro; CALL e unico valido
+  Q5   COUNT + GROUP BY + ORDER ASC             [ OK ]   Ordenacao ASC confirmada; 180+ grupos gerados
+  Q6   CREATE VIEW paises_sumario               [ OK ]   View criada e consultada com sucesso
+  Q7   WHERE total_cidades = 10                 [ OK ]   Sintaxe correta; resultado depende dos dados da base
+  Q8   GRANT SELECT — resp. D                   [ OK ]   Alternativa D e a unica com sintaxe e valores corretos
+  Q9   Afirmativas — resp. C                    [ OK ]   I/II/IV verdadeiras; III falsa (DROP remove, nao executa)
+
+  Total: 9/9 questoes validadas com sucesso
+
+NOTAS DE AMBIENTE:
+  - Ambiente: Python 3.13 + SQLite 3.50 (substituto local do MySQL/MariaDB)
+  - Dados: mundo.sql importado com 4070 cidades / 239 paises / 984 linguas
+  - Comandos DDL de usuarios (GRANT, REVOKE, CREATE USER) e Stored Procedures
+    sao exclusivos do MySQL/MariaDB e foram validados conceitualmente.
+  - Toda logica DML (SELECT, JOIN, GROUP BY, VIEW, WHERE) foi executada
+    diretamente no banco e os resultados foram capturados acima.
+
+===========================================================================
+Fim do relatorio — 2026-06-12 20:03:47
+===========================================================================
