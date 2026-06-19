@@ -53,7 +53,10 @@ type: folder_brief_live
 		- [[CTPSDigital_425.480.108-48_10-06-2026.pdf]]
 		- [[Declaração de Experiência Profissional.pdf]]
 	- [[Anexo_H_Capa.pdf]]
+<<<<<<< HEAD
+=======
 	- [[Declaração de Experiência Profissional.pdf]]
+>>>>>>> 49e16b53a41204947c4084d41bf71ad40811fd7d
 	- [[Estágio Supervisionado - Efraim Lima.docx]]
 	- [[Estágio Supervisionado - Efraim Lima.pdf]]
 	- [[Estágio Supervisionado.doc]]

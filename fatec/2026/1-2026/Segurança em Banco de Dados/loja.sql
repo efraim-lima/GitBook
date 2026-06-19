@@ -53,9 +53,15 @@ CREATE TABLE IF NOT EXISTS `cliente` (
   `endereco` text DEFAULT NULL,
   PRIMARY KEY (`cliente_id`),
   UNIQUE KEY `email` (`email`)
+<<<<<<< HEAD
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+
+-- Copiando dados para a tabela loja.cliente: ~10 rows (aproximadamente)
+=======
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 -- Copiando dados para a tabela loja.cliente: ~12 rows (aproximadamente)
+>>>>>>> 49e16b53a41204947c4084d41bf71ad40811fd7d
 DELETE FROM `cliente`;
 INSERT INTO `cliente` (`cliente_id`, `nome`, `email`, `telefone`, `endereco`) VALUES
 	(1, 'Luisa Fernandes', 'luisa.fernandes@gmail.com', '21987654321', 'Av. das Américas, 500, Rio de Janeiro - RJ'),
@@ -67,9 +73,13 @@ INSERT INTO `cliente` (`cliente_id`, `nome`, `email`, `telefone`, `endereco`) VA
 	(7, 'Juliana Moraes', 'juliana.moraes@email.com', '21987651111', 'Av. Maracanã, 789, Rio de Janeiro - RJ'),
 	(8, 'Rafael Costa', 'rafael.costa@email.com', '11987652222', 'Praça da Sé, 321, São Paulo - SP'),
 	(9, 'Patricia Barbosa', 'patricia.barbosa@email.com', '31987653333', 'Av. Afonso Pena, 456, Belo Horizonte - MG'),
+<<<<<<< HEAD
+	(10, 'Eduardo Pereira', 'eduardo.pereira@email.com', '41987654444', 'Rua XV de Novembro, 123, Curitiba - PR');
+=======
 	(10, 'Eduardo Pereira', 'eduardo.pereira@email.com', '41987654444', 'Rua XV de Novembro, 123, Curitiba - PR'),
 	(11, 'Lucas Neves', 'lucas@hotmail.com', '11987634321', 'Rua dos Andradas, 100, São Paulo - SP'),
 	(12, 'Juliana Oliveira', 'julianaoliveira@hotmail.com', '11987650010', 'Avenida dos estados, 200, Santo André - SP');
+>>>>>>> 49e16b53a41204947c4084d41bf71ad40811fd7d
 
 -- Copiando estrutura para tabela loja.fornecedor
 DROP TABLE IF EXISTS `fornecedor`;
@@ -82,7 +92,11 @@ CREATE TABLE IF NOT EXISTS `fornecedor` (
   PRIMARY KEY (`fornecedor_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
+<<<<<<< HEAD
+-- Copiando dados para a tabela loja.fornecedor: ~9 rows (aproximadamente)
+=======
 -- Copiando dados para a tabela loja.fornecedor: ~13 rows (aproximadamente)
+>>>>>>> 49e16b53a41204947c4084d41bf71ad40811fd7d
 DELETE FROM `fornecedor`;
 INSERT INTO `fornecedor` (`fornecedor_id`, `nome`, `contato`, `telefone`, `endereco`) VALUES
 	(1, 'EletroTech', 'Márcia Lima', '11987650001', 'Rua Eletrônica, 400, São Paulo - SP'),
@@ -112,9 +126,15 @@ CREATE TABLE IF NOT EXISTS `produto` (
   PRIMARY KEY (`produto_id`),
   KEY `fornecedor_id` (`fornecedor_id`),
   CONSTRAINT `produto_ibfk_1` FOREIGN KEY (`fornecedor_id`) REFERENCES `fornecedor` (`fornecedor_id`)
+<<<<<<< HEAD
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+
+-- Copiando dados para a tabela loja.produto: ~26 rows (aproximadamente)
+=======
 ) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 -- Copiando dados para a tabela loja.produto: ~36 rows (aproximadamente)
+>>>>>>> 49e16b53a41204947c4084d41bf71ad40811fd7d
 DELETE FROM `produto`;
 INSERT INTO `produto` (`produto_id`, `nome`, `descricao`, `preco`, `estoque`, `fornecedor_id`, `categoria_id`) VALUES
 	(1, 'Smartphone XZ2', 'Smartphone XZ2, 128GB, tela 6.1"', 2800.00, 150, 1, 1),
@@ -136,6 +156,15 @@ INSERT INTO `produto` (`produto_id`, `nome`, `descricao`, `preco`, `estoque`, `f
 	(17, '1984 - George Orwell', 'Clássico da literatura distópica', 29.90, 150, 8, 5),
 	(18, 'Kit de Halteres', 'Conjunto de halteres ajustáveis, até 20kg', 300.00, 75, 9, 6),
 	(19, 'Cubo Mágico', 'Cubo Mágico profissional 3x3x3', 25.90, 200, 10, 7),
+<<<<<<< HEAD
+	(20, 'Kit Jardinagem', 'Kit Jardinagem com 5 ferramentas básicas', 120.00, 80, 11, 8),
+	(21, 'Mouse Gamer', 'Mouse Gamer com fio, 7200 DPI ajustáveis', 89.99, 150, 12, 9),
+	(22, 'Creme Hidratante Facial', 'Creme hidratante facial, 50g', 59.90, 100, 13, 10),
+	(23, 'Quebra-Cabeça 1000 peças', 'Quebra-cabeça temático, 1000 peças', 49.90, 150, 10, 7),
+	(24, 'Vaso Decorativo', 'Vaso decorativo em cerâmica, 30cm', 85.00, 60, 11, 8),
+	(25, 'Teclado Mecânico RGB', 'Teclado mecânico RGB, switches azuis', 250.00, 75, 12, 9),
+	(26, 'Kit Maquiagem Básico', 'Kit maquiagem com itens essenciais', 180.00, 90, 13, 10);
+=======
 	(20, 'Kit Jardinagem', 'Kit Jardinagem com 5 ferramentas básicas', 120.00, 80, NULL, 8),
 	(21, 'Mouse Gamer', 'Mouse Gamer com fio, 7200 DPI ajustáveis', 89.99, 150, 12, 9),
 	(22, 'Creme Hidratante Facial', 'Creme hidratante facial, 50g', 59.90, 100, 13, 10),
@@ -153,6 +182,7 @@ INSERT INTO `produto` (`produto_id`, `nome`, `descricao`, `preco`, `estoque`, `f
 	(34, 'Sistema de Irrigação', 'Sistema automático de irrigação para jardins pequenos', 200.00, 50, 11, 8),
 	(35, 'Roteador Wi-Fi 6', 'Roteador Wi-Fi 6, suporte a múltiplos dispositivos', 280.00, 60, 12, 9),
 	(36, 'Kit de Barba', 'Kit completo para cuidados com a barba, incluindo óleo, shampoo e pente', 90.00, 85, 13, 10);
+>>>>>>> 49e16b53a41204947c4084d41bf71ad40811fd7d
 
 -- Copiando estrutura para tabela loja.venda
 DROP TABLE IF EXISTS `venda`;
@@ -164,9 +194,15 @@ CREATE TABLE IF NOT EXISTS `venda` (
   PRIMARY KEY (`venda_id`),
   KEY `cliente_id` (`cliente_id`),
   CONSTRAINT `venda_ibfk_1` FOREIGN KEY (`cliente_id`) REFERENCES `cliente` (`cliente_id`)
+<<<<<<< HEAD
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+
+-- Copiando dados para a tabela loja.venda: ~6 rows (aproximadamente)
+=======
 ) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 -- Copiando dados para a tabela loja.venda: ~50 rows (aproximadamente)
+>>>>>>> 49e16b53a41204947c4084d41bf71ad40811fd7d
 DELETE FROM `venda`;
 INSERT INTO `venda` (`venda_id`, `cliente_id`, `data_hora`, `valor_total`) VALUES
 	(1, 1, '2023-10-05 10:30:00', 2890.00),
@@ -178,6 +214,9 @@ INSERT INTO `venda` (`venda_id`, `cliente_id`, `data_hora`, `valor_total`) VALUE
 	(7, 7, '2023-10-11 10:00:00', 255.89),
 	(8, 8, '2023-10-12 14:30:00', 335.90),
 	(9, 5, '2023-10-13 16:45:00', 215.00),
+<<<<<<< HEAD
+	(10, 6, '2023-10-14 11:15:00', 584.89);
+=======
 	(10, 6, '2023-10-14 11:15:00', 584.89),
 	(11, 1, '2023-10-17 10:15:00', 3645.00),
 	(12, 2, '2023-10-18 14:30:00', 250.00),
@@ -219,6 +258,7 @@ INSERT INTO `venda` (`venda_id`, `cliente_id`, `data_hora`, `valor_total`) VALUE
 	(48, 8, '2023-11-03 16:00:00', 480.00),
 	(49, 9, '2023-11-04 17:00:00', 410.00),
 	(50, 10, '2023-11-05 18:00:00', 410.00);
+>>>>>>> 49e16b53a41204947c4084d41bf71ad40811fd7d
 
 -- Copiando estrutura para tabela loja.venda_produto
 DROP TABLE IF EXISTS `venda_produto`;
@@ -233,11 +273,25 @@ CREATE TABLE IF NOT EXISTS `venda_produto` (
   CONSTRAINT `venda_produto_ibfk_2` FOREIGN KEY (`produto_id`) REFERENCES `produto` (`produto_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
+<<<<<<< HEAD
+-- Copiando dados para a tabela loja.venda_produto: ~15 rows (aproximadamente)
+=======
 -- Copiando dados para a tabela loja.venda_produto: ~25 rows (aproximadamente)
+>>>>>>> 49e16b53a41204947c4084d41bf71ad40811fd7d
 DELETE FROM `venda_produto`;
 INSERT INTO `venda_produto` (`venda_id`, `produto_id`, `quantidade`, `preco_unitario`) VALUES
 	(1, 1, 1, 2800.00),
 	(1, 3, 1, 120.00),
+<<<<<<< HEAD
+	(2, 4, 1, 7800.00),
+	(3, 7, 1, 350.00),
+	(3, 9, 2, 250.00),
+	(4, 8, 1, 1200.00),
+	(4, 10, 1, 1800.00),
+	(4, 12, 1, 99.90),
+	(5, 13, 1, 180.00),
+	(5, 15, 1, 49.90),
+=======
 	(1, 13, 1, 800.00),
 	(2, 3, 1, 90.00),
 	(2, 4, 1, 7800.00),
@@ -256,6 +310,7 @@ INSERT INTO `venda_produto` (`venda_id`, `produto_id`, `quantidade`, `preco_unit
 	(5, 13, 1, 180.00),
 	(5, 15, 1, 49.90),
 	(6, 11, 1, 3500.00),
+>>>>>>> 49e16b53a41204947c4084d41bf71ad40811fd7d
 	(6, 14, 1, 1200.00),
 	(6, 16, 1, 29.90),
 	(6, 18, 1, 300.00),
