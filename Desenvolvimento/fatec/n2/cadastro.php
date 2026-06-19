@@ -39,15 +39,83 @@ function processa_formulário(){
       exit;
    }
 
+   // Regra 2: caracteres especiais em nome, endereco, cidade e bairro
+   if ($_POST["nome"]!=""){
+      if ((strrpos($_POST["nome"],"*")!==false)||
+          (strrpos($_POST["nome"],"#")!==false)||
+          (strrpos($_POST["nome"],"!")!==false)||
+          (strrpos($_POST["nome"],"@")!==false)||
+          (strrpos($_POST["nome"],"<")!==false)||
+          (strrpos($_POST["nome"],">")!==false)){
+             echo "Nome Invalido";
+             echo "<a href='javascript:history.back()'>Voltar</a>";
+             exit;
+      }
+   }
+   if ($_POST["endereco"]!=""){
+      if ((strrpos($_POST["endereco"],"*")!==false)||
+          (strrpos($_POST["endereco"],"#")!==false)||
+          (strrpos($_POST["endereco"],"!")!==false)||
+          (strrpos($_POST["endereco"],"@")!==false)||
+          (strrpos($_POST["endereco"],"<")!==false)||
+          (strrpos($_POST["endereco"],">")!==false)){
+             echo "Endereco Invalido";
+             echo "<a href='javascript:history.back()'>Voltar</a>";
+             exit;
+      }
+   }
+   if ($_POST["cidade"]!=""){
+      if ((strrpos($_POST["cidade"],"*")!==false)||
+          (strrpos($_POST["cidade"],"#")!==false)||
+          (strrpos($_POST["cidade"],"!")!==false)||
+          (strrpos($_POST["cidade"],"@")!==false)||
+          (strrpos($_POST["cidade"],"<")!==false)||
+          (strrpos($_POST["cidade"],">")!==false)){
+             echo "Cidade Invalida";
+             echo "<a href='javascript:history.back()'>Voltar</a>";
+             exit;
+      }
+   }
+   if ($_POST["bairro"]!=""){
+      if ((strrpos($_POST["bairro"],"*")!==false)||
+          (strrpos($_POST["bairro"],"#")!==false)||
+          (strrpos($_POST["bairro"],"!")!==false)||
+          (strrpos($_POST["bairro"],"@")!==false)||
+          (strrpos($_POST["bairro"],"<")!==false)||
+          (strrpos($_POST["bairro"],">")!==false)){
+             echo "Bairro Invalido";
+             echo "<a href='javascript:history.back()'>Voltar</a>";
+             exit;
+      }
+   }
+
+   // Regra 4: email deve ter @ e .
+   if ($_POST["email"]!=""){
+      if ((strrpos($_POST["email"],"@")==0)||(strrpos($_POST["email"],".")==0)){
+         echo "Email Invalido";
+         echo "<a href='javascript:history.back()'>Voltar</a>";
+         exit;
+      }
+   }
+
+   // Regra 5: celular so aceita numeros
+   if ($_POST["celular"]!=""){
+      if (!is_numeric($_POST["celular"])){
+         echo "Celular Invalido";
+         echo "<a href='javascript:history.back()'>Voltar</a>";
+         exit;
+      }
+   }
+
    $campos_texto = ["nome", "endereco", "complemento", "cidade", "bairro", "email", "usuario"];
    foreach ($campos_texto as $campo) {
-      if (isset($_POST[$campo]) && $_POST[$campo] != "") {
-         if ((strrpos($_POST[$campo],"drop")!==false)||
-             (strrpos($_POST[$campo],"update")!==false)||
-             (strrpos($_POST[$campo],"insert")!==false)||
-             (strrpos($_POST[$campo],"delete")!==false)||
-             (strrpos($_POST[$campo],"select")!==false)){
-                echo ucfirst($campo)." Invalido";
+      if ($_POST[$campo]!=""){
+         if ((strrpos($_POST[$campo],"drop")>0)||
+             (strrpos($_POST[$campo],"update")>0)||
+             (strrpos($_POST[$campo],"insert")>0)||
+             (strrpos($_POST[$campo],"delete")>0)||
+             (strrpos($_POST[$campo],"select")>0)){
+                echo $campo." Invalido";
                 echo "<a href='javascript:history.back()'>Voltar</a>";
                 exit;
          }
@@ -81,15 +149,17 @@ $sql = "INSERT INTO `funcionarios`
 (`nome`, `endereco`, `numero`, `complemento`, `celular`, `bairro`, `cep`, `cidade`, `uf`, `email`, `cargo`, `usuario`, `senha`, `departamento`)
 VALUES ('".$nome."','".$endereco."','".$numero."','".$complemento."','".$celular."','".$bairro."','".$cep."','".$cidade."','".$uf."','".$email."','".$cargo."','".$usuario."','".$senha."','".$departamento."')";
 
-$host    = "localhost";
-$username= "root";
-$password= "";
-$db_name = "duck_tech";
-$con = mysqli_connect("$host", "$username", "$password", "$db_name") or die("cannot connect");
+$host    ="localhost";
+$username="root";
+$password="";
+$db_name ="duck_tech";
+$con=mysqli_connect("$host", "$username", "$password", "$db_name") or die("cannot connect");
+
 if (mysqli_connect_errno()) {
     echo "Falhou ao conectar ao MySQL: " . mysqli_connect_error();
     exit();
 }
+
 $result = mysqli_query($con, $sql);
 if (!$result) {
     die("Erro na inclusao: " . mysqli_error($con));
@@ -98,4 +168,5 @@ if (!$result) {
     echo "Funcionário cadastrado com sucesso";
     exit;
 }
+
 ?></body></html>

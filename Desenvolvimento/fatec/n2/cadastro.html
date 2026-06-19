@@ -38,12 +38,127 @@
         }
         input[type="submit"]:hover { background-color: #A67721; color: white; }
     </style>
+<script type="text/javascript">
+    function verifica_formulario() {
+        if (cadastro.nome.value==""){
+            alert("Preencher o nome");
+            cadastro.nome.focus();
+            return false;
+        }
+        if (cadastro.endereco.value==""){
+            alert("Preencher o Endereco");
+            cadastro.endereco.focus();
+            return false;
+        }
+        if (cadastro.email.value==""){
+            alert("Preencher o Email");
+            cadastro.email.focus();
+            return false;
+        }
+        if (cadastro.usuario.value==""){
+            alert("Preencher o Usuario");
+            cadastro.usuario.focus();
+            return false;
+        }
+        if (cadastro.senha.value==""){
+            alert("Preencher a Senha");
+            cadastro.senha.focus();
+            return false;
+        }
+        if (cadastro.UF.selectedIndex==0){
+            alert("Selecione o UF");
+            cadastro.UF.focus();
+            return false;
+        }
+        if (cadastro.Cargo.selectedIndex==0){
+            alert("Selecione o Cargo");
+            cadastro.Cargo.focus();
+            return false;
+        }
+        // Regra 2: caracteres especiais em nome, endereco, cidade e bairro
+        if (cadastro.nome.value!=""){
+            if ((cadastro.nome.value.indexOf("*")>=0)||
+                (cadastro.nome.value.indexOf("#")>=0)||
+                (cadastro.nome.value.indexOf("!")>=0)||
+                (cadastro.nome.value.indexOf("@")>=0)||
+                (cadastro.nome.value.indexOf("<")>=0)||
+                (cadastro.nome.value.indexOf(">")>=0)){
+                    alert("Nome Invalido");
+                    cadastro.nome.focus();
+                    return false;
+            }
+        }
+        if (cadastro.endereco.value!=""){
+            if ((cadastro.endereco.value.indexOf("*")>=0)||
+                (cadastro.endereco.value.indexOf("#")>=0)||
+                (cadastro.endereco.value.indexOf("!")>=0)||
+                (cadastro.endereco.value.indexOf("@")>=0)||
+                (cadastro.endereco.value.indexOf("<")>=0)||
+                (cadastro.endereco.value.indexOf(">")>=0)){
+                    alert("Endereco Invalido");
+                    cadastro.endereco.focus();
+                    return false;
+            }
+        }
+        if (cadastro.cidade.value!=""){
+            if ((cadastro.cidade.value.indexOf("*")>=0)||
+                (cadastro.cidade.value.indexOf("#")>=0)||
+                (cadastro.cidade.value.indexOf("!")>=0)||
+                (cadastro.cidade.value.indexOf("@")>=0)||
+                (cadastro.cidade.value.indexOf("<")>=0)||
+                (cadastro.cidade.value.indexOf(">")>=0)){
+                    alert("Cidade Invalida");
+                    cadastro.cidade.focus();
+                    return false;
+            }
+        }
+        if (cadastro.bairro.value!=""){
+            if ((cadastro.bairro.value.indexOf("*")>=0)||
+                (cadastro.bairro.value.indexOf("#")>=0)||
+                (cadastro.bairro.value.indexOf("!")>=0)||
+                (cadastro.bairro.value.indexOf("@")>=0)||
+                (cadastro.bairro.value.indexOf("<")>=0)||
+                (cadastro.bairro.value.indexOf(">")>=0)){
+                    alert("Bairro Invalido");
+                    cadastro.bairro.focus();
+                    return false;
+            }
+        }
+        // Regra 4: email deve ter @ e .
+        if (cadastro.email.value!=""){
+            if ((cadastro.email.value.indexOf("@")<=0)||(cadastro.email.value.indexOf(".")<0)){
+                alert("Email Invalido");
+                cadastro.email.focus();
+                return false;
+            }
+        }
+        // Regra 5: celular so aceita numeros
+        if (cadastro.celular.value!=""){
+            if (isNaN(parseInt(cadastro.celular.value))){
+                alert("Celular Invalido");
+                cadastro.celular.focus();
+                return false;
+            }
+        }
+        // Regra 6: SQL Injection
+        if ((cadastro.nome.value.indexOf("drop")>0)||
+            (cadastro.nome.value.indexOf("update")>0)||
+            (cadastro.nome.value.indexOf("insert")>0)||
+            (cadastro.nome.value.indexOf("delete")>0)||
+            (cadastro.nome.value.indexOf("select")>0)){
+                alert("Nome Invalido");
+                cadastro.nome.focus();
+                return false;
+        }
+    return true;
+    }
+</script>
 </head>
 	
 <body>
     <div class="form-wrapper">
     <h2>Cadastro Duck Tech</h2>
-    <form method="post" action="cadastro.php">
+    <form name="cadastro" method="post" action="cadastro.php" onsubmit="return verifica_formulario()">
     <table border="0" width="100%" cellpadding="5">
         <tr>
             <th colspan="4" style="background-color:#F2A413; color:#1C1526; padding:12px; font-size:1.1rem; border-radius:4px;">Cadastro Duck Tech</th>

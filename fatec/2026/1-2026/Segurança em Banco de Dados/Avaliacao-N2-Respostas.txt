@@ -1,0 +1,658 @@
+===========================================================================
+AVALIACAO OFICIAL N2 — Segurança em Bancos de Dados
+Fatec São Caetano do Sul – Antonio Russo
+Turma: A702-N-SEGURANCA INFORMACAO-168-20251
+Professor: Thiago de Jesus Inocêncio
+Banco de dados: mundo (tabelas: cidades, paises, linguas)
+===========================================================================
+
+SCHEMA DE REFERÊNCIA
+---------------------
+paises:   id_pais CHAR(3) PK | id_cidade INT | nome VARCHAR(52) | codigo_pais CHAR(2)
+cidades:  id_cidade INT PK   | id_pais CHAR(3) FK | nome VARCHAR(35) | estado VARCHAR(40) | informacoes JSON
+linguas:  id_lingua VARCHAR(45) PK | id_pais CHAR(3) PK FK | oficial ENUM('T','F') | porcentagem DECIMAL(4,2)
+
+
+===========================================================================
+QUESTÃO 1 — SELECT com INNER JOIN  (1 ponto)
+===========================================================================
+
+ENUNCIADO:
+Selecione o nome da cidade (campo nome da tabela cidades), o estado da cidade
+(tabela cidades) e o nome do país (campo nome da tabela paises). Utilize INNER JOIN.
+
+RESPOSTA:
+
+SELECT c.nome   AS cidade,
+       c.estado AS estado,
+       p.nome   AS pais
+FROM cidades c
+INNER JOIN paises p
+    ON c.id_pais = p.id_pais;
+
+---
+DIFERENÇA EM RELAÇÃO AO SIMULADO:
+O Simulado pedia apenas nome da cidade e nome do país.
+A Avaliação pede também o campo "estado" da tabela cidades.
+Por isso, a linha "c.estado AS estado" foi adicionada ao SELECT.
+---
+
+EXPLICAÇÃO LINHA A LINHA:
+
+  SELECT c.nome AS cidade
+    -> Seleciona a coluna "nome" de cidades (alias c), exibida como "cidade".
+
+  c.estado AS estado
+    -> Seleciona a coluna "estado" de cidades. Ambas as colunas (nome e estado)
+       pertencem à mesma tabela, então não há ambiguidade. O alias é opcional aqui,
+       mas mantém o padrão do enunciado.
+
+  p.nome AS pais
+    -> Seleciona a coluna "nome" de paises (alias p), exibida como "pais".
+       O prefixo "p." é OBRIGATÓRIO aqui porque a tabela "cidades" também tem
+       uma coluna "nome" — sem o prefixo o banco retornaria erro de ambiguidade.
+
+  FROM cidades c
+    -> Define "cidades" como tabela principal. "c" é o alias, usado para encurtar
+       as referências nas demais cláusulas.
+
+  INNER JOIN paises p ON c.id_pais = p.id_pais
+    -> Une as tabelas pelo campo "id_pais":
+         - c.id_pais é chave estrangeira em cidades (referencia paises)
+         - p.id_pais é chave primária de paises
+       O INNER JOIN garante que apenas cidades com um país cadastrado aparecem
+       no resultado (linhas sem correspondência são descartadas dos dois lados).
+
+EXEMPLO DE RESULTADO (primeiras linhas):
+  cidade          | estado    | pais
+  ----------------+-----------+-------------
+  Kabul           | Kabol     | Afghanistan
+  Qandahar        | Qandahar  | Afghanistan
+  Herat           | Herat     | Afghanistan
+  Amsterdam       | Noord-H.  | Netherlands
+
+
+===========================================================================
+QUESTÃO 2 — Stored Procedure cidade_pais_info  (1,5 pontos)
+===========================================================================
+
+ENUNCIADO:
+Qual código você usaria para criar uma Stored Procedure chamada cidade_pais_info
+da consulta da questão 1?
+
+RESPOSTA:
+
+DELIMITER $$
+
+CREATE PROCEDURE cidade_pais_info()
+BEGIN
+    SELECT c.nome   AS cidade,
+           c.estado AS estado,
+           p.nome   AS pais
+    FROM cidades c
+    INNER JOIN paises p
+        ON c.id_pais = p.id_pais;
+END $$
+
+DELIMITER ;
+
+-- Para executar:
+CALL cidade_pais_info();
+
+---
+DIFERENÇA EM RELAÇÃO AO SIMULADO:
+O SELECT interno agora inclui "c.estado AS estado" para refletir
+o campo adicionado na Q1 da Avaliação.
+---
+
+EXPLICAÇÃO DE CADA PARTE:
+
+1) DELIMITER $$
+   O MySQL/MariaDB usa ";" para identificar o fim de um comando.
+   Dentro de BEGIN...END, cada instrução também termina com ";".
+   Se não trocarmos o delimitador, o client confunde o ";" interno
+   com o fim do CREATE PROCEDURE e gera erro de sintaxe.
+   Solução: trocar para "$$" temporariamente. Agora só "$$" encerra o comando.
+
+2) CREATE PROCEDURE cidade_pais_info()
+   - CREATE PROCEDURE: instrução DDL que cria a procedure no banco ativo.
+   - cidade_pais_info: nome da procedure (deve ser único no banco).
+   - (): parâmetros — vazio porque a procedure não recebe argumentos.
+
+3) BEGIN ... END $$
+   - BEGIN: abre o bloco de código da procedure.
+   - O SELECT dentro é idêntico à resposta da Q1.
+   - END $$: fecha o bloco. O "$$" sinaliza o fim do CREATE PROCEDURE
+     usando o delimitador temporário definido no passo 1.
+
+4) DELIMITER ;
+   Restaura o delimitador padrão. OBRIGATÓRIO após o END $$ para que os
+   comandos seguintes funcionem normalmente com ";".
+
+5) CALL cidade_pais_info()
+   Invoca a procedure. Os "()" são obrigatórios pelo padrão MySQL/MariaDB.
+   Sem argumentos é possível omitir os parênteses (CALL cidade_pais_info;),
+   mas a forma com "()" é a mais recomendada e segura.
+
+VANTAGENS DA STORED PROCEDURE:
+- Reutilização: qualquer aplicação chama CALL cidade_pais_info() sem reescrever o SQL.
+- Segurança: pode-se dar GRANT EXECUTE ao usuário sem dar SELECT direto nas tabelas.
+- Manutenção: lógica de negócio centralizada em um único lugar no banco.
+
+
+===========================================================================
+QUESTÃO 3 — Conceito RIGHT JOIN  (1 ponto)
+===========================================================================
+
+ENUNCIADO:
+Com base na Figura 2 (diagrama de Venn do RIGHT JOIN), qual das afirmações é verdadeira?
+
+ALTERNATIVAS:
+A) O RIGHT JOIN nao retorna todas as linhas presentes na tabela2 e as correspondentes na table1.
+B) O RIGHT JOIN retorna apenas as linhas presentes na table1.
+C) O RIGHT JOIN retorna apenas as linhas que estao em ambas as tabelas.
+D) O RIGHT JOIN retorna todas as linhas da table1, independentemente de correspondencias na table2.
+E) nenhuma das anteriores.
+
+RESPOSTA: E — nenhuma das anteriores.
+
+---
+DIFERENÇA EM RELAÇÃO AO SIMULADO:
+No Simulado, a alternativa correta era E: "O RIGHT JOIN retorna todas as linhas
+presentes na tabela2 e as correspondentes na table1."
+Na Avaliação, ESSA definição correta não aparece entre as alternativas A–D.
+Por isso a única resposta verdadeira é E (nenhuma das anteriores).
+---
+
+ANÁLISE DE CADA ALTERNATIVA:
+
+  A) FALSO — diz que o RIGHT JOIN NÃO retorna todas as linhas da tabela2.
+     A afirmação tem negação ("não retorna"). O comportamento real do RIGHT JOIN
+     é exatamente o oposto: ele GARANTE todas as linhas da tabela direita (table2).
+     Logo, a alternativa A é uma afirmação FALSA.
+
+  B) FALSO — "retorna apenas as linhas presentes na table1".
+     Isso inverteria a lógica. Retornar só table1 seria mais próximo de um LEFT JOIN
+     sem correspondência (exclusivo da esquerda). Não descreve o RIGHT JOIN.
+
+  C) FALSO — "retorna apenas as linhas que estão em ambas as tabelas".
+     Essa é a definição do INNER JOIN, não do RIGHT JOIN.
+
+  D) FALSO — "retorna todas as linhas da table1, independentemente de correspondências
+     na table2". Essa é a definição do LEFT JOIN (tabela da esquerda garantida).
+     O RIGHT JOIN garante a tabela da DIREITA, não da esquerda.
+
+  E) CORRETO — nenhuma das definições acima descreve corretamente o RIGHT JOIN.
+     A definição correta (ausente nas alternativas) seria:
+     "O RIGHT JOIN retorna TODAS as linhas da table2 (direita) e as correspondentes
+     da table1 (esquerda). Onde não há correspondência na esquerda, retorna NULL."
+
+DIAGRAMA DOS JOINS:
+  INNER JOIN: só a interseção (match nos dois lados)
+  LEFT JOIN:  toda a esquerda + match da direita (direita pode ser NULL)
+  RIGHT JOIN: toda a DIREITA + match da esquerda (esquerda pode ser NULL)
+
+REGRA DE OURO:
+  RIGHT JOIN = a tabela que vem DEPOIS de "RIGHT JOIN" está totalmente garantida.
+  FROM tabela_A RIGHT JOIN tabela_B ON ...
+                           ^^^^^^^^ <- esta está garantida por completo
+
+
+===========================================================================
+QUESTÃO 4 — Executar Stored Procedure  (1 ponto)
+===========================================================================
+
+ENUNCIADO:
+Qual comando deveria ser utilizado para executar a procedure cidade_pais_info
+criada na questão 2?
+
+ALTERNATIVAS:
+A) CALL cidade_pais_info;
+B) EXECUTE cidade_pais_info;
+C) RUN cidade_pais_info;
+D) CALL PROCEDURE cidade_pais_info;
+E) EXEC cidade_pais_info;
+
+RESPOSTA: A — CALL cidade_pais_info;
+
+---
+DIFERENÇA EM RELAÇÃO AO SIMULADO:
+No Simulado, a resposta correta era "CALL cidade_pais_info();" (com parênteses).
+Na Avaliação, a alternativa A apresenta "CALL cidade_pais_info;" (sem parênteses).
+No MySQL/MariaDB, os parênteses são OPCIONAIS para procedures sem parâmetros:
+  CALL cidade_pais_info;    <- válido
+  CALL cidade_pais_info();  <- também válido (forma recomendada)
+Entre as opções apresentadas, A é a única com sintaxe correta.
+---
+
+ANÁLISE DE CADA ALTERNATIVA:
+
+  A) CALL cidade_pais_info;   -> CORRETO.
+     "CALL" é o único comando MySQL/MariaDB para executar stored procedures.
+     Os parênteses são opcionais para procedures sem parâmetros (doc oficial MySQL 8.0).
+
+  B) EXECUTE cidade_pais_info;  -> ERRADO.
+     "EXECUTE" é usado com PREPARED STATEMENTS:
+       PREPARE stmt FROM 'SELECT ...';
+       EXECUTE stmt;
+     Não funciona com stored procedures nomeadas.
+
+  C) RUN cidade_pais_info;  -> ERRADO.
+     "RUN" não é um comando SQL do MySQL/MariaDB. Não existe.
+
+  D) CALL PROCEDURE cidade_pais_info;  -> ERRADO.
+     "CALL PROCEDURE" não é sintaxe válida. O correto é apenas CALL.
+
+  E) EXEC cidade_pais_info;  -> ERRADO.
+     "EXEC" é um atalho do SQL Server (Microsoft). Não existe no MySQL/MariaDB.
+
+
+===========================================================================
+QUESTÃO 5 — COUNT + GROUP BY + ORDER BY (menor número)  (1,5 pontos)
+===========================================================================
+
+ENUNCIADO:
+Qual consulta você utilizaria para contar a quantidade de cidades que existem
+em cada país ordenando pelo país com MENOR número de cidades?
+Utilize INNER JOIN, GROUP BY e ORDER BY.
+
+RESPOSTA:
+
+SELECT p.nome              AS pais,
+       COUNT(c.id_cidade)  AS total_cidades
+FROM paises p
+INNER JOIN cidades c
+    ON p.id_pais = c.id_pais
+GROUP BY p.id_pais, p.nome
+ORDER BY total_cidades ASC;
+
+---
+DIFERENÇA EM RELAÇÃO AO SIMULADO:
+O Simulado pedia ORDER BY total_cidades DESC (maior número primeiro).
+A Avaliação pede ORDER BY total_cidades ASC (menor número primeiro).
+Apenas a palavra DESC foi trocada por ASC.
+ASC é o padrão do ORDER BY — poderia ser omitido, mas é boa prática deixar explícito.
+---
+
+EXPLICAÇÃO LINHA A LINHA:
+
+  SELECT p.nome AS pais
+    -> Nome do país como coluna descritiva (não-agregada).
+       Deve estar no GROUP BY.
+
+  COUNT(c.id_cidade) AS total_cidades
+    -> Conta quantas cidades pertencem a cada país.
+       "id_cidade" é PK de cidades (nunca NULL), então conta todas as linhas do grupo.
+       Equivaleria a COUNT(*) neste contexto.
+
+  FROM paises p INNER JOIN cidades c ON p.id_pais = c.id_pais
+    -> Une as duas tabelas pelo campo id_pais.
+       INNER JOIN exclui países sem nenhuma cidade cadastrada (comportamento desejado).
+
+  GROUP BY p.id_pais, p.nome
+    -> Agrupa por país. Incluir p.id_pais (PK) é boa prática porque:
+         1. Garante unicidade mesmo para países com mesmo nome (ex: dois "Congo").
+         2. Evita erro de "ONLY_FULL_GROUP_BY" (modo padrão MySQL 5.7+),
+            que exige que toda coluna no SELECT sem agregação esteja no GROUP BY.
+
+  ORDER BY total_cidades ASC
+    -> Ordena o resultado pelo total calculado, do menor para o maior.
+       Países com 1 cidade aparecem primeiro, com centenas aparecem por último.
+
+DIFERENÇA ENTRE ASC E DESC:
+  ASC  (ascending)  = crescente: 1, 2, 3 ... 363  -> menor primeiro
+  DESC (descending) = decrescente: 363, 245 ... 1  -> maior primeiro
+
+RESULTADO ESPERADO (primeiras linhas — países com menos cidades):
+  pais                    | cidades
+  ------------------------+---------
+  (países com 1 cidade)   | 1
+  ...
+  Greece                  | 8
+  Yugoslavia              | 8
+  Kenya                   | 8
+  ...
+  China                   | 363   <- aparece por último
+
+
+===========================================================================
+QUESTÃO 6 — Criar View paises_sumario  (1,5 pontos)
+===========================================================================
+
+ENUNCIADO:
+Com base na consulta criada na questão 5, informe o código de criação de
+uma View chamada paises_sumario.
+
+RESPOSTA:
+
+CREATE VIEW paises_sumario AS
+SELECT p.nome              AS pais,
+       COUNT(c.id_cidade)  AS total_cidades
+FROM paises p
+INNER JOIN cidades c
+    ON p.id_pais = c.id_pais
+GROUP BY p.id_pais, p.nome
+ORDER BY total_cidades ASC;
+
+-- Para verificar o conteúdo da View:
+SELECT * FROM paises_sumario;
+
+---
+DIFERENÇA EM RELAÇÃO AO SIMULADO:
+A query interna agora usa ORDER BY total_cidades ASC (menor primeiro),
+seguindo a resposta da Q5 da Avaliação.
+---
+
+EXPLICAÇÃO DO CREATE VIEW:
+
+  CREATE VIEW paises_sumario AS
+    -> "CREATE VIEW" é o comando DDL para criar uma visão (View).
+       "paises_sumario" é o nome — deve ser único no banco.
+       "AS" inicia a definição da query que a View representa.
+
+  SELECT ... GROUP BY ... ORDER BY ...
+    -> A query completa da Q5. A View ARMAZENA ESSA DEFINIÇÃO, não os dados.
+       A cada acesso (SELECT * FROM paises_sumario), o banco executa a query
+       internamente e retorna o resultado atualizado.
+
+O QUE É UMA VIEW:
+  Uma View é uma "tabela virtual" — uma consulta salva com nome.
+  Não ocupa espaço de dados físicos. Reflete sempre o estado atual das tabelas base.
+  Pode ser consultada como se fosse uma tabela normal:
+    SELECT * FROM paises_sumario;
+    SELECT * FROM paises_sumario WHERE total_cidades > 50;
+    SELECT * FROM paises_sumario ORDER BY pais;
+
+VANTAGENS DA VIEW:
+  - Simplificação: oculta a complexidade do JOIN+GROUP BY do usuário final.
+  - Segurança: GRANT SELECT na View sem expor as tabelas base (paises, cidades).
+  - Abstração: mudanças na estrutura física das tabelas são tratadas na View.
+
+OUTROS COMANDOS ÚTEIS:
+  -- Substituir a View se ela já existir (sem precisar de DROP antes):
+  CREATE OR REPLACE VIEW paises_sumario AS SELECT ...;
+
+  -- Remover a View:
+  DROP VIEW IF EXISTS paises_sumario;
+
+  -- Ver a definição da View:
+  SHOW CREATE VIEW paises_sumario;
+
+
+===========================================================================
+QUESTÃO 7 — Filtrar View por exatamente 10 cidades  (1,5 pontos)
+===========================================================================
+
+ENUNCIADO:
+Informe a consulta SQL para utilizar a View paises_sumario criada na questão 6
+filtrando os países com exatamente 10 cidades.
+
+RESPOSTA:
+
+SELECT *
+FROM paises_sumario
+WHERE total_cidades = 10;
+
+---
+DIFERENÇA EM RELAÇÃO AO SIMULADO:
+O Simulado filtrava WHERE total_cidades = 8.
+A Avaliação filtra WHERE total_cidades = 10.
+---
+
+EXPLICAÇÃO LINHA A LINHA:
+
+  SELECT *
+    -> Seleciona todas as colunas da View: "pais" e "total_cidades".
+       Poderia ser SELECT pais, total_cidades para ser mais explícito.
+
+  FROM paises_sumario
+    -> Usa a View como fonte de dados. O banco executa internamente a query
+       definida na View (com o JOIN e GROUP BY) e entrega o resultado.
+
+  WHERE total_cidades = 10
+    -> Filtra apenas os países cujo total calculado é exatamente 10.
+
+POR QUE WHERE FUNCIONA AQUI SE total_cidades É UM COUNT()?
+  Normalmente, filtrar por função de agregação exige HAVING (não WHERE).
+  PORÉM: a agregação já ocorreu DENTRO da View.
+  Ao consultar paises_sumario, o banco vê uma tabela com colunas normais
+  (pais = texto, total_cidades = número). O WHERE filtra sobre esse resultado,
+  não sobre uma agregação em andamento. Logo, WHERE é correto nesse contexto.
+
+  Analogia:
+    View interna (executa):  SELECT p.nome, COUNT(*) AS total ... GROUP BY ...
+    Resultado entregue:      tabela com (pais | total_cidades) já calculado
+    Query externa enxerga:   WHERE total_cidades = 10  -> filtra número inteiro, OK
+
+RESULTADO ESPERADO:
+  Países do banco "mundo" que possuem exatamente 10 cidades cadastradas.
+  (O número exato de países varia conforme a base de dados.)
+
+
+===========================================================================
+QUESTÃO 8 — GRANT SELECT na View  (1 ponto)
+===========================================================================
+
+ENUNCIADO:
+Qual é o comando SQL correto para conceder a permissão de leitura da View
+paises_sumario para um usuário chamado fatecuser que executará a partir
+de qualquer IP?
+
+ALTERNATIVAS:
+A) GRANT SELECT ON VIEW mundo.paises_sumario TO 'usuario'@'10.106.1.24';
+B) GRANT DELETE ON mundo.paises_sumario TO 'fatecuser'@'%';
+C) ALLOW SELECT ON mundo.paises_sumario TO 'usuario'@'10.106.1.24';
+D) GRANT SELECT ON mundo.paises_sumario TO fatecuser@'%';
+E) GRANT ACCESS ON mundo.paises_sumario TO 'fatecuser'@'10.105.1.24';
+
+RESPOSTA: D
+
+GRANT SELECT ON mundo.paises_sumario TO fatecuser@'%';
+
+---
+DIFERENÇA EM RELAÇÃO AO SIMULADO:
+As alternativas foram trocadas. Na Avaliação, a opção D é a mais correta
+entre as apresentadas:
+  - Banco correto:  mundo
+  - Objeto correto: paises_sumario
+  - Privilégio correto: SELECT
+  - Usuário correto: fatecuser
+  - Host correto: '%' (qualquer IP)
+Observação: o padrão ideal seria 'fatecuser'@'%' (com aspas no usuário).
+MySQL/MariaDB aceita identificadores simples sem aspas, por isso D funciona.
+---
+
+ANÁLISE COMPLETA DE CADA ALTERNATIVA:
+
+  A) GRANT SELECT ON VIEW mundo.paises_sumario TO 'usuario'@'10.106.1.24';
+     Erros:
+       1. "ON VIEW" — sintaxe INVÁLIDA no MySQL/MariaDB. O correto é apenas
+          "ON banco.objeto" (a palavra VIEW não entra no comando GRANT).
+       2. Usuário errado: 'usuario' em vez de 'fatecuser'.
+       3. Host restrito a IP fixo (10.106.1.24) em vez de '%' (qualquer IP).
+
+  B) GRANT DELETE ON mundo.paises_sumario TO 'fatecuser'@'%';
+     Erros:
+       1. "GRANT DELETE" concede permissão de EXCLUIR, não de ler.
+          O enunciado pede permissão de LEITURA = SELECT.
+       O banco, usuário e host estão corretos — mas o privilégio está errado.
+
+  C) ALLOW SELECT ON mundo.paises_sumario TO 'usuario'@'10.106.1.24';
+     Erros:
+       1. "ALLOW" não existe no MySQL/MariaDB. O comando é GRANT.
+       2. Usuário errado: 'usuario'.
+       3. Host fixo em vez de '%'.
+
+  D) GRANT SELECT ON mundo.paises_sumario TO fatecuser@'%';   <- CORRETO
+     Análise:
+       - GRANT SELECT: privilégio de leitura. Correto.
+       - ON mundo.paises_sumario: banco correto, objeto correto.
+       - TO fatecuser@'%': usuário correto. O MySQL aceita nomes de usuário
+         sem aspas quando são identificadores simples (sem caracteres especiais).
+         fatecuser@'%' = acesso de qualquer IP. Correto.
+     Nota: a forma ideal com aspas seria 'fatecuser'@'%', mas a ausência de
+     aspas no nome não invalida o comando — MySQL trata como identifer normal.
+
+  E) GRANT ACCESS ON mundo.paises_sumario TO 'fatecuser'@'10.105.1.24';
+     Erros:
+       1. "GRANT ACCESS" — "ACCESS" não é um privilégio válido no MySQL/MariaDB.
+       2. Host fixo (10.105.1.24) em vez de '%'.
+
+SINTAXE GERAL DO GRANT:
+  GRANT <privilégio(s)> ON <banco>.<objeto> TO '<usuario>'@'<host>';
+
+TABELA DE HOSTS:
+  '%'              -> qualquer IP (wildcard total)
+  'localhost'      -> apenas conexão local (socket Unix / loopback)
+  '192.168.1.%'   -> qualquer IP da rede 192.168.1.0/24
+  '10.106.1.24'   -> um único IP específico
+
+OUTROS COMANDOS RELACIONADOS:
+  -- Criar o usuário antes de dar GRANT (se ainda não existir):
+  CREATE USER 'fatecuser'@'%' IDENTIFIED BY 'senha_segura!';
+
+  -- Forçar releitura das permissões:
+  FLUSH PRIVILEGES;
+
+  -- Verificar permissões concedidas:
+  SHOW GRANTS FOR 'fatecuser'@'%';
+
+  -- Revogar a permissão:
+  REVOKE SELECT ON mundo.paises_sumario FROM 'fatecuser'@'%';
+
+
+===========================================================================
+QUESTÃO 9 — Análise de afirmativas (NOVA — não estava no Simulado)  (1 ponto)
+===========================================================================
+
+ENUNCIADO:
+Analise as afirmações a seguir relacionadas ao uso de comandos SQL em bancos
+de dados relacionais:
+
+I.  A cláusula INNER JOIN retorna apenas as linhas que possuem correspondência
+    em ambas as tabelas envolvidas na junção.
+II. Uma VIEW pode ser utilizada para restringir o acesso a dados sensíveis,
+    exibindo apenas colunas específicas de uma ou mais tabelas.
+III.O comando DROP PROCEDURE é utilizado para executar uma procedure existente
+    no banco.
+IV. É possível conceder permissões específicas para um usuário acessar uma VIEW,
+    incluindo restrição por endereço IP.
+
+Assinale a alternativa correta:
+A) Apenas as afirmativas I e II estão corretas.
+B) Apenas as afirmativas I, III e IV estão corretas.
+C) Apenas as afirmativas I, II e IV estão corretas.
+D) Apenas as afirmativas II e III estão corretas.
+E) Todas as afirmativas estão corretas.
+
+RESPOSTA: C — Apenas as afirmativas I, II e IV estão corretas.
+
+ANÁLISE DE CADA AFIRMATIVA:
+
+  AFIRMATIVA I — VERDADEIRA
+  "A cláusula INNER JOIN retorna apenas as linhas que possuem correspondência
+  em ambas as tabelas envolvidas na junção."
+
+  Correto. Esta é a definição exata do INNER JOIN.
+  Exemplo: se uma cidade tem um id_pais que não existe em paises, ela não
+  aparece no resultado. Idem para um país sem cidades cadastradas.
+
+  Comparação:
+    INNER JOIN -> só correspondências (interseção do diagrama de Venn)
+    LEFT JOIN  -> todas da esquerda + correspondências da direita
+    RIGHT JOIN -> todas da direita + correspondências da esquerda
+
+  -----------------------------------------------------------------------
+
+  AFIRMATIVA II — VERDADEIRA
+  "Uma VIEW pode ser utilizada para restringir o acesso a dados sensíveis,
+  exibindo apenas colunas específicas de uma ou mais tabelas."
+
+  Correto. Este é um dos principais casos de uso de Views em segurança.
+  Exemplo: a tabela "cliente" tem colunas (cliente_id, nome, email, cpf, senha).
+  Criar uma View que expõe só (cliente_id, nome) e dar GRANT SELECT nessa View
+  evita que o usuário acesse cpf e senha diretamente.
+
+  Exemplo prático:
+    CREATE VIEW cliente_publico AS
+    SELECT cliente_id, nome FROM cliente;
+    GRANT SELECT ON loja.cliente_publico TO 'app_user'@'%';
+    -- app_user vê só id e nome, nunca cpf ou senha.
+
+  -----------------------------------------------------------------------
+
+  AFIRMATIVA III — FALSA
+  "O comando DROP PROCEDURE é utilizado para executar uma procedure existente
+  no banco."
+
+  FALSO. DROP PROCEDURE REMOVE (exclui) a procedure do banco de dados.
+  É o oposto de executar.
+
+    DROP PROCEDURE IF EXISTS cidade_pais_info;
+    -> Remove permanentemente a procedure. Não pode ser desfeito facilmente.
+
+  Para EXECUTAR uma procedure, o comando correto é CALL:
+    CALL cidade_pais_info();
+
+  Resumo dos comandos de procedure:
+    CREATE PROCEDURE  -> cria
+    ALTER PROCEDURE   -> altera atributos (não o corpo — para isso, DROP + CREATE)
+    DROP PROCEDURE    -> REMOVE/EXCLUI (não executa!)
+    CALL              -> executa
+
+  -----------------------------------------------------------------------
+
+  AFIRMATIVA IV — VERDADEIRA
+  "É possível conceder permissões específicas para um usuário acessar uma VIEW,
+  incluindo restrição por endereço IP."
+
+  Correto. O GRANT do MySQL/MariaDB combina DOIS controles em um único comando:
+    1. O QUÊ o usuário pode fazer (SELECT, INSERT, UPDATE, etc.)
+    2. DE ONDE ele pode conectar (host/IP)
+
+  Exemplos:
+    GRANT SELECT ON mundo.paises_sumario TO 'fatecuser'@'%';
+    -> acesso de qualquer IP
+
+    GRANT SELECT ON mundo.paises_sumario TO 'fatecuser'@'10.0.0.5';
+    -> acesso apenas do IP 10.0.0.5
+
+    GRANT SELECT ON mundo.paises_sumario TO 'fatecuser'@'192.168.1.%';
+    -> acesso apenas da rede 192.168.1.0/24
+
+  O mesmo usuário (fatecuser) pode ter permissões DIFERENTES dependendo
+  do IP de origem — cada combinação 'usuario'@'host' é tratada como
+  uma identidade separada no MySQL.
+
+  -----------------------------------------------------------------------
+
+CONCLUSÃO DA Q9:
+  I  = VERDADEIRA  (INNER JOIN -> só correspondências)
+  II = VERDADEIRA  (VIEW restringe colunas visíveis)
+  III= FALSA       (DROP PROCEDURE remove, não executa — CALL executa)
+  IV = VERDADEIRA  (GRANT + host = controle por IP)
+
+  Corretas: I, II e IV -> Alternativa C.
+
+
+===========================================================================
+RESUMO FINAL DAS RESPOSTAS
+===========================================================================
+
+Q1 (1,0 pt)   Dissertativa  -> SELECT c.nome, c.estado, p.nome FROM cidades c INNER JOIN paises p ON c.id_pais = p.id_pais
+Q2 (1,5 pt)   Dissertativa  -> DELIMITER $$ CREATE PROCEDURE cidade_pais_info() BEGIN ... (Q1 interno) END $$ DELIMITER ;
+Q3 (1,0 pt)   Alternativa E -> "nenhuma das anteriores" (a definição correta de RIGHT JOIN não está em A-D)
+Q4 (1,0 pt)   Alternativa A -> CALL cidade_pais_info; (CALL é o comando MySQL; parênteses opcionais sem parâmetros)
+Q5 (1,5 pt)   Dissertativa  -> SELECT p.nome, COUNT(c.id_cidade) ... GROUP BY p.id_pais, p.nome ORDER BY total_cidades ASC
+Q6 (1,5 pt)   Dissertativa  -> CREATE VIEW paises_sumario AS (query da Q5)
+Q7 (1,5 pt)   Dissertativa  -> SELECT * FROM paises_sumario WHERE total_cidades = 10
+Q8 (1,0 pt)   Alternativa D -> GRANT SELECT ON mundo.paises_sumario TO fatecuser@'%'
+Q9 (1,0 pt)   Alternativa C -> Apenas I, II e IV (III é falsa: DROP PROCEDURE remove, não executa)
+
+TOTAL: 10 pontos
+
+===========================================================================
+Gerado por ALFRED em 2026-06-12
+Fonte: Avaliacao N2.pdf + banco de dados mundo.sql + Aulas 01-12
+Referência completa: Work/context/TASK-SEGBD-PROVA-2026.md
+===========================================================================

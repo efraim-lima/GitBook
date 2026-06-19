@@ -74,10 +74,12 @@ type: folder_brief_live
 			- [[giovanna.enc]]
 		- [[index.html]]
 		- [[robots.txt]]
-	- **[[fatec/2026/1-2026/Estudos Avançados/N2|N2]]**
+	- **n2**
+		- [[AUDITORIA_2026-06-12]]
 		- [[cadastro.html]]
 		- [[cadastro.php]]
 		- [[conexao.php]]
+		- [[criar_banco_ducktech.sql]]
 		- [[criar_banco.sql]]
 		- [[duck_bg_menu.jpg]]
 		- [[duck_cadastro_bg.jpg]]
@@ -88,7 +90,10 @@ type: folder_brief_live
 		- [[home.html]]
 		- [[index.html]]
 		- [[lista.html]]
+		- [[listagem.php]]
+		- [[login.php]]
 		- [[N2]]
+		- [[RELATORIO_N2]]
 		- [[sobre.html]]
 		- [[style.css]]
 	- **src**
