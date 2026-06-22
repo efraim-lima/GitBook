@@ -9,7 +9,7 @@ type: folder_brief_live
 	- **roteiros**
 		- [[__init__]]
 		- [[handshake]]
-		- [[malware-analysis]]
+		- [[cyberetico/temas/roteiros/malware-analysis]]
 		- [[malware-processes]]
 		- [[md5]]
 		- [[page-1]]

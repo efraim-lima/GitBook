@@ -1,4 +1,0 @@
-# SO
-
-[[bootstrap-prova]]
-[[logs]]

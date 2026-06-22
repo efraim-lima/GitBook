@@ -1,0 +1,152 @@
+# Hints
+
+Malware Analysis in [[CyberSecurity/Course/soc]]
+
+[https://explorer.globe.engineer/search?qd=%5B%7B%22searchbox\_query%22%3A%22malware%20analisys%20SOC%20%22%2C%22search\_id%22%3A%2293f9fe5f-3bea-4390-8928-f0f51e1f3429%22%2C%22index%22%3A0%2C%22type%22%3A%22initial\_searchbox%22%2C%22clicked\_category%22%3Anull%2C%22staged\_image%22%3Anull%7D%5D\&sid=93f9fe5f-3bea-4390-8928-f0f51e1f3429](https://explorer.globe.engineer/search?qd=%5B%7B%22searchbox_query%22%3A%22malware%20analisys%20SOC%20%22%2C%22search_id%22%3A%2293f9fe5f-3bea-4390-8928-f0f51e1f3429%22%2C%22index%22%3A0%2C%22type%22%3A%22initial_searchbox%22%2C%22clicked_category%22%3Anull%2C%22staged_image%22%3Anull%7D%5D\&sid=93f9fe5f-3bea-4390-8928-f0f51e1f3429)
+
+&#x20;
+
+Malware Diagnosis
+
+[https://explorer.globe.engineer/search?qd=%5B%7B%22searchbox\_query%22%3A%22malware%20diagnosis%20in%20PC%20linux%20and%20windows%22%2C%22search\_id%22%3A%224fc49bed-77c0-41fc-a2c1-62a899c59987%22%2C%22index%22%3A0%2C%22type%22%3A%22initial\_searchbox%22%2C%22clicked\_category%22%3Anull%2C%22staged\_image%22%3Anull%7D%5D\&sid=4fc49bed-77c0-41fc-a2c1-62a899c59987](https://explorer.globe.engineer/search?qd=%5B%7B%22searchbox_query%22%3A%22malware%20diagnosis%20in%20PC%20linux%20and%20windows%22%2C%22search_id%22%3A%224fc49bed-77c0-41fc-a2c1-62a899c59987%22%2C%22index%22%3A0%2C%22type%22%3A%22initial_searchbox%22%2C%22clicked_category%22%3Anull%2C%22staged_image%22%3Anull%7D%5D\&sid=4fc49bed-77c0-41fc-a2c1-62a899c59987)
+
+&#x20;
+
+Sysinternals Microsoft
+
+GLPI para gerar tickets de alerta
+
+&#x20;
+
+Desabilitar leitura automática de USB – montar ou montagem automatica
+
+&#x20;
+
+* Entrar no editor de registror do [[CyberSecurity/Course/tools/operational-systems/windows/windows|windows]]
+  * Win + R => regedit => Computer\HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Services\mountmgr
+    * Criar uma DWORD em hexadecimal chamada NoAutoMount
+    * Double Click nela
+    * Mudar valor de 1 para 0 (disable to enable)
+  * Win + R => regedit =>  Computer\HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Services\USBSTOR
+    * Criar um novo valor DWORD chamado "PreventDeviceEnumeration"
+    * Mudar valor de 0 para 1 (enable to disable)
+  * Win + R => regedit => Computer\HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Services\USBSTOR
+    * Criar um novo valor DWORD chamado "PreventAutomaticMounting"
+    * Mudar valor de 0 para 1 (enable to disable)
+* Reiniciar o computador para receber as mudanças
+* Caso queira montar alguma unidade segura após isto basta digitar Win + X e ir em Gerenciador de Dispositivos
+
+&#x20;
+
+Outra alternativa para montagem de unidades no [[CyberSecurity/Course/tools/operational-systems/windows/windows|windows]]:\
+&#x20;
+
+* Abriir terminal ou powershell e acessar configurações de dispositivos de memoria:
+*
+  * diskpart
+  * automount disable
+  * mountvol /n
+  * mountvol /r
+  * Para reabilitar:
+  *
+    * automount enable
+    * mountvol /e
+    * | Mountvol /e |
+      | ----------- |
+  * Para limpar histórico de unidades montadas anteriormente:
+  *
+    * automount scrub
+
+&#x20;
+
+Para voltarmos a montar as unidades USB normalmente:
+
+diskpart
+
+list disk
+
+select disk 2
+
+assign letter=E
+
+&#x20;
+
+Por fim vale a pena ainda gerar o AutoPlay:\
+-ir em Settings => Devices => AutoPlay => Desabilitar
+
+&#x20;
+
+verificar arquivos de hosts e ver IPs redirecionados
+
+&#x20;
+
+Para montar uma unidade USB desconhecida, recomendo abri-la em uma máquina virtual isolada para isso.\
+Dica:
+
+&#x20;
+
+Primeiro instale o "apt install clamav clamav-daemon" e faça um "clamscan -r \<pasta>" ou "clamscan -v \<pasta>"
+
+Caso tenha duvidas da veracidade e qualidade do material recomendo fortemente formatar a mídia com [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] passos a seguir:\
+\
+lsblk => listar [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] dispositivos conectados
+
+umount /[[DEV]]/\<nome da unidade sd?> => desmonta a unidade sd
+
+sudo dd if=/[[DEV]]/zero of=/[[DEV]]/\<nome da unidade sd?> bs=4M status=progress => escreve um tudo em 00 na unidade
+
+sudo mkfs.vfat /[[DEV]]/\<nome da unidade sd?> => formata para fat32 #mais rápido
+
+sudo mkfs.ext4 /[[DEV]]/\<nome da unidade sd?>  => formata para ext64
+
+sudo eject /[[DEV]]/\<nome da unidade sd?> => ejeta o dispositivo
+
+&#x20;
+
+&#x20;
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_/[[CyberSecurity/Course/tools/operational-systems/windows/windows|windows]]
+
+[[CyberSecurity/Course/tools/operational-systems/windows/windows|windows]] ->  C:\[[[[soc]]/[[tools]]/[[operational-systems]]/[[CyberSecurity/Course/tools/operational-systems/windows/windows|windows]]/[[CyberSecurity/Course/tools/operational-systems/windows/windows|windows]]|[[CyberSecurity/Course/tools/operational-systems/windows/windows|windows]]]]\System32\drivers\etc\hosts
+
+As [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/ferramentas|ferramentas]] comuns que são usadas para monitoramento de [[Segurança]] de rede incluem:
+
+* Analisadores de protocolo de rede como Wireshark e Tcpdump
+* NetFlow
+* Sistemas de gerenciamento de eventos e informações de [[Segurança]] (SIEM)
+
+Também é comum que analistas de [[Segurança]] confiem em arquivos de log e [[snmp]] (Simple Network Management Protocol) para detecção de comportamento de rede.
+
+Observação: \*\*windump\*\* é uma variante do Microsoft [[CyberSecurity/Course/tools/operational-systems/windows/windows|windows]] do \*\*tcpdump\*\*. \*\*tshark\*\* é uma ferramenta de linha de comando Wireshark semelhante a \*\*tcpdump\*\*.
+
+Em caso de encontrar o arquivo lsass.exe no Program Files é  preciso deletá-lo, pode ser um malware.
+
+O NetFlow pode monitorar essa conexão de aplicativo rastreando contagens de bytes e pacotes para esse fluxo de aplicativo individual. Em seguida, envia as estatísticas para um servidor externo chamado coletor NetFlow.
+
+Por exemplo, o Cisco Stealthwatch coleta estatísticas do NetFlow para executar funções avançadas, incluindo:
+
+* Costura de fluxo - Ele agrupa entradas individuais em fluxos.
+* Desduplicação de fluxo - Filtra entradas duplicadas de vários [[CLIENTES]] NetFlow.
+* Costura NAT - Simplifica [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] fluxos com entradas NAT.
+
+Há um canal Cisco Stealthwatch no YouTube que fornece muitos detalhes sobre o Stealthwatch e seus usos.
+
+[[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] sistemas SIEM incluem as seguintes funções essenciais:
+
+* Análise [[CyberSecurity/Course/forense/forense|forense]] — A capacidade de pesquisar [[CyberSecurity/Course/forense/logs/logs]] e registros de eventos de fontes em toda a organização. Ele fornece informações mais completas para análise [[CyberSecurity/Course/forense/forense|forense]].
+* Correlação — examina [[CyberSecurity/Course/forense/logs/logs]] e eventos de diferentes sistemas ou [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/aplicativos|aplicativos]], acelerando a detecção e reação a ameaças de [[Segurança]].
+* Agregação - A agregação reduz o volume de dados de eventos consolidando registros de eventos duplicados.
+* Reporting - Reporting apresenta [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] dados de eventos correlacionados e agregados em monitoramento em tempo real e resumos de longo prazo.
+
+O SIEM fornece detalhes sobre a origem da atividade suspeita:
+
+* Informações do usuário, como nome de usuário, status de autenticação, localização.
+* Informações do dispositivo, como fabricante, modelo, versão do sistema operacional, endereço MAC, método de conexão de rede e localização.
+* Informações de postura, como se o dispositivo é compatível com a política de [[Segurança]], tem arquivos antivírus atualizados e é atualizado com [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] patches de SO mais recentes.&#x20;
+
+Teclar Win + R e acionar:
+
+* netplwiz: verificar se usuários são [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] corretos;
+* msconfig: Ir em opções avançadas de INICIALIZAÇÃO e ver se [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] processadores estão bloqueados
+
+Cuckoo Sandbox é um sandbox popular sistema de análise de malware livre. Ele pode ser executado localmente e ter amostras de malware enviadas a ele para análise. Existem várias outras sandboxes públicas online. Esses serviços permitem que amostras de malware sejam carregadas para análise. Alguns desses serviços são VirusTotal, Joe Sandbox e CrowdStrike Falcon Sandbox.

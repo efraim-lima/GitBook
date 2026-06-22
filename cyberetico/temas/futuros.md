@@ -15,19 +15,19 @@
 * GitHub
 * [[comandos]] básicos
 * pra quê usar no dia a dia
-* criando um belo [[soc/tools/operational-systems/windows/README|README]].md
+* criando um belo [[CyberSecurity/Course/tools/operational-systems/windows/README|README]].md
 * como criar um repositório
 * como administrar um repositório
 * como organizar um repositório
 * como excluir um repositório
 * boas práticas de administração
-* sistema de arquivos [[soc/tools/operational-systems/linux/linux|linux]]
-* rwx [[soc/tools/operational-systems/linux/linux|linux]]
-* chmod 777 [[soc/tools/operational-systems/linux/linux|linux]]
-* [[soc/tools/malwares|malwares]]
+* sistema de arquivos [[CyberSecurity/Course/tools/operational-systems/linux/linux|linux]]
+* rwx [[CyberSecurity/Course/tools/operational-systems/linux/linux|linux]]
+* chmod 777 [[CyberSecurity/Course/tools/operational-systems/linux/linux|linux]]
+* [[CyberSecurity/Course/tools/malwares|malwares]]
 * como criar um malware simples
 * como diagnosticar malware
 * como conter malware
 * como eliminar malware
 * como prevenir malware
-* detectando intrusões [[soc/tools/operational-systems/linux/linux|linux]]
+* detectando intrusões [[CyberSecurity/Course/tools/operational-systems/linux/linux|linux]]

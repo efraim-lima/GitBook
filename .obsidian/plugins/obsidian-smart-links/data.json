@@ -1,0 +1,8 @@
+{
+  "patterns": [
+    {
+      "regexp": "T(\\d+)",
+      "replacement": "https://phabricator.wikimedia.org/T$1"
+    }
+  ]
+}

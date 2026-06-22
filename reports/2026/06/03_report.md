@@ -1,7 +1,7 @@
 # Activity Report — 2026-06-03
 
 ## Summary
-Ciclo de produção acadêmica composto por duas tarefas: (1) inserção de análise de vulnerabilidades no documento de arquitetura de segurança; (2) geração de três documentos formatados para entrega das atividades da disciplina ISG012.
+Ciclo de produção acadêmica composto por duas [[Tarefas]]: (1) inserção de análise de vulnerabilidades no documento de [[Arquitetura de segurança]]; (2) geração de três documentos formatados para entrega das [[CyberSecurity/fatec/2026/1-2026/Desenvolvimento/ATIVIDADES|ATIVIDADES]] da disciplina ISG012.
 
 ---
 
@@ -36,13 +36,13 @@ Ciclo de produção acadêmica composto por duas tarefas: (1) inserção de aná
 
 ## Decisions Made
 - Vulnerabilidades inseridas como nova Seção 7 (antes da Conclusão), renumerando a Conclusão para Seção 8, per especificação de ALFRED.
-- Documentos ISG012 criados por cópia do modelo e limpeza de corpo, preservando estilos, margens e layout da FATEC, per orientação de ALFRED.
+- Documentos ISG012 criados por cópia do modelo e limpeza de corpo, preservando estilos, margens e layout da [[CyberSecurity/Notas/FATEC|FATEC]], per orientação de ALFRED.
 - Conteúdo de blocos de código nos .md convertido para tabelas 1×1 com `Courier New 9pt` e fundo `#F2F2F2`, conforme padrão acadêmico.
 
 ## Pending Decisions
 Nenhuma.
 
 ## Next Actions
-- Revisar visualmente os documentos gerados para validar formatação antes de entrega.
-- Confirmar prazo de entrega ISG012: 09/06/2026 23:59 — conforme `ISG012-Aulas0102-Respostas.md`.
+- Revisar visualmente [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] documentos gerados para validar formatação antes de entrega.
+- Confirmar prazo de entrega ISG012: 09/06/[[reports/2026/2026|2026]] 23:59 — conforme `[[ISG012-Aulas0102-Respostas]].md`.
 - Inserir a Declaração de Experiência Profissional (PDF CLT) manualmente após a Capa no Estágio Supervisionado.

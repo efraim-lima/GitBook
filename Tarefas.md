@@ -1,6 +1,6 @@
 
-[[ATIVIDADES]]
-[[FATEC]]
+[[Work/To Do/Under/Atividades/Atividades]]
+[[CyberSecurity/fatec/FATEC]]
 
 ## To Do | ATIVAS
 ```tasks

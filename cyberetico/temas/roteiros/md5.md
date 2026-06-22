@@ -1,8 +1,8 @@
 Falar brevemente sobre hashing
 
-Primeiro falar sobre o paradigma do aniversário, onde a probabilidade de 2 pessoas fazerem aniversário na mesma sala excede [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] 50% quando houverem 23 pessoas na mesma sala e isso vai aumentando gradativamente até chegarmos em uma probabilidade de 100% comm 100 pessoas em uma sala.
+Primeiro falar sobre o paradigma do aniversário, onde a probabilidade de 2 pessoas fazerem aniversário na mesma sala excede [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] 50% quando houverem 23 pessoas na mesma sala e isso vai aumentando gradativamente até chegarmos em uma probabilidade de 100% comm 100 pessoas em uma sala.
 
- As vulnerabilidades de MD5 foram descobertas devido à sua estrutura e à forma como manipula [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] dados, permitindo a construção de pares de mensagens diferentes que geram o mesmo hash, o que foi formalmente demonstrado em 2004.
+ As vulnerabilidades de MD5 foram descobertas devido à sua estrutura e à forma como manipula [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] dados, permitindo a construção de pares de mensagens diferentes que geram o mesmo hash, o que foi formalmente demonstrado em 2004.
 
 - 2¹²⁸ possibilidades, mas apenas 23 entradas são necessárias para ter uma probabilidade maior que 50% de uma colisão (aproximadamente 1 em 365).
 
@@ -12,7 +12,7 @@ Ou seja: Ao gerar 1000 hashes, as chances de colisão se tornam significativas, 
 
  Em 2017, o ataque "SHAttered" gerou duas imagens diferentes com o mesmo hash SHA-1, mostrando que, mesmo com um espaço maior (160 bits), a colisão pode ser encontrada com um número razoável de entradas, explorando as fraquezas estruturais
 
-depois apresentar como isso afeta [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] algoritmos sha1 e md5 pois eles possuem pouca variabilidade de permutas para poder fazer uma extensão maior de variabilidade de outputs, o que inevitavelmente fará com que tenhamos elementos semelhantes no output que não representam semelhança no input.
+depois apresentar como isso afeta [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] algoritmos sha1 e md5 pois eles possuem pouca variabilidade de permutas para poder fazer uma extensão maior de variabilidade de outputs, o que inevitavelmente fará com que tenhamos elementos semelhantes no [[output]] que não representam semelhança no input.
 
 apresentar o [[Teste]] em python3:
 
@@ -28,7 +28,7 @@ crypt.crypt("O!>',%$", "br")
 
 presente em https://github.com/corkami/collisions
 
-também apresentar [[fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] testes do hello e erase, presentes no website: https://www.mscs.dal.ca/~selinger/md5collision/
+também apresentar [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] testes do hello e erase, presentes no website: https://www.mscs.dal.ca/~selinger/md5collision/
 
 C:\TEMP> md5sum hello.exe
 cdc47d670159eef60916ca03a9d4a007

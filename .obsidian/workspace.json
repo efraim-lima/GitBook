@@ -39,12 +39,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fatec/Pesquisa/Pesquisa/ferramentas/os/os.md",
+                "file": "CyberSecurity/Notas/PENTESTING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "os"
+              "title": "PENTESTING"
+            }
+          },
+          {
+            "id": "681a96f03ee2e2dd",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://github.com/login/device/failure?reason=not_found",
+                "title": "Device Activation",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Device Activation"
+            }
+          },
+          {
+            "id": "95f2c0c108be5b95",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "image 12 2.png"
+              },
+              "icon": "lucide-image",
+              "title": "image 12 2"
+            }
+          },
+          {
+            "id": "0158ada5189cba07",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "orphaned files output.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "orphaned files output"
+            }
+          },
+          {
+            "id": "ce2647adcdbbb944",
+            "type": "leaf",
+            "state": {
+              "type": "smart-release-notes-view",
+              "state": {},
+              "icon": "file-text",
+              "title": "Release Notes"
             }
           },
           {
@@ -72,7 +122,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -124,6 +174,16 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "e562cac140243101",
+            "type": "leaf",
+            "state": {
+              "type": "ai-workspace-view",
+              "state": {},
+              "icon": "briefcase-business",
+              "title": "AI Workspace"
+            }
           }
         ]
       }
@@ -138,7 +198,7 @@
       {
         "id": "dc13de2168d037d0",
         "type": "tabs",
-        "dimension": 28.469241773962807,
+        "dimension": 46.3519313304721,
         "children": [
           {
             "id": "598e170ca0ed8362",
@@ -241,14 +301,36 @@
               "icon": "smart-connections",
               "title": "Connections"
             }
+          },
+          {
+            "id": "d725ff637bf1df34",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "github-copilot-chat-view",
+              "state": {},
+              "pinned": true,
+              "icon": "bot-message-square",
+              "title": "Copilot Chat"
+            }
+          },
+          {
+            "id": "11273f1310df634c",
+            "type": "leaf",
+            "state": {
+              "type": "freshness-view",
+              "state": {},
+              "icon": "boxes",
+              "title": "Project Knowledge Packs"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 9
       },
       {
         "id": "e6fa56c359b9072a",
         "type": "tabs",
-        "dimension": 71.5307582260372,
+        "dimension": 53.648068669527895,
         "children": [
           {
             "id": "57cd248ccb3574b4",
@@ -270,6 +352,10 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obisidian-note-linker:Note Linker": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -286,59 +372,64 @@
       "smart-connections:Smart Connections: Open connections view": false,
       "smart-connections:Toggle Footer Connections": false,
       "smart-connections:Smart Connections: Open random connection": false,
-      "obisidian-note-linker:Note Linker": false,
       "omnisearch:Omnisearch": false,
+      "obsidian-importer:Open Importer": false,
+      "context-prism:Review link suggestions": false,
+      "context-pack-for-notebooklm:AI Workspace": false,
+      "context-pack-for-notebooklm:Project Knowledge Packs": false,
+      "context-pack-for-notebooklm:AI Context Pack / Export": false,
+      "context-pack-for-notebooklm:Create Daily Notes pack": false,
       "card-board:CardBoard": false
     }
   },
-  "active": "087039d6c936fcf0",
+  "active": "57cd248ccb3574b4",
   "lastOpenFiles": [
-    "knowlage/wireless/frequency/Radio Wave Propagation.pdf",
-    "knowlage/wireless/frequency",
-    "knowlage/wireless",
-    "knowlage",
-    "fatec/Pesquisa/Pesquisa/ferramentas/os/linux/100-Linux-Commands-LinuxBlog-io-v2.0.1.pdf",
-    "fatec/2026/1-2026/Segurança em Banco de Dados/Avaliacao-N2-Validacao.txt",
-    "fatec/2026/1-2026/Segurança em Banco de Dados/Avaliacao-N2-Respostas.txt",
-    "fatec/2026/1-2026/Segurança em Banco de Dados/Avaliacao+N2.pdf",
-    "fatec/2026/1-2026/Segurança em Banco de Dados/100-Linux-Commands-LinuxBlog-io-v2.0.1.pdf",
-    "Desenvolvimento/fatec/n2/login.php",
-    "Desenvolvimento/fatec/n2/listagem.php",
-    "Desenvolvimento/fatec/n2/RELATORIO_N2.md",
-    "Desenvolvimento/fatec/n2/AUDITORIA_2026-06-12.md",
-    "fatec/2026/2026.md",
-    "reports/2026/06/04_report.md",
-    "reports/2026/06/03_report.md",
-    "fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-RESUMO-TEORICO.md",
-    "fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-RESPOSTAS-CONSOLIDADO.md",
-    "fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-Aulas0506-Respostas.md",
-    "fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-Aulas0304-Respostas.md",
-    "fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-Aulas0102-Respostas.md",
-    "fatec/2026/1-2026/Segurança em Banco de Dados/mundo_modelo.png",
-    "fatec/2026/1-2026/Segurança em Banco de Dados/Simulado-N2-Gabarito-Comentado.md",
-    "fatec/Pesquisa/Pesquisa/ferramentas/os/os.md",
-    "fatec/Pesquisa/TCC/Roteiro.md",
-    "README.md",
-    "fatec/Pesquisa/TCC/TCC.md",
-    "Work/agents/severino.agent.md",
-    "Work/agents/desire.agent.md",
-    "Work/agents/claudio.agent.md",
-    "Work/agents/alfred.agent.md",
-    "Work/Automações/Dados Brutos/Dados Brutos.md",
-    "fatec/Pesquisa/Pesquisa/Pesquisa.md",
-    "fatec/Pesquisa/Pesquisa.md",
-    "fatec/2026/1-2026/Estudos Avançados/RELATORIO_VULNERABILIDADES_ARQUITETURA_SEGURANCA.md",
-    "fatec/FATEC.md",
-    "SUMMARY.md",
-    "Work/Pasted image 20260526094043.png",
-    "Work/Pasted image 20260521120614.png",
-    "Work/Interflow Search - Fonte de Logs.png",
-    "Desenvolvimento/fatec/n2/duck_header.jpg",
-    "Desenvolvimento/fatec/n2/duck_chefe.jpg",
-    "Desenvolvimento/fatec/n2/duck_cadastro_bg.jpg",
-    "Desenvolvimento/fatec/n2/duck_bg_menu.jpg",
-    "Desenvolvimento/fatec/EfraimLima_GabrielPereira_GiovannaPardini/n1/img/chapeu.webp",
-    "Desenvolvimento/fatec/EfraimLima_GabrielPereira_GiovannaPardini/n1/img/background-cadastro.jpg",
+    "orphaned files output.md",
+    "image 12 2.png",
+    "Notion/Private & Shared/Cybersecurity.md",
+    "reports/2026/2026.md",
+    "CyberSecurity",
+    "pack-folder-Desenvolvimento-20260621.md",
+    "CyberSecurity/Notas/PENTESTING.md",
+    "OneNote",
+    "CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os.md",
+    "CyberSecurity/Notas/PENTESTING/Windows/Untitled.md",
+    "CyberSecurity/Notas/PENTESTING/Introdução/Untitled.md",
+    "CyberSecurity/Notas/PENTESTING/AI/Untitled.md",
+    "CyberSecurity/Notas/PENTESTING/Windows/Sistemas Operacionais.md",
+    "CyberSecurity/Notas/PENTESTING/AI/Pentesting em agentes de AI.md",
+    "CyberSecurity/Notas/PENTESTING/Introdução/Tipos de Memória.md",
+    "CyberSecurity/Notas/SOC/Introdução/Untitled.md",
+    "CyberSecurity/Notas/SOC/Cyber Kill Chain/Untitled.md",
+    "CyberSecurity/Notas/SOC/MITRE/Untitled.md",
+    "image 33.png",
+    "CyberSecurity/Notas/SOC/MITRE/MITRE ATT&CK Framework.md",
+    "CyberSecurity/Notas/SOC/MITRE/🔰Início.md",
+    "CyberSecurity/Notas/SOC/Cyber Kill Chain/🔰Início.md",
+    "CyberSecurity/Notas/SOC/Cyber Kill Chain/Fases.md",
+    "CyberSecurity/Notas/SOC/Introdução/Evitar.md",
+    "CyberSecurity/Notas/SOC/Introdução/Funções do SOC.md",
+    "CyberSecurity/Notas/SOC/Introdução/Ferramentas.md",
+    "CyberSecurity/Notas/SOC/Introdução/Tipos de SOC 2.md",
+    "CyberSecurity/Notas/SOC/Introdução/Tipos de SOC.md",
+    "CyberSecurity/Notas/DFIR/Unix Like/Untitled.md",
+    "CyberSecurity/Notas/DFIR/Introdução/Untitled.md",
+    "GetImage_(2).png",
+    "GetImage_(1).png",
+    "GetImage.png",
+    "Diagrama_de_Criao.png",
+    "image 32.png",
+    "image 11 2.png",
+    "image 10 2.png",
+    "image 9 2.png",
+    "captura-agentk.pcapng",
+    "CyberSecurity/Notas/PENTESTING/Windows",
+    "CyberSecurity/Notas/PENTESTING/AI",
+    "CyberSecurity/Notas/PENTESTING/Introdução",
+    "CyberSecurity/Notas/PENTESTING",
+    "CyberSecurity/Notas/SOC/MITRE",
+    "CyberSecurity/Notas/SOC/Cyber Kill Chain",
+    "CyberSecurity/Notas/SOC/Introdução",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas"

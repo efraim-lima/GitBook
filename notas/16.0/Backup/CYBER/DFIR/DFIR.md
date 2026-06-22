@@ -4,13 +4,13 @@
 type: folder_brief_live
 ```
 
-[[Forense]]
+[[CyberSecurity/Course/forense/forense]]
 
 %% Begin Waypoint %%
-- **[[DFIR]]**
+- **[[notas/16.0/Backup/CYBER/DFIR/DFIR]]**
 	- [[ACERVO (Em 18-12-2025).one]]
 	- [[CYBEROPS (Em 10-11-2025).one]]
-	- [[DFIR]]
+	- [[notas/16.0/Backup/CYBER/DFIR/DFIR]]
 	- [[LEARNING (Em 24-12-2025 - 2).one]]
 	- [[LEARNING (Em 24-12-2025).one]]
 

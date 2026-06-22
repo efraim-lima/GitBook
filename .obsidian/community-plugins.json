@@ -13,5 +13,13 @@
   "obsidian-style-settings",
   "omnisearch",
   "obsidian-auto-link-title",
-  "pdf-plus"
+  "pdf-plus",
+  "obsidian-importer",
+  "obsidian-smart-links",
+  "obisidian-note-linker",
+  "github-copilot",
+  "context-prism",
+  "context-pack-for-notebooklm",
+  "simple-exporter-for-llm",
+  "find-unlinked-files"
 ]

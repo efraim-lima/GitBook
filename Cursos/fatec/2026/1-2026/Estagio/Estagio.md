@@ -1,0 +1,66 @@
+# Estagio Overview
+ 
+```ccard
+type: folder_brief_live
+```
+ 
+%% Begin Waypoint %%
+- **[[Estagio]]**
+	- **Anexos**
+		- [[Anexo_A_TCE_NaoObrigatorioRemunerado.docx]]
+		- [[Anexo_B_TCE_ObrigatorioRemunerado.docx]]
+		- [[Anexo_C_TCE_ObrigatorioNaoRemunerado.docx]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_D_PlanoAtividadesEstagio.docx]]
+		- [[Anexo_E_TermoRescisao.docx]]
+		- [[Anexo_F_Aditivo_TCE.docx]]
+		- [[Anexo_G_CadastroEmpresa.docx]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_H_Capa.docx]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_I_RelatorioParcial.docx]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_J_RelatorioFinal.docx]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_K_Autoavaliacao.docx]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_L_AvaliacaoSupervisor.docx]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_M_RequerimentoEquivalencia.docx]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_N_FichaEncerramento.docx]]
+		- [[Anexo_O_DeclaracaoEmpresa.docx]]
+		- [[Anexo_P_DeclaracaoAtuacaoEmpresa.docx]]
+		- [[Anexo_Q_PlanoAtividadesMonitoria.docx]]
+		- [[Anexo_Q1_ProcessoEquiparacaoMonitoria.docx]]
+		- [[Anexo_Q2_CartaEquiparacaoMonitoria.docx]]
+		- [[Anexo_R_PlanoAtividadesIC.docx]]
+		- [[Anexo_R1_ProcessoEquiparacaoIC.docx]]
+		- [[Anexo_R2_CartaEquiparacaoIC.docx]]
+		- [[Anexo_S_PlanoAtividadesExtensao.docx]]
+		- [[Anexo_S1_ProcessoEquiparacaoExtensao.docx]]
+		- [[Anexo_S2_CartaEquiparacaoExtensao.docx]]
+	- **Preenchidos**
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_D_PlanoAtividadesEstagio.docx]]
+		- [[Anexo_D_PlanoAtividadesEstagio.pdf]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_H_Capa.docx]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexo_H_Capa.pdf]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_I_RelatorioParcial.docx]]
+		- [[Anexo_I_RelatorioParcial.pdf]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_J_RelatorioFinal.docx]]
+		- [[Anexo_J_RelatorioFinal.pdf]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_K_Autoavaliacao.docx]]
+		- [[Anexo_K_Autoavaliacao.pdf]]
+		- [[Anexo_L_AvaliacaoSupervisor_assinado.pdf]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_L_AvaliacaoSupervisor.docx]]
+		- [[Anexo_L_AvaliacaoSupervisor.pdf]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_M_RequerimentoEquivalencia.docx]]
+		- [[Anexo_M_RequerimentoEquivalencia.pdf]]
+		- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexos/Anexo_N_FichaEncerramento.docx]]
+		- [[Anexo_N_FichaEncerramento.pdf]]
+		- [[CTPSDigital_425.480.108-48_10-06-2026.pdf]]
+		- [[Declaração de Experiência Profissional.pdf]]
+	- [[CyberSecurity/fatec/2026/1-2026/Estagio/Anexo_H_Capa.pdf]]
+	- [[Estágio Supervisionado - Efraim Lima.docx]]
+	- [[Estágio Supervisionado - Efraim Lima.pdf]]
+	- [[Estágio Supervisionado.doc]]
+	- [[Estágio Supervisionado.pdf]]
+	- [[Estagio]]
+	- [[fill_anexos.py]]
+	- [[Manual de Orientação de Estágios.pdf]]
+	- [[merge_docx.py]]
+	- [[Relatório de Estágio Supervisionado - Efraim Lima.docx]]
+
+%% End Waypoint %%

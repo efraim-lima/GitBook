@@ -1,2 +1,0 @@
-Não crie codigos duplicados no sistema, evite replicar trechos de codigo redundante no ambiente, reduza a quantidade de comentários desnecessários.
-Revise códigos gerados para que sejam exutos e fucnionais de forma a evitar espagetificação de código e ineficiência de funcionalidades nas aplicações.

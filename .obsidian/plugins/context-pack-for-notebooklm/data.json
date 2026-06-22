@@ -1,0 +1,131 @@
+{
+  "targetFolder": "",
+  "outputFolder": "",
+  "flattenStructure": false,
+  "includeFrontmatterTitle": true,
+  "openAfterExport": false,
+  "contextPackOutputFolder": "",
+  "customRules": [],
+  "dailyNotesAutoDetect": true,
+  "dailyNotesFolder": "",
+  "dailyNotesFormat": "YYYY-MM-DD",
+  "dailyNotesDefaultRange": "week",
+  "dailyNotesExcludeTags": "",
+  "dailyNotesSortOrder": "asc",
+  "defaultOutputTarget": "notebooklm-text",
+  "showOutputModal": true,
+  "showTokenCount": true,
+  "warnOnTokenLimit": true,
+  "openAiUrl": false,
+  "includeStarterPrompt": true,
+  "starterPrompt": "",
+  "promptProfiles": [],
+  "defaultMode": "none",
+  "outputSelectorState": {
+    "activeTab": "agents",
+    "chatgptMode": "chat",
+    "claudeMode": "chat",
+    "geminiMode": "chat",
+    "agentMode": "notebooklm"
+  },
+  "packRegistry": [
+    {
+      "name": "Desenvolvimento",
+      "source": {
+        "type": "folder",
+        "query": "CyberSecurity/Desenvolvimento"
+      },
+      "target": "notebooklm",
+      "createdAt": 1782081362008,
+      "files": [
+        {
+          "path": "CyberSecurity/Desenvolvimento/fatec/n2/RELATORIO_N2.md",
+          "mtime": 1782004127464,
+          "size": 5645
+        },
+        {
+          "path": "CyberSecurity/Desenvolvimento/fatec/n2/N2.md",
+          "mtime": 1779916303269,
+          "size": 521
+        },
+        {
+          "path": "CyberSecurity/Desenvolvimento/fatec/n2/AUDITORIA_2026-06-12.md",
+          "mtime": 1782004127466,
+          "size": 8651
+        },
+        {
+          "path": "CyberSecurity/Desenvolvimento/fatec/fatec.md",
+          "mtime": 1782004127467,
+          "size": 3045
+        },
+        {
+          "path": "CyberSecurity/Desenvolvimento/fatec/RELATORIO_VALIDACAO_N2.md",
+          "mtime": 1782004127469,
+          "size": 25316
+        },
+        {
+          "path": "CyberSecurity/Desenvolvimento/fatec/Aulas Professor/Aulas Professor.md",
+          "mtime": 1779914777443,
+          "size": 1846
+        },
+        {
+          "path": "CyberSecurity/Desenvolvimento/fatec/AGENTS.md",
+          "mtime": 1782004127471,
+          "size": 313
+        },
+        {
+          "path": "CyberSecurity/Desenvolvimento/Java/Java.md",
+          "mtime": 1779916302906,
+          "size": 1973
+        },
+        {
+          "path": "CyberSecurity/Desenvolvimento/Java/DogSniffer/README.md",
+          "mtime": 1782004127474,
+          "size": 1757
+        },
+        {
+          "path": "CyberSecurity/Desenvolvimento/Desenvolvimento.md",
+          "mtime": 1781874882958,
+          "size": 754
+        }
+      ],
+      "outputSelectorState": {
+        "activeTab": "agents",
+        "chatgptMode": "chat",
+        "claudeMode": "chat",
+        "geminiMode": "chat",
+        "agentMode": "notebooklm"
+      }
+    }
+  ],
+  "freshnessSettings": {
+    "warnThreshold": 0.01,
+    "staleThreshold": 0.2
+  },
+  "freshnessViewDark": true,
+  "freshnessAutoCheck": false,
+  "aiBriefSettings": {
+    "includeExecutiveSummary": true,
+    "includeKeyTopics": true,
+    "includeKnowledgeMap": true,
+    "includeRelationshipMap": true,
+    "includeSimilarNotes": true,
+    "includeKnowledgeHealth": true,
+    "includeOpenQuestions": true,
+    "includeSuggestedPrompts": true,
+    "enableMermaid": true,
+    "maxTopics": 10,
+    "similarityThreshold": 70
+  },
+  "epubSortStrategy": "ai-brief",
+  "workspaces": [
+    {
+      "id": "1782081502252",
+      "name": "Desenvolvimento",
+      "sourceType": "folder",
+      "sourcePath": "Desenvolvimento",
+      "createdAt": 1782081502252
+    }
+  ],
+  "workspaceViewDark": true
+}
