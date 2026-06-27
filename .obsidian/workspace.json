@@ -77,14 +77,16 @@
             "id": "0158ada5189cba07",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "orphaned files output.md",
-                "mode": "source",
-                "source": false
+                "file": "knowlage/wireless/frequency/Radio Wave Propagation.pdf",
+                "page": 1,
+                "left": -6,
+                "top": 699,
+                "zoom": 2.3411371237458196
               },
-              "icon": "lucide-file",
-              "title": "orphaned files output"
+              "icon": "lucide-file-text",
+              "title": "Radio Wave Propagation"
             }
           },
           {
@@ -378,10 +380,11 @@
       "context-pack-for-notebooklm:AI Workspace": false,
       "context-pack-for-notebooklm:Project Knowledge Packs": false,
       "context-pack-for-notebooklm:AI Context Pack / Export": false,
-      "context-pack-for-notebooklm:Create Daily Notes pack": false
+      "context-pack-for-notebooklm:Create Daily Notes pack": false,
+      "card-board:CardBoard": false
     }
   },
-  "active": "57cd248ccb3574b4",
+  "active": "0158ada5189cba07",
   "lastOpenFiles": [
     "orphaned files output.md",
     "image 12 2.png",
