@@ -44,7 +44,7 @@ Nesta parte o foco é em sistemas de controle industrial, sendo a parte
 ## \#️⃣ Matrizes
 ### 🗒️ Taticas
 Correspondente aos Indices das colunas, as taticas sção uma das principais partes atreladas ao MITRE, sendo a forma como descobrimos o comportamento dos grupos de cyber ataque.
-![[/image 33.png|image 33.png]]
+![[image 33.png|image 33.png]]
   
 Referente às taticas temos diferenciação delas entre os tipos de matrizes, no caso temos os seguintes comportamentos (taticas) para as devidas matrizes.
 |   |   |   |

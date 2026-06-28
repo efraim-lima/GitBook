@@ -7,7 +7,7 @@ Criado por: 2026-04-01T17:44
 ## Identificando brechas externas
 ### Uso de nmap para verificar especificamente as portas mais sensíveis do servidor
 Para validarmos as [[portas]] abertas e ativas no ambiente do servidor utilizamos o comando nmap aguerrido de alguns parametros e [[portas]] pré-estabelecidas para validarmos como está a saúde do ambiente.
-![[/image 28.png|image 28.png]]
+![[image 28.png|image 28.png]]
 Transcrição:  
 
 > ──(root㉿1388d58b300a)-[/]  

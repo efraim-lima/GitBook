@@ -6,7 +6,6 @@ type: folder_brief_live
  
 %% Begin Waypoint %%
 - **[[cyberetico]]**
-	- **[[Backup AI NO NAKA DE]]**
 	- **[[temas]]**
 	- [[__init__]]
 	- [[cyberetico]]
@@ -22,7 +21,7 @@ type: folder_brief_live
 	- [[image (6).png]]
 	- [[image (7).png]]
 	- [[image (9).png]]
-	- [[image.png]]
+	- [[reports/Orphaned Files/image.png]]
 	- [[README]]
 
 %% End Waypoint %%

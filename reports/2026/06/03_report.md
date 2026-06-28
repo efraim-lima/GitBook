@@ -44,5 +44,5 @@ Nenhuma.
 
 ## Next Actions
 - Revisar visualmente [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] documentos gerados para validar formatação antes de entrega.
-- Confirmar prazo de entrega ISG012: 09/06/[[reports/2026/2026|2026]] 23:59 — conforme `[[ISG012-Aulas0102-Respostas]].md`.
+- Confirmar prazo de entrega ISG012: 09/06/[[reports/2026/2026|2026]] 23:59 — conforme `[[[[ISG012-Aulas0102-Respostas]]]].md`.
 - Inserir a Declaração de Experiência Profissional (PDF CLT) manualmente após a Capa no Estágio Supervisionado.

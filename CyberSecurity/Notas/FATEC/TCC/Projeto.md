@@ -9,9 +9,9 @@ Ubuntu Server 20.4
 4Gb RAM
 50.9GB Armazenamento
   
-![[/image 30.png|image 30.png]]
-![[/image 1 3.png|image 1 3.png]]
-![[/image 2 3.png|image 2 3.png]]
+![[image 30.png|image 30.png]]
+![[image 1 3.png|image 1 3.png]]
+![[image 2 3.png|image 2 3.png]]
 Foi seguido o processo de instalação do docker, kubectl e demais dependencias do Agentk normalmente, em seguida foram seguidos alguns passos antes de usar docker compose.  
   
 Foram feitos [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] seguintes passos para limpar espaço em disco, algo necessário para que possamos baixar o modelo de LLM ollama e também qwen.  

@@ -14,13 +14,13 @@ Para implementar a segurança de tráfego dos dados entre servidor e cliente dev
 ```bash
 openssl req -new -x509 -days 90 -newkey rsa:4096 -sha512 -nodes -out agentk.cert -keyout agentk.key
 ```
-![[/image 29.png|image 29.png]]
+![[image 29.png|image 29.png]]
 Assim teremos o certificado instalado, mas como o artigo “Nginx Reverse Proxy with TLS Encryption” direciona utilizar o Nginx para complementar o processo de criptografia do trafego vamos utilizar o processo de configuração mencionado.
   
 Feito isso seguir os passos seguintes
 Ao concluir o processo de encriptar o tráfego e capturar via Wareshark pode-se aferir que o tráfego está fluindo de forma encriptada, sem texto plano nos dados.
 Emitindo prompt a partir do ambiente encriptado.
-![[/image 1 2.png|image 1 2.png]]
+![[image 1 2.png|image 1 2.png]]
 Transcrição:
 
 > Você é AgentK, especialista em configurações YAML do Kubernetes e aplicação  
@@ -61,9 +61,9 @@ Transcrição:
 > do seu cluster Kubernetes. Como posso ajudar você hoje?
 A partir disso podemos analisar no WireShark, seguindo o processo de armazenar o trafego no período de teste para que tenhamos todos pacotes coletados, filtrar o trafego através do filtro ip.addr==<IP do servidor> and tcp.port==443 e procurar pacotes com tamanhos elevados.
 Nisso conseguimos encontrar o pacote abaixo:
-![[/image 2 2.png|image 2 2.png]]
+![[image 2 2.png|image 2 2.png]]
 Ai dar Follow no stream conseguimos reparar no tráfego totalmente encriptado e devidamente seguro.
-![[/image 3 2.png|image 3 2.png]]
+![[image 3 2.png|image 3 2.png]]
   
 ## Autenticação utilizando KeyCloak e OAuth2
 Para uma boa segurança do acesso à ferramenta foi utilizado o Keycloak para ingresso dos usuários e o OAuth2 como complemento ao processo de autenticação do usuário, seguindo as boas práticas recomendadas pelo NIST em sua publicação especial 800-63B [https://pages.nist.gov/800-63-3/sp800-63b.html#:~:text=The ongoing authentication of subscribers,event of loss or theft](https://pages.nist.gov/800-63-3/sp800-63b.html#:~:text=The%20ongoing%20authentication%20of%20subscribers,event%20of%20loss%20or%20theft). e também CISA [https://www.cisa.gov/audiences/small-and-medium-businesses/secure-your-business/require-multifactor-authentication](https://www.cisa.gov/audiences/small-and-medium-businesses/secure-your-business/require-multifactor-authentication) em sua publicação “Multifactor Authentication Provides Extra Security”.
@@ -236,5 +236,5 @@ Implementada via RotatingFileHandler:
 ## Guardrails
 Foi criada uma ferramenta de guardrail que tem o objetivo de coletar o que foi emitido como prompt no AgentK, validando localmente através de uma LLM local (qwen 2.5/1.5GB) que valida se o prompt se enquadra em alguns padrões como VALIDO, SUSPEITO, NOCIVO e PERIGOSO ([[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] termos divergem, estão em inglês). Foi implementada uma alteração no código do cliente MCP que disponbiliza o prompt para o chatGPT, essa alteração intercepta o prompt antes que seja emitido como requisição ao servidor e ao chatGPT, nessa interceptação ocorre a transferencia do prompt para a LLM local validar a possível intenção do prompt (com base em instruções que são emitidas junto ao processo de análise), a LLM devolve uma resposta curta para o cliente indicando o resultado da analise que, dependendo do resultado emitirá o prompt para o servidor e o chatGPT ou então irá barrar esta emissão pode parecer nociva ou não fizer sentido para o ambiente.
 Nisso foi capturado o seguinte resultado:
-![[/image 4 2.png|image 4 2.png]]
+![[image 4 2.png|image 4 2.png]]
 Com essa prova de conceito conseguimos definir que o usuário não consegue emitir [[comandos]] potencialmente nocivos ao ambiente.

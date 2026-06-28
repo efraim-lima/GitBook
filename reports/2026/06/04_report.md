@@ -1,7 +1,7 @@
 # Activity Report — 2026-06-04
 
 ## Summary
-Substituição completa da Seção 7 (Análise de Vulnerabilidades) do documento `[[Arquitetura de segurança]].docx`, com nova análise produzida por SEVERINO e inserida por CLAUDIO, alinhada exclusivamente ao ambiente proposto nas seções 1–6.
+Substituição completa da Seção 7 (Análise de Vulnerabilidades) do documento `[[Arquitetura de [[Segurança]]]].docx`, com nova análise produzida por SEVERINO e inserida por CLAUDIO, alinhada exclusivamente ao ambiente proposto nas seções 1–6.
 
 ## Tasks Processed
 

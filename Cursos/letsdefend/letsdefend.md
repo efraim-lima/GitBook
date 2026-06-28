@@ -6,6 +6,8 @@ type: folder_brief_live
  
 %% Begin Waypoint %%
 - **[[letsdefend]]**
+	- **[[security-analyst]]**
+	- **[[tryhackme]]**
 	- [[__init__]]
 	- [[dynamic-malware-analysis-example-1]]
 	- [[letsdefend]]

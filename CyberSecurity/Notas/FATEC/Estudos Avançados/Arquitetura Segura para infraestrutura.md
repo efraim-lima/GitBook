@@ -9,7 +9,7 @@ Precisamos ter algumas camadas, de forma a proteger nossos ativos em diversas et
   
 Abaixo segue uma imagem referenciada no próprio NIST em sua Special Publication 1800-25B (Data Integrity: Identifying and Protecting Assets Against Ransomware and Other Destructive Events)
   
-![[/image 32.png|image 32.png]]
+![[image 32.png|image 32.png]]
   
 Após inventariar [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] ativos devemos atrelar [[CyberSecurity/fatec/Pesquisa/Pesquisa/ferramentas/os/os|os]] [[CyberSecurity/Course/forense/logs/logs|logs]], mas devemos observar com atenção focada também:
 - superficie de ataque,
