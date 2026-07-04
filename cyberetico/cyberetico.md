@@ -6,6 +6,119 @@ type: folder_brief_live
  
 %% Begin Waypoint %%
 - **[[cyberetico]]**
+	- **[[Cursos]]**
+	- **CyberSecurity**
+		- **[[information-security]]**
+		- **Notas**
+			- **DEV**
+				- **Introdução**
+					- [[public static class Main()]]
+					- [[Untitled]]
+				- **Java**
+					- [[Documentaçao do Sniffer]]
+					- [[Untitled]]
+			- **DFIR**
+				- **Introdução**
+					- [[Data Recovery]]
+					- [[Sistemas Operacionais e de Arquivos]]
+					- [[Tipos de Memória]]
+					- [[Tipos de Memorias]]
+					- [[Untitled]]
+					- [[Windows]]
+				- **Unix Like**
+					- [[Linux]]
+					- [[Sistemas Operacionais]]
+					- [[Untitled]]
+				- **[[Windows]]**
+					- [[Aquisição]]
+					- [[Sistemas Operacionais]]
+					- [[Untitled]]
+					- [[Windows]]
+			- **FATEC**
+				- **Direito Digital**
+					- [[Aula 2 - Percepção de Trabalho]]
+					- [[Aula 3 - Adam Smith]]
+					- [[Aula 4 -]]
+					- [[Aula 5 - Domínios de Internet]]
+					- [[Aula 7]]
+					- [[Aula Inaugural]]
+					- [[Direitos Autorais]]
+					- [[Untitled]]
+				- **English**
+					- [[Atividade em Aula]]
+					- [[Untitled]]
+				- **Estudos Avançados**
+					- [[Arquitetura de segurança]]
+					- [[Arquitetura Segura para infraestrutura]]
+					- [[Segunda Etapa]]
+					- [[Untitled]]
+				- **Faltas**
+					- [[Recording]]
+					- [[Untitled]]
+				- **GSI**
+					- [[Aula Inaugural]]
+					- [[Estudo de Perímetro]]
+					- [[Mapeamento da Relevância]]
+					- [[Untitled]]
+				- **Introdução**
+					- [[Tema A]]
+					- [[Untitled]]
+				- **S S O R**
+					- [[Atividade 1 - Coleta de Informações]]
+					- [[Atividade 2 - Reconhecimento com netcat e nmap]]
+					- [[Untitled]]
+				- **TCC**
+					- [[Alchemy]]
+					- [[Escrita academica]]
+					- [[Mitigação]]
+					- [[Pentest]]
+					- [[Projeto]]
+					- [[Recon]]
+					- [[Segurança]]
+					- [[Untitled]]
+			- **PENTESTING**
+				- **AI**
+					- [[Pentesting em agentes de AI]]
+					- [[Untitled]]
+				- **Introdução**
+					- [[Tipos de Memória]]
+					- [[Untitled]]
+				- **Windows**
+					- [[Sistemas Operacionais]]
+					- [[Untitled]]
+			- **SOC**
+				- **Cyber Kill Chain**
+					- [[🔰Início]]
+					- [[Fases]]
+					- [[Untitled]]
+				- **Introdução**
+					- [[Evitar]]
+					- [[Ferramentas]]
+					- [[Funções do SOC]]
+					- [[Tipos de SOC 2]]
+					- [[Tipos de SOC]]
+					- [[Untitled]]
+				- **MITRE**
+					- [[🔰Início]]
+					- [[MITRE ATT&CK Framework]]
+					- [[Untitled]]
+			- **TEMPLATE**
+				- **Introdução**
+					- [[Tema A]]
+					- [[Untitled]]
+				- **[[Tema A]]**
+					- [[Tema A]]
+					- [[Untitled]]
+			- [[DEV]]
+			- [[DFIR]]
+			- [[FATEC]]
+			- [[PENTESTING]]
+			- [[SOC]]
+			- [[TEMPLATE]]
+	- **[[notas]]**
+	- **Notion**
+		- **Private & Shared**
+			- [[Cybersecurity]]
 	- **[[temas]]**
 	- [[__init__]]
 	- [[cyberetico]]
@@ -21,7 +134,7 @@ type: folder_brief_live
 	- [[image (6).png]]
 	- [[image (7).png]]
 	- [[image (9).png]]
-	- [[reports/Orphaned Files/image.png]]
+	- [[image.png]]
 	- [[README]]
 
 %% End Waypoint %%

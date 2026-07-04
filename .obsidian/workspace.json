@@ -89,12 +89,14 @@
             "id": "15a756194e793184",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "reports/Orphaned Files/image 33.png"
+                "file": "cyberetico/Cursos/letsdefend/security-analyst/Detecting Web Attacks/Detecting Web Attacks.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "image 33"
+              "icon": "lucide-file",
+              "title": "Detecting Web Attacks"
             }
           },
           {
@@ -103,8 +105,8 @@
             "state": {
               "type": "smart-release-notes-view",
               "state": {},
-              "icon": "file-text",
-              "title": "Release Notes"
+              "icon": "lucide-ghost",
+              "title": "smart-release-notes-view"
             }
           },
           {
@@ -113,8 +115,8 @@
             "state": {
               "type": "smart-release-notes-view",
               "state": {},
-              "icon": "file-text",
-              "title": "Release Notes"
+              "icon": "lucide-ghost",
+              "title": "smart-release-notes-view"
             }
           },
           {
@@ -191,15 +193,16 @@
             "state": {
               "type": "ai-workspace-view",
               "state": {},
-              "icon": "briefcase-business",
-              "title": "AI Workspace"
+              "icon": "lucide-ghost",
+              "title": "ai-workspace-view"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 209.5,
+    "collapsed": true
   },
   "right": {
     "id": "a706770663434870",
@@ -313,29 +316,17 @@
             }
           },
           {
-            "id": "d725ff637bf1df34",
+            "id": "a7fe3df165f7dc30",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "github-copilot-chat-view",
               "state": {},
-              "pinned": true,
               "icon": "bot-message-square",
               "title": "Copilot Chat"
             }
-          },
-          {
-            "id": "11273f1310df634c",
-            "type": "leaf",
-            "state": {
-              "type": "freshness-view",
-              "state": {},
-              "icon": "boxes",
-              "title": "Project Knowledge Packs"
-            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 6
       },
       {
         "id": "e6fa56c359b9072a",
@@ -358,14 +349,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 737.5
+    "width": 471.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obisidian-note-linker:Note Linker": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -383,17 +371,31 @@
       "smart-connections:Toggle Footer Connections": false,
       "smart-connections:Smart Connections: Open random connection": false,
       "omnisearch:Omnisearch": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
       "obsidian-importer:Open Importer": false,
+      "obisidian-note-linker:Note Linker": false,
       "context-prism:Review link suggestions": false,
       "context-pack-for-notebooklm:AI Workspace": false,
       "context-pack-for-notebooklm:Project Knowledge Packs": false,
       "context-pack-for-notebooklm:AI Context Pack / Export": false,
       "context-pack-for-notebooklm:Create Daily Notes pack": false,
+      "ai-knowledge-hub:AI Hub: Control panel": false,
       "card-board:CardBoard": false
     }
   },
-  "active": "11273f1310df634c",
+  "active": "15a756194e793184",
   "lastOpenFiles": [
+    "cyberetico/Cursos/letsdefend/letsdefend.md",
+    "cyberetico/Cursos/letsdefend/security-analyst/Detecting Web Attacks/Detecting Web Attacks.md",
+    "cyberetico/Cursos/hackthebox.md",
+    "AI Batch Report 2026-07-04.md",
+    "cyberetico/Cursos/letsdefend/security-analyst/Detecting Web Attacks/Web Application  Working.md",
+    "cyberetico/Cursos/letsdefend/security-analyst/best-practices/playbook.md",
+    "cyberetico/Cursos/letsdefend/security-analyst/security-analyst.md",
+    "cyberetico/Cursos/letsdefend/security-analyst/best-practices",
+    "Pasted image 20260701221523.png",
     "reports/Orphaned Files/image 33.png",
     "reports/Orphaned Files",
     "reports/orphaned files output.md",
@@ -412,7 +414,6 @@
     "knowlage/PERSONAL/[ASTRO] Donna.one",
     "knowlage/PERSONAL/[ASTRO] Captação.one",
     "knowlage/PERSONAL/[ASTRO] Anisa.one",
-    "knowlage/PERSONAL/[ASTRO] AKL.one",
     "Cursos/letsdefend/letsdefend.md",
     "cyberetico/cyberetico.md",
     "knowlage/Scores/Backup AI NO NAKA DE/Backup AI NO NAKA DE.md",
@@ -430,15 +431,8 @@
     "notas/16.0/16.0.md",
     "CyberSecurity/information-security/fatec/fatec.md",
     "Cursos/letsdefend/security-analyst/phishing/phishing.md",
-    "Cursos/letsdefend/security-analyst/security-analyst.md",
-    "Work/context/reports/2026/05/28_report_fase5.md",
-    "Cursos/letsdefend/security-analyst/phishing/Untitled.md",
-    "Notion/Private & Shared/Cybersecurity.md",
-    "reports/2026/2026.md",
-    "pack-folder-Desenvolvimento-20260621.md",
     "reports/Orphaned Files/GetImage_(1).png",
     "reports/Orphaned Files/GetImage.png",
-    "reports/Orphaned Files/Diagrama_de_Criao.png",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas"
