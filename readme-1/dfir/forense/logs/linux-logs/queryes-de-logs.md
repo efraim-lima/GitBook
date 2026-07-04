@@ -1,0 +1,2 @@
+# Queryes de LOGs
+
