@@ -381,8 +381,7 @@
       "context-pack-for-notebooklm:Project Knowledge Packs": false,
       "context-pack-for-notebooklm:AI Context Pack / Export": false,
       "context-pack-for-notebooklm:Create Daily Notes pack": false,
-      "ai-knowledge-hub:AI Hub: Control panel": false,
-      "card-board:CardBoard": false
+      "ai-knowledge-hub:AI Hub: Control panel": false
     }
   },
   "active": "15a756194e793184",

@@ -101,9 +101,165 @@ Para o monitoramento de auditoria e varredura preventiva contínua contra esse t
 * **Padrões de Log:** Estudo das assinaturas de ataque em logs de servidores através do portal de inteligência *LetsDefend Blog*.
 ---
 
+## IDOR - Insecure Direct Object Reference
+# Detecção de Insegurança no Objeto de Referência Direta (IDOR): Guia para SOC e Análise de Logs
+
+Este documento resume as metodologias de identificação e detecção de vulnerabilidades e ataques IDOR, com foco no monitoramento de telemetria em Centros de Operações de Segurança (SOC).
+
+---
+
+## 1. O Desafio da Detecção de IDOR
+A detecção de ataques IDOR (Insecure Direct Object Reference) apresenta uma complexidade superior se comparada a outras ameaças web. Isso ocorre porque o vetor de ataque não se baseia em assinaturas de payloads conhecidos ou maliciosos, como ocorre em injeções de SQL (SQLi) ou Cross-Site Scripting (XSS). Ademais, a identificação é dificultada pelo fato de que o corpo das respostas HTTP — fundamentais para confirmar se o acesso inadequado foi bem-sucedido — raramente é registrado nos logs por motivos operacionais e de privacidade.
+
+---
+
+## 2. Métodos de Detecção e Análise em Tráfego/Logs do SOC
+
+### A. Análise de Parâmetros e Mapeamento de Padrões Sequenciais
+* **Comportamento:** O IDOR pode se manifestar em qualquer parâmetro da requisição. Os atacantes costumam planejar ataques de força bruta visando alcançar múltiplos objetos de forma previsível e sucessiva (valores inteiros sequenciais).
+* **Análise no SOC:** Investigação proativa de requisições que apresentem um padrão numérico incremental consecutivo no mesmo parâmetro de ID (ex: `id=1`, `id=2`, `id=3`).
+
+### B. Volumetria e Origem de Requisições
+* **Comportamento:** Para exfiltrar dados em massa após descobrir uma falha IDOR, o invasor dispara automações direcionadas para uma única página.
+* **Análise no SOC:** Monitoramento do volume de requisições destinadas à mesma página ou endpoint a partir de uma única origem (mesmo endereço IP ou mesma sessão de usuário). Um pico anormal é um forte indicador de força bruta.
+
+### C. Monitoramento da Variabilidade no Tamanho das Respostas (Response Size)
+* **Comportamento:** Enquanto o atacante altera sequencialmente os IDs das requisições automatizadas, o servidor retorna os dados de diferentes usuários legítimos.
+* **Análise no SOC:** Rastreamento do tamanho dos dados retornados pelo servidor (`bytes_sent` ou `content-length` nos logs). Se as respostas para requisições idênticas em estrutura apresentarem variações significativas de tamanho a cada ID testado, isso indica que o atacante obteve acesso bem-sucedido a informações de terceiros com dimensões únicas.
+
+---
+
+## 3. Validação Proativa e Testes baseados em Matrizes de Acesso
+
+### A. Troca de Papéis e Testes com Proxies
+Profissionais de segurança validam o comportamento da aplicação capturando uma requisição legítima do Usuário A e alterando o parâmetro do ID do objeto para o correspondente ao Usuário B. Em seguida, os tokens de autorização são substituídos para verificar se o servidor processará indevidamente a solicitação sem validar a propriedade do objeto.
+
+### B. Extensões de Auditoria Automatizada
+* **Autorize (Burp Suite):** Ferramenta utilizada para automatizar e agilizar a verificação de permissões e controle de acesso baseado em funções em múltiplos endpoints.
+
+---
+
+## 4. Ferramentas de Automação e Referências Avançadas
+* **DAST Baseado em IA/Automatizado:** Scanners modernos e soluções dinâmicas (como o Aptori) alternam sistematicamente entre tokens de sessão e IDs de objetos para evidenciar falhas de autorização de forma programática.
+* **OWASP Testing Guide:** Metodologias completas para localização manual de vulnerabilidades de controle de acesso.
+* **Guia Sycope:** Estratégias detalhadas de detecção com foco na análise forense de tráfego HTTP.
+* **MDN Web Docs:** Conceitos de remediação estrutural focados no aumento da complexidade de identificadores e mecanismos rígidos de controle de acesso.
+
+## # Detecção de Open Redirect (Redirecionamento Aberto): Guia de Análise para Analistas SOC e Logs
+
+Este documento resume as metodologias de identificação, análise de telemetria e engenharia de detecção para mitigar e responder a ataques de Redirecionamento Aberto (Open Redirect).
+
+---
+
+## 1. O Mecanismo do Ataque e Impacto no SOC
+O Open Redirect ocorre quando uma aplicação web aceita uma entrada controlada pelo usuário que especifica uma URL para a qual o sistema redirecionará o navegador, sem a devida validação. 
+* **Impacto:** Embora frequentemente classificada como de severidade média ou baixa isoladamente, essa vulnerabilidade é um pilar fundamental para campanhas sofisticadas de **Phishing** e engenharia social, pois permite que um atacante utilize a reputação do domínio legítimo da empresa para mascarar o destino final malicioso.
+
+---
+
+## 2. Mapeamento de Parâmetros de Entrada Sensíveis
+A investigação deve iniciar pelo inventário e monitoramento de parâmetros de strings de consulta (*query strings*) que comumente gerenciam fluxos de navegação, autenticação posterior ou retornos de checkout. Exemplos críticos incluem:
+* `?next=`
+* `?url=`
+* `?redirect_url=`
+* `?returnTo=`
+* `?continue=`
+* `?goto=`
+* `?checkout_url=`
+
+---
+
+## 3. Técnicas de Evasão (Bypass) e Ofuscação em Logs
+Para passar despercebidos por Web Application Firewalls (WAFs) e analistas de SOC, os atacantes não utilizam apenas URLs estruturadas comuns (como `http://attacker.com`). Eles empregam técnicas de bypass para enganar os validadores da aplicação:
+
+* **Manipulação de Barras e Caracteres Especiais:** Uso de barras triplas (`///evil.com`), contra-barras ou o caractere de autenticação básica `@` (`sitelegitimo.com@evil.com`).
+* **Codificação de Caracteres (URL Encoding):** Substituição de caracteres críticos por seus equivalentes hexadecimais (ex: `%2f` no lugar de `/`).
+* **Bypass de Localhost / IPs:** Utilização de notações alternativas para referenciar loops locais ou fugir de regexes simples:
+  * Notação IPv6 abreviada: `http://[::]:25/`
+  * Caracteres Unicode equivalentes: `http://①②⑦.⓪.⓪.⓪`
+  * Notação CIDR incorreta ou truncada: `http://127.0.0.0`
+  * Ignorar pontos por conversão Decimal: `http://2130706433/` (equivalente a `127.0.0.1`)
+  * Conversão Hexadecimal: `http://0x7f000001/`
+
+---
+
+## 4. Engenharia de Detecção e Análise de Logs (SIEM/SOC)
+
+### A. Detecção Baseada em Expressões Regulares (Regex)
+Para realizar buscas proativas (*threat hunting*) ou criar regras de correlação no SIEM baseadas em logs de servidores web (como Nginx, Apache ou IIS) que registram requisições HTTP GET, pode ser utilizada a seguinte expressão regular baseada no padrão de assinaturas comuns:
+
+```regex
+/^.*"GET.*\?.*=(https%3a%2f%2f[a-z0-9-]+%2e[a-z]{2,}).+?.*HTTP\/.*".*$/gm
+```
+
+
+
+
+## Detecção de Directory Traversal (Travessia de Diretório): Guia de Análise para Analistas SOC e Logs
+
+Este documento resume as metodologias de identificação, análise de telemetria e engenharia de detecção para mitigar e responder a ataques de Travessia de Diretório (Directory Traversal).
+
+---
+
+## 1. O Mecanismo do Ataque e Alvos Críticos
+O Directory Traversal consiste na exploração de falhas de validação de entrada para ler arquivos arbitrários hospedados no servidor de aplicação. O sucesso do exploit depende do acesso a arquivos confidenciais do sistema operacional. Os analistas de SOC devem priorizar alertas que envolvam requisições aos seguintes caminhos populares:
+
+### Alvos em Sistemas Linux
+* `/etc/issue`
+* `/etc/passwd`
+* `/etc/shadow`
+* `/etc/group`
+* `/etc/hosts`
+
+### Alvos em Sistemas Windows
+* `c:/boot.ini`
+* `c:/inetpub/logs/logfiles`
+* `c:/inetpub/wwwroot/global.asa`
+* `c:/inetpub/wwwroot/index.asp`
+* `c:/inetpub/wwwroot/web.config`
+* `c:/sysprep.inf`
+
+---
+
+## 2. Indicadores de Ataque (Payloads) e Evasão
+Os valores-chave que caracterizam esse tipo de ataque baseiam-se na sequência de retrocesso de diretório `../` (dot-dot-slash) ou `..\`. No entanto, para evadir Web Application Firewalls (WAFs), os atacantes utilizam variações de codificação:
+* **Codificação Simples:** `%2e%2e%2f`
+* **Codificação Dupla:** `%252e%252e%252f`
+* **Codificação Unicode:** Uso de caracteres estendidos/Unicode para contornar filtros de strings do WAF antes que a requisição chegue ao interpretador do servidor.
+
+---
+
+## 3. Engenharia de Detecção e Análise de Logs (SIEM/SOC)
+
+### A. Detecção Baseada em Expressões Regulares (Regex)
+Para realizar varreduras ou criar regras de correlação em logs de acesso de servidores web (como o Nginx ou Apache), os analistas podem utilizar assinaturas específicas para os payloads descritos.
+
+* **Assinatura Genérica para Travessia Simples (Nginx access.log):**
+```regex
+/^.*"GET.*\?.*=(%2e%2e%2f).+?.*HTTP\/.*".*$/gm
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```ccard
 type: folder_brief_live
 ```
+
+
+
+
+
  
 %% Begin Waypoint %%
 - **[[Detecting Web Attacks]]**
