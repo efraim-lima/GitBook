@@ -122,6 +122,7 @@ type: folder_brief_live
 	- **[[temas]]**
 	- [[__init__]]
 	- [[cyberetico]]
+	- [[Example Graph.mtgl]]
 	- [[image (1) (1) (1).png]]
 	- [[image (1) (1).png]]
 	- [[image (1).png]]
@@ -135,6 +136,7 @@ type: folder_brief_live
 	- [[image (7).png]]
 	- [[image (9).png]]
 	- [[image.png]]
+	- [[Inv - Natalia - 07.2026.mtgl]]
 	- [[README]]
 
 %% End Waypoint %%

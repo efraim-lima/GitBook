@@ -7,15 +7,15 @@ type: folder_brief_live
 
 
 %% Begin Waypoint %%
-- **[[CyberSecurity/fatec/Pesquisa/Pesquisa]]**
-	- **[[CyberSecurity/fatec/Pesquisa/Cronograma/Cronograma]]**
-	- **[[CyberSecurity/fatec/Pesquisa/Ferramentas/Ferramentas]]**
-	- **[[CyberSecurity/fatec/Pesquisa/Pesquisa]]**
+- **[[Pesquisa]]**
+	- **[[Cronograma]]**
+	- **[[Ferramentas]]**
+	- **[[Pesquisa]]**
 	- **[[Rascunhos]]**
-	- **[[CyberSecurity/fatec/Pesquisa/TCC/TCC]]**
-	- **[[CyberSecurity/fatec/Pesquisa/Trabalho/Trabalho]]**
+	- **[[TCC]]**
+	- **[[Trabalho]]**
 	- [[__init__]]
 	- [[ARTIGO]]
-	- [[CyberSecurity/fatec/Pesquisa/Pesquisa]]
+	- [[Pesquisa]]
 
 %% End Waypoint %%
