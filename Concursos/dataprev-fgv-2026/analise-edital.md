@@ -7,7 +7,8 @@ orgao: DATAPREV (Empresa de Tecnologia e Informações da Previdência)
 cargo: Analista de Tecnologia da Informação (perfis 1–12) e Analista de Processamento (perfil 13)
 data_prova: 2026-10-11
 edital: edital/edital-retificado-dataprev.pdf (edital retificado)
-status: analise-concluida-modulo-geral
+perfil_alvo: 5 — Segurança Cibernética e Proteção de Dados
+status: analise-concluida-perfil-5
 ---
 
 # Análise do Edital — DATAPREV 2026 (FGV)
@@ -130,9 +131,62 @@ O específico (30 q × 2,5 = 75 pts) **muda conforme o perfil**. Perfis do Anexo
 | 12 | Engenharia | CE |
 | 13 | Analista de Processamento | DF |
 
-> **Pendente:** detalhar em tópicos atômicos o específico **do perfil escolhido**.
-> Ver o texto completo de cada perfil no Anexo I do edital (págs. ~26–40).
-> Perfil 5 (Segurança Cibernética) alinha ao histórico do usuário em InfoSec.
+### PERFIL ALVO 5 — Segurança Cibernética e Proteção de Dados (30 q · 75 pts · prioridade A)
+
+3 blocos no Anexo I. Ordem de estudo por retorno/incidência FGV.
+
+#### A. Segurança da Informação (bloco principal — maior peso do específico)
+| # | Tópico atômico | Prioridade |
+|---|----------------|-----------|
+| 1 | Políticas de SI; procedimentos; gestão | A |
+| 2 | **ISO/IEC 27001:2022** e **27002:2022** (controles) | A |
+| 3 | Segurança de redes (inclui wireless) | A |
+| 4 | Vulnerabilidades e ataques a sistemas | A |
+| 5 | Prevenção e tratamento de incidentes | A |
+| 6 | Ataques/proteções: hardware, SO, apps, BD, redes; firewall, proxy, **VPN (IPSec/SSL)**, nuvem | A |
+| 7 | Segurança física e lógica de ativos | M |
+| 8 | **Criptografia**: simétrica/assimétrica, chave pública, modos de cifra, cert./assinatura digital, tokens/smartcards, **RSA/DES/AES**, hash **MD5/SHA-1**, esteganografia | A |
+| 9 | Malware: ransomware, vírus, worms, spyware, rootkit | A |
+| 10 | Detecção de intrusão; segurança de servidores/SO; certificação digital | A |
+| 11 | **Gestão de riscos**: ISO **27005:2019**, **31000:2018**; identificação/análise | A |
+| 12 | **Continuidade de negócio**: ISO **22301:2020**, 22313 | M |
+| 13 | **LGPD** (Lei 13.709/2018) + alterações | A |
+| 14 | **IDS / IPS / SIEM** (conceitos) | A |
+| 15 | **NIST CSF v1.1** | A |
+| 16 | Ferramentas modernas: **BAS, XDR, SOAR, CASB, UEBA** | A |
+| 17 | **Operação de SOC**: Firewall, Proxy, IPS/IDS, DLP, CASB, SIEM, AV, **EDR**, WAF, gestão de vuln., monitoração, backup | A |
+| 18 | Desenvolvimento seguro: **SAST/DAST/IAST** | M |
+| 19 | Gestão de identidade e acesso (IAM) | A |
+| 20 | **Resposta a incidente — NIST SP 800-61** | A |
+| 21 | Threat intel; threat hunting | M |
+| 22 | Testes de penetração | M |
+| 23 | Modelagem de ameaças (**STRIDE** etc.) | M |
+| 24 | **MITRE ATT&CK** (táticas) | A |
+| 25 | Segurança em IoT | B |
+| 26 | Programação: Perl, Python, C, C++, C#, Shell, PowerShell | M |
+| 27 | **Direito Digital**; **GDPR**; políticas/regulamentos | M |
+| 28 | Detecção/resposta/recuperação de incidentes cibernéticos | A |
+| 29 | Containers; anonimização/pseudoanonimização/reidentificação; Blockchain | B |
+| 30 | Proteção da informação **Microsoft 365 E5** | B |
+
+#### B. Redes de Computadores
+| # | Tópico | Prioridade |
+|---|--------|-----------|
+| 1 | Conceitos, meios, topologia, LAN/WAN/wireless | M |
+| 2 | Interconexão: hub, switch, roteador; **VLANs**; cabeamento | M |
+| 3 | Modelo **OSI**; padrões **IEEE 802.1/.3/.11 a/b/g/n/ac** | M |
+| 4 | **TCP/IP**: rede (IPv4/IPv6/IPsec, endereçamento, roteamento), transporte (TCP/UDP), aplicação (FTP, SSH, DNS, SMTP, POP, IMAP, HTTP/S, SSL, RDP, DHCP) | A |
+| 5 | Gerência de redes: **SNMP, RMON** | B |
+
+#### C. Governança de TI + Computação em Nuvem
+| # | Tópico | Prioridade |
+|---|--------|-----------|
+| 1 | Gerenciamento ágil de projetos; grupos de processos; gestão de riscos | M |
+| 2 | **ITIL v4**; **COBIT 2019** (conceitos, estrutura, objetivos) | M |
+| 3 | Nuvem: IaaS/PaaS/SaaS; privada/pública/híbrida; HA, escalabilidade, DR; regiões/zonas; IaC; automação; **AWS/GCP/Azure** | M |
+
+> **Normas ISO decoram muito na FGV** — 27001/27002/27005/31000/22301. Priorizar.
+> **Leis decoram por letra:** LGPD, e no Módulo Geral LAI/Marco Civil/12.737.
 
 ## 5. Legislação e referências citadas (síntese)
 

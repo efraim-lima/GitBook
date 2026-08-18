@@ -1,0 +1,37 @@
+{
+  "toolLoading": {
+    "profile": "all",
+    "promoted": [],
+    "profiles": {
+      "default": {
+        "profile": "all",
+        "promoted": [],
+        "allowed": null
+      }
+    }
+  },
+  "mcpTransport": {
+    "tokens": [
+      {
+        "id": "default",
+        "label": "Default",
+        "token": "PTPRoFmszwkAJpD9zACclwxq72lDANOqyGgvuw3vRWo",
+        "createdAt": 1786710668873
+      }
+    ],
+    "bearerToken": "PTPRoFmszwkAJpD9zACclwxq72lDANOqyGgvuw3vRWo",
+    "livePort": 27200,
+    "serverName": ""
+  },
+  "semanticSearch": {
+    "provider": "auto",
+    "indexingMode": "live",
+    "unloadModelWhenIdle": false
+  },
+  "mcpClientConfig": {
+    "mcpRemotePreWarm": {
+      "lastWarmedAt": "2026-08-14T12:48:10.239Z"
+    }
+  },
+  "mcpTools": {}
+}

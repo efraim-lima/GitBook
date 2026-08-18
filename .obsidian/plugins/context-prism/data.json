@@ -18,5 +18,6 @@
   "includeFrontmatter": true,
   "useMetadataRanking": true,
   "metadataWeight": 0.08,
-  "showScores": true
+  "showScores": true,
+  "lastSeenReleaseNotesVersion": "0.5.3"
 }

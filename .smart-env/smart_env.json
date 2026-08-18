@@ -16,6 +16,10 @@
     "file_exclusions": "Untitled,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-01/ISG012-01 - Arquitetura de Redes Seguras Do Perímetro à Segmentação Lógica - Q de múlt escolha - Gabarito.pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-05/ISG012-05 - Firewalls de Host Defesa do Endpoint em SOs - Teoria - Q de múlt escolha - Gabarito.pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-08/ISG012-08/ISG012-08 - Análise de Falhas e Testes de Invasão Básicos em Redes - Teoria- Q de múlt escolha - Gabarito.pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-08/ISG012-08/ISG012-08 - Análise de Falhas e Testes de Invasão Básicos em Redes - Teoria- Q de múlt escolha.pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-07/ISG012-07/ISG012-07 - Segurança em Redes sem Fio – Fundamentos - Teoria- Q de múlt escolha - Gabarito.pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-09/ISG012-09/ISG012-09 - Configuração Segura de Servidores de Rede - Teoria - Q de múlt escolha - Gabarito .pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-11/ISG012-11/ISG012-11 - Coleta e Análise de Tráfego para Segurança - Teoria - Q de múlt escolha - Gabarito.pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-10/ISG012-10/ISG012-10 - Monitoramento e Sistemas de Alerta - Teoria- Q de múlt escolha - Gabarito.pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-12/ISG012-12/ISG012-12 - Proxy Avançado e Inspeção de Tráfego - Teoria - Q de múlt escolha - Gabarito.pdf",
     "folder_exclusions": ""
   },
+  "gitignore_exclusions": [
+    ".env"
+  ],
+  "gitignore_exclusions_updated_at": 1787075015462,
   "language": "en",
   "re_import_wait_time": 13,
   "smart_chat_threads": {
@@ -56,7 +60,8 @@
         "show_full_path": false
       }
     },
-    "footer_connections": false
+    "footer_connections": false,
+    "footer_connections_list_component_key": "connections_list_v3"
   },
   "context_items": {
     "template_preset": "xml_structured",
@@ -73,7 +78,8 @@
   "lookup_lists": {
     "results_collection_key": "smart_blocks",
     "score_algo_key": "similarity",
-    "results_limit": 20
+    "results_limit": 20,
+    "get_results_action_key": "lookup_list_get_results"
   },
   "smart_contexts": {
     "template_preset": "xml_structured",

@@ -13,26 +13,26 @@ type: folder_brief_live
 			- **DEV**
 				- **Introdução**
 					- [[public static class Main()]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 				- **Java**
 					- [[Documentaçao do Sniffer]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 			- **DFIR**
 				- **Introdução**
 					- [[Data Recovery]]
 					- [[Sistemas Operacionais e de Arquivos]]
 					- [[Tipos de Memória]]
 					- [[Tipos de Memorias]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 					- [[Windows]]
 				- **Unix Like**
 					- [[Linux]]
 					- [[Sistemas Operacionais]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 				- **[[Windows]]**
 					- [[Aquisição]]
 					- [[Sistemas Operacionais]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 					- [[Windows]]
 			- **FATEC**
 				- **Direito Digital**
@@ -43,30 +43,30 @@ type: folder_brief_live
 					- [[Aula 7]]
 					- [[Aula Inaugural]]
 					- [[Direitos Autorais]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 				- **English**
 					- [[Atividade em Aula]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 				- **Estudos Avançados**
 					- [[Arquitetura de segurança]]
 					- [[Arquitetura Segura para infraestrutura]]
 					- [[Segunda Etapa]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 				- **Faltas**
 					- [[Recording]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 				- **GSI**
 					- [[Aula Inaugural]]
 					- [[Estudo de Perímetro]]
 					- [[Mapeamento da Relevância]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 				- **Introdução**
 					- [[Tema A]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 				- **S S O R**
 					- [[Atividade 1 - Coleta de Informações]]
 					- [[Atividade 2 - Reconhecimento com netcat e nmap]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 				- **TCC**
 					- [[Alchemy]]
 					- [[Escrita academica]]
@@ -75,40 +75,40 @@ type: folder_brief_live
 					- [[Projeto]]
 					- [[Recon]]
 					- [[Segurança]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 			- **PENTESTING**
 				- **AI**
 					- [[Pentesting em agentes de AI]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 				- **Introdução**
 					- [[Tipos de Memória]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 				- **Windows**
 					- [[Sistemas Operacionais]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 			- **SOC**
 				- **Cyber Kill Chain**
 					- [[🔰Início]]
 					- [[Fases]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 				- **Introdução**
 					- [[Evitar]]
 					- [[Ferramentas]]
 					- [[Funções do SOC]]
 					- [[Tipos de SOC 2]]
 					- [[Tipos de SOC]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 				- **MITRE**
 					- [[🔰Início]]
 					- [[MITRE ATT&CK Framework]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 			- **TEMPLATE**
 				- **Introdução**
 					- [[Tema A]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 				- **[[Tema A]]**
 					- [[Tema A]]
-					- [[Untitled]]
+					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
 			- [[DEV]]
 			- [[DFIR]]
 			- [[FATEC]]

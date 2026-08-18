@@ -67,9 +67,15 @@ def fetch(url: str, timeout: int = 45) -> tuple[bytes, str, str]:
 
 
 def is_pdf(body: bytes, content_type: str, url: str) -> bool:
+    if body[:5] == b"%PDF-":
+        return True
+    # A body that opens as HTML/XML is not a PDF, even if the URL ends in .pdf
+    # or the server mislabels the content-type (common with redirect landings).
+    head = body[:512].lstrip().lower()
+    if head.startswith((b"<!doctype html", b"<html", b"<?xml", b"<head", b"<body")):
+        return False
     return (
-        body[:5] == b"%PDF-"
-        or "application/pdf" in content_type.lower()
+        "application/pdf" in content_type.lower()
         or urlparse(url).path.lower().endswith(".pdf")
     )
 

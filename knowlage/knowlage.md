@@ -34,6 +34,8 @@ type: folder_brief_live
 		- [[Abrir Bloco de Anotações.onetoc2]]
 		- [[MISSA.one]]
 	- **PERSONAL**
+		- **Linux Tips**
+			- [[Tmux]]
 		- [[[ASTRO] AKL.one]]
 		- [[[ASTRO] Anisa.one]]
 		- [[[ASTRO] Captação.one]]

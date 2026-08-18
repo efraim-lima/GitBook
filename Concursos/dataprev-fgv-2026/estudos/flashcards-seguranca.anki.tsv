@@ -1,0 +1,25 @@
+NIST CSF v1.1 — quais as 5 funções do núcleo, em ordem?	Identify, Protect, Detect, Respond, Recover. (Govern só entra na v2.0.)	dataprev seguranca nist
+NIST SP 800-61 — quais as 4 fases do ciclo de resposta a incidentes?	1) Preparação; 2) Detecção e Análise; 3) Contenção, Erradicação e Recuperação; 4) Atividade Pós-Incidente (lições aprendidas).	dataprev seguranca incidentes
+ISO/IEC 27001 vs 27002 — qual a diferença?	27001 = requisitos do SGSI (norma certificável). 27002 = código de práticas / controles (guia de implementação).	dataprev seguranca iso
+ISO/IEC 27005 trata de quê?	Gestão de riscos de segurança da informação.	dataprev seguranca iso
+ISO 31000:2018 trata de quê?	Gestão de riscos — diretrizes (genérica, qualquer risco organizacional).	dataprev seguranca riscos
+ISO 22301:2020 trata de quê?	Sistema de gestão de continuidade de negócios (SGCN) — requisitos.	dataprev seguranca continuidade
+Criptografia simétrica vs assimétrica — chaves e exemplos?	Simétrica: mesma chave cifra e decifra (DES, AES) — rápida. Assimétrica: par pública/privada (RSA) — resolve troca de chave e permite assinatura.	dataprev seguranca cripto
+Para garantir CONFIDENCIALIDADE numa mensagem assimétrica, cifra-se com qual chave?	Com a chave PÚBLICA do destinatário (só a privada dele decifra).	dataprev seguranca cripto
+Para garantir AUTENTICIDADE/NÃO REPÚDIO (assinatura), usa-se qual chave?	A chave PRIVADA do remetente (qualquer um verifica com a pública dele).	dataprev seguranca cripto
+Diferença entre IDS e IPS?	IDS detecta e alerta (passivo). IPS detecta e bloqueia/previne em linha (ativo).	dataprev seguranca soc
+O que faz um SIEM?	Coleta e correlaciona logs de várias fontes, gera alertas e centraliza investigação de eventos de segurança.	dataprev seguranca soc
+O que é SOAR?	Security Orchestration, Automation and Response — orquestra e automatiza respostas (playbooks) integrando ferramentas de segurança.	dataprev seguranca soc
+O que é XDR?	Extended Detection and Response — detecção/resposta estendida correlacionando endpoint, rede, e-mail e nuvem em uma plataforma.	dataprev seguranca soc
+O que é DLP?	Data Loss Prevention — previne vazamento/exfiltração de dados sensíveis (monitora e bloqueia saída não autorizada).	dataprev seguranca soc
+O que é CASB?	Cloud Access Security Broker — intermediário que aplica políticas de segurança entre usuários e serviços de nuvem.	dataprev seguranca nuvem
+MITRE ATT&CK — o que é "Lateral Movement"?	Tática de mover-se de um host comprometido para outros hosts na rede interna.	dataprev seguranca mitre
+STRIDE — o que significa cada letra?	Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege. Modelagem de ameaças da Microsoft.	dataprev seguranca ameacas
+LGPD — o que são dados pessoais sensíveis?	Origem racial/étnica, convicção religiosa, opinião política, filiação sindical, dado sobre saúde/vida sexual, dado genético ou biométrico.	dataprev legislacao lgpd
+LGPD — o consentimento é a única base legal para tratar dados?	Não. Há 10 bases legais (art. 7º): consentimento, obrigação legal, execução de contrato, exercício de direitos, proteção da vida, tutela da saúde, legítimo interesse, etc.	dataprev legislacao lgpd
+Lei 12.737/2012 (art. 2º) tipifica qual crime?	Invasão de dispositivo informático (Lei "Carolina Dieckmann").	dataprev legislacao penal
+Lei 12.527/2011 é conhecida como?	LAI — Lei de Acesso à Informação (regulamentada pelos Dec. 7.724 e 7.845).	dataprev legislacao lai
+Lei 12.965/2014 é conhecida como?	Marco Civil da Internet (princípios, garantias, direitos e deveres no uso da internet).	dataprev legislacao marcocivil
+TCP/IP — cite protocolos da camada de aplicação cobrados no edital.	FTP, SSH, DNS, SMTP, POP, IMAP, HTTP, HTTPS, SSL, RDP, DHCP, SNMP.	dataprev seguranca redes
+IPSec VPN opera em qual camada? E SSL VPN?	IPSec = camada de rede (túnel de todo o tráfego IP). SSL/TLS VPN = camada de aplicação/transporte, acesso a serviços via navegador.	dataprev seguranca redes
+SAST vs DAST?	SAST analisa o código-fonte estático (sem executar). DAST testa a aplicação em execução (caixa-preta, runtime).	dataprev seguranca devsec
