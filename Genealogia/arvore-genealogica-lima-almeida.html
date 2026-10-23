@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Árvore Genealógica — Lima · Almeida · Vieira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --papel:#E9DFC7;
+    --papel-2:#DFD2B4;
+    --tinta:#241C14;
+    --indigo:#2B3F5C;
+    --tijolo:#9C3B26;
+    --verde:#5E6B45;
+    --linha:rgba(36,28,20,.28);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--papel);
+    background-image:
+      repeating-linear-gradient(0deg, rgba(36,28,20,.035) 0 1px, transparent 1px 4px),
+      radial-gradient(circle at 20% 10%, rgba(156,59,38,.06), transparent 55%);
+    color:var(--tinta);
+    font-family:"Crimson Pro", Georgia, serif;
+    font-size:17px;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 18px 72px}
+
+  /* ---------- cabeçalho ---------- */
+  header{
+    border:2px solid var(--tinta);
+    border-bottom-width:6px;
+    padding:26px 20px 20px;
+    background:var(--papel-2);
+    text-align:center;
+  }
+  .eyebrow{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:11px;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--tijolo);margin-bottom:12px;
+  }
+  h1{
+    font-family:"Alfa Slab One", Georgia, serif;
+    font-weight:400;
+    font-size:clamp(28px,7vw,54px);
+    line-height:.98;
+    margin:0 0 4px;
+    letter-spacing:-.01em;
+  }
+  h1 span{display:block;color:var(--tijolo)}
+  .sub{font-style:italic;color:rgba(36,28,20,.75);margin-top:10px}
+
+  /* ---------- rota migratória (elemento assinatura) ---------- */
+  .rota{
+    margin:0;border:2px solid var(--tinta);border-top:none;
+    padding:20px 16px 22px;background:rgba(43,63,92,.05);
+  }
+  .rota h2{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;
+    letter-spacing:.22em;text-transform:uppercase;text-align:center;
+    margin:0 0 18px;color:var(--indigo);
+  }
+  .paradas{display:flex;align-items:flex-start;justify-content:center;gap:0;flex-wrap:wrap}
+  .parada{flex:1 1 130px;min-width:110px;text-align:center;position:relative;padding:0 6px}
+  .pino{
+    width:14px;height:14px;border-radius:50%;
+    border:2px solid var(--indigo);background:var(--papel);
+    margin:0 auto 10px;position:relative;z-index:2;
+  }
+  .parada:last-child .pino{background:var(--tijolo);border-color:var(--tijolo)}
+  .parada::before{
+    content:"";position:absolute;top:6px;left:-50%;width:100%;
+    border-top:2px dashed var(--linha);z-index:1;
+  }
+  .parada:first-child::before{display:none}
+  .parada b{display:block;font-size:15px}
+  .parada em{
+    display:block;font-family:"IBM Plex Mono",monospace;font-style:normal;
+    font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    color:rgba(36,28,20,.6);margin-top:3px;
+  }
+
+  /* ---------- ramos ---------- */
+  .ramos{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:36px}
+  .ramo > h3{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;
+    letter-spacing:.22em;text-transform:uppercase;margin:0 0 14px;
+    padding-bottom:8px;border-bottom:2px solid var(--tinta);
+  }
+  .ramo.paterno > h3{color:var(--tijolo)}
+  .ramo.materno > h3{color:var(--indigo)}
+
+  .ger{margin-bottom:6px}
+  .ger-rot{
+    font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.16em;
+    text-transform:uppercase;color:rgba(36,28,20,.5);margin-bottom:8px;
+  }
+  .par{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+  .card{
+    background:var(--papel-2);
+    border:1.5px solid var(--tinta);
+    padding:11px 12px;
+    box-shadow:3px 3px 0 rgba(36,28,20,.18);
+  }
+  .card .nome{font-weight:600;font-size:16.5px;line-height:1.22}
+  .card .meta{
+    font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+    color:rgba(36,28,20,.68);margin-top:6px;letter-spacing:.04em;
+  }
+  .card.vazio{background:transparent;border-style:dashed;box-shadow:none;color:rgba(36,28,20,.45)}
+  .card.vazio .nome{font-weight:400;font-style:italic}
+
+  .desce{height:22px;margin:0 auto;width:0;border-left:2px solid var(--linha)}
+
+  /* ---------- foco ---------- */
+  .foco{
+    margin:30px auto 0;max-width:460px;text-align:center;
+    border:2px solid var(--tinta);border-bottom-width:6px;
+    background:var(--tijolo);color:var(--papel);padding:20px 18px;
+    box-shadow:5px 5px 0 rgba(36,28,20,.25);
+  }
+  .foco .nome{font-family:"Alfa Slab One",Georgia,serif;font-size:clamp(20px,4.6vw,30px);line-height:1.05}
+  .foco .meta{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;margin-top:9px;color:rgba(233,223,199,.85)}
+  .foco .meta b{font-weight:500;color:#fff}
+
+  /* ---------- colaterais e notas ---------- */
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:46px}
+  .bloco h3{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;
+    letter-spacing:.22em;text-transform:uppercase;margin:0 0 12px;
+    padding-bottom:8px;border-bottom:2px solid var(--tinta);
+  }
+  .tios{list-style:none;margin:0;padding:0;columns:2;column-gap:16px}
+  .tios li{break-inside:avoid;padding:3px 0;font-size:16px}
+  .tios li::before{content:"—  ";color:var(--verde)}
+  .conta{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:rgba(36,28,20,.55);margin-top:10px;display:block}
+
+  .notas{margin-top:46px;border-top:2px solid var(--tinta);padding-top:22px}
+  .notas h3{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;
+    letter-spacing:.22em;text-transform:uppercase;margin:0 0 14px;color:var(--indigo);
+  }
+  .nota{border-left:3px solid var(--verde);padding:2px 0 2px 14px;margin-bottom:16px}
+  .nota b{font-weight:600}
+  .tag{
+    display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:9.5px;
+    letter-spacing:.14em;text-transform:uppercase;padding:2px 7px;
+    border:1px solid var(--linha);margin-right:8px;vertical-align:2px;
+  }
+  .tag.conf{color:var(--tijolo);border-color:var(--tijolo)}
+  .tag.oral{color:var(--indigo);border-color:var(--indigo)}
+  footer{
+    margin-top:44px;text-align:center;font-family:"IBM Plex Mono",monospace;
+    font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(36,28,20,.45);
+  }
+
+  @media (max-width:760px){
+    .ramos,.duo{grid-template-columns:1fr}
+    .tios{columns:1}
+    .parada::before{display:none}
+    .parada{flex:1 1 100%;margin-bottom:14px}
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .card,.foco{animation:sobe .5s ease both}
+    @keyframes sobe{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Quatro gerações · Pernambuco → São Paulo</div>
+    <h1>Lima · Almeida<span>Vieira · Castro</span></h1>
+    <p class="sub">Árvore genealógica de Efraim de Almeida Lima, reunida a partir de memória familiar</p>
+  </header>
+
+  <section class="rota">
+    <h2>Rota da família</h2>
+    <div class="paradas">
+      <div class="parada"><div class="pino"></div><b>Amazônia</b><em>relato oral · geração não localizada</em></div>
+      <div class="parada"><div class="pino"></div><b>Sertão do Araripe</b><em>travessia a pé</em></div>
+      <div class="parada"><div class="pino"></div><b>Sombrio · Feitoria</b><em>Bodocó, PE · Francisco 1965</em></div>
+      <div class="parada"><div class="pino"></div><b>São Paulo, SP</b><em>Efraim · 1993</em></div>
+    </div>
+  </section>
+
+  <div class="ramos">
+
+    <!-- RAMO PATERNO -->
+    <div class="ramo paterno">
+      <h3>Ramo paterno — Lima</h3>
+
+      <div class="ger">
+        <div class="ger-rot">Bisavós</div>
+        <div class="par">
+          <div class="card"><div class="nome">Antonio de Oliveira Lima</div><div class="meta">pai de Hermes · † 26/05/1926 ✓</div></div>
+          <div class="card"><div class="nome">Julia Maria de Castro</div><div class="meta">mãe de Hermes · n. 07/07/1888 ✓</div></div>
+          <div class="card"><div class="nome">Firmino Vicente de Oliveira</div><div class="meta">pai de Rozena · n. 05/01/1888 · † antes de 1977 ✓</div></div>
+          <div class="card"><div class="nome">Francisca Maria da Conceição</div><div class="meta">mãe de Rozena · n. 04/09/1890 · † antes de 1977 ✓</div></div>
+        </div>
+      </div>
+      <div class="desce"></div>
+
+      <div class="ger">
+        <div class="ger-rot">Avós</div>
+        <div class="par">
+          <div class="card"><div class="nome">Hermes de Castro Lima</div><div class="meta">n. 01/03/1924 · Faz. Monte Sombrio, Feitoria · agricultor ✓</div></div>
+          <div class="card"><div class="nome">Rozena Francisca de Lima</div><div class="meta">n. 22/12/1925 · Bodocó · solteira era «de Oliveira» ✓</div></div>
+        </div>
+      </div>
+      <div class="desce"></div>
+
+      <div class="ger">
+        <div class="ger-rot">Pai</div>
+        <div class="par">
+          <div class="card"><div class="nome">Francisco das Chagas Lima</div><div class="meta">01/01/1965, 20h · Sombrio, Feitoria, Bodocó, PE ✓</div></div>
+          <div class="card vazio"><div class="nome">8 irmãos</div><div class="meta">ver tios paternos</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RAMO MATERNO -->
+    <div class="ramo materno">
+      <h3>Ramo materno — Almeida · Vieira</h3>
+
+      <div class="ger">
+        <div class="ger-rot">Bisavós</div>
+        <div class="par">
+          <div class="card vazio"><div class="nome">a pesquisar</div><div class="meta">pais de Narciso</div></div>
+          <div class="card vazio"><div class="nome">a pesquisar</div><div class="meta">pais de Narciso</div></div>
+          <div class="card vazio"><div class="nome">a pesquisar</div><div class="meta">pais de Jandira</div></div>
+          <div class="card vazio"><div class="nome">a pesquisar</div><div class="meta">pais de Jandira</div></div>
+        </div>
+      </div>
+      <div class="desce"></div>
+
+      <div class="ger">
+        <div class="ger-rot">Avós</div>
+        <div class="par">
+          <div class="card"><div class="nome">Narciso de Almeida Lima</div><div class="meta">local a confirmar</div></div>
+          <div class="card"><div class="nome">Jandira Vieira de Almeida</div><div class="meta">local a confirmar</div></div>
+        </div>
+      </div>
+      <div class="desce"></div>
+
+      <div class="ger">
+        <div class="ger-rot">Mãe</div>
+        <div class="par">
+          <div class="card"><div class="nome">Sonia Vieira de Almeida Lima</div><div class="meta">19/11/1964 · São Paulo, SP</div></div>
+          <div class="card vazio"><div class="nome">4 irmãos</div><div class="meta">ver tios maternos</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foco">
+    <div class="nome">Efraim de Almeida Lima</div>
+    <div class="meta"><b>03/11/1993</b> · São Paulo, SP · filho único</div>
+  </div>
+
+  <div class="duo">
+    <div class="bloco">
+      <h3>Tios e tias — paternos</h3>
+      <ul class="tios">
+        <li>Jaime</li><li>Rosiene</li><li>Rosilene</li><li>Cicera</li>
+        <li>Antonia</li><li>Paulo</li><li>Luis</li><li>José</li>
+      </ul>
+      <span class="conta">Com Francisco: 9 filhos de Hermes e Rozena</span>
+    </div>
+    <div class="bloco">
+      <h3>Tios e tias — maternos</h3>
+      <ul class="tios">
+        <li>Gerson</li><li>Lucia</li><li>Eulalia</li><li>Wilson</li>
+      </ul>
+      <span class="conta">Com Sonia: 5 filhos de Narciso e Jandira</span>
+    </div>
+  </div>
+
+  <div class="duo">
+    <div class="bloco">
+      <h3>Colaterais — irmãos de Rozena</h3>
+      <ul class="tios">
+        <li>Alixandrina Francisca <span class="conta" style="margin:0">† 31/12/1977 · casada c/ Genesio Pereira Barros</span></li>
+        <li>Romão Firmino de Oliveira <span class="conta" style="margin:0">n. 13/10/1917 Bodocó · † 2009 Feitoria</span></li>
+      </ul>
+      <span class="conta">Filhos de Firmino e Francisca ✓ · cada óbito de colateral pode nomear os trisavós</span>
+    </div>
+    <div class="bloco">
+      <h3>Rede de relações — a investigar</h3>
+      <ul class="tios">
+        <li>Genesio Pereira Barros <span class="conta" style="margin:0">cunhado (marido de Alixandrina)</span></li>
+        <li>Antonio Lopes Filho <span class="conta" style="margin:0">testemunha do nasc. de Francisco</span></li>
+        <li>Galdino Lucio Feitoza <span class="conta" style="margin:0">testemunha do nasc. de Francisco</span></li>
+        <li>Manoel de Paula e Silva <span class="conta" style="margin:0">testemunha do casamento civil</span></li>
+        <li>João Mendes <span class="conta" style="margin:0">testemunha do casamento civil</span></li>
+        <li>João José de Siqueira <span class="conta" style="margin:0">testemunha do casamento religioso</span></li>
+        <li>Diolindo Torres de Oliveira <span class="conta" style="margin:0">testemunha do casamento religioso</span></li>
+      </ul>
+      <span class="conta">Testemunha em registro rural costuma ser compadre, vizinho ou parente — cruzar com os livros de Feitoria</span>
+    </div>
+  </div>
+
+  <div class="notas">
+    <h3>Fonte documental</h3>
+
+    <div class="nota">
+      <span class="tag conf">certidão</span>
+      <b>Registro civil de Francisco das Chagas Lima.</b> Livro A-28, folha 42, nº 5.963, lavrado em 05/07/1967 no Distrito de Feitoria, município de Bodocó, Pernambuco — registro tardio, dois anos e meio após o nascimento. Nascido em 01/01/1965, às 20 horas, no lugar Sombrio. Declarante: o próprio pai. Testemunhas: Antonio Lopes Filho e Galdino Lucio Feitoza. Segunda via emitida em 07/12/1976.
+    </div>
+
+    <div class="nota">
+      <span class="tag conf">casamento civil</span>
+      <b>Casamento de Hermes de Castro Lima e Rozena Francisca de Oliveira.</b> Termo nº 179, lavrado em 22/07/1944, às 8h30, no prédio da Escola Municipal da Vila de Feitoria, Comarca de Bodocó, Pernambuco. Juiz de Direito Dr. Antonio Joaquim Pereira de Oliveira; testemunhas Manoel de Paula e Silva e João Mendes (agricultores). Traz as datas de nascimento dos noivos e dos quatro bisavós, e registra que Rozena passou a assinar «de Lima» — o sobrenome veio do casamento. FamilySearch, Bodocó, Registros de casamento 1935–1944, imagem 208/225, filme #004146793 (ARK 3:1:S3HY-6BB9-TLJ).
+    </div>
+
+    <div class="nota">
+      <span class="tag conf">casamento religioso</span>
+      <b>Casamento católico dos mesmos Hermes e Rozena.</b> Celebrado em 24/07/1943 na freguesia de Bodocó, pelo Ritual Romano, vigário Pedro Modesto Ferraz; testemunhas João José de Siqueira e Diolindo Torres de Oliveira. Realizado um ano antes do registro civil — padrão comum na região. Confirma independentemente os quatro bisavós paternos. FamilySearch, Petrolina, Registros de casamento 1941–1949 (ARK 3:1:3QS7-893Z-FYWY). Obs.: o escrivão grafou o noivo como «de Oliveira Lima» e a mãe dele como «da Conceição» (vs. «de Castro» no civil) — variação de grafia, não contradição.
+    </div>
+
+    <div class="nota">
+      <span class="tag conf">óbito</span>
+      <b>Nova pessoa: Alixandrina Francisca, irmã de Rozena.</b> Falecida em 31/12/1977, cerca de 57 anos (nascida por volta de 1920), doméstica, residente no sítio Sombrio; casada com Genesio Pereira Barros (declarante). O registro a identifica como «filha de Firmino Vicente de Oliveira e Francisca Maria da Conceição, ambos já falecidos» — logo, os dois bisavós paternos morreram antes de dezembro de 1977. FamilySearch, Feitoria, Registros de óbito 1972–1979 (ARK 3:1:S3HY-6BBS-SRT). É irmã de Rozena por dedução sólida: pais de nome idêntico e mesma localidade (sítio Sombrio).
+    </div>
+
+    <h3 style="margin-top:26px">O que a certidão resolveu</h3>
+
+    <div class="nota">
+      <b>A dedução sobre os bisavós estava certa.</b> O documento lista Antonio de Oliveira Lima e Julia Maria de Castro como avós paternos de Francisco — ou seja, pais de Hermes — e Firmino Vicente de Oliveira e Francisca Maria da Conceição como avós maternos, pais de Rozena. Isso também indica que o nome de solteira de Rozena não trazia "Lima": o sobrenome veio do casamento.
+    </div>
+
+    <div class="nota">
+      <b>Sombrio fica em Bodocó, sertão do Araripe.</b> É uma localidade do distrito de Feitoria, que antes de 1943 se chamava São Félix e pertencia a Ouricuri até 1938 — detalhe importante, porque registros anteriores a essas datas podem estar arquivados sob outro município. Hermes e Rozena eram ambos naturais de Bodocó.
+    </div>
+
+    <h3 style="margin-top:26px">Sobre o ancestral judeu</h3>
+
+    <div class="nota">
+      <span class="tag oral">tradição oral</span>
+      <b>A certidão não sustenta nem derruba a história — só empurra a data para trás.</b> Se os dois avós e os quatro bisavós já eram do sertão do Araripe, o ancestral que veio da Amazônia está pelo menos uma geração acima: seria trisavô ou tataravô, não bisavô. Os quatro nomes de bisavós são nomes portugueses católicos comuns e não indicam origem por si sós.
+    </div>
+
+    <div class="nota">
+      <span class="tag oral">duas hipóteses</span>
+      <b>Hipótese A — judeus marroquinos, 1810 a 1910.</b> Chegaram pelo porto de Belém no ciclo da borracha e se espalharam pelos rios como comerciantes. Deixaram cerca de vinte cemitérios judaicos na região e registros nas sinagogas de Belém e Manaus. Encaixa no "veio para a Amazônia", mas o percurso a pé até o Araripe seria incomum nesse grupo.<br><br>
+      <b>Hipótese B — cristãos-novos do próprio sertão.</b> Descendentes de judeus convertidos à força ainda em Portugal, que entraram pelo Nordeste séculos antes. É a origem mais frequente das histórias de "avô judeu" no interior pernambucano, e a memória da Amazônia pode ter se somado depois — inclusive pelo caminho inverso, o dos nordestinos que foram trabalhar na borracha entre 1942 e 1945 e voltaram para casa.
+    </div>
+
+    <h3 style="margin-top:26px">Próximos passos, na ordem</h3>
+
+    <div class="nota">
+      <span class="tag conf">✓ feito</span>
+      <b>Casamento de Hermes e Rozena — localizado no FamilySearch (busca full-text por IA).</b> Aparecem duas cerimônias: a religiosa (24/07/1943) e a civil (Termo 179, 22/07/1944). Deram as datas de nascimento dos quatro bisavós e a data de morte de Antonio (1926). Ver «Fonte documental» acima.
+    </div>
+
+    <div class="nota">
+      <span class="tag conf">1</span>
+      <b>O muro dos trisavós.</b> Um óbito nomeia os pais do falecido; um casamento nomeia os pais dos noivos. Para subir acima dos bisavós (nascidos 1888–1890) preciso do <i>batismo</i> ou do <i>óbito</i> de cada um dos quatro. Alvos concretos: óbito de Antonio de Oliveira Lima (†1926, Bodocó) e óbitos de Julia, Firmino e Francisca. Esses livros antigos de Bodocó ainda <b>não</b> estão na busca full-text — é folhear imagem por imagem na coleção «Registros civis, Bodocó 1910–2003».
+    </div>
+
+    <div class="nota">
+      <span class="tag conf">2</span>
+      <b>Paróquia de Bodocó / Diocese de Petrolina.</b> Batismos de 1888–1890 nomeiam os pais dos bisavós = os trisavós. O acervo paroquial de Bodocó/Feitoria (1925–1965) está no Arquivo Diocesano de Petrolina; batismos anteriores a 1925 podem estar sob Ouricuri, Granito ou Exu. É a via mais provável para romper o muro.
+    </div>
+
+    <div class="nota">
+      <span class="tag conf">3</span>
+      <b>Só então a pista amazônica.</b> Sem um nome e uma data plausíveis, procurar em Manaus ou Belém é achar agulha no palheiro. Quando houver um candidato, os caminhos são o acervo do Arqshoah-LEER/USP, o site Amazônia Judaica e o levantamento de sepulturas israelitas de Belém feito por Abecassis e Wolff.
+    </div>
+
+    <div class="nota">
+      <span class="tag conf">4</span>
+      <b>Ramo materno, ainda em branco.</b> A certidão de nascimento da sua mãe, registrada em São Paulo, deve trazer os nomes dos pais de Narciso e de Jandira e revelar se eles eram paulistas ou também migrantes nordestinos.
+    </div>
+
+    <h3 style="margin-top:26px">Fontes novas para romper o muro dos trisavós</h3>
+
+    <div class="nota">
+      <span class="tag oral">bases já compiladas</span>
+      <b>Genealogia Pernambucana — Famílias Sertanejas</b> (genealogiapernambucana.com.br): banco curado do sertão de PE e CE, muitos registros já cruzados com o FamilySearch e uma ferramenta de parentesco. Buscar os sobrenomes dos bisavós — sobretudo <i>Oliveira do Rego</i> e <i>de Castro</i> — na região do Araripe. <b>ASBRAP</b> (asbrap.org.br) e o <b>IHGP</b> publicam genealogias de famílias sertanejas do século XVIII–XIX que podem já conter a linha.
+    </div>
+
+    <div class="nota">
+      <span class="tag oral">sesmarias</span>
+      <b>SILB — Sesmarias do Império Luso-Brasileiro</b> (silb.cchla.ufrn.br): base pesquisável de todas as cartas de sesmaria por nome de sesmeiro e capitania. O Araripe foi povoado por sesmarias de gado entre o fim do século XVII e o início do XIX; se um ancestral recebeu terra, o nome está lá. Complementa o <b>APEJE</b> (Arquivo Público Estadual, Recife), com documentação colonial a republicana desde 1534, parte já digitalizada com a CEPE.
+    </div>
+
+    <div class="nota">
+      <span class="tag conf">correção</span>
+      <b>Ouricuri depende hoje da Diocese de Salgueiro, não de Petrolina.</b> Como os batismos de 1888–1890 dos bisavós devem estar sob a paróquia-mãe da época (provável Ouricuri, vila desde 1849), o <b>Arquivo Diocesano de Salgueiro</b> passa a ser alvo primário para romper o muro. O Arquivo Diocesano de Petrolina guarda o acervo de Bodocó/Feitoria a partir de ~1925 — complementar.
+    </div>
+  </div>
+
+  <footer>Montado em agosto de 2026 · atualizado 07/09/2026 com colaterais, rede de relações e fontes para os trisavós · documento vivo, feito para crescer</footer>
+</div>
+</body>
+</html>

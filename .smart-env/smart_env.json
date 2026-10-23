@@ -14,12 +14,13 @@
     },
     "excluded_headings": "",
     "file_exclusions": "Untitled,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-01/ISG012-01 - Arquitetura de Redes Seguras Do Perímetro à Segmentação Lógica - Q de múlt escolha - Gabarito.pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-05/ISG012-05 - Firewalls de Host Defesa do Endpoint em SOs - Teoria - Q de múlt escolha - Gabarito.pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-08/ISG012-08/ISG012-08 - Análise de Falhas e Testes de Invasão Básicos em Redes - Teoria- Q de múlt escolha - Gabarito.pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-08/ISG012-08/ISG012-08 - Análise de Falhas e Testes de Invasão Básicos em Redes - Teoria- Q de múlt escolha.pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-07/ISG012-07/ISG012-07 - Segurança em Redes sem Fio – Fundamentos - Teoria- Q de múlt escolha - Gabarito.pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-09/ISG012-09/ISG012-09 - Configuração Segura de Servidores de Rede - Teoria - Q de múlt escolha - Gabarito .pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-11/ISG012-11/ISG012-11 - Coleta e Análise de Tráfego para Segurança - Teoria - Q de múlt escolha - Gabarito.pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-10/ISG012-10/ISG012-10 - Monitoramento e Sistemas de Alerta - Teoria- Q de múlt escolha - Gabarito.pdf,cyberetico/Cursos/fatec/2026/1-2026/Segurança em Redes/ISG012-Seguranca_SO_Redes_II_Noturno/ISG012-12/ISG012-12/ISG012-12 - Proxy Avançado e Inspeção de Tráfego - Teoria - Q de múlt escolha - Gabarito.pdf",
-    "folder_exclusions": ""
+    "folder_exclusions": "Work/context/CTI/Reports"
   },
   "gitignore_exclusions": [
-    ".env"
+    ".env",
+    ".obsidian/plugins/mcp-tools-istefox/main.js"
   ],
-  "gitignore_exclusions_updated_at": 1787075015462,
+  "gitignore_exclusions_updated_at": 1788288798655,
   "language": "en",
   "re_import_wait_time": 13,
   "smart_chat_threads": {
@@ -87,6 +88,6 @@
     "template_after": "</context>"
   },
   "embedding_models": {
-    "default_model_key": "transformers#1779803524680"
+    "default_model_key": "transformers#1788466577199"
   }
 }

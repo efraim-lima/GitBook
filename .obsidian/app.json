@@ -3,5 +3,8 @@
   "promptDelete": true,
   "showUnsupportedFiles": true,
   "showLineNumber": true,
-  "vimMode": true
+  "vimMode": true,
+  "userIgnoreFilters": [
+    "Work/context/CTI/Reports/"
+  ]
 }

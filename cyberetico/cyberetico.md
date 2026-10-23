@@ -13,26 +13,26 @@ type: folder_brief_live
 			- **DEV**
 				- **Introdução**
 					- [[public static class Main()]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 				- **Java**
 					- [[Documentaçao do Sniffer]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 			- **DFIR**
 				- **Introdução**
 					- [[Data Recovery]]
 					- [[Sistemas Operacionais e de Arquivos]]
 					- [[Tipos de Memória]]
 					- [[Tipos de Memorias]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 					- [[Windows]]
 				- **Unix Like**
 					- [[Linux]]
 					- [[Sistemas Operacionais]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 				- **[[Windows]]**
 					- [[Aquisição]]
 					- [[Sistemas Operacionais]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 					- [[Windows]]
 			- **FATEC**
 				- **Direito Digital**
@@ -43,30 +43,30 @@ type: folder_brief_live
 					- [[Aula 7]]
 					- [[Aula Inaugural]]
 					- [[Direitos Autorais]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 				- **English**
 					- [[Atividade em Aula]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 				- **Estudos Avançados**
 					- [[Arquitetura de segurança]]
 					- [[Arquitetura Segura para infraestrutura]]
 					- [[Segunda Etapa]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 				- **Faltas**
 					- [[Recording]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 				- **GSI**
 					- [[Aula Inaugural]]
 					- [[Estudo de Perímetro]]
 					- [[Mapeamento da Relevância]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 				- **Introdução**
 					- [[Tema A]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 				- **S S O R**
 					- [[Atividade 1 - Coleta de Informações]]
 					- [[Atividade 2 - Reconhecimento com netcat e nmap]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 				- **TCC**
 					- [[Alchemy]]
 					- [[Escrita academica]]
@@ -75,40 +75,40 @@ type: folder_brief_live
 					- [[Projeto]]
 					- [[Recon]]
 					- [[Segurança]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 			- **PENTESTING**
 				- **AI**
 					- [[Pentesting em agentes de AI]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 				- **Introdução**
 					- [[Tipos de Memória]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 				- **Windows**
 					- [[Sistemas Operacionais]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 			- **SOC**
 				- **Cyber Kill Chain**
 					- [[🔰Início]]
 					- [[Fases]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 				- **Introdução**
 					- [[Evitar]]
 					- [[Ferramentas]]
 					- [[Funções do SOC]]
 					- [[Tipos de SOC 2]]
 					- [[Tipos de SOC]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 				- **MITRE**
 					- [[🔰Início]]
 					- [[MITRE ATT&CK Framework]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 			- **TEMPLATE**
 				- **Introdução**
 					- [[Tema A]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 				- **[[Tema A]]**
 					- [[Tema A]]
-					- [[cyberetico/CyberSecurity/Notas/DEV/Java/Untitled]]
+					- [[Untitled]]
 			- [[DEV]]
 			- [[DFIR]]
 			- [[FATEC]]
@@ -119,6 +119,33 @@ type: folder_brief_live
 	- **Notion**
 		- **Private & Shared**
 			- [[Cybersecurity]]
+	- **Projetos**
+		- **ImageReader-AI**
+			- **app-android**
+				- **app**
+					- **src**
+						- **main**
+							- **java**
+								- **com**
+									- **efraim**
+										- **imagereaderai**
+											- [[MainActivity.java]]
+											- [[WebhookClient.java]]
+							- **res**
+								- **layout**
+									- [[activity_main.xml]]
+								- **values**
+									- [[strings.xml]]
+									- [[themes.xml]]
+							- [[AndroidManifest.xml]]
+					- [[build.gradle]]
+					- [[proguard-rules.pro]]
+				- [[build.gradle]]
+				- [[gradle.properties]]
+				- [[README]]
+				- [[settings.gradle]]
+			- [[ARQUITETURA]]
+			- [[SPEC]]
 	- **[[temas]]**
 	- [[__init__]]
 	- [[cyberetico]]

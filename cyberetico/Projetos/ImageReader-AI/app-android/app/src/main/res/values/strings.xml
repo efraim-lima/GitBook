@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ImageReader-AI</string>
+    <string name="capture">Capturar e ler</string>
+    <string name="processing">Processando imagem…</string>
+    <string name="hint_ready">Aponte a câmera para o texto manuscrito e toque em capturar.</string>
+    <string name="camera_denied">Permissão de câmera negada.</string>
+    <string name="capture_error">Erro ao capturar a foto.</string>
+    <string name="empty_result">Nenhum texto reconhecido.</string>
+    <string name="request_error">Falha na requisição: %1$s</string>
+</resources>
