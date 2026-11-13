@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository nature
 
-This is **not** a software project — it is a personal Markdown knowledge base (Information Security / cybersecurity notes, coursework, SOC operations) authored in Obsidian and published via GitBook. There is no root-level build, lint, or test pipeline. The one exception is a self-contained Python automation project nested under `Work/Automações/Entregaveis/` (see below).
+This is **not** a software project — it is a personal Markdown knowledge base (Information Security / cybersecurity notes, coursework, SOC operations) authored in Obsidian and published via GitBook. There is no root-level build, lint, or test pipeline. Two self-contained Python projects are nested inside: the automation pipeline under `Work/Automações/Entregaveis/` and the `nesting-laser` app under `Projects/chapas/` (both described below).
 
-`Work/` is a **separate nested git repository** (`Work/.git`), independent from the repo root (`.git`). Treat changes inside `Work/` as belonging to a different repo when checking status/history or committing.
+Both `Work/` and `Projects/chapas/` are **separate nested git repositories** (`Work/.git`, `Projects/chapas/.git`), independent from the repo root (`.git`). Treat changes inside them as belonging to a different repo when checking status/history or committing. Additionally, `.gitmodules` declares a git submodule `information-security/fatec` (may be uninitialized).
 
 ## Build, test, and lint commands
 
@@ -28,6 +28,8 @@ python -m unittest _dev/test_integration.py -k test_get_dashboard
 uv run python gerar_apresentacao.py --cliente CLIENTE --data-inicio YYYY-MM-DD --data-fim YYYY-MM-DD
 ```
 
+`Projects/chapas` (nesting-laser, Python ≥3.11, phased build per `docs/PLANO.md`) has its **own `CLAUDE.md`** with code conventions — read it before working there. It uses `pyproject.toml` (setuptools) and has a `tests/` suite plus Docker; defer to that file rather than this one for chapas.
+
 ## High-level architecture
 
 ### 1) Knowledge-base layer (repository root)
@@ -39,6 +41,9 @@ uv run python gerar_apresentacao.py --cliente CLIENTE --data-inicio YYYY-MM-DD -
   - `knowlage/` — investigations, CYBER notes, personal/wireless notes
   - `obsidian/` and `Work/` — workspace notes and operational (SOC) documentation
   - `reports/` — generated reports and an "Orphaned Files" index
+  - `Concursos/` — Brazilian public-exam (concurso) study material, one subfolder per concurso; written/read by the `analisando-edital` and `estudando-concurso` skills
+  - `Genealogia/` — family-history research project (planning + source notes)
+  - `Projects/` — nested code projects (currently `chapas`); `Init/`, `Teste/` — setup scripts and scratch, not published content
 
 ### 2) Automation layer (`Work/Automações/Entregaveis`)
 A Python pipeline for SOC/client deliverable presentations (PPTX generation):
